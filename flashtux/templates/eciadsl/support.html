@@ -1,0 +1,139 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}{% load txt2html %}
+
+{% block subtitle %} :: {% trans "Support" %}{% endblock %}
+{% block menu2_support %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>{% trans "Support via IRC" %}</h3>
+
+<p>
+  {% trans "For any problem (or for thanking us), you can discuss with development team on IRC:" %}
+  <br><br>
+  <span class="ml-4">server: <code>irc.freenode.net</code>, channel: <code>#eci</code></span>
+</p>
+
+<p>
+  {% trans "You can ask them for support:" %} FlashCode, jeanseb, benoit, kolja, crevetor, low, [Pink], [Odin].
+  <br>
+  {% trans "<strong>Important:</strong> EciAdsl developers will NEVER ask you for your connection password, do not give it under any pretext!" %}
+</p>
+
+<h3>{% trans "Mailing list" %}</h3>
+
+{% trans "With this mailing list, you can receive the latest news about EciAdsl development, and you can join all developers and users." %}
+<br>
+{% trans "You must subscribe to the mailing list to send or receive mails from it." %}
+<br><br>
+{% trans "Subscribe/unsubscribe/infos:" %}
+<a href="http://lists.sourceforge.net/lists/listinfo/eciadsl-users">http://lists.sourceforge.net/lists/listinfo/eciadsl-users</a>
+
+<h3>{% trans "Team" %}</h3>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_flashcode.jpg" width="64" height="64" class="rounded shadow" alt="FlashCode"
+         onmouseover="javascript:this.src='{{ MEDIA_URL }}images/photo_dev_flashcode_2.jpg'"
+         onmouseout="javascript:this.src='{{ MEDIA_URL }}images/photo_dev_flashcode.jpg'">
+  </div>
+  <div class="col">
+    <strong>Sébastien Helleu</strong>
+    <span class="text-muted">(FlashCode)</span>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer, initiator of project" %}
+      <br>
+      <a href="mailto:{% txt2html "flashcode@flashtux.org" %}">{% txt2html "flashcode@flashtux.org" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_jeanseb.jpg" width="64" height="64" class="rounded shadow" alt="jeanseb"
+         onmouseover="javascript:this.src='{{ MEDIA_URL }}images/photo_dev_jeanseb_2.jpg'"
+         onmouseout="javascript:this.src='{{ MEDIA_URL }}images/photo_dev_jeanseb.jpg'">
+  </div>
+  <div class="col">
+    <strong>Jean-Sébastien Valette</strong>
+    <span class="text-muted">(jeanseb)</span>
+    <br>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer, kernelmode driver" %}
+      <br>
+      <a href="mailto:{% txt2html "jeanseb.valette@free.fr" %}">{% txt2html "jeanseb.valette@free.fr" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_benoit.jpg" width="64" height="64" class="rounded shadow" alt="benoit">
+  </div>
+  <div class="col">
+    <strong>Benoît Papillault</strong>
+    <span class="text-muted">(benoit)</span>
+    <br>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer, usermode and BSD driver" %}
+      <br>
+      <a href="mailto:{% txt2html "benoit.papillault@free.fr" %}">{% txt2html "benoit.papillault@free.fr" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_kolja.jpg" width="64" height="64" class="rounded shadow" alt="kolja">
+  </div>
+  <div class="col">
+    <strong>Kolka</strong>
+    <br>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_it.png" alt="fr" class="border mr-2">
+      {% trans "Developer, driver for GS7470 chipsets" %}
+      <br>
+      <a href="mailto:{% txt2html "gava@bergamoblog.it" %}">{% txt2html "gava@bergamoblog.it" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_low.jpg" width="64" height="64" class="rounded shadow" alt="low">
+  </div>
+  <div class="col">
+    <strong>Laurent Wandrebeck</strong>
+    <span class="text-muted">(low)</span>
+    <br>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer, support" %}
+      <br>
+      <a href="mailto:{% txt2html "wandre.l@free.fr" %}">{% txt2html "wandre.l@free.fr" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_crevetor.jpg" width="64" height="64" class="rounded shadow" alt="crevetor">
+  </div>
+  <div class="col">
+    <strong>Antoine Reversat</strong>
+    <span class="text-muted">(crevetor)</span>
+    <br>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer, support" %}
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

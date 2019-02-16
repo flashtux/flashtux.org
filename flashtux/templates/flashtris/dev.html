@@ -1,0 +1,107 @@
+{% extends "flashtris/flashtris.html" %}
+
+{% load i18n %}{% load localdate %}
+
+{% block subtitle %} :: {% trans "Development" %}{% endblock %}
+{% block menu2_dev %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>{% trans "FlashTris history" %}</h3>
+
+<p>
+  <ul>
+    <li>
+      <strong>1995 - 1998:</strong>
+      {% url "news" section="games" as url_games %}
+      {% blocktrans %}I develop games during my studies (see <a href="{{ url_games }}">games page</a>). The best is Demoniac-Tris, a "Tetris like" running under Dos/Windows with IPX network support.{% endblocktrans %}
+    </li>
+    <li>
+      <strong>June 1998:</strong>
+      {% blocktrans %}I discover Linux. During one year, I develop some utilities to discover this fabulous system.{% endblocktrans %}
+    </li>
+    <li>
+      <strong>June 1999:</strong>
+      {% blocktrans %}I decide to convert Demoniac-Tris to a Linux version. I encountered difficulties (langage Pascal ==> C and system Linux/Dos). I decided to leave this project and I would like to create a new "Tetris like", 100% in C and assembly langage, 100% compatible between Linux, Dos and Windows 3.x/95/98/2000/XP.{% endblocktrans %}
+    </li>
+    <li>
+      <strong>1999-06-21:</strong>
+      {% blocktrans %}FlashTris is born.{% endblocktrans %}
+    </li>
+  </ul>
+</p>
+
+<h3>{% trans "Technical info" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "FlashTris is developed and tested with a Pentium III 800, 450 Mb RAM, Linux Debian and Slackware, kernel 2.4.0, XFree 4.0.2" %}</li>
+    <li>{% trans "100% C/assembly langage, compatible Linux - Dos - Windows v3.x/95/98/2000/XP" %}</li>
+    <li>{% trans "Optimised: 75% of graphics and sound are written in assembly langage." %}</li>
+    <li>{% trans "Data is included in executable (compressed musics and graphics)." %}</li>
+    <li>{% trans "More than 23000 lines of source code (menu: 28%, graphics: 23%, game: 18%, sound: 14%, other: 20%)." %}</li>
+    <li>{% trans "Zero high level library used (except svgalib for Linux console graphics)." %}</li>
+    <li>{% trans "Graphics are made with The Gimp and Deluxe Paint II." %}</li>
+    <li>{% trans "Program (and bugs…) are free!" %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Special thanks" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Rapass for his fabulous menu's idea." %}</li>
+    <li>{% trans "People who help me, give me ideas, signal bugs, etc." %}</li>
+  </ul>
+</p>
+
+{% with "2001-09-06"|localdate as date %}
+<h3>{% blocktrans %}Progress report on {{ date }}{% endblocktrans %}</h3>
+{% endwith %}
+
+<p>
+  <ul>
+    <li>{% trans "Graphics mode: VGA (320x200): 100%, SVGA (unlimited resolution): 5%" %}</li>
+    <li>{% trans "X-Window version: 35%" %}</li>
+    <li>{% trans "Linux console version: 100%" %}</li>
+    <li>{% trans "Dos version: 100%" %}</li>
+    <li>{% trans "Windows 3.x/95/98/2000/XP version: 100%" %}</li>
+    <li>{% trans "Menu: 85%" %}</li>
+    <li>{% trans "Game - display: 90%" %}</li>
+    <li>{% trans "Game - modes: 70%" %}</li>
+    <li>{% trans "Game - options: 65%" %}</li>
+    <li>{% trans "Game - bonus levels: 60%" %}</li>
+    <li>{% trans "Game - scores: 32%" %}</li>
+    <li>{% trans "Artificial intelligence: 80%" %}</li>
+    <li>{% trans "Network game - Linux: 20% (TCP/IP only)" %}</li>
+    <li>{% trans "Network game - Windows: 0% (soon)" %}</li>
+    <li>{% trans "Musics, sound FX: 100%" %}</li>
+  </ul>
+</p>
+
+<h3>Under construction</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Network game for Windows version." %}</li>
+    <li>{% trans "X-Window version." %}</li>
+    <li>{% trans "Game modes: challenge, star mode, etc." %}</li>
+    <li>{% trans "High scores." %}</li>
+    <li>{% trans "Other bonus levels: nibble, tron, etc." %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Known bugs (sorry!)" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Under Windows 2000, game detects Msdos 5.0!" %}</li>
+    <li>{% trans "Hangs up before menu (Windows only)." %}</li>
+    <li>{% trans "Display problem when lot of players (stats, number or lines, etc.)." %}</li>
+    <li>{% trans "Bad computer intelligence (is that really a bug?)." %}</li>
+  </ul>
+</p>
+
+{% endblock content %}

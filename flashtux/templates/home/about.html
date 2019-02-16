@@ -1,0 +1,125 @@
+{% extends "home/home.html" %}
+
+{% load i18n %}{% load localdate %}{% load txt2html %}
+
+{% block subtitle %} :: {% trans "About" %}{% endblock %}
+{% block menu2_about %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>FlashTux.org</h3>
+
+<h4>{% trans "History" %}</h4>
+
+<p>
+  {% trans "FlashTux.org is a website hosting free software for free OS (Linux, BSD, etc.)." %}
+</p>
+
+<p>
+  {% trans "Key dates:" %}
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <th class="text-nowrap">{% trans "Date" %}</th>
+        <th class="text-nowrap">
+          {% comment %}Translators: "language" is a programming language{% endcomment %}
+          {% trans "Language / environment" %}
+        </th>
+        <th width="100%">{% trans "Description" %}</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-nowrap">1999</td>
+          <td class="text-nowrap">PHP</td>
+          <td>
+            {% blocktrans %}Creation of the <a href="http://flashcode.free.fr/index2.php">FlashCode's page</a>, with tools and games I am developing.{% endblocktrans %}
+          </td>
+        </tr>
+        <tr>
+          <td class="text-nowrap">{{ "2002-09"|localdate:"date_year_month" }}</td>
+          <td class="text-nowrap">PHP, MySQL</td>
+          <td>
+            {% trans "Creation of FlashTux.org, in replacement of FlashCode's page." %}
+            <br>
+            {% trans "Hosted projects like the EciAdsl driver are growing and become stable." %}
+            <br>
+            {% trans "Dynamic parts of website (like news, EciAdsl modems, programs, etc.) are now stored in a database." %}
+          </td>
+        </tr>
+        <tr>
+          <td class="text-nowrap">{{ "2004-06"|localdate:"date_year_month" }}</td>
+          <td class="text-nowrap">PHP, MySQL</td>
+          <td>
+            {% trans "Major update of website:" %}
+            <ul>
+              <li>{% trans "conform to XHTML / CSS 2 W3C recommandations" %}</li>
+              <li>{% trans "comments system for news" %}</li>
+              <li>{% trans "language selection is saved in a cookie" %}</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-nowrap">{{ "2019-02"|localdate:"date_year_month" }}</td>
+          <td class="text-nowrap">Python / Django, PostgreSQL</td>
+          <td>
+            {% blocktrans %}FlashTux.org (formerly the "FlashCode's webpage") is turning 20!{% endblocktrans %}
+            <br>
+            {% trans "Full rewrite of the site, source code is now available." %}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</p>
+
+<h4>{% trans "Source code" %}</h4>
+
+<p>
+  {% trans "The source code of this website is hosted on GitHub:" %}
+  <a href="https://github.com/flashtux">https://github.com/flashtux</a>
+</p>
+
+<p>
+  {% trans "All pages are written with text editor, no web page editor or CMS (Content Management System) are used." %}
+</p>
+
+<p>
+  {% trans "This website and software available on this website are free, source code is provided and you can redistribute it under GNU GPL licence conditions." %}
+  <br>
+  {% trans "FlashTux.org is not responsible of any data/hardware damage due to use of software available on this website." %}
+</p>
+
+<h4>{% trans "Pages conformity" %}</h4>
+
+<p>
+  {% blocktrans %}FlashTux.org pages are conform to W3C <a href="https://www.w3.org/TR/html5/" target="_blank" rel="noopener">HTML 5 recommendation</a>.{% endblocktrans %}
+  <br>
+  {% trans "Therefore, any browser compatible with theses recommendations should display website without any problem." %}
+</p>
+
+<h4>{% trans "Spam" %}</h4>
+
+<p>
+  {% trans "FlashTux.org team is actively fighting against spam." %}
+  <br>
+  {% trans "Your e-mail address will NEVER be sent to anyone, neither displayed on website." %}
+</p>
+
+<h4>{% trans "Technical info" %}</h4>
+
+<p>
+  {% trans "Web hoster: Hetzner" %}
+  <br>
+  {% trans "Host: flashtux.org" %}
+</p>
+
+<h4>{% trans "Contact" %}</h4>
+
+<p>
+  e-mail: <a href="mailto:{% txt2html "webmaster@flashtux.org" %}">webmaster@flashtux.org</a>
+  <br>
+  IRC: server irc.freenode.net, nick FlashCode, channels: #weechat, #weechat-fr, #eci
+</p>
+
+{% endblock content %}

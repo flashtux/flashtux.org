@@ -1,0 +1,160 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Tutorial" %}{% endblock %}
+{% block menu2_tutorial %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div class="tutorial">
+
+  <h3>{% trans "Preamble" %}</h3>
+
+  <p>
+    {% trans "This tutorial was written for Linux beginners." %}
+    <br>
+    {% trans "If you know how to install programs and how to edit configuration files, you can refer to the documentation." %}
+  </p>
+
+  <p>
+    {% trans "This tutorial only describes RPM installation of driver, for ECI HiFocus or B-Focus modem in France." %}
+    <br>
+    {% trans "Screenshots are here only for examples, some of them are old and do not show last version of EciAdsl." %}
+    <br>
+    {% trans "For other packages / modems, please look at the documentation." %}
+  </p>
+
+  <p>
+    {% trans "Thanks to fisher for posting initial version of this tutorial on the forum." %}
+  </p>
+
+  <h3>{% trans "Step 1: download the driver" %}</h3>
+
+  <p>
+    {% url "eciadsl_download" as url_download %}
+    {% blocktrans %}Download .rpm version on <a href="{{ url_download }}">this page</a>.{% endblocktrans %}
+    <br>
+    {% trans "If you're under Windows with a floppy disk, save on the floppy to send it to Linux." %}
+  </p>
+
+  <h3>{% trans "Step 2: Driver installation" %}</h3>
+
+  <p>
+    {% trans "Unplug USB cable from modem." %}
+    <br>
+    {% trans "Connected as root user (for example with Gnome)." %}
+    <br>
+    {% trans "Open file manager as root (like Windows):" %}
+    <div class="text-center w-50 my-2">
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture1_install_rpm.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture1_install_rpm.png" class="shadow">
+      </a>
+    </div>
+    <br>
+    {% trans "…otherwise on a root console (like un*x users):" %}
+    <pre><code># rpm -i eciadsl-usermode-0.10-1.i386.rpm</code></pre>
+    <div class="text-center w-50 my-2">
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture_console001.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture_console001.png" class="shadow">
+      </a>
+      <br><br>
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture_console002.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture_console002.png" class="shadow">
+      </a>
+    </div>
+    {% trans "Disable or delete dabusb module:" %}
+    {% trans "if /etc/hotplug/blacklist exists, edit it and add a line containing the word 'dabusb' (without the quotes) to it. Restart Linux." %}
+    <br>
+    {% trans "Otherwise, type:" %}
+    <pre><code># modprobe -r dabusb && rm -f $(modprobe -l | grep dabusb) && depmod -a</code></pre>
+    <div class="text-center w-50 my-2">
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture_console003.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture_console003.png" class="shadow">
+      </a>
+    </div>
+    {% trans "And that's all! Your modem is now installed!" %}
+  </p>
+
+  <h3>{% trans "Step 3: Connexion setup" %}</h3>
+
+  <p>
+    {% trans "Run graphical configuration tool:" %}
+    <div class="text-center w-50 my-2">
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture2_executer_eciconf.sh.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture2_executer_eciconf.sh.png" class="shadow">
+      </a>
+      <br><br>
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture5_executer_eciconf.sh.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture5_executer_eciconf.sh.png" class="shadow">
+      </a>
+    </div>
+    {% trans "or type:" %}
+    <pre><code># eciadsl-config-tk (or eciadsl-config-text)</code></pre>
+    <br>
+    {% trans "And you see that:" %}
+    <div class="text-center w-50 my-2">
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/capture7_eciconf.sh.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/capture7_eciconf.sh.png" class="shadow">
+      </a>
+    </div>
+    {% trans "Enter login, password, etc., and save." %}
+    <br>
+    {% trans "Synch .bin files should be in /etc/eciadsl" %}
+    <br>
+    {% trans "On floppy disk, click with right button and choose Ark software." %}
+    <div class="text-center w-50 my-2">
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/ouvrir_avec_autre_appli.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/ouvrir_avec_autre_appli.png" class="shadow">
+      </a>
+      <br><br>
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/ouvrir_avec_autre_appli_ARK.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/ouvrir_avec_autre_appli_ARK.png" class="shadow">
+      </a>
+      <br><br>
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/ARK_extraire.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/ARK_extraire.png" class="shadow">
+      </a>
+      <br><br>
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/ARK_extraire4.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/ARK_extraire4.png" class="shadow">
+      </a>
+      <br><br>
+      <a href="{{ MEDIA_URL }}images/eciadsl/tutorial/ARK_extraire3.png" target="_blank" rel="noopener">
+        <img src="{{ MEDIA_URL }}images/eciadsl/tutorial/small/ARK_extraire3.png" class="shadow">
+      </a>
+    </div>
+  </p>
+
+  <h3>{% trans "Step 4: Launch connection" %}</h3>
+
+  <p>
+    {% trans "Note: after plugging modem, LEDs should be off, otherwise please repeat step 2 (dabusb)." %}
+  </p>
+
+  <p>
+    {% trans "To do that, type with plugged modem:" %}
+    <pre><code># /usr/bin/eciadsl-start | tee log.txt</code></pre>
+  </p>
+
+  <p>
+    {% trans "Note: LEDs power on (first red then green), if there is any error message like 'Authentication failed' please repeat step 3." %}
+    <br>
+    {% trans "If you see a timeout and that green LED still blinks, please repeat step 3 and choose another .bin synch file." %}
+  </p>
+
+  <p>
+    <strong>{% trans "That's all, you should be connected :-)" %}</strong>
+  </p>
+
+  <p>
+    {% url "eciadsl_doc" as url_doc %}
+    {% url "eciadsl_faq" as url_faq %}
+    {% blocktrans %}For any problem, please read <a href="{{ url_doc }}">documentation</a> and <a href="{{ url_faq }}">FAQ</a>.{% endblocktrans %}
+  </p>
+
+</div>
+
+{% endblock content %}

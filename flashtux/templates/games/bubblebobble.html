@@ -1,0 +1,63 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}{% load linkfile %}
+
+{% block subtitle %} :: Bubble Bobble{% endblock %}
+{% block menu2_bubblebobble %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<p class="text-center">
+  <img src="{{ MEDIA_URL }}images/games/bubble1.png" class="px-2" alt="Bubble Bobble" title="Bubble Bobble">
+  <img src="{{ MEDIA_URL }}images/games/bubble2.png" class="px-2" alt="Bubble Bobble" title="Bubble Bobble">
+</p>
+
+<h3>{% trans "The game" %}</h3>
+
+<p>
+  {% trans "New version of this famous game!" %}
+</p>
+
+<h3>{% trans "Plus" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "2 players game" %}</li>
+    <li>{% trans "fun!" %}</li>
+    <li>{% trans "original music!" %}</li>
+    <li>{% trans "nostalgia…" %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "OS" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Dos (native)" %}</li>
+    <li>{% blocktrans %}Windows / Linux / BSD / BeOS (with <a href="https://www.dosbox.com">DOSBox</a>){% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Programming language" %}</h3>
+
+<p>
+  {% trans "Pascal (8100 lines), result of 1 year' work." %}
+</p>
+
+<h3>{% trans "Note" %}</h3>
+
+<p>
+  {% blocktrans %}The title "Bubble Bobble" is not used as a commercial name.{% endblocktrans %}
+  <br>
+  {% trans "It stays property of Bubble Bobble's authors." %}
+</p>
+
+<h3>{% trans "Download" %}</h3>
+
+<p>
+  {% linkfile "games/bubble.zip" %}
+</p>
+
+{% endblock content %}

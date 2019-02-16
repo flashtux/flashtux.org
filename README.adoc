@@ -1,0 +1,63 @@
+= FlashTux.org
+:author: Sébastien Helleu
+:email: flashcode@flashtux.org
+:lang: en
+
+
+FlashTux.org is the website for FlashTux, the home of free projects for free OS.
+
+Homepage: https://flashtux.org/
+
+image:https://travis-ci.org/flashtux/flashtux.org.svg?branch=master["Build Status", link="https://travis-ci.org/flashtux/flashtux.org"]
+
+== Install
+
+=== Dependencies
+
+Following packages are *required*:
+
+* python >= 2.7
+* python-django >= 1.10
+* python-tz
+* python-django-countries
+* PostgreSQL.
+
+=== Deploy
+
+Run the install script and follow instructions:
+
+----
+$ ./bin/install.sh
+----
+
+Run Django server:
+
+----
+$ ./test.sh
+----
+
+And just point your browser on <http://127.0.0.1:8000/>, that's all!
+
+== Authors
+
+* Design/code:
+** Sébastien Helleu (FlashCode)
+
+== Copyright
+
+Copyright (C) 1999-2019 Sébastien Helleu <flashcode@flashtux.org>
+
+This file is part of FlashTux.org.
+
+FlashTux.org is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+FlashTux.org is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with FlashTux.org.  If not, see <https://www.gnu.org/licenses/>.

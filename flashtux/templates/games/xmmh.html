@@ -1,0 +1,52 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}{% load linkfile %}
+
+{% block subtitle %} :: Xmmh{% endblock %}
+{% block menu2_xmmh %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<p class="text-center">
+  <img src="{{ MEDIA_URL }}images/games/xmmh.png" class="px-2" alt="Xmmh" title="Xmmh">
+</p>
+
+<h3>{% trans "The game" %}</h3>
+
+<p>
+  {% trans "Find hidden mines." %}
+</p>
+
+<h3>{% trans "Plus" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Linux version" %}</li>
+    <li>{% trans "funny" %}</li>
+    <li>{% trans "source included!" %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "OS" %}</h3>
+
+<p>
+  <ul>
+    <li>Linux</li>
+  </ul>
+</p>
+
+<h3>{% trans "Programming language" %}</h3>
+
+<p>
+  {% trans "C (569 lines), result of 2 days' work!" %}
+</p>
+
+<h3>{% trans "Download" %}</h3>
+
+<p>
+  {% linkfile "games/xmmh.zip" %}
+</p>
+
+{% endblock content %}

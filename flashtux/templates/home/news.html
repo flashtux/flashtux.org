@@ -1,0 +1,21 @@
+{% extends "home/home.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "News" %}{% endblock %}
+{% block menu2_news %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div class="alert border project">
+  {% trans "<strong>FlashTux.org</strong> is a website hosting free projects for free OS." %}
+  <br>
+  {% url 'home_projects' as url_projects %}
+  {% blocktrans %}See the <a href="{{ url_projects }}">projects page</a> for more information about main hosted projects.{% endblocktrans %}
+</div>
+
+{% include "news/news.html" %}
+
+{% endblock content %}

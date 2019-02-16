@@ -1,0 +1,14 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "News" %}{% endblock %}
+{% block menu2_news %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% include "news/news.html" %}
+
+{% endblock content %}

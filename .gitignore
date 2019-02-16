@@ -1,0 +1,12 @@
+# compiled files
+*.pyc
+django.mo
+
+# config files
+etc
+
+# data files
+files
+
+# local settings
+settings_local.py

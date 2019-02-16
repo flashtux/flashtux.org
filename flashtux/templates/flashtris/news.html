@@ -1,0 +1,22 @@
+{% extends "flashtris/flashtris.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "News" %}{% endblock %}
+{% block menu2_news %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% if not info_id %}
+<div class="alert border project">
+  {% trans "<strong>FlashTris</strong> is a Tetris-like with many innovating options." %}
+  <br>
+  {% trans "It is released under the terms of the GNU General Public License version 2." %}
+</div>
+{% endif %}
+
+{% include "news/news.html" %}
+
+{% endblock content %}

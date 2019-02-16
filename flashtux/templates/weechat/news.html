@@ -1,0 +1,24 @@
+{% extends "weechat/weechat.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "News" %}{% endblock %}
+{% block menu2_news %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div class="alert border project">
+  {% trans "<strong>WeeChat</strong> is a fast, light and extensible chat client, with a text-based user interface." %}
+  <br>
+  {% trans "It is released under the terms of the GNU General Public License version 3." %}
+  <br><br>
+  {% with url_weechat="https://weechat.org/" %}
+    {% blocktrans %}<strong>Important:</strong> since 2009, the official WeeChat website has moved to <a href="{{ url_weechat }}">{{ url_weechat }}</a>.{% endblocktrans %}
+  {% endwith %}
+</div>
+
+{% include "news/news.html" %}
+
+{% endblock content %}

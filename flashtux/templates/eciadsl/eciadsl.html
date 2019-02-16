@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: EciAdsl{% endblock %}
+{% block menu %}eciadsl{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='eciadsl' %}">{% trans "News" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_screenshots %}{% endblock %}" href="{% url 'eciadsl_screenshots' %}">{% trans "Screenshots" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_doc %}{% endblock %}" href="{% url 'eciadsl_doc' %}">{% trans "Documentation" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_tutorial %}{% endblock %}" href="{% url 'eciadsl_tutorial' %}">{% trans "Tutorial" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_modems %}{% endblock %}" href="{% url 'eciadsl_modems' %}">{% trans "Modems" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_download %}{% endblock %}" href="{% url 'eciadsl_download' %}">{% trans "Download" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_faq %}{% endblock %}" href="{% url 'eciadsl_faq' %}">{% trans "FAQ" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_support %}{% endblock %}" href="{% url 'eciadsl_support' %}">{% trans "Support" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_story %}{% endblock %}" href="{% url 'eciadsl_story' %}">{% trans "Story" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_team %}{% endblock %}" href="{% url 'eciadsl_team' %}">{% trans "Team" %}</a></li>
+</ul>
+
+{% endblock content %}

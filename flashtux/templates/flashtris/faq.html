@@ -1,0 +1,87 @@
+{% extends "flashtris/flashtris.html" %}
+
+{% load i18n %}{% load txt2html %}
+
+{% block subtitle %} :: {% trans "FAQ" %}{% endblock %}
+{% block menu2_faq %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div id="q1">
+  <h4>1. {% trans "My sound card is properly installed but not detected. What can I do?" %}</h4>
+  <p>
+    {% trans "Under Dos/Windows, run game choosing appropriate port and IRQ." %}
+    <br>
+    {% blocktrans %}Example: "ftris -port220 -irq5" if sound card is on port 220h and IRQ 5.{% endblocktrans %}
+    <br>
+    {% trans "Under Dos/Windows, only SoundBlaster or 100% compatible are supported." %}
+    <br>
+    {% trans "Under Windows 9x, install SB16 Emulation driver (in case of necessity)." %}
+    <br>
+    {% trans "Under Windows 2000, install SoundFX 2000 or VdmSound." %}
+    <br>
+    {% trans "Under Linux, all cards are supported." %}
+  </p>
+</div>
+
+<div id="q2">
+  <h4>2. {% blocktrans %}Game hangs up when "Initializing sound…"{% endblocktrans %}</h4>
+  <p>
+    {% trans "Under Dos/Windows, modify port and/or IRQ (see FAQ #1)." %}
+    <br>
+    {% blocktrans %}Otherwise, run game without sound/music: "ftris -nosound"{% endblocktrans %}
+  </p>
+</div>
+
+<div id="q3">
+  <h4>3. {% trans "Game hangs up during intro." %}</h4>
+  <p>
+    {% blocktrans %}Disable introduction: "ftris -nointro" (and see FAQ #7).{% endblocktrans %}
+  </p>
+</div>
+
+<div id="q4">
+  <h4>4. {% blocktrans %}Game hangs up with error message "svgalib: Cannot get I/O permissions" (Linux only){% endblocktrans %}</h4>
+  <p>
+    {% blocktrans %}Svgalib requires "root" privileges to access video card.{% endblocktrans %}
+    <br>
+    {% blocktrans %}You must be connected as "root" user to run FlashTris or you must activate "setuid" bit on executable (issue "chmod +s ./ftris" command as "root" user).{% endblocktrans %}
+  </p>
+</div>
+
+<div id="q5">
+  <h4>5. {% blocktrans %}Game hangs up with error message "svgalib: mmap error in paged screen memory" (Linux only){% endblocktrans %}</h4>
+  <p>
+    {% trans "This is an error of svgalib with kernels 2.3.x and 2.4.x." %}
+    <br>
+    {% blocktrans %}Download last version of svgalib with sources (here: <a href="https://www.svgalib.org">https://www.svgalib.org</a>) and compile it without option "BACKGROUND = Y" in file Makefile.cfg (comment this line).{% endblocktrans %}
+  </p>
+</div>
+
+<div id="q6">
+  <h4>6. {% trans "Menu and/or game are very slow." %}</h4>
+  <p>
+    {% blocktrans %}In "advanced" menu (under burning title): disable menu's flames and/or motion pixels.{% endblocktrans %}
+    <br>
+    {% trans "With 80486 processor or less, it is advisable to install a pedal (and to pedal fast!)." %}
+  </p>
+</div>
+
+<div id="q7">
+  <h4>7. {% trans "There is a bug in game!" %}</h4>
+  <p>
+    {% trans "Send complete description to:" %}
+    <a href="mailto:{% txt2html "flashcode@flashtux.org" %}">{% txt2html "flashcode@flashtux.org" %}</a>
+  </p>
+</div>
+
+<div id="q8">
+  <h4>8. {% trans "Author merits to be remunerate." %}</h4>
+  <p>
+    {% trans "All gifts are welcome." %}
+  </p>
+</div>
+
+{% endblock content %}

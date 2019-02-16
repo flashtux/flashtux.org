@@ -1,0 +1,451 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}{% load localdate %}{% load linkfile %}
+
+{% block subtitle %} :: {% trans "Download" %}{% endblock %}
+{% block menu2_download %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<ul class="nav nav-tabs mt-4">
+  <li class="nav-item"><a class="nav-link{% if version == "stable" %} active{% endif %}" href="{% url 'eciadsl_download' 'stable' %}">{% trans "Stable" %}</a></li>
+  <li class="nav-item"><a class="nav-link{% if version == "devel" %} active{% endif %}" href="{% url 'eciadsl_download' 'devel' %}">{% trans "Development" %}</a></li>
+  <li class="nav-item"><a class="nav-link{% if version == "old" %} active{% endif %}" href="{% url 'eciadsl_download' 'old' %}">{% trans "Old versions" %}</a></li>
+</ul>
+
+{% if version == "stable" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.12
+      <small class="text-muted">({{ "2007-08-13"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div id="packages" class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.12.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.12.tar.bz2" %}</li>
+        <li>{% trans "SuSE:" %} {% linkfile "eciadsl/suse/eciadsl-usermode-0.12-1.i386.rpm" %}</li>
+        <li>{% trans "Debian Lenny:" %} {% linkfile "eciadsl/debian/lenny/eciadsl-usermode_0.12-1_i386.deb" %}</li>
+        <li>{% trans "Debian Etch:" %} {% linkfile "eciadsl/debian/etch/eciadsl-usermode_0.12-1_i386.deb" %}</li>
+        <li>{% trans "Debian Sid:" %} {% linkfile "eciadsl/debian/sid/eciadsl-usermode_0.12-1_i386.deb" %}</li>
+        <li>{% trans "Ubuntu:" %} {% linkfile "eciadsl/debian/etch/eciadsl-usermode_0.12-1_i386.deb" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/gentoo/eciadsl-usermode-0.12.ebuild" %}</li>
+        <li>{% trans "Patch kernel 2.4.28 to 2.4.30:" %} {% linkfile "eciadsl/beta/2.4.28-usb-devio.patch" %}</li>
+        <li>{% trans "Patch kernel 2.6.0 to 2.6.6:" %} {% linkfile "eciadsl/beta/2.6.x-usb.patch" %}</li>
+        <li>{% trans "Patch packet size:" %} {% linkfile "eciadsl/beta/packet_size.patch" %}</li>
+        <li>{% trans "Third-party contributions:" %} {% linkfile "eciadsl/contrib/" %}</li>
+      </ul>
+    </p>
+    <p>
+      {% trans "EciAdsl and Linux kernels:" %}
+      <div class="table-responsive col-lg-8 col-xl-6 px-0">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                {% comment %}Translators: "From" kernel…{% endcomment %}
+                {% trans "From" context "kernel" %}
+              </th>
+              <th>
+                {% comment %}Translators: "To" kernel{% endcomment %}
+                {% trans "To" context "kernel" %}
+              </th>
+              <th>{% trans "Status" %}</th>
+              <th>{% trans "Description" %}</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>(…)</td>
+              <td>2.4.17</td>
+              <td class="severity3">{% include "svg/icon_x.html" %}</td>
+              <td>
+                {% trans "NOT recommended with EciAdsl." %}
+              </td>
+            </tr>
+            <tr>
+              <td>2.4.18</td>
+              <td>2.4.27</td>
+              <td class="fixed">{% include "svg/check.html" %}</td>
+              <td>{% trans "OK." %}</td>
+            </tr>
+            <tr>
+              <td>2.4.28</td>
+              <td>2.4.30</td>
+              <td class="fixed">{% include "svg/check.html" %}</td>
+              <td>{% blocktrans %}You have to patch it (see in <a href="#packages">Packages</a>).{% endblocktrans %}</td>
+            </tr>
+            <tr>
+              <td>2.4.31</td>
+              <td>2.4.31</td>
+              <td class="fixed">{% include "svg/check.html" %}</td>
+              <td>{% trans "OK." %}</td>
+            <tr>
+              <td>2.4.32</td>
+              <td>2.4.37.x</td>
+              <td class="severity2">{% include "svg/icon_x.html" %}</td>
+              <td>{% trans "Unknown status (not tested)." %}</td>
+            </tr>
+            <tr>
+              <td>2.6.0</td>
+              <td>2.6.6</td>
+              <td class="fixed">{% include "svg/check.html" %}</td>
+              <td>{% blocktrans %}You have to patch it (see in <a href="#packages">Packages</a>).{% endblocktrans %}</td>
+            </tr>
+            <tr>
+              <td>2.6.7</td>
+              <td>2.6.8</td>
+              <td class="severity3">{% include "svg/icon_x.html" %}</td>
+              <td>
+                {% trans "NOT recommended with EciAdsl (unstable)." %}
+              </td>
+            </tr>
+            <tr>
+              <td>2.6.9</td>
+              <td>2.6.16.28</td>
+              <td class="fixed">{% include "svg/check.html" %}</td>
+              <td>{% trans "OK." %}</td>
+            </tr>
+            <tr>
+              <td>2.6.17.1</td>
+              <td>2.6.17.7</td>
+              <td class="severity3">{% include "svg/icon_x.html" %}</td>
+              <td>
+                {% with "http://bugzilla.kernel.org/show_bug.cgi?id=6752" as url_bug %}
+                {% blocktrans %}NOT recommended with EciAdsl (<a href="{{ url_bug }}">uhci bug</a> in kernel).{% endblocktrans %}
+                {% endwith %}
+              </td>
+            </tr>
+            <tr>
+              <td>2.6.17.8</td>
+              <td>2.6.20.15</td>
+              <td class="fixed">{% include "svg/check.html" %}</td>
+              <td>{% trans "OK." %}</td>
+            </tr>
+            <tr>
+              <td>2.6.21.1</td>
+              <td>(…)</td>
+              <td class="severity2">{% include "svg/icon_x.html" %}</td>
+              <td>{% trans "Unknown status (not tested)." %}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </p>
+    <h5>{% trans "Synchronization" %}</h5>
+    <p>
+      {% trans "<strong>Warning:</strong> you must try ALL .bin files according to your chipset (you have to shutdown the modem between two attempts) before reporting one of these problems to developers:" %}
+      <ul>
+        <li>{% trans "synchronization problem (eci-load2 / eciadsl-synch timeout)" %}</li>
+        <li>{% trans "LCP timeout (when connecting to provider)." %}</li>
+      </ul>
+    </p>
+    <p>
+      {% trans "Synchronization files (55 .bin for GS7070 chipset, 22 for GS7470):" %}
+      <ul>
+        <li>{% trans "Package (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-synch_bin.tar.bz2" %}</li>
+        <li>{% trans "Sniffer (binaries):" %} {% linkfile "eciadsl/src/sniff-bin-1.8.zip" %}</li>
+        <li>{% trans "Sniffer (sources):" %} {% linkfile "eciadsl/src/sniff-src-1.8.zip" %}</li>
+        <li>{% trans "ECI windows driver:" %} {% linkfile "eciadsl/src/eci_drv_106_win.zip" %}</li>
+      </ul>
+    </p>
+    <p>
+      {% trans "Installation instructions:" %}
+      <p>
+        <ul>
+          <li>{% trans "unpack eciadsl-synch_bin.tar.bz2 package in /etc/eciadsl" %}</li>
+          <li>{% trans "run eciadsl-config-tk or eciadsl-config-text and follow instructions." %}</li>
+        </ul>
+      </p>
+      {% trans "<strong>Important:</strong> you must shutdown your modem between two attempts." %}
+      <br>
+      {% url "eciadsl_doc" as url_doc %}
+      {% blocktrans %}You can make your own .bin with Windows and USB sniffer, look at <a href="{{ url_doc }}">documentation</a>.{% endblocktrans %}
+    </p>
+  </div>
+</div>
+
+{% elif version == "devel" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">{% trans "Development version" %}</h4>
+  </div>
+  <div class="card-body pb-2">
+    <p>
+      {% trans "<strong>Warning:</strong> kernelmode is <strong>not stable</strong>, it is not recommended to beginners." %}
+    </p>
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "EciAdsl usermode - Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-cvs.tar.gz" %}</li>
+        <li>{% trans "EciAdsl usermode - Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-cvs.tar.bz2" %}</li>
+        <li>{% trans "EciAdsl kernelmode - Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-kernelmode-cvs.tar.gz" %}</li>
+        <li>{% trans "EciAdsl kernelmode - Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-kernelmode-cvs.tar.bz2" %}</li>
+        <li>{% trans "EciAdsl usermode BSD (2006-01-31):" %} {% linkfile "eciadsl/bsd/eciadsl-usermode-bsd-0.11.beta3.tar.bz2" %}</li>
+      </ul>
+    </p>
+    <p>
+      {% trans "Sources:" %}
+      <a href="https://github.com/flashtux/eciadsl">https://github.com/flashtux/eciadsl</a>
+    </p>
+    <p>
+      <a href="{{ MEDIA_URL }}images/eciadsl/eciadsl_commits.png" target="_blank" rel="noopener">
+        {% trans "CVS commits graph" %}
+      </a>
+    </p>
+  </div>
+</div>
+
+{% elif version == "old" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.11
+      <small class="text-muted">({{ "2005-09-24"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.11.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.11.tar.bz2" %}</li>
+        <li>{% trans "Mandriva/Redhat 9.0:" %} {% linkfile "eciadsl/redhat/eciadsl-usermode-0.11-0.1.102mdk.i586.rpm" %}</li>
+        <li>{% trans "Fedora Core 4:" %} {% linkfile "eciadsl/fedora-core/eciadsl-usermode-0.11-1.i386.rpm" %}</li>
+        <li>{% trans "SuSE:" %} {% linkfile "eciadsl/suse/eciadsl-usermode-0.11-1.i586.rpm" %}</li>
+        <li>{% trans "Debian Etch:" %} {% linkfile "eciadsl/debian/etch/" %}</li>
+        <li>{% trans "Debian Sid i386:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.11-1_i386.deb" %}</li>
+        <li>{% trans "Debian Sid amd64:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.11-1_amd64.deb" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.11-i486.tgz" %}</li>
+        <li>{% trans "Slax:" %} {% linkfile "eciadsl/slax/eciadsl-usermode-0.11-i486.mo" %}</li>
+        <li>{% trans "Damn Small Linux:" %} {% linkfile "eciadsl/dsl/eciadsl-usermode-0.11.dsl" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.11.ebuild" %}</li>
+        <li>{% trans "Patch kernel 2.4.28 to 2.4.30:" %} {% linkfile "eciadsl/beta/2.4.28-usb-devio.patch" %}</li>
+        <li>{% trans "Patch kernel 2.6.0 to 2.6.6:" %} {% linkfile "eciadsl/beta/2.6.x-usb.patch" %}</li>
+        <li>{% trans "Patch packet size:" %} {% linkfile "eciadsl/beta/packet_size.patch" %}</li>
+        <li>{% trans "Patch synch (≥ 2.6.18):" %} {% linkfile "eciadsl/beta/synch.patch" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.10
+      <small class="text-muted">({{ "2004-11-03"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.10.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.10.tar.bz2" %}</li>
+        <li>{% trans "Nortek sources (gzip):" %} {% linkfile "eciadsl/nortek-2021/eciadsl-usermode-0.10-nortek-alpha.tar.gz" %}</li>
+        <li>{% trans "Nortek sources (bzip2):" %} {% linkfile "eciadsl/nortek-2021/eciadsl-usermode-0.10-nortek-alpha.tar.bz2" %}</li>
+        <li>{% trans "Nortek Gentoo (bzip2):" %} {% linkfile "eciadsl/nortek-2021/eciadsl-usermode-nortek-0.10_alpha.ebuild" %}</li>
+        <li>{% trans "Mandriva/Redhat 9.0:" %} {% linkfile "eciadsl/redhat/eciadsl-usermode-0.10-1.i386.rpm" %}</li>
+        <li>{% trans "Fedora Core 2:" %} {% linkfile "eciadsl/fedora-core/eciadsl-usermode-0.10-1.i386.rpm" %}</li>
+        <li>{% trans "Debian i386:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.10-1_i386.deb" %}</li>
+        <li>{% trans "Debian ppc:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.10-1_powerpc.deb" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.10-i386-1.tgz" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.10.ebuild" %}</li>
+        <li>{% trans "Crux Linux:" %} {% linkfile "eciadsl/src/eciadsl-0.10.tar.bz2" %}</li>
+        <li>{% trans "Patch kernel 2.4.28 to 2.4.30:" %} {% linkfile "eciadsl/beta/2.4.28-usb-devio.patch" %}</li>
+        <li>{% trans "Patch kernel 2.6.0 to 2.6.6:" %} {% linkfile "eciadsl/beta/2.6.x-usb.patch" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.9
+      <small class="text-muted">({{ "2004-04-04"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.9.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.9.tar.bz2" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.9-2.i386.rpm" %}</li>
+        <li>{% trans "Debian:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.9-1_i386.deb" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.9-i386-1.tgz" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.9.ebuild" %}</li>
+        <li>{% trans "Crux Linux:" %} {% linkfile "eciadsl/src/eciadsl-0.9-1.tar.bz2" %}</li>
+        <li>{% trans "Nortek sources (bzip2):" %} {% linkfile "eciadsl/nortek-2021/old/eciadsl-usermode-nortek2021.tar.bz2" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.8
+      <small class="text-muted">({{ "2003-08-01"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.8.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src//eciadsl-usermode-0.8.tar.bz2" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.8-1.i386.rpm" %}</li>
+        <li>{% trans "Debian:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.8-1_i386.deb" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.8-i386-1.tgz" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.8.ebuild" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.7
+      <small class="text-muted">({{ "2003-03-26"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.7.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.7.tar.bz2" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.7-1.i386.rpm" %}</li>
+        <li>{% trans "Debian:" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.7-1_i386.deb" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.7-i386-1.tgz" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.7.ebuild" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.6
+      <small class="text-muted">({{ "2002-12-25"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.6.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.6.tar.bz2" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.6-2.i386.rpm" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.6-i386-1.tgz" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.6.ebuild" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.5
+      <small class="text-muted">({{ "2002-05-15"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.5.tgz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "eciadsl/src/eciadsl-usermode_0.5.tar.bz2" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl-usermode-0.5-2.i586.rpm" %}</li>
+        <li>{% trans "Debian:" %} {% linkfile "eciadsl/src/eciadsl-usermode.0.5_1-1_i386.deb" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.4
+      <small class="text-muted">({{ "2002-02-23"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/usermode-0.4.tgz" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl_usermode-0.4-1.mdk.i686.rpm" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.3
+      <small class="text-muted">({{ "2001-12-24"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/usermode-0.3.tgz" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl_usermode-0.3-1.mdk.i686.rpm" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.2
+      <small class="text-muted">({{ "2001-12-14"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/usermode-src.0.2.tar.gz" %}</li>
+        <li>{% trans "RPM:" %} {% linkfile "eciadsl/src/eciadsl_usermode-0.2-1select.mdk.i686.rpm" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.1
+      <small class="text-muted">({{ "2001-12-05"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "eciadsl/src/usermode.tgz" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% endif %}
+
+{% endblock content %}

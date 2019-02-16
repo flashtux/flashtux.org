@@ -1,0 +1,16 @@
+{% extends "flashtris/flashtris.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Screenshots" %}{% endblock %}
+{% block menu2_screenshots %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% with url_images="flashtris_screenshots" url_image="flashtris_screenshot" %}
+{% include "images.html" %}
+{% endwith %}
+
+{% endblock content %}

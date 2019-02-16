@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: {% trans "Games" %}{% endblock %}
+{% block menu %}games{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='games' %}">{% trans "News" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_bubblebobble %}{% endblock %}" href="{% url 'games_bubblebobble' %}">Bubble Bobble</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_nibble %}{% endblock %}" href="{% url 'games_nibble' %}">Nibble</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_demoniactris %}{% endblock %}" href="{% url 'games_demoniactris' %}">Demoniac-Tris</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_helltris %}{% endblock %}" href="{% url 'games_helltris' %}">HellTris</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_demoniacfight %}{% endblock %}" href="{% url 'games_demoniacfight' %}">Demoniac Fight</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_hellfight %}{% endblock %}" href="{% url 'games_hellfight' %}">HellFight</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_trap %}{% endblock %}" href="{% url 'games_trap' %}">Trap</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_xmmh %}{% endblock %}" href="{% url 'games_xmmh' %}">Xmmh</a></li>
+</ul>
+
+{% endblock content %}

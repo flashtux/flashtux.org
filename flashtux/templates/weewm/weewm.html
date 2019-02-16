@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: WeeWM{% endblock %}
+{% block menu %}weewm{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='weewm' %}">{% trans "News" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_screenshots %}{% endblock %}" href="{% url 'weewm_screenshots' %}">{% trans "Screenshots" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_doc %}{% endblock %}" href="{% url 'weewm_doc' %}">{% trans "Documentation" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_download %}{% endblock %}" href="{% url 'weewm_download' %}">{% trans "Download" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_support %}{% endblock %}" href="{% url 'weewm_support' %}">{% trans "Support" %}</a></li>
+</ul>
+
+{% endblock content %}

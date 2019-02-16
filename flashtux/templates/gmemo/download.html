@@ -1,0 +1,99 @@
+{% extends "gmemo/gmemo.html" %}
+
+{% load i18n %}{% load localdate %}{% load linkfile %}
+
+{% block subtitle %} :: {% trans "Download" %}{% endblock %}
+{% block menu2_download %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<ul class="nav nav-tabs mt-4">
+  <li class="nav-item"><a class="nav-link{% if version == "stable" %} active{% endif %}" href="{% url 'gmemo_download' 'stable' %}">{% trans "Stable" %}</a></li>
+  <li class="nav-item"><a class="nav-link{% if version == "devel" %} active{% endif %}" href="{% url 'gmemo_download' 'devel' %}">{% trans "Development" %}</a></li>
+  <li class="nav-item"><a class="nav-link{% if version == "old" %} active{% endif %}" href="{% url 'gmemo_download' 'old' %}">{% trans "Old versions" %}</a></li>
+</ul>
+
+{% if version == "stable" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.1.1
+      <small class="text-muted">({{ "2003-05-27"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "gmemo/src/gmemo-0.1.1.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "gmemo/src/gmemo-0.1.1.tar.bz2" %}</li>
+        <li>{% trans "Debian:" %} {% linkfile "gmemo/src/gmemo_0.1.1-1_i386.deb" %}</li>
+        <li>{% trans "Binary (Windows):" %} {% linkfile "gmemo/src/gmemo-0.1.1.zip" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% elif version == "devel" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">{% trans "Development version" %}</h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "gmemo/src/gmemo-cvs.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "gmemo/src/gmemo-cvs.tar.bz2" %}</li>
+      </ul>
+    </p>
+    <p>
+      {% trans "This version is 0.1.2-pre1." %}
+    </p>
+    <p>
+      <a href="{{ MEDIA_URL }}images/gmemo/gmemo_commits.png" target="_blank" rel="noopener">
+        {% trans "CVS commits graph" %}
+      </a>
+    </p>
+    <p>
+      {% trans "Gmemo on Savannah:" %}
+      <a href="http://savannah.nongnu.org/projects/gmemo" target="_blank" rel="noopener">
+        http://savannah.nongnu.org/projects/gmemo
+      </a>
+      <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+    </p>
+    <p>
+      {% trans "Sources:" %}
+      <a href="https://github.com/flashtux/gmemo">https://github.com/flashtux/gmemo</a>
+    </p>
+  </div>
+</div>
+
+{% elif version == "old" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} alpha-0.1
+      <small class="text-muted">({{ "2003-02-08"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "gmemo/src/gmemo-alpha-0.1.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "gmemo/src/gmemo-alpha-0.1.tar.bz2" %}</li>
+        <li>{% trans "Binary (Windows):" %} {% linkfile "gmemo/src/gmemo-alpha-0.1.zip" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% endif %}
+
+{% endblock content %}

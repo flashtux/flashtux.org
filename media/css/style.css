@@ -1,0 +1,255 @@
+/*
+ * FlashTux.org CSS Style
+ * Copyright (C) 1999-2019 Sébastien Helleu <flashcode@flashtux.org>
+ */
+
+body {
+  background: #ebebeb;
+}
+
+a:not(.btn), a:not(.btn):visited, a:not(.btn):hover, a:not(.btn):active {
+  color: #2a6ea1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+}
+
+pre {
+  margin-bottom: 0;
+}
+
+pre p {
+  margin: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, .02);
+}
+
+/* ===== nav bar ===== */
+
+.navbar {
+  background: #bdf;
+  background: linear-gradient(#d5d5ee, #fdfdff);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #395b8d;
+  padding: .06rem .2rem;
+  margin: 0 .6rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #395b8d;
+}
+
+.nav-item {
+  white-space: nowrap;
+}
+
+#nav1-home .nav-home, #nav1-weechat .nav-weechat, #nav1-eciadsl .nav-eciadsl,
+#nav1-weewm .nav-weewm, #nav1-w3blacklist .nav-w3blacklist, #nav1-gmemo .nav-gmemo,
+#nav1-flashtris .nav-flashtris, #nav1-coding .nav-coding, #nav1-games .nav-games {
+  border-bottom: 2px solid;
+}
+
+.nav-tabs {
+  margin-bottom: 1rem;
+}
+
+.nav-other-links a {
+  text-decoration: none;
+}
+
+.nav-other-links svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.nav-other-links svg g, .nav-other-links svg path {
+  fill: #57b;
+}
+
+.nav-languages a.language {
+  color: #294b8d;
+}
+
+.nav-languages .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-languages select {
+  background: #eef;
+}
+
+/* ===== page content ===== */
+
+.content {
+  background: white;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ===== forms ===== */
+
+.required label:after {
+  content: " *";
+  color: #f00;
+}
+
+.helptext {
+  font-size: 80%;
+  color: #6c757d;
+}
+
+/* ===== pages ===== */
+
+.count-comments {
+  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.comments {
+  margin-left: -3em;
+}
+
+.comment {
+  margin: 1.5em 0 1.5em 3em;
+}
+
+.comment-box {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
+
+.comment-title {
+  padding: .5em;
+  background: #eee;
+  border-bottom: solid 1px #ccc;
+}
+
+.comment-name-date {
+  color: #888;
+  padding: .2em 0 0 .5em;
+  margin: 0;
+}
+
+.comment-content {
+  padding: .5em;
+  margin-top: .5em;
+}
+
+.comment-reply {
+  padding: .5em;
+}
+
+.image img {
+  margin: .8em 0;
+}
+
+.project {
+  margin: 1.5em 0;
+  padding: .7em;
+  background: #f8f8f8;
+}
+
+.project ul {
+  margin-bottom: 0;
+}
+
+.btn svg {
+  vertical-align: text-top;
+}
+
+.svg object {
+  margin: 0 20%;
+}
+
+.severity1 svg path {
+  fill: #999;
+}
+
+.severity2 svg path {
+  fill: #ffa500;
+}
+
+.severity3 svg path {
+  fill: #f00;
+}
+
+.fixed svg path {
+  fill: #090;
+}
+
+.zimg {
+  display: inline-block;
+  margin-right: .3em;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.zimg img {
+  position: absolute;
+  margin: 4px 0 0 4px;
+}
+
+.zimg-ok {
+  background-color: #dfd;
+}
+
+.zimg-ko {
+  background-color: #fcc;
+}
+
+.zimg1 {
+  z-index: 2;
+}
+
+.zimg2 {
+  z-index: 3;
+}
+
+.letter .highlight {
+  color: #b00;
+  font-weight: bold;
+}
+
+/* ===== footer ===== */
+
+.footer {
+  margin-top: 2rem;
+}
+
+.footer .main {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer li {
+  margin: .8rem 0;
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer .icons a {
+  text-decoration: none;
+}
+
+.footer .icons svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 .5rem;
+}
+
+.footer .icons svg g, .footer .icons svg path {
+  fill: #2a6ea1;
+}

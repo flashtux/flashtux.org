@@ -1,0 +1,31 @@
+{% load i18n %}
+
+{% if image_list %}
+
+<div class="text-center">
+  {% for image in image_list %}
+  <a href="{% url url_image image.filename %}">
+    <img src="{{ MEDIA_URL }}images/{{ section }}/{{ category }}/small/{{ image.filename }}" class="m-2 rounded img-thumbnail" alt="{{ image.filename }}" title="{{ image.comment }}">
+  </a>
+  {% endfor %}
+</div>
+
+{% elif image %}
+
+<div class="text-center image">
+  <h4>{{ image.comment }}</h4>
+  <a href="{% url url_images %}">
+    <figure class="figure">
+      <img src="{{ MEDIA_URL }}images/{{ section }}/{{ category }}/medium/{{ image.filename }}" class="rounded shadow" alt="{{ image.filename }}" title="{{ image.comment }}">
+      <figcaption class="figure-caption">{{ image.filename }}</figcaption>
+    </figure>
+  </a>
+</div>
+
+{% else %}
+
+<div class="alert alert-success">
+  {% trans "No images." %}
+</div>
+
+{% endif %}

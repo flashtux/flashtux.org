@@ -1,0 +1,76 @@
+{% extends "home/home.html" %}
+
+{% load i18n %}{% load localdate %}
+
+{% block subtitle %} :: {% trans "Projects" %}{% endblock %}
+{% block menu2_projects %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div class="row">
+
+  {% for project in project_list %}
+  <div class="col-12">
+    <div class="card mb-4">
+      <div class="card-header">
+        <div class="media">
+          <img src="{{ MEDIA_URL }}images/icon_{{ project.name|lower }}32.png" class="mr-3" alt="{{ project.name }}">
+          <div class="media-body">
+            <div class="mt-1">
+              <span class="h5 mr-3"><strong>{{ project.name }}</strong></span>
+              {% with date=project.start_date|localdate %}
+              {% blocktrans %}Started on {{ date }}{% endblocktrans %}
+              {% endwith %}
+              {% if project.stable_version %}
+              -
+              {% trans "Stable version:" %} <strong>{{ project.stable_version }}</strong>
+              ({{ project.stable_date|localdate }})
+              {% endif %}
+              {% if project.devel_version %}
+              -
+              {% trans "Under development:" %} <strong>{{ project.devel_version }}</strong>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body pb-1">
+        {% if project.screenshot %}
+        <div class="float-right">
+          <img src="{{ MEDIA_URL }}images/project/{{ project.name|lower }}.jpg" class="shadow ml-2" alt="{{ project.name }}">
+        </div>
+        {% endif %}
+        {% autoescape off %}{{ project.description_i18n|linebreaks }}{% endautoescape %}
+        <p>
+          <strong>{% trans "License:" %}</strong> {{ project.license }}
+          {% if project.support %}
+          <br>
+          <strong>{% trans "Support:" %}</strong> {% trans project.support %}
+          {% endif %}
+        </p>
+        <p>
+          <strong>{% trans "Page:" %}</strong>
+          <a href="{{ project.page }}">{{ project.name }}</a>
+          {% if project.website %}
+          <br>
+          <strong>{% trans "Website:" %}</strong>
+          <a href="{{ project.website }}" target="_blank" rel="noopener">{{ project.website }}</a>
+          <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+          {% endif %}
+          {% if project.repository %}
+          <br>
+          <strong>{% trans "Sources:" %}</strong>
+          <a href="{{ project.repository }}" target="_blank" rel="noopener">{{ project.repository }}</a>
+          <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endblock content %}

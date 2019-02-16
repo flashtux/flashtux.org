@@ -1,0 +1,22 @@
+{% extends "weewm/weewm.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "News" %}{% endblock %}
+{% block menu2_news %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% if not info_id %}
+<div class="alert border project">
+  {% trans "<strong>WeeWM</strong> is a fast and ultra light window manager for XFree." %}
+  <br>
+  {% trans "It is released under the terms of the GNU General Public License version 2." %}
+</div>
+{% endif %}
+
+{% include "news/news.html" %}
+
+{% endblock content %}

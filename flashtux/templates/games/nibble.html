@@ -1,0 +1,53 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}{% load linkfile %}
+
+{% block subtitle %} :: Nibble{% endblock %}
+{% block menu2_nibble %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<p class="text-center">
+  <img src="{{ MEDIA_URL }}images/games/nibble.png" class="px-2" alt="Nibble" title="Nibble">
+</p>
+
+<h3>{% trans "The game" %}</h3>
+
+<p>
+  {% trans "Feed a caterpillar (remake of Nibby nibble on Amiga)." %}
+</p>
+
+<h3>{% trans "Plus" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "30 levels" %}</li>
+    <li>{% trans "original graphics by CoDeMaNCeR" %}</li>
+    <li>{% blocktrans %}lot of cool musics, some by <a href="http://multor.free.fr/">MulToR</a>{% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "OS" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Dos (native)" %}</li>
+    <li>{% blocktrans %}Windows / Linux / BSD / BeOS (with <a href="https://www.dosbox.com">DOSBox</a>){% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Programming language" %}</h3>
+
+<p>
+  {% trans "Pascal (15000 lines), result of 10 months' work." %}
+</p>
+
+<h3>{% trans "Download" %}</h3>
+
+<p>
+  {% linkfile "games/nibble.zip" %}
+</p>
+
+{% endblock content %}

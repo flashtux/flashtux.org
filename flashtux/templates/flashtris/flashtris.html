@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: FlashTris{% endblock %}
+{% block menu %}flashtris{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='flashtris' %}">{% trans "News" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_screenshots %}{% endblock %}" href="{% url 'flashtris_screenshots' %}">{% trans "Screenshots" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_doc %}{% endblock %}" href="{% url 'flashtris_doc' %}">{% trans "Documentation" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_download %}{% endblock %}" href="{% url 'flashtris_download' %}">{% trans "Download" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_dev %}{% endblock %}" href="{% url 'flashtris_dev' %}">{% trans "Development" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_faq %}{% endblock %}" href="{% url 'flashtris_faq' %}">{% trans "FAQ" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_support %}{% endblock %}" href="{% url 'flashtris_support' %}">{% trans "Support" %}</a></li>
+</ul>
+
+{% endblock content %}

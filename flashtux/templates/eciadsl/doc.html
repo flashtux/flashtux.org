@@ -1,0 +1,37 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Documentation" %}{% endblock %}
+{% block menu2_doc %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% include "doc.html" %}
+
+<h3>{% trans "Other EciAdsl documentations" %}</h3>
+
+<p>
+  <div class="table-responsive col-12 col-lg-8 col-xl-6 px-0">
+    <table class="table table-hover">
+      <tbody>
+        {% for doc in other_docs %}
+        <tr>
+          <td class="text-center text-nowrap">
+            {% for lang in doc.0 %}
+            <img src="{{ MEDIA_URL }}images/flag_{{ lang }}.png" alt="{{ lang }}" class="border">
+            {% endfor %}
+          </td>
+          <td width="100%">
+            <a href="{{ doc.1 }}" target="_blank" rel="noopener">{{ doc.2 }}</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</p>
+
+{% endblock content %}

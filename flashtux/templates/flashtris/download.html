@@ -1,0 +1,75 @@
+{% extends "flashtris/flashtris.html" %}
+
+{% load i18n %}{% load localdate %}{% load linkfile %}
+
+{% block subtitle %} :: {% trans "Download" %}{% endblock %}
+{% block menu2_download %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.30 alpha
+      <small class="text-muted">({{ "2001-09-06"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Linux binary (gzip):" %} {% linkfile "flashtris/src/ftris.gz" %}</li>
+        <li>{% trans "Windows binary (zip):" %} {% linkfile "flashtris/src/ftris.zip" %}</li>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "flashtris/src/ftris-src-0.30.tar.gz" %}</li>
+        <li>{% trans "Data (gzip):" %} {% linkfile "flashtris/src/ftris-data-0.30.tar.gz" %}</li>
+      </ul>
+    </p>
+
+    <div class="h5">{% trans "Version 0.30 alpha, binary for Linux" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "dynamically compiled" %}</li>
+        <li>{% trans "X-Window version under development" %}</li>
+        <li>{% blocktrans %}must be run as "root" user (see FAQ #4){% endblocktrans %}</li>
+        <li>{% trans "compatible with 2.4.x kernels (see FAQ)" %}</li>
+        <li>{% trans "required libraries: libvga.so.1 (svgalib), libm.so.6, libc.so.6, ld-linux.so.2" %}</li>
+      </ul>
+    </p>
+
+    <div class="h5">{% trans "Version 0.30 alpha, binary for Windows" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "compatible with Windows 2000 (see FAQ)" %}</li>
+        <li>{% trans "network game under development (scheduled for next version)" %}</li>
+        <li>{% trans "binary required:" %} {% linkfile "flashtris/src/cwsdpmi.exe" %}</li>
+      </ul>
+    </p>
+
+    <div class="h5">{% trans "Version 0.30 alpha, source code" %}</div>
+    <p>
+      <ul>
+        <li>
+          {% trans "distributed under GPL license (see COPYING file)" %}
+        </li>
+        <li>
+          {% with url_djgpp="http://www.delorie.com/djgpp" %}
+          {% blocktrans %}for Windows: <a href="{{ url_djgpp }}">DJGPP</a> compiler required{% endblocktrans %}
+          {% endwith %}
+        </li>
+      </ul>
+    </p>
+
+    <div class="h5">{% trans "Version 0.30 alpha, data files" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "data files for FlashTris (musics, graphics, etc.)" %}</li>
+        <li>{% trans "you must unpack this file into FlashTris directory" %}</li>
+        <li>{% trans "with these files and source code, you can compile and run FlashTris." %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% endblock content %}

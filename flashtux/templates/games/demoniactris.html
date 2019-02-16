@@ -1,0 +1,57 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}{% load linkfile %}
+
+{% block subtitle %} :: Demoniac-Tris{% endblock %}
+{% block menu2_demoniactris %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<p class="text-center">
+  <img src="{{ MEDIA_URL }}images/games/dtris1.png" class="px-2" alt="Demoniac-Tris" title="Demoniac-Tris">
+  <img src="{{ MEDIA_URL }}images/games/dtris2.png" class="px-2" alt="Demoniac-Tris" title="Demoniac-Tris">
+</p>
+
+<h3>{% trans "The game" %}</h3>
+
+<p>
+  {% blocktrans %}A "tetris like", one of the best in the world…{% endblocktrans %}
+  {% trans "after FlashTris of course!" %}
+</p>
+
+<h3>{% trans "Plus" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "game finished!" %}</li>
+    <li>{% trans "network game (local network with IPX)" %}</li>
+    <li>{% trans "5 players by PC (40 with network)" %}</li>
+    <li>{% trans "computer reflexion" %}</li>
+    <li>{% trans "powerful configuration" %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "OS" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Dos (native)" %}</li>
+    <li>{% blocktrans %}Windows / Linux / BSD / BeOS (with <a href="https://www.dosbox.com">DOSBox</a>){% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Programming language" %}</h3>
+
+<p>
+  {% trans "Pascal (9200 lines), result of 3 years' work." %}
+</p>
+
+<h3>{% trans "Download" %}</h3>
+
+<p>
+  {% linkfile "games/dtris.zip" %}
+</p>
+
+{% endblock content %}

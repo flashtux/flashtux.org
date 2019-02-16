@@ -1,0 +1,107 @@
+{% extends "w3blacklist/w3blacklist.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "FAQ" %}{% endblock %}
+{% block menu2_faq %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<div id="q1">
+  <h4>1. {% trans "What can I do to help?" %}</h4>
+  <p>
+    {% trans "You can contact webmasters of problematical websites and inform them about the troubles you encounter. There is some standard pre-written letters." %}
+  </p>
+</div>
+
+<div id="q2">
+  <h4>2. {% trans "What are red crosses near website title?" %}</h4>
+  <p>
+    {% trans "This is severity of problem:" %}
+    <p>
+      <ul>
+        <li>{% trans "1 = low: render is bad" %}</li>
+        <li>{% trans "2 = medium: part of website not accessible" %}</li>
+        <li>{% trans "3 = high: entire website not accessible" %}</li>
+      </ul>
+    </p>
+  </p>
+</div>
+
+<div id="q3">
+  <h4>3. {% trans "I found an interesting website in the list, is it possible to keep me informed when some changes are made on this website?" %}</h4>
+  <p>
+    {% trans "Yes!" %}
+    <br>
+    {% trans "You can enter your mail on detail page for each website you want to be informed about." %}
+  </p>
+</div>
+
+<div id="q4">
+  <h4>4. {% trans "I've seen some days ago a website in blacklist, and today I can't find it again! Where is it?" %}</h4>
+  <p>
+    {% blocktrans %}Website was probably fixed so it is in "whitelist". Click on appropriate link on homepage to see fixed websites.{% endblocktrans %}
+    <br>
+    {% trans "If website is nowhere, please mail webmaster." %}
+  </p>
+</div>
+
+<div id="q5">
+  <h4>5. {% trans "I created alerts for 150 websites, I want to remove all, how can I do?" %}</h4>
+  <p>
+    {% trans "You can remove them one by one. To remove all, send mail to webmaster with your mail in body, it will be removed ASAP." %}
+  </p>
+</div>
+
+<div id="q6">
+  <h4>6. {% trans "I know a website which has invalid code, but display is ok with all browsers/OS, can I submit it?" %}</h4>
+  <p>
+    {% trans "No, we're blacklisting websites with problems (render/access) with some browsers/OS." %}
+  </p>
+</div>
+
+<div id="q7">
+  <h4>7. {% trans "Website I submitted is rejected, why?" %}</h4>
+  <p>
+    {% trans "Many possible reasons:" %}
+    <p>
+      <ul>
+        <li>
+          {% trans "We could not reproduce the bug/annoyance. Thus we can't certify there's really a problem with the website." %}
+        </li>
+        <li>
+          {% blocktrans %}The website is badly designed, hard to navigate but the reason isn't due to a will to prevent people from accessing it with a define browser or OS but only because of misconception (e.g. anyone suffers the same problems). Such a website would rather find its place in a "crappy websites" list.{% endblocktrans %}
+        </li>
+        <li>
+          {% blocktrans %}we do not list "Flash-only" websites for the only reason it's all made of Flash and requires a specific plug-in. If the website relies on Flash for presentation/decoration purpose only and blocks visitors because of this, then we'll list the website and contact its webmaster.{% endblocktrans %}
+        </li>
+        <li>
+          {% trans "it's not a government or company's website. We do not list personal websites here." %}
+        </li>
+      </ul>
+    </p>
+    {% trans "Anyway you'll receive a mail with reject reason." %}
+  </p>
+</div>
+
+<div id="q8">
+  <h4>8. {% trans "I submitted website some days ago. It isn't in the list and I have no news, what's happening?" %}</h4>
+  <p>
+    {% trans "We need some time to test website with all OS and browsers. Moreover, webmaster is contacted, and we're waiting for his answer before adding website." %}
+  </p>
+  <p>
+    {% trans "Following steps must be done before displaying website in blacklist:" %}
+    <p>
+      <ul>
+        <li>1. {% trans "reproduce problem (approx. delay: 1 day to 1 week)" %}</li>
+        <li>2. {% trans "send mail to webmaster and wait for reply (approx. delay: 1 to 3 weeks)" %}</li>
+        <li>3. {% trans "if webmaster doesn't want to modify website, it is blacklisted." %}</li>
+      </ul>
+    </p>
+    {% trans "Since your website will be accepted or rejected, you'll receive a mail." %}
+  </p>
+</div>
+
+{% endblock content %}

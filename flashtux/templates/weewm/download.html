@@ -1,0 +1,106 @@
+{% extends "weewm/weewm.html" %}
+
+{% load i18n %}{% load localdate %}{% load linkfile %}
+
+{% block subtitle %} :: {% trans "Download" %}{% endblock %}
+{% block menu2_download %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<ul class="nav nav-tabs mt-4">
+  <li class="nav-item"><a class="nav-link{% if version == "stable" %} active{% endif %}" href="{% url 'weewm_download' 'stable' %}">{% trans "Stable" %}</a></li>
+  <li class="nav-item"><a class="nav-link{% if version == "devel" %} active{% endif %}" href="{% url 'weewm_download' 'devel' %}">{% trans "Development" %}</a></li>
+  <li class="nav-item"><a class="nav-link{% if version == "old" %} active{% endif %}" href="{% url 'weewm_download' 'old' %}">{% trans "Old versions" %}</a></li>
+</ul>
+
+{% if version == "stable" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.0.2
+      <small class="text-muted">({{ "2003-07-07"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "weewm/src/weewm-0.0.2.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "weewm/src/weewm-0.0.2.tar.bz2" %}</li>
+        <li>{% trans "Debian:" %} {% linkfile "weewm/src/weewm_0.0.2-1_i386.deb" %}</li>
+        <li>{% trans "Mandriva:" %} {% linkfile "weewm/src/weewm-0.0.2-1.i586.rpm" %}</li>
+        <li>{% trans "Slackware:" %} {% linkfile "weewm/src/weewm-0.0.2-i386-1.tgz" %}</li>
+        <li>{% trans "Gentoo:" %} {% linkfile "weewm/src/weewm-0.0.2.ebuild" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% elif version == "devel" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">{% trans "Development version" %}</h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "weewm/src/weewm-devel.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "weewm/src/weewm-devel.tar.bz2" %}</li>
+      </ul>
+    </p>
+    <p>
+      {% trans "This version is <strong>0.0.3-pre2</strong>." %}
+    </p>
+    <p>
+      {{ "2004-03-07"|localdate:"date" }}: {% trans "Added ./configure script, code cleanup & secured." %}
+    </p>
+    <p>
+      <a href="/files/weewm/ChangeLog.txt" target="_blank" rel="noopener">ChangeLog</a>
+    </p>
+    <p>
+      <a href="{{ MEDIA_URL }}images/weewm/weewm_commits.png" target="_blank" rel="noopener">
+        {% trans "CVS commits graph" %}
+      </a>
+    </p>
+    <p>
+      {% trans "WeeWM on Savannah:" %}
+      <a href="http://savannah.nongnu.org/projects/weewm" target="_blank" rel="noopener">
+        http://savannah.nongnu.org/projects/weewm
+      </a>
+      <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+    </p>
+    <p>
+      {% trans "Sources:" %}
+      <a href="https://github.com/flashtux/weewm">https://github.com/flashtux/weewm</a>
+    </p>
+  </div>
+</div>
+
+{% elif version == "old" %}
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="my-0">
+      {% trans "Version" %} 0.01
+      <small class="text-muted">({{ "2003-03-18"|localdate:"date" }})</small>
+    </h4>
+  </div>
+  <div class="card-body pb-2">
+    <div class="h5">{% trans "Packages" %}</div>
+    <p>
+      <ul>
+        <li>{% trans "Sources (gzip):" %} {% linkfile "weewm/src/weewm-0.01.tar.gz" %}</li>
+        <li>{% trans "Sources (bzip2):" %} {% linkfile "weewm/src/weewm-0.01.tar.bz2" %}</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% endif %}
+
+{% endblock content %}

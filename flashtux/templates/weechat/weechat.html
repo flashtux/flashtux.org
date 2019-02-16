@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: WeeChat{% endblock %}
+{% block menu %}weechat{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='weechat' %}">{% trans "News" %}</a></li>
+</ul>
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: W3BlackList{% endblock %}
+{% block menu %}w3blacklist{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='w3blacklist' %}">{% trans "News" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_sites %}{% endblock %}" href="{% url 'w3blacklist_sites' %}">{% trans "Sites" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_doc %}{% endblock %}" href="{% url 'w3blacklist_doc' %}">{% trans "Documentation" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_letters %}{% endblock %}" href="{% url 'w3blacklist_letters' %}">{% trans "Letters" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_faq %}{% endblock %}" href="{% url 'w3blacklist_faq' %}">{% trans "FAQ" %}</a></li>
+</ul>
+
+{% with project="W3BlackList" %}
+{% include "discontinued.html" %}
+{% endwith %}
+
+{% endblock content %}

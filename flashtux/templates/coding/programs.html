@@ -1,0 +1,103 @@
+{% extends "coding/coding.html" %}
+
+{% load i18n %}{% load localdate %}{% load txt2html %}{% load linkfile %}
+
+{% block subtitle %} :: {% trans "Programs" %}{% endblock %}
+{% block menu2_programs %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<ul class="nav nav-tabs mt-4">
+  {% for categ, categ_i18n in categories %}
+  <li class="nav-item">
+    <a class="nav-link{% if categ == category %} active{% endif %}" href="{% url 'coding_category' category=categ %}">
+      {{ categ_i18n }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if program %}
+
+<h3>{{ program.name|capfirst }}</h3>
+
+<p>
+  {{ program.shortdesc_i18n }}
+</p>
+
+<p>
+  <ul>
+    {% comment %}Translators: "OS" is the abbreviation of "Operating System"{% endcomment %}
+    <li>{% trans "OS:" %} {{ program.operating_system }}</li>
+    <li>{% trans "Programming language:" %} {{ program.prog_language }}</li>
+    <li>{% trans "Author:" %} <a href="mailto:{{ program.email|txt2html }}">{{ program.author }}</a></li>
+  </ul>
+</p>
+
+<h4>{% trans "Description" %}</h4>
+
+<p>
+  {% autoescape off %}{{ program.description_i18n|linebreaks }}{% endautoescape %}
+</p>
+
+{% if program.output %}
+<h4>{% trans "Example" %}</h4>
+
+<p>
+  <pre class="p-2 border rounded shadow"><code>{{ program.output|linebreaksbr }}</code></pre>
+</p>
+{% endif %}
+
+{% if program.images %}
+<h4>
+  {% blocktrans count counter=program.images_list|length %}Screenshot{% plural %}Screenshots{% endblocktrans %}
+</h4>
+
+<p>
+  {% for image in program.images_list %}
+  <div>
+    <img src="{{ MEDIA_URL }}images/coding/{{ category }}/{{ image }}" class="py-1" alt="{{ image }}">
+  </div>
+  {% endfor %}
+</p>
+{% endif %}
+
+<h4>{% trans "Download" %}</h4>
+
+<p>
+  {{ program.filename_description }}: {% linkfile "coding/"|add:category|add:"/"|add:program.filename %}
+</p>
+
+{% else %}
+
+<p>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <th>{% trans "Name" %}</th>
+        <th>{% trans "Description" %}</th>
+        <th>{% trans "Programming language" %}</th>
+        {% comment %}Translators: "OS" is the abbreviation of "Operating System"{% endcomment %}
+        <th>{% trans "OS" %}</th>
+        <th>{% trans "Author" %}</th>
+      </thead>
+      <tbody>
+        {% for prog in programs %}
+        <tr>
+          <td class="text-nowrap"><a href="{% url 'coding_program' category prog.name %}">{{ prog.name }}</a></td>
+          <td>{{ prog.shortdesc_i18n }}</td>
+          <td>{{ prog.prog_language_i18n }}</td>
+          <td>{{ prog.operating_system }}</td>
+          <td>{{ prog.author }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</p>
+
+{% endif %}
+
+{% endblock content %}

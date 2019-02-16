@@ -1,0 +1,122 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Modems" %}{% endblock %}
+{% block menu2_modems %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<ul class="nav nav-tabs mt-4">
+  <li class="nav-item"><a class="nav-link{% if status == "all" %} active{% endif %}" href="{% url 'eciadsl_modems_status' status='all' %}">{% trans "All modems" %} ({{ count.all }})</a></li>
+  <li class="nav-item"><a class="nav-link{% if status == "supported" %} active{% endif %}" href="{% url 'eciadsl_modems_status' status='supported'  %}">{% trans "Supported" context "plural" %} ({{ count.2 }})</a></li>
+  <li class="nav-item"><a class="nav-link{% if status == "maybe" %} active{% endif %}" href="{% url 'eciadsl_modems_status' status='maybe'  %}">{% trans "Maybe supported" context "plural" %} ({{ count.1 }})</a></li>
+  <li class="nav-item"><a class="nav-link{% if status == "notsupported" %} active{% endif %}" href="{% url 'eciadsl_modems_status' status='notsupported'  %}">{% trans "Not supported" context "plural" %} ({{ count.0 }})</a></li>
+</ul>
+
+{% if status == "all" %}
+
+  {% regroup modems by status as modems_by_status %}
+
+  <div class="row">
+
+  {% for modem_status in modems_by_status %}
+    {% if modem_status.list.0.status != 0 %}
+    <div class="col-lg-4 col-12 px-lg-5">
+    {% endif %}
+      <h3>
+        {{ modem_status.list.0.status_title_i18n }}
+        <small class="text-muted">({{modem_status.list|length }})</small>
+      </h3>
+      {% for modem in modem_status.list %}
+      <a href="{% url 'eciadsl_modem' modem.id %}">{{ modem.manufacturer }} {{ modem.modem }}</a>
+      <br>
+      {% endfor %}
+    {% if modem_status.list.0.status != 1 %}
+    </div>
+    {% endif %}
+  {% endfor %}
+
+  </div>
+
+{% else %}
+
+{% for modem in modems %}
+
+<div class="row pt-5 pb-3 {% if not forloop.last %}border-bottom{% endif %}">
+  <div class="col-auto">
+    <div class="text-center border rounded shadow mb-4" style="width: 150px; height: 150px; line-height: 150px; background: {{ modem.status_bg_color }};">
+      {% if modem.photo %}
+      <img src="{{ MEDIA_URL }}images/eciadsl/modems/{{ modem.photo }}" width="128" height="128"
+           alt="{{ modem.manufacturer }} {{ modem.modem }}" >
+      {% else %}
+      {% trans "No photo" %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="col">
+    <div class="h4">{{ modem.manufacturer }} {{ modem.modem }}</div>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        <tbody>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Status" %}</td>
+            <td class="w-100"><strong>{{ modem.status_i18n }}</strong></td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Min EciAdsl" %}</td>
+            <td class="w-100">{{ modem.drvmini }}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Chipset" %}</td>
+            <td class="w-100">{{ modem.chipset }}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">Vid1/Pid1</td>
+            <td class="w-100">{{ modem.vid1 }} / {{ modem.pid1 }}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">Vid2/Pid2</td>
+            <td class="w-100">{{ modem.vid2 }} / {{ modem.pid2 }}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Country" %}</td>
+            <td class="w-100">{% autoescape off %}{{ modem.country_string|linebreaksbr }}{% endautoescape %}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Provider(s)" %}</td>
+            <td class="w-100">{% autoescape off %}{{ modem.provider_string|linebreaksbr }}{% endautoescape %}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">VPI.VCI</td>
+            <td class="w-100">{{ modem.vpivci }}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Synch .bin" %}</td>
+            <td class="w-100">{% autoescape off %}{{ modem.synchbin_string|linebreaksbr }}{% endautoescape %}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Synch alt" %}</td>
+            <td class="w-100">{{ modem.synch_alt }}<td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Pppoeci alt" %}</td>
+            <td class="w-100">{{ modem.pppoeci_alt }}</td>
+          </tr>
+          <tr>
+            <td class="text-nowrap pr-4">{% trans "Comment" context "noun" %}</td>
+            <td class="w-100">{% autoescape off %}{{ modem.comment_i18n }}{% endautoescape %}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+{% endif %}
+
+{% endblock content %}

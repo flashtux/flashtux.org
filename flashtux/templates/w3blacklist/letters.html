@@ -1,0 +1,22 @@
+{% extends "w3blacklist/w3blacklist.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Letters" %}{% endblock %}
+{% block menu2_letters %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% for letter in letters %}
+
+<h3>{{ letter.description_i18n }}</h3>
+
+<div class="letter border rounded shadow mt-4 p-3">
+  {% autoescape off %}{{ letter.content_i18n|linebreaks }}{% endautoescape %}
+</div>
+
+{% endfor %}
+
+{% endblock content %}

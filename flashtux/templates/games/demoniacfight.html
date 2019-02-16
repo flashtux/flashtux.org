@@ -1,0 +1,54 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}{% load linkfile %}
+
+{% block subtitle %} :: Demoniac Fight{% endblock %}
+{% block menu2_demoniacfight %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<p class="text-center">
+  <img src="{{ MEDIA_URL }}images/games/dfight1.png" class="px-2" alt="Demoniac Fight" title="Demoniac Fight">
+  <img src="{{ MEDIA_URL }}images/games/dfight2.png" class="px-2" alt="Demoniac Fight" title="Demoniac Fight">
+</p>
+
+<h3>{% trans "The game" %}</h3>
+
+<p>
+  {% trans "Destroy enemy ship (before he destroys you!)" %}
+</p>
+
+<h3>{% trans "Plus" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "2 players game" %}</li>
+    <li>{% trans "mega fun!" %}</li>
+    <li>{% blocktrans %}lot of cool musics, some by <a href="http://multor.free.fr/">MulToR</a>{% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "OS" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Dos (native)" %}</li>
+    <li>{% blocktrans %}Windows / Linux / BSD / BeOS (with <a href="https://www.dosbox.com">DOSBox</a>){% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Programming language" %}</h3>
+
+<p>
+  {% trans "Pascal (6700 lines), result of 7 months' work." %}
+</p>
+
+<h3>{% trans "Download" %}</h3>
+
+<p>
+  {% linkfile "games/dfight.zip" %}
+</p>
+
+{% endblock content %}

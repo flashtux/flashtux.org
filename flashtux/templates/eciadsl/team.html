@@ -1,0 +1,16 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Team" %}{% endblock %}
+{% block menu2_team %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% with url_images="eciadsl_team" url_image="eciadsl_team_photo" %}
+{% include "images.html" %}
+{% endwith %}
+
+{% endblock content %}

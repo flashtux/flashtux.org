@@ -1,0 +1,95 @@
+{% extends "flashtris/flashtris.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Documentation" %}{% endblock %}
+{% block menu2_doc %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>{% trans "Installation" %}</h3>
+
+<h4>{% trans "Executable" %}</h4>
+
+<p>
+  <ul>
+    <li>{% blocktrans %}Under Linux: unpack file ("gunzip ftris.gz") and run game: "./ftris"{% endblocktrans %}
+    <li>{% blocktrans %}Under Dos/Windows: unpack file and run game "ftris.exe"{% endblocktrans %}
+  </ul>
+</p>
+
+<h4>{% trans "Source code" %}</h4>
+
+<p>
+  {% trans "Unpack both archives (ftris-src-x.yy.tar.gz and ftris-data-x.yy.tar.gz) in the SAME directory." %}
+  <br>
+  {% blocktrans %}To compile FlashTris, follow instructions in "Readme" file.{% endblocktrans %}
+  <br>
+  {% trans "If you have any problem, send me a mail." %}
+</p>
+
+<h3>Source code info</h3>
+
+<p>
+  {% trans "Source code is free, under GPL license." %}
+</p>
+
+<p>
+  {% trans "What you can do with it:" %}
+  <p>
+    <ul>
+      <li>{% trans "improve it and give it, according to GPL license" %}</li>
+      <li>{% trans "fix known bugs" %}</li>
+      <li>{% trans "modify FlashTris for other operating systems (Mac, BeOS, etc.)" %}</li>
+      <li>{% trans "send me your comments, questions, suggestions, etc." %}</li>
+      <li>{% trans "send me modifications you made to my sources" %}</li>
+    </ul>
+  </p>
+</p>
+
+<p>
+  {% trans "What you can't do with it:" %}
+  <p>
+    <ul>
+      <li>{% trans "sell this game or include it (completely or partially) in a commercial product without giving full source code" %}</li>
+    </ul>
+  </p>
+</p>
+
+<p>
+  {% trans "What I am doing now:" %}
+  <p>
+    <ul>
+      <li>{% trans "cleaning up source code" %}</li>
+      <li>{% trans "modifying FlashTris for Mac (Linux/PowerPC), e.g. removing assembly functions" %}</li>
+      <li>{% trans "writing C module player (today it is 90% assembly code)" %}</li>
+    </ul>
+  </p>
+</p>
+
+<p>
+  {% trans "Source details:" %}
+  <p>
+    <ul>
+      <li>{% trans "about.c: about screen," %}</li>
+      <li>{% trans "bonus.c: bonus levels," %}</li>
+      <li>{% trans "config.c: configuration," %}</li>
+      <li>{% trans "effet.c: some graphical effects," %}</li>
+      <li>{% trans "ftris.c: main program," %}</li>
+      <li>{% trans "game.c: the game," %}</li>
+      <li>{% trans "key.c: keyboard management," %}</li>
+      <li>{% trans "menu.c: main menu," %}</li>
+      <li>{% trans "menu_gfx.c: menu display," %}</li>
+      <li>{% trans "menu_tst.c: tests between menu options," %}</li>
+      <li>{% trans "net.c: network," %}</li>
+      <li>{% trans "netftris.c: network (specific to FlashTris)," %}</li>
+      <li>{% trans "playfli.c: FLI player," %}</li>
+      <li>{% trans "video.c: graphical display using mode 320x200x256, compatible Linux/Dos/Windows," %}</li>
+      <li>{% trans "mod.c: Amiga modules player." %}</li>
+    </ul>
+  </p>
+</p>
+
+{% endblock content %}

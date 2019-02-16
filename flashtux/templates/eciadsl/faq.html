@@ -1,0 +1,14 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "FAQ" %}{% endblock %}
+{% block menu2_faq %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% include "doc.html" %}
+
+{% endblock content %}

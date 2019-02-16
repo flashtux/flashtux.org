@@ -1,0 +1,57 @@
+{% load i18n %}{% load localdate %}
+
+<h4 class="mb-3">
+  {% if section == "home" %}<a href="{% url 'news' section=info.section %}">{{ info.section_i18n }}</a>:{% endif %}
+  {{ info.title_i18n }}
+  <small class="text-muted">({{ info.date|localdate:"datetime" }})</small>
+</h4>
+
+{% if info.text %}{% autoescape off %}{{ info.text_i18n|linebreaks }}{% endautoescape %}{% endif %}
+
+{% if info_id and not form %}
+<div class="new-comment-button">
+  <a href="{% url 'info_reply' section=section info_id=info.id comment_relative_id=0 %}" class="btn btn-outline-secondary" role="button">
+    {% trans "New comment" %}
+  </a>
+</div>
+{% endif %}
+
+{% if form %}
+<h4>{% trans "New comment" %}</h4>
+{% endif %}
+
+{% with count_comments=info.comment_set.count %}
+{% if info_id %}
+{% if count_comments > 0 and not form %}
+<div class="count-comments">
+  {% blocktrans count counter=count_comments %}{{ count_comments }} comment:{% plural %}{{ count_comments }} comments:{% endblocktrans %}
+</div>
+{% endif %}
+{% else %}
+{% include "svg/comments.html" %}
+<a href="{% url 'info' section=section info_id=info.id %}">
+  <span class="link-comments-count ml-2">
+    {% blocktrans count counter=count_comments %}{{ count_comments }} comment{% plural %}{{ count_comments }} comments{% endblocktrans %}
+  </span>
+</a>
+{% endif %}
+{% endwith %}
+
+{% if comments %}
+<div class="comments">
+  {% include "news/comments.html" %}
+</div>
+{% endif %}
+
+{% if form %}
+<div class="row justify-content-left">
+  <div class="col-12 col-md-8">
+    <form action="." method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_div }}
+      <button type="submit" class="btn btn-success mt-3 px-5">{% trans "Submit" %}</button>
+      <a href="{% url 'info' section=section info_id=info.id %}" class="btn btn-secondary mt-3 ml-3 px-5" role="button">{% trans "Cancel" %}</a>
+    </form>
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,199 @@
+{% extends "w3blacklist/w3blacklist.html" %}
+
+{% load i18n %}{% load localdate %}
+
+{% block subtitle %} :: {% trans "Sites" %}{% endblock %}
+{% block menu2_sites %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+{% if not site %}
+<div class="alert border project">
+  {% trans "Status:" %}
+  <ul>
+    <li>{% blocktrans %}<strong>{{ count_blacklist }}</strong> blacklisted sites{% endblocktrans %}</li>
+    <li>{% blocktrans %}<strong>{{ count_fixed }}</strong> sites fixed{% endblocktrans %}</li>
+    <li>{% blocktrans %}<strong>{{ count_approval }}</strong> waiting for approval (<strong>{{ count_pending_approval }}</strong> in test by w3blacklist team, <strong>{{ count_waiting_response }}</strong> waiting for a response from the webmaster).{% endblocktrans %}</li>
+  </ul>
+</div>
+
+<ul class="nav nav-tabs mt-4">
+  <li class="nav-item"><a class="nav-link{% if status == "blacklist" %} active{% endif %}" href="{% url 'w3blacklist_sites_status' status='blacklist' %}">{% trans "Blacklist" %} ({{ count_blacklist }})</a></li>
+  <li class="nav-item"><a class="nav-link{% if status == "fixed" %} active{% endif %}" href="{% url 'w3blacklist_sites_status' status='fixed'  %}">{% trans "Fixed" context "plural" %} ({{ count_fixed }})</a></li>
+</ul>
+{% endif %}
+
+{% if site %}
+
+<h3>
+  {{ site.website }}
+  {% if site.status == 2 %}
+  <span class="severity{{ site.severity }} ml-3" title="{{ site.severity_i18n }}">
+    {% for i in site.severity_x %}{% include "svg/icon_x.html" %}{% endfor %}
+  </span>
+  {% else %}
+  <span class="fixed ml-3" title="{% trans "Website has been fixed" %}">
+    {% include "svg/check.html" %}
+  </span>
+  {% endif %}
+</h3>
+
+<h5>{% trans "Info" %}</h5>
+
+<p>
+  <ul>
+    <li>{% trans "Problem:" %} {{ site.shortdesc_i18n }}</li>
+    <li>
+      {% trans "URL:" %} <a href="{{ site.url }}">{{ site.url }}</a>
+      <img src="{{ MEDIA_URL }}images/flag_{{ site.lang }}.png" class="border ml-2" width="26px" height="15px">
+    </li>
+    <li>{% trans "Added:" %} {{ site.date|localdate }}</li>
+    {% if site.date_update %}
+    <li>{% trans "Updated:" %} {{ site.date_update|localdate }}</li>
+    {% endif %}
+  </ul>
+</p>
+
+<h5>{% trans "Browsers" %}</h5>
+
+<p>
+  {% for browser, browser_ok in site.browsers.items %}
+  <div class="zimg zimg-{% if browser_ok %}ok{% else %}ko{% endif %} border rounded shadow-sm"
+       title="{% if browser_ok %}{% blocktrans %}Website is OK with {{ browser }}{% endblocktrans %}{% else %}{% blocktrans %}Website doesn't work with {{ browser }}{% endblocktrans %}{% endif %}">
+    <img src="{{ MEDIA_URL }}images/w3blacklist/logo_{{ browser.lower }}.png" class="zimg1">
+    {% if not browser_ok %}
+    <img src="{{ MEDIA_URL }}images/w3blacklist/cross.png" class="zimg2">
+    {% endif %}
+  </div>
+  {% endfor %}
+</p>
+
+<h5>{% trans "OS" %}</h5>
+
+<p>
+  {% for os, os_ok in site.operating_system.items %}
+  <div class="zimg zimg-{% if os_ok %}ok{% else %}ko{% endif %} border rounded shadow-sm"
+       title="{% if os_ok %}{% blocktrans %}Website is OK with {{ os }}{% endblocktrans %}{% else %}{% blocktrans %}Website doesn't work with {{ os }}{% endblocktrans %}{% endif %}">
+    <img src="{{ MEDIA_URL }}images/w3blacklist/logo_{{ os.lower }}.png" class="zimg1">
+    {% if not os_ok %}
+    <img src="{{ MEDIA_URL }}images/w3blacklist/cross.png" class="zimg2">
+    {% endif %}
+  </div>
+  {% endfor %}
+</p>
+
+<h5>{% trans "E-mails" %}</h5>
+
+<p>
+  {% trans "Contact:" %}
+  {% if site.contact %}{{ site.contact }}{% else %}{% trans "unknown" %}{% endif %}
+</p>
+
+<p>
+  {% if site.sentmail %}
+  {% trans "Sent to webmaster:" %}
+  {% for date in site.list_sentmail %}
+  {{ date|localdate }}{% if not forloop.last %}, {% endif %}
+  {% endfor %}
+  {% else %}
+  {% trans "No e-mails sent to webmaster." %}
+  {% endif %}
+  <br>
+  {% if site.recvmail %}
+  {% trans "Received from webmaster:" %}
+  {% for date in site.list_recvmail %}
+  {{ date|localdate }}{% if not forloop.last %}, {% endif %}
+  {% endfor %}
+  {% else %}
+  {% trans "No e-mails received from webmaster." %}
+  {% endif %}
+</p>
+
+<h5>{% trans "Description" %}</h5>
+
+<p>
+  {% autoescape off %}{{ site.description_i18n|linebreaks }}{% endautoescape %}
+</p>
+
+{% if comments %}
+<h5>{% trans "Comments" %}</h5>
+
+<div class="comments">
+  {% for comment in comments %}
+  <div class="comment">
+    <div class="comment-box">
+      <div class="comment-name-date">
+        {% if comment.name %}
+          {% with comment.name as name %}
+          {% blocktrans %}Posted by <strong>{{ name }}</strong>{% endblocktrans %},
+          {% endwith %}
+        {% else %}
+          {% trans "Anonymous comment" %},
+        {% endif %}
+        {{ comment.date|localdate }}
+      </div>
+      <div class="comment-content">
+        {{ comment.content|linebreaksbr }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="back-button mt-4">
+  {% include "svg/chevron_left.html" %}
+  {% if site.status == 2 %}
+  <a href="{% url 'w3blacklist_sites_status' status='blacklist' %}">{% trans "Back to blacklist" %}</a>
+  {% else %}
+  <a href="{% url 'w3blacklist_sites_status' status='fixed' %}">{% trans "Back to fixed sites" %}</a>
+  {% endif %}
+</div>
+
+{% else %}
+
+<h3>
+  {% if status == "blacklist" %}{% trans "Blacklisted websites" %}{% else %}{% trans "Fixed websites" %}{% endif %}
+</h3>
+
+<p>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <th>{% trans "Date" %}</th>
+        <th>{% trans "Website" %}</th>
+        <th>{% trans "URL" %}</th>
+        <th>{% trans "Description" %}</th>
+        <th>{% trans "Status" %}</th>
+      </thead>
+      <tbody>
+        {% for site in sites %}
+        <tr>
+          <td class="text-nowrap">{{ site.date|localdate }}</td>
+          <td>
+            <a href="{% url 'w3blacklist_site' site.id %}">
+              <img src="{{ MEDIA_URL }}images/flag_{{ site.lang }}.png" class="border mr-2" width="26px" height="15px">
+              {{ site.website }}
+            </a>
+          </td>
+          <td><a href="{{ site.url }}" target="_blank" rel="noopener" title="{{ site.url }}">{{ site.url|truncatechars:45 }}</a></td>
+          <td>{{ site.shortdesc_i18n }}</td>
+          {% if site.status == 2 %}
+          <td class="text-nowrap severity{{ site.severity }}" title="{{ site.severity_i18n }}">
+            {% for i in site.severity_x %}{% include "svg/icon_x.html" %}{% endfor %}
+          </td>
+          {% else %}
+          <td class="fixed" title="{% trans "website fixed" %}">{% include "svg/check.html" %}</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</p>
+
+{% endif %}
+
+{% endblock content %}

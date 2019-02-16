@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}FlashTux :: Gmemo{% endblock %}
+{% block menu %}gmemo{% endblock %}
+
+{% block content %}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link {% block menu2_news %}{% endblock %}" href="{% url 'news' section='gmemo' %}">{% trans "News" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_screenshots %}{% endblock %}" href="{% url 'gmemo_screenshots' %}">{% trans "Screenshots" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_download %}{% endblock %}" href="{% url 'gmemo_download' %}">{% trans "Download" %}</a></li>
+  <li class="nav-item"><a class="nav-link {% block menu2_support %}{% endblock %}" href="{% url 'gmemo_support' %}">{% trans "Support" %}</a></li>
+</ul>
+
+{% endblock content %}

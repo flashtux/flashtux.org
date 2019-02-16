@@ -1,0 +1,39 @@
+{% load i18n %}{% load localdate %}
+
+{% for comment in comments %}
+
+<div class="comment">
+
+  <div class="comment-box">
+    <div class="comment-title">
+      {{ comment.title }}
+    </div>
+    <div class="comment-name-date">
+      {% with comment.name as name %}
+      {% blocktrans %}Posted by <strong>{{ name }}</strong>{% endblocktrans %},
+      {% endwith %}
+      {{ comment.date|localdate:"datetime" }}
+    </div>
+    <div class="comment-content">
+      {{ comment.content|linebreaksbr }}
+    </div>
+    {% if not form %}
+    <div class="comment-reply">
+      <a href="{% url 'info_reply' section=section info_id=comment.info.id comment_relative_id=comment.id %}"
+         class="btn btn-sm btn-outline-secondary"
+         role="button">
+        {% trans "Reply" %}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+
+  {% with "news/comments.html" as filename %}
+  {% with comment.replies as comments %}
+  {% include filename %}
+  {% endwith %}
+  {% endwith %}
+
+</div>
+
+{% endfor %}

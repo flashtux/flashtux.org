@@ -1,0 +1,60 @@
+{% extends "weewm/weewm.html" %}
+
+{% load i18n %}{% load txt2html %}
+
+{% block subtitle %} :: {% trans "Support" %}{% endblock %}
+{% block menu2_support %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>{% trans "Support via IRC" %}</h3>
+
+<p>
+  {% trans "For any problem (or for thanking us), you can discuss with development team on IRC:" %}
+  <br><br>
+  <span class="ml-4">server: <code>irc.freenode.net</code>, channel: <code>#weewm</code></span>
+</p>
+
+<p>
+  {% trans "You can ask them for support:" %} FlashCode, xahlexx.
+</p>
+
+<h3>{% trans "Team" %}</h3>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_flashcode.jpg" width="64" height="64" class="rounded shadow" alt="FlashCode"
+         onmouseover="javascript:this.src='{{ MEDIA_URL }}images/photo_dev_flashcode_2.jpg'"
+         onmouseout="javascript:this.src='{{ MEDIA_URL }}images/photo_dev_flashcode.jpg'">
+  </div>
+  <div class="col">
+    <strong>Sébastien Helleu</strong>
+    <span class="text-muted">(FlashCode)</span>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer, initiator of project" %}
+      <br>
+      <a href="mailto:{% txt2html "flashcode@flashtux.org" %}">{% txt2html "flashcode@flashtux.org" %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col-auto pr-1">
+    <img src="{{ MEDIA_URL }}images/photo_dev_xahlexx.jpg" width="64" height="64" class="rounded shadow" alt="xahlexx">
+  </div>
+  <div class="col">
+    <strong>Xahlexx</strong>
+    <br>
+    <div class="ml-4">
+      <img src="{{ MEDIA_URL }}images/flag_fr.png" alt="fr" class="border mr-2">
+      {% trans "Developer" %}
+      <br>
+      <a href="mailto:{% txt2html "xahlexx@weeland.org" %}">{% txt2html "xahlexx@weeland.org" %}</a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

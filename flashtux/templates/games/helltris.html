@@ -1,0 +1,52 @@
+{% extends "games/games.html" %}
+
+{% load i18n %}{% load linkfile %}
+
+{% block subtitle %} :: HellTris{% endblock %}
+{% block menu2_helltris %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<p class="text-center">
+  <img src="{{ MEDIA_URL }}images/games/htris.png" class="px-2" alt="HellTris" title="HellTris">
+</p>
+
+<h3>{% trans "The game" %}</h3>
+
+<p>
+  {% blocktrans %}Another "Tetris like" with bowls and falling stones…{% endblocktrans %}
+</p>
+
+<h3>{% trans "Plus" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "original" %}</li>
+    <li>{% trans "many players, computer reflexion" %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "OS" %}</h3>
+
+<p>
+  <ul>
+    <li>{% trans "Dos (native)" %}</li>
+    <li>{% blocktrans %}Windows / Linux / BSD / BeOS (with <a href="https://www.dosbox.com">DOSBox</a>){% endblocktrans %}</li>
+  </ul>
+</p>
+
+<h3>{% trans "Programming language" %}</h3>
+
+<p>
+  {% trans "Pascal (4100 lines), result of 1 month' work!" %}
+</p>
+
+<h3>{% trans "Download" %}</h3>
+
+<p>
+  {% linkfile "games/htris.zip" %}
+</p>
+
+{% endblock content %}

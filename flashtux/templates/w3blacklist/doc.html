@@ -1,0 +1,134 @@
+{% extends "w3blacklist/w3blacklist.html" %}
+
+{% load i18n %}
+
+{% block subtitle %} :: {% trans "Documentation" %}{% endblock %}
+{% block menu2_doc %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>{% trans "W3blacklist documentation" %}</h3>
+
+<h4>{% trans "Websites list" %}</h4>
+
+<p>
+  {% trans "Websites list shows all websites in database, with search bar." %}
+  <br>
+  {% trans "Only approved websites are displayed." %}
+  <br>
+  {% trans "By clicking on a website, detail are displayed." %}
+</p>
+
+<h4>{% trans "Website detail" %}</h4>
+
+<p>
+  {% trans "All info about website are displayed." %}
+  <br>
+  {% trans "It is possible to create an alert in order to receive mail for any changes on website (a new comment does not send alert mail)." %}
+</p>
+
+<h4>{% trans "Submit a website" %}</h4>
+
+<p>
+  {% trans "A form lets you add a website (personal pages are NOT allowed)." %}
+  <br>
+  {% trans "Thanks for checking that website is not already in database. See FAQ for questions about submitting new websites." %}
+</p>
+
+<h4>{% trans "Standards goal" %}</h4>
+
+<p>
+  {% trans "Allow anyone to freely access information, independently of the software or hardware used, even if the person suffers from disabilities (sight impairments, etc.)." %}
+</p>
+
+<h4>{% trans "Advantages of standards" %}</h4>
+
+<p>
+  <ul>
+    <li>{% trans "Accessibility: open to people with disabilities (vocal, braille, text browsers), access pages with alternate browsers or hand-held devices, etc." %}</li>
+    <li>{% trans "Maintenance: bring simplified code, separation of the content and presentation, only one version of the site for all browsers." %}</li>
+    <li>{% trans "Stability: forward and backward compatibility, code readable by all future browsers without modification, the rendering of pages stay correct even with outdated browsers." %}</li>
+  </ul>
+</p>
+
+<h4>{% trans "Possibilities of standards" %}</h4>
+
+<p>
+  {% trans "A common misconception is that websites compliant to standards are dull, poorly designed and not eye-candy. That's completely wrong. The standards support a wide range of possibilites that match the most advanced HTML or JavaScript code. Just have a look at those links for examples:" %}
+  <ul>
+    <li>
+      {% trans "CSS Zen Garden:" %}
+      <a href="http://www.csszengarden.com">http://www.csszengarden.com</a>
+    </li>
+    <li>
+      {% trans "Eric Meyer's CSS design:" %}
+      <a href="http://www.meyerweb.com/eric/css/edge/">http://www.meyerweb.com/eric/css/edge/</a>
+    </li>
+    <li>
+      {% trans "A designer's experience:" %}
+      <a href="http://www.stopdesign.com">http://www.stopdesign.com</a>
+    </li>
+    <li>
+      {% trans "An XHTML/CSS based site:" %}
+      <a href="http://www.wired.com">http://www.wired.com</a>
+    </li>
+  </ul>
+</p>
+
+<h4>{% trans "Why would people not just use the same browser? It'd fix problems" %}</h4>
+
+<p>
+  {% trans "There's many reasons why people don't use the same program to achieve the same task. Those reasons are pretty much the same as why we are not all dressed the same way or don't own the same brand and model of cars." %}
+  <br><br>
+  {% trans "Those reasons are:" %}
+  <ul>
+    <li>
+      {% trans "Personal tastes: one may like a browser's look but not the other, prefer the way options and features are integrated or their availability." %}
+    </li>
+    <li>
+      {% trans "Technically: some products are supperior to others, either on security, feature support, stability or performance. This evolves pretty quickly and a good browser may become obsolete in a short amount of time." %}
+    </li>
+    <li>
+      {% trans "Availability: one browser may simply not be available on the platform used. Not everyone uses a Mac, Windows or even a computer to access the internet. Hand-held devices became so popular they're by now more numerous than personal computers (in Japan, most of internet access are not done through computers anymore but through PDAs, cellular phones and other kind of hand-held devices)." %}
+    </li>
+    <li>{% trans "Accessibility: disabled people can't use the same programs, simply because those programs are not at all adapted to their needs. Does this mean we should ban disabled people from the Web?" %}
+    </li>
+  </ul>
+</p>
+
+<h4>{% trans "Create your own site: the basic tips" %}</h4>
+
+<p>
+  {% trans "If you plan to write a new site from scratch, then it is highly adviced to use XHTML to write it. Don't be afraid, XHTML is pretty close to traditional HTML except on some major points." %}
+</p>
+
+<p>
+  {% trans "First, in XHTML, the layout & style are separeted from the content. Basically, XHTML pages only stored the content of your site and the style is stored in CSS pages. This means you should not use any &lt;font&gt; tags for text rendering and avoid using tables for the layout." %}
+</p>
+
+<p>
+  {% trans "The other main difference with HTML is that tags are case-sensitive and must be written in lower case (&lt;strong&gt; is correct, &lt;STRONG&gt; is not). Also, each tag opened must be closed (&lt;p&gt;&lt;/p&gt; is correct, &lt;p&gt; is not)." %}
+</p>
+
+<p>
+  {% trans "Tutorials about XHTML and CSS are available at http://www.w3schools.com. Practical CSS examples are available at digital-web.com, thenoodleincident.com and pompage.net (in French)." %}
+</p>
+
+<p>
+  {% trans "XHTML and CSS are not a problem for old browsers. The code they don't understand will simply be ignored and won't cause troubles accessing the site. Only the layout/design may be altered, but the site's content stays fully readable." %}
+</p>
+
+<p>
+  {% trans "P.S.: don't lose your time with Internet Explorer 4 and Netscape 4 browsers, they're not conform at all, and should be forgotten forever." %}
+</p>
+
+<h4>{% trans "Contact the webmasters of problematical sites" %}</h4>
+
+<p>
+  {% url "w3blacklist_letters" as url_letters %}
+  {% blocktrans %}See <a href="{{ url_letters }}">here</a> for template letters.{% endblocktrans %}
+</p>
+
+{% endblock content %}

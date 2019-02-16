@@ -1,0 +1,787 @@
+{% extends "eciadsl/eciadsl.html" %}
+
+{% load i18n %}{% load localdate %}
+
+{% block subtitle %} :: {% trans "Story" %}{% endblock %}
+{% block menu2_story %}active{% endblock %}
+
+{% block content %}
+
+{{ block.super }}
+
+<h3>{% trans "EciAdsl, story of a driver unlike any other" %}</h3>
+
+{% trans "Written by FlashCode" %}, {{ "2004-11-12"|localdate:"date" }}
+
+<h4>I. {% trans "Introduction" %}</h4>
+
+<h5>{% trans "At the beginning" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  The story begins in 1999. I buy a computer magazine which promotes the Linux
+  operating system and gives a CD-ROM with Kheops Slackware distribution.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  I heard a lot about free softwares and Linux, but I had never tried this system.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  With this ready-to-install CD-ROM, I give a try. I programmed until this under MS-Dos,
+  I never liked Windows, for various reasons: its lack of stability, opaque interface,
+  general heaviness, and its price.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  With Linux I feel like home, and thus I decide to use it as a secondary OS, with MS-Dos,
+  which I keep to continue to develop and use programs I made and don't run with Linux.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  During almost two years, I develop games and various applications under Linux,
+  to learn the system.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  At that time, I have an internet connection with a RTC 56k modem,
+  and I connect only some days by week, mainly to read my e-mails.
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "First steps with ADSL" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  In March 2001, I made shopping in a supermarket close to my home, I see
+  a Wanadoo stand where they do a demonstration of broadband Internet.
+  I didn't now what was the "broadband" and how it worked.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  After a quick demonstration, I fill a form to receive within two months a modem
+  with a subscription at Wanadoo, the only provider in my region at that time.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  The proposed modem was "Eci HiFocus", with Ethernet connection.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Two months later, as scheduled, the France Telecom agency calls me and asks me
+  if I have a USB port on my PC. Slightly surprised, I answer yes and they give me
+  an appointment in the agency some days later to get my modem.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I discover that I'll receive an "ECI HiFocus" USB modem, and not an Ethernet modem
+  as they said two months ago. I'll discover later that this USB version has just been
+  released and that I'm amongh the first users.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  I fill in all the papers and I go back at home to try and surf the internet
+  at high speed!
+  {% endblocktrans %}
+</p>
+
+<h4>II. {% trans "Birth of the EciAdsl project" %}</h4>
+
+<h5>{% trans "The terrible report" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  Back at home with the brand new ECI HiFocus modem, I browse the CD-ROM with
+  drivers and I notice there's no Linux driver.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  I think then this modem should be supported by the Linux kernel.
+  I browse all the kernel options to search a driver for this modem.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  After reviewing all the kernel options, I conclude that this modem should be
+  supported by an external driver.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  I reboot my old Windows, which was starting to take the dust, and I go on
+  the Internet to search for a driver.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  And there, my disappointment grows… After long hours of research,
+  with different search engines, on Linux sites, etc. no driver found for
+  this modem!
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "Beginning of the EciAdsl driver" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  After a few days on Windows (to be able to enjoy the unlimited fast connection),
+  I find the e-mail address of Benoît PAPILLAULT, who is developing a Linux / BSD
+  driver for the Alcatel Speedtouch USB modem.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  I decide to contact him, hoping that his driver can work with my Eci modem.
+  Unfortunately, our modems are not compatible.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I still continue my research for a few weeks, before I get to the obvious:
+  the manufacturer does not provide any driver for Linux, there is none available
+  in the kernel or on any website, and nobody seems to work on such a driver…
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% trans "I therefore have three solutions:" %}
+  <ul>
+    <li>{% trans "go back to Windows and do a cross on Linux" %}</li>
+    <li>{% trans "wait for someone to develop the driver" %}</li>
+    <li>{% trans "develop myself the driver." %}</li>
+  </ul>
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  After thinking a few days, the first solution being dismissed automatically,
+  I decided to launch myself in developing the driver.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  So I'm starting to think about the skills I've learned under Linux and the ones
+  I miss to reach my goal.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  My conclusion is:
+  {% endblocktrans %}
+  <ul>
+    <li>
+      {% blocktrans trimmed %}
+      I am familiar with system programming: I developed various utilities during
+      several years, under MS-Dos and Linux,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      I do not know anything about ADSL technology, but I should be able to find
+      documents on Internet,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      I do not know anything about USB, but it is well documented,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      and especially I have no documentation on the modem, I do not know at all
+      how is working the chipset inside.
+      {% endblocktrans %}
+    </li>
+  </ul>
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  So my technical knowledge is not sufficient to develop this driver alone and
+  I will need help.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  Getting to know the Linux community and the spirit of help between users,
+  I think that I should not be the only person with this modem and trying to use it
+  under Linux, and that necessarily people would be willing to help me in this work
+  (three years later, I confirm that I was right!).
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "Constitution of the team" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  I recontact Benoît PAPILLAULT in June 2001 to ask him if he can help me
+  to develop this driver.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  With his positive response, I start writing a Linua page on my website
+  (<a href="http://flashcode.free.fr">http://flashcode.free.fr</a>)
+  where I simply explain that I'm starting the development.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Many people contact me, most of them to encourage me in this work, and some
+  to help me in the development.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  Among them, Jean-Sébastien VALETTE who does not have the modem yet, but wish
+  to take it because I started the project. So he offers me his help in development.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  So I decide to start the driver with Jean-Sébastien and call Benoît if needed,
+  who works on his driver Alcatel Speedtouch.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  At the end of June 2001, we open the project on Sourceforge.
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "Start of development" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  At the beginning of the developments, I decide to read about USB, ADSL technology,
+  and writing drivers under Linux.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In parallel, I write to Eci Telecom to know if they are planning to distribute
+  a Linux driver for their hardware.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  They tell me that it is planned, but the answer is not clear and they do not
+  give me any date as to the release of this hypothetical driver.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  So I e-mail them again to ask them for documentation on the modem, which would
+  help me greatly to start writing the driver. And there they tell me to ask to
+  Globespan, the modem chipset manufacturer
+  (note: Globespan has now been acquired by Conexant).
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  But Globespan rarely responds to emails, or sends me to other people and
+  in the end I don't receive any documentation…
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Never mind, Jean-Sébastien and I are more than determined to make this driver
+  in order to go back on Linux, and we try to understand the chipset behavior
+  without any documentation.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  At that moment, Benoît gives me tips and explains to me how he has developed
+  its driver for the Alcatel Speedtouch.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  He captured ("sniffed") all the data exchanged under Windows between the driver
+  and the modem, which gives it files of "logs".
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  Then we have to analyze these logs to understand a minimum the operation and
+  reproduce these data exchanges under Linux.
+  {% endblocktrans %}
+</p>
+
+<h4>III. {% trans "First version of the EciAdsl driver" %}</h4>
+
+<h5>{% trans "Modem initialization" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  As simple as it sounds, turning on the modem is not so obvious. We need to
+  understand a minimum how the Globespan chipset works.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  With the help of modem users who took it apart, and with Internet searches,
+  we discover that the chipset is a Globespan GS7070.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  We then start two tasks in parallel:
+  {% endblocktrans %}
+  <ul>
+    <li>
+      {% blocktrans trimmed %}
+      on the one hand we "sniff" the USB connection under Windows to get
+      log files of exchanged data,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      on the other hand we are looking for a way under Linux to send the data
+      to the modem.
+      {% endblocktrans %}
+    </li>
+  </ul>
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  We used the snooper USB "Snoopy" (written by Roland BOSA and Heiko RABE),
+  modified by Benoît and Jean-Sébastien to work with our modem.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  We manage to extract the "firmware" from the log files obtained (this is
+  the program sent by the driver to the modem to initialize it).
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  We quickly reach the first visible result: end of June 2001, we managed to turn on
+  the two LEDs of the modem: red (power) is fixed and the green (synchronization)
+  flashes, which means that the modem is not synchronized with the ADSL line.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  The firmware is sent successfully to the modem!
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  We used a small program that sends data to our Globespan chip ("ezusb" loader).
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Two months later, in August 2001, Jean-Sébastien manages to synchronize the modem,
+  the green LED becomes fixed and all hopes are allowed at the connection.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  For this we extracted and made a binary file (which we will later name
+  "synchronization .bin file") which is sent to modem by a program written by
+  Jean-Sebastien.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  Afterwards, we will build several different .bin files that we will distribute
+  with the driver.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  (Nowadays - October 2004 - we still do not know what is exactly in these
+  sync .bin files).
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Nevertheless, we suspect that the connection remains the most difficult and
+  it will surely take time to understand all the mechanisms…
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In addition, Laurent Wandrebeck (aka "low") and "wwp" join the development team.
+  {% endblocktrans %}
+</p>
+
+<h5>{% blocktrans %}"Networld Interop'" show{% endblocktrans %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  In parallel with the development, I tell myself that any documentation on
+  the modem would be welcome.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  I discover by chance that a show called "Networld Interop '" will take place
+  in Paris in September 2001 with a stand held by… Eci Telecom!
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  So I have the idea to organize an online petition and to give it to Eci Telecom
+  on the show, to show them our determination to obtain the documentation and
+  be able to continue in the best conditions the development of our driver.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  On 2001, September 10th I put the petition online and I invite all people
+  interested in the project to sign it.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  The show takes place on September 18th, only 8 days later, and the petition
+  contains 1370 signatures!
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I have an appointment with Marc-Aurèle DARCHE, member of the AFUL (French-speaking
+  Association of Linux Users and Free Software), and two (future) users of the driver
+  supporting me: Vincent Planchenault and Philip J.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I give as agreed the petition to Eci Telecom, strong of its 1370 signatures.
+  Thierry Berton (Commercial Director Eci Telecom) assures us that he will do
+  its best to get the documentation.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  We leave with his e-mail address, and confident in the following our exchanges
+  with Eci Telecom.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Unfortunately once again, these e-mail exchanges are not a success:
+  still no documentation.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I decide to leave the petition online, in case we would need again, and we continue
+  development without documentation.
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "Goal: connection" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  There things become complicated…
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  For a few months, we wade and stagnate…
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  The lack of documentation and knowledge about the behavior of the modem chipset
+  is lacking…
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  It should be noted that at this time there is a strong craze for this project,
+  and many people support us and encourage us to come to a version to connect.
+  This helps us to stay motivated about our main goal: be able to connect to the
+  internet with this modem under Linux.
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "Achievement" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  At the beginning of December 2001, while everything had stagnated for several
+  months, an event for the least unexpected will accelerate the development:
+  Benoît PAPILLAULT moved and got an Eci HiFocus USB modem, at his request
+  and despite France Telecom's warning that it was not working under Linux.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  He suddenly finds himself obliged to use the Eci modem, that does not work
+  on Linux yet.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  He obviously joins the development team on a full-time basis and starts to
+  study the Eci modem.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  In a few days, he manages to unblock the situation and to connect briefly
+  on the Internet.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  On December 7, 2001, the entire team proudly announces first version 0.1
+  of the driver to connect to the Internet!
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Our goal is REACHED!
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I naively thought at that moment that the driver was finished and that
+  I could move on now that my Internet connection worked perfectly under Linux.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In fact the development of the driver was just beginning…
+  {% endblocktrans %}
+</p>
+
+<h4>IV. {% trans "Driver development" %}</h4>
+
+<h5>{% trans "The sequence of the first versions" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  The first versions generated a real enthusiasm on the part of many users.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  This has two consequences:
+  {% endblocktrans %}
+  <ul>
+    <li>
+      {% blocktrans trimmed %}
+      we have to stabilize the first version which was more than "alpha"
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      we need to provide support for driver installation, which is not
+      not yet very obvious, no configuration tool has been developed
+      at this stage.
+      {% endblocktrans %}
+    </li>
+  </ul>
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In December 2001, we release three versions, until the version 0.3,
+  made available on Christmas Eve.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Support becomes a preponderant part of the project and is now insured via
+  a mailing list, IRC, and e-mail.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Antoine REVERSAT (aka "crevetor") joins the development team.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In February 2002, we release version 0.4 of the driver, then Antoine creates
+  an EciAdsl forum, which immediately wins a great success from users.
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "Major evolutions" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  In April 2002, I develop with Antoine a graphical configuration tool for the
+  driver. This tool allows you to completely configure the driver and then
+  makes it accessible to Linux beginners.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In the following months, many foreign users (outside France) contact us.
+  They own modems sold under other brands, but with the same Globespan chipset as us
+  (the GS7070).
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  With the help of some foreign contributors ("flynux" and "oliver the red"),
+  we modify the driver to support these modems as well as the encapsulation protocols
+  that are used in these countries.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  The driver is now used in many countries and more and more modems are supported.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  The version 0.5 is released on May 2002, but does not allow yet to choose other
+  modems than the Eci HiFocus.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  In early September 2002, I set up a brand new site for the driver:
+  <a href="https://eciadsl.flashtux.org">https://eciadsl.flashtux.org</a>
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Version 0.6 will be the Christmas present since the release on December 25, 2002,
+  just over a year after the very first stable release.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  It brings an impressive number of new features, among which:
+  {% endblocktrans %}
+  <ul>
+    <li>{% trans "28 modems supported" %}</li>
+    <li>{% trans "many PPP encapsulations" %}</li>
+    <li>{% trans "graphical and text configuration tool" %}</li>
+    <li>{% trans "FAQ in driver and on the website" %}</li>
+  </ul>
+</p>
+
+<h5>{% trans "The following versions" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  The version 0.7 is released on March 2003. March. It fixes some bugs.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  The version 0.8 is released on August 2003. Like the previous release,
+  it has only some bug fixes.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  On December 2003, Benoît releases a driver version which is working under BSD.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  The version 0.9 is released on April 2004. This version works with Linux
+  kernels 2.4 and 2.6.
+  {% endblocktrans %}
+</p>
+
+<h5>{% trans "New Globespan chipsets" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  On November 2003, "kolja" (Italian developer) joins the development team,
+  with one goal: make changes in our driver to support his modem, a Nortek 2021,
+  which has a Globespan GS7470 chipset.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  He releases on February 2004 a modified version of the driver for his modem.
+  {% endblocktrans %}
+  <br>
+  {% blocktrans trimmed %}
+  This new version is quickly used and then supports other compatible modems:
+  BT100 and 105, Siemens Santis 10, Askey ALE130, etc.
+  {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  Nowadays - october 2004 - this driver must be merged in the standard version.
+  {% endblocktrans %}
+</p>
+
+<h4>V. {% trans "Conclusion" %}</h4>
+
+<h5>{% trans "The future of the driver" %}</h5>
+
+<p>
+  {% blocktrans trimmed %}
+  Many points for the future of the EciAdsl driver:
+  {% endblocktrans %}
+  <ul>
+    <li>
+      {% blocktrans trimmed %}
+      we are still waiting for documentation from Globespan (now Conexant) or
+      Eci Telecom, and furthermore we do not find any free ADSL documentation
+      on the internet,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      we want to integrate the driver in a maximum of distributions Linux / BSD,
+      which is not easy with the licensing problems on the firmware and binary
+      sync files,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      we want to improve the synchronization process for us get rid of .bin
+      sync files,
+      {% endblocktrans %}
+    </li>
+    <li>
+      {% blocktrans trimmed %}
+      we need to merge the version supporting the new chipsets Globespan
+      (package "Nortek") with the standard version.
+      {% endblocktrans %}
+    </li>
+  </ul>
+</p>
+
+<h5>{% trans "Thanks" %}</h5>
+
+<p>
+  {% trans "The EciAdsl development team:" %}
+  <ul>
+    <li>Sébastien HELLEU ("FlashCode")</li>
+    <li>Jean-Sébastien VALETTE</li>
+    <li>Benoît PAPILLAULT</li>
+    <li>Kolja</li>
+    <li>Laurent WANDREBECK ("low")</li>
+    <li>Antoine REVERSAT ("crevetor")</li>
+  </ul>
+</p>
+
+<p>
+  {% blocktrans trimmed %}
+  I want to thank all the developers, the testers, the people who quickly reported
+  problems, the foreign contributors which allowed us to adapt the driver
+  for their country, and all driver users :)
+  {% endblocktrans %}
+</p>
+
+{% endblock content %}
