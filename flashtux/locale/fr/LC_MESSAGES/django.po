@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 20:57+0100\n"
-"PO-Revision-Date: 2019-02-16 20:58+0100\n"
+"POT-Creation-Date: 2019-02-16 23:28+0100\n"
+"PO-Revision-Date: 2019-02-16 23:28+0100\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -946,7 +946,7 @@ msgstr "Réécriture complète de FlashTux.org"
 #. Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
 #: news/_i18n_info.py:14
 msgid ""
-"FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20! \n"
+"FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20!\n"
 "\n"
 "The site has been completely rewritten from scratch, in Python, with the "
 "Django framework and PostgreSQL database.\n"
@@ -973,8 +973,8 @@ msgstr ""
 #: templates/eciadsl/download.html:361 templates/eciadsl/download.html:381
 #: templates/eciadsl/download.html:399 templates/eciadsl/download.html:417
 #: templates/eciadsl/download.html:435 templates/flashtris/download.html:15
-#: templates/gmemo/download.html:23 templates/gmemo/download.html:80
-#: templates/weewm/download.html:23 templates/weewm/download.html:88
+#: templates/gmemo/download.html:23 templates/gmemo/download.html:81
+#: templates/weewm/download.html:23 templates/weewm/download.html:89
 msgid "Version"
 msgstr "Version"
 
@@ -6004,8 +6004,8 @@ msgstr "Anciennes versions"
 #: templates/eciadsl/download.html:404 templates/eciadsl/download.html:422
 #: templates/eciadsl/download.html:440 templates/flashtris/download.html:20
 #: templates/gmemo/download.html:28 templates/gmemo/download.html:47
-#: templates/gmemo/download.html:85 templates/weewm/download.html:28
-#: templates/weewm/download.html:49 templates/weewm/download.html:93
+#: templates/gmemo/download.html:86 templates/weewm/download.html:28
+#: templates/weewm/download.html:49 templates/weewm/download.html:94
 msgid "Packages"
 msgstr "Paquets"
 
@@ -6016,9 +6016,9 @@ msgstr "Paquets"
 #: templates/eciadsl/download.html:389 templates/eciadsl/download.html:407
 #: templates/eciadsl/download.html:425 templates/eciadsl/download.html:443
 #: templates/flashtris/download.html:25 templates/gmemo/download.html:31
-#: templates/gmemo/download.html:50 templates/gmemo/download.html:88
+#: templates/gmemo/download.html:50 templates/gmemo/download.html:89
 #: templates/weewm/download.html:31 templates/weewm/download.html:52
-#: templates/weewm/download.html:96
+#: templates/weewm/download.html:97
 msgid "Sources (gzip):"
 msgstr "Sources (gzip) :"
 
@@ -6027,8 +6027,8 @@ msgstr "Sources (gzip) :"
 #: templates/eciadsl/download.html:305 templates/eciadsl/download.html:327
 #: templates/eciadsl/download.html:349 templates/eciadsl/download.html:370
 #: templates/gmemo/download.html:32 templates/gmemo/download.html:51
-#: templates/gmemo/download.html:89 templates/weewm/download.html:32
-#: templates/weewm/download.html:53 templates/weewm/download.html:97
+#: templates/gmemo/download.html:90 templates/weewm/download.html:32
+#: templates/weewm/download.html:53 templates/weewm/download.html:98
 msgid "Sources (bzip2):"
 msgstr "Sources (bzip2) :"
 
@@ -6232,8 +6232,8 @@ msgstr "EciAdsl kernelmode - Sources (gzip) :"
 msgid "EciAdsl usermode BSD (2006-01-31):"
 msgstr "EciAdsl usermode BSD (31/01/2006) :"
 
-#: templates/eciadsl/download.html:194 templates/gmemo/download.html:69
-#: templates/home/projects.html:63 templates/weewm/download.html:77
+#: templates/eciadsl/download.html:194 templates/gmemo/download.html:70
+#: templates/home/projects.html:64 templates/weewm/download.html:78
 msgid "Sources:"
 msgstr "Sources :"
 
@@ -8521,7 +8521,7 @@ msgstr "source inclus !"
 msgid "C (569 lines), result of 2 days' work!"
 msgstr "C (569 lignes), fait en 2 jours !"
 
-#: templates/gmemo/download.html:34 templates/gmemo/download.html:90
+#: templates/gmemo/download.html:34 templates/gmemo/download.html:91
 msgid "Binary (Windows):"
 msgstr "Binaire (Windows) :"
 

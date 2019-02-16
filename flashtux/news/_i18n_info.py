@@ -11,7 +11,7 @@ def __i18n_news_info():
     # Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
     gettext_noop("Complete rewrite of FlashTux.org")
     # Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
-    gettext_noop("FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20! \n\nThe site has been completely rewritten from scratch, in Python, with the Django framework and PostgreSQL database.\nIt is now fully responsive, using Bootstrap toolkit.\n\nSource code is available on GitHub: <a href=\"https://github.com/flashtux/flashtux.org\">https://github.com/flashtux/flashtux.org</a>.")
+    gettext_noop("FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20!\n\nThe site has been completely rewritten from scratch, in Python, with the Django framework and PostgreSQL database.\nIt is now fully responsive, using Bootstrap toolkit.\n\nSource code is available on GitHub: <a href=\"https://github.com/flashtux/flashtux.org\">https://github.com/flashtux/flashtux.org</a>.")
     # Translators: 2018-10-21 11:40, weechat: Version 2.3
     gettext_noop("Version")
     # Translators: 2018-10-21 11:40, weechat: Version 2.3
