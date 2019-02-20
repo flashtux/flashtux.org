@@ -37,35 +37,39 @@
         </div>
       </div>
       <div class="card-body pb-1">
-        {% if project.screenshot %}
-        <div class="float-right">
-          <img src="{{ MEDIA_URL }}images/project/{{ project.name|lower }}.jpg" class="shadow ml-2" alt="{{ project.name }}">
+        <div class="row">
+          <div class="col-12 col-md">
+            {% autoescape off %}{{ project.description_i18n|linebreaks }}{% endautoescape %}
+            <p>
+              <strong>{% trans "License:" %}</strong> {{ project.license }}
+              {% if project.support %}
+              <br>
+              <strong>{% trans "Support:" %}</strong> {% trans project.support %}
+              {% endif %}
+            </p>
+            <p>
+              <strong>{% trans "Page:" %}</strong>
+              <a href="{{ project.page }}">{{ project.name }}</a>
+              {% if project.website %}
+              <br>
+              <strong>{% trans "Website:" %}</strong>
+              <a href="{{ project.website }}" target="_blank" rel="noopener">{{ project.website }}</a>
+              <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+              {% endif %}
+              {% if project.repository %}
+              <br>
+              <strong>{% trans "Sources:" %}</strong>
+              <a href="{{ project.repository }}" target="_blank" rel="noopener">{{ project.repository }}</a>
+              <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+              {% endif %}
+            </p>
+          </div>
+          <div class="col-12 col-md-auto">
+            {% if project.screenshot %}
+            <img src="{{ MEDIA_URL }}images/project/{{ project.name|lower }}.jpg" class="img-fluid shadow mb-3" alt="{{ project.name }}">
+            {% endif %}
+          </div>
         </div>
-        {% endif %}
-        {% autoescape off %}{{ project.description_i18n|linebreaks }}{% endautoescape %}
-        <p>
-          <strong>{% trans "License:" %}</strong> {{ project.license }}
-          {% if project.support %}
-          <br>
-          <strong>{% trans "Support:" %}</strong> {% trans project.support %}
-          {% endif %}
-        </p>
-        <p>
-          <strong>{% trans "Page:" %}</strong>
-          <a href="{{ project.page }}">{{ project.name }}</a>
-          {% if project.website %}
-          <br>
-          <strong>{% trans "Website:" %}</strong>
-          <a href="{{ project.website }}" target="_blank" rel="noopener">{{ project.website }}</a>
-          <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
-          {% endif %}
-          {% if project.repository %}
-          <br>
-          <strong>{% trans "Sources:" %}</strong>
-          <a href="{{ project.repository }}" target="_blank" rel="noopener">{{ project.repository }}</a>
-          <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
-          {% endif %}
-        </p>
       </div>
     </div>
   </div>
