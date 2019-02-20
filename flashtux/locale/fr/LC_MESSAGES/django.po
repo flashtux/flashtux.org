@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 23:28+0100\n"
-"PO-Revision-Date: 2019-02-16 23:28+0100\n"
+"POT-Creation-Date: 2019-02-20 20:50+0100\n"
+"PO-Revision-Date: 2019-02-20 20:50+0100\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -967,14 +967,14 @@ msgstr ""
 
 #. Translators: 2018-10-21 11:40, weechat: Version 2.3
 #: news/_i18n_info.py:16 templates/eciadsl/download.html:23
-#: templates/eciadsl/download.html:210 templates/eciadsl/download.html:242
-#: templates/eciadsl/download.html:272 templates/eciadsl/download.html:296
-#: templates/eciadsl/download.html:318 templates/eciadsl/download.html:340
-#: templates/eciadsl/download.html:361 templates/eciadsl/download.html:381
-#: templates/eciadsl/download.html:399 templates/eciadsl/download.html:417
-#: templates/eciadsl/download.html:435 templates/flashtris/download.html:15
-#: templates/gmemo/download.html:23 templates/gmemo/download.html:81
-#: templates/weewm/download.html:23 templates/weewm/download.html:89
+#: templates/eciadsl/download.html:211 templates/eciadsl/download.html:243
+#: templates/eciadsl/download.html:273 templates/eciadsl/download.html:297
+#: templates/eciadsl/download.html:319 templates/eciadsl/download.html:341
+#: templates/eciadsl/download.html:362 templates/eciadsl/download.html:382
+#: templates/eciadsl/download.html:400 templates/eciadsl/download.html:418
+#: templates/eciadsl/download.html:436 templates/flashtris/download.html:15
+#: templates/gmemo/download.html:23 templates/gmemo/download.html:82
+#: templates/weewm/download.html:23 templates/weewm/download.html:90
 msgid "Version"
 msgstr "Version"
 
@@ -5929,8 +5929,8 @@ msgid "Author:"
 msgstr "Auteur :"
 
 #: templates/coding/programs.html:39 templates/coding/programs.html:80
-#: templates/eciadsl/download.html:60 templates/home/about.html:30
-#: templates/w3blacklist/sites.html:114 templates/w3blacklist/sites.html:168
+#: templates/eciadsl/download.html:60 templates/w3blacklist/sites.html:114
+#: templates/w3blacklist/sites.html:168
 msgid "Description"
 msgstr "Description"
 
@@ -5997,42 +5997,42 @@ msgid "Old versions"
 msgstr "Anciennes versions"
 
 #: templates/eciadsl/download.html:28 templates/eciadsl/download.html:183
-#: templates/eciadsl/download.html:215 templates/eciadsl/download.html:247
-#: templates/eciadsl/download.html:277 templates/eciadsl/download.html:301
-#: templates/eciadsl/download.html:323 templates/eciadsl/download.html:345
-#: templates/eciadsl/download.html:366 templates/eciadsl/download.html:386
-#: templates/eciadsl/download.html:404 templates/eciadsl/download.html:422
-#: templates/eciadsl/download.html:440 templates/flashtris/download.html:20
+#: templates/eciadsl/download.html:216 templates/eciadsl/download.html:248
+#: templates/eciadsl/download.html:278 templates/eciadsl/download.html:302
+#: templates/eciadsl/download.html:324 templates/eciadsl/download.html:346
+#: templates/eciadsl/download.html:367 templates/eciadsl/download.html:387
+#: templates/eciadsl/download.html:405 templates/eciadsl/download.html:423
+#: templates/eciadsl/download.html:441 templates/flashtris/download.html:20
 #: templates/gmemo/download.html:28 templates/gmemo/download.html:47
-#: templates/gmemo/download.html:86 templates/weewm/download.html:28
-#: templates/weewm/download.html:49 templates/weewm/download.html:94
+#: templates/gmemo/download.html:87 templates/weewm/download.html:28
+#: templates/weewm/download.html:49 templates/weewm/download.html:95
 msgid "Packages"
 msgstr "Paquets"
 
-#: templates/eciadsl/download.html:31 templates/eciadsl/download.html:218
-#: templates/eciadsl/download.html:250 templates/eciadsl/download.html:280
-#: templates/eciadsl/download.html:304 templates/eciadsl/download.html:326
-#: templates/eciadsl/download.html:348 templates/eciadsl/download.html:369
-#: templates/eciadsl/download.html:389 templates/eciadsl/download.html:407
-#: templates/eciadsl/download.html:425 templates/eciadsl/download.html:443
-#: templates/flashtris/download.html:25 templates/gmemo/download.html:31
-#: templates/gmemo/download.html:50 templates/gmemo/download.html:89
-#: templates/weewm/download.html:31 templates/weewm/download.html:52
-#: templates/weewm/download.html:97
-msgid "Sources (gzip):"
-msgstr "Sources (gzip) :"
-
-#: templates/eciadsl/download.html:32 templates/eciadsl/download.html:219
+#: templates/eciadsl/download.html:31 templates/eciadsl/download.html:219
 #: templates/eciadsl/download.html:251 templates/eciadsl/download.html:281
 #: templates/eciadsl/download.html:305 templates/eciadsl/download.html:327
 #: templates/eciadsl/download.html:349 templates/eciadsl/download.html:370
+#: templates/eciadsl/download.html:390 templates/eciadsl/download.html:408
+#: templates/eciadsl/download.html:426 templates/eciadsl/download.html:444
+#: templates/flashtris/download.html:25 templates/gmemo/download.html:31
+#: templates/gmemo/download.html:50 templates/gmemo/download.html:90
+#: templates/weewm/download.html:31 templates/weewm/download.html:52
+#: templates/weewm/download.html:98
+msgid "Sources (gzip):"
+msgstr "Sources (gzip) :"
+
+#: templates/eciadsl/download.html:32 templates/eciadsl/download.html:220
+#: templates/eciadsl/download.html:252 templates/eciadsl/download.html:282
+#: templates/eciadsl/download.html:306 templates/eciadsl/download.html:328
+#: templates/eciadsl/download.html:350 templates/eciadsl/download.html:371
 #: templates/gmemo/download.html:32 templates/gmemo/download.html:51
-#: templates/gmemo/download.html:90 templates/weewm/download.html:32
-#: templates/weewm/download.html:53 templates/weewm/download.html:98
+#: templates/gmemo/download.html:91 templates/weewm/download.html:32
+#: templates/weewm/download.html:53 templates/weewm/download.html:99
 msgid "Sources (bzip2):"
 msgstr "Sources (bzip2) :"
 
-#: templates/eciadsl/download.html:33 templates/eciadsl/download.html:222
+#: templates/eciadsl/download.html:33 templates/eciadsl/download.html:223
 msgid "SuSE:"
 msgstr "SuSE :"
 
@@ -6040,7 +6040,7 @@ msgstr "SuSE :"
 msgid "Debian Lenny:"
 msgstr "Debian Lenny :"
 
-#: templates/eciadsl/download.html:35 templates/eciadsl/download.html:223
+#: templates/eciadsl/download.html:35 templates/eciadsl/download.html:224
 msgid "Debian Etch:"
 msgstr "Debian Etch :"
 
@@ -6052,24 +6052,24 @@ msgstr "Debian Sid :"
 msgid "Ubuntu:"
 msgstr "Ubuntu :"
 
-#: templates/eciadsl/download.html:38 templates/eciadsl/download.html:229
-#: templates/eciadsl/download.html:260 templates/eciadsl/download.html:285
-#: templates/eciadsl/download.html:309 templates/eciadsl/download.html:331
-#: templates/eciadsl/download.html:352 templates/weewm/download.html:36
+#: templates/eciadsl/download.html:38 templates/eciadsl/download.html:230
+#: templates/eciadsl/download.html:261 templates/eciadsl/download.html:286
+#: templates/eciadsl/download.html:310 templates/eciadsl/download.html:332
+#: templates/eciadsl/download.html:353 templates/weewm/download.html:36
 msgid "Gentoo:"
 msgstr "Gentoo :"
 
-#: templates/eciadsl/download.html:39 templates/eciadsl/download.html:230
-#: templates/eciadsl/download.html:262
+#: templates/eciadsl/download.html:39 templates/eciadsl/download.html:231
+#: templates/eciadsl/download.html:263
 msgid "Patch kernel 2.4.28 to 2.4.30:"
 msgstr "Patch noyau 2.4.28 à 2.4.30 :"
 
-#: templates/eciadsl/download.html:40 templates/eciadsl/download.html:231
-#: templates/eciadsl/download.html:263
+#: templates/eciadsl/download.html:40 templates/eciadsl/download.html:232
+#: templates/eciadsl/download.html:264
 msgid "Patch kernel 2.6.0 to 2.6.6:"
 msgstr "Patch noyau 2.6.0 à 2.6.6 :"
 
-#: templates/eciadsl/download.html:41 templates/eciadsl/download.html:232
+#: templates/eciadsl/download.html:41 templates/eciadsl/download.html:233
 msgid "Patch packet size:"
 msgstr "Patch taille de paquet :"
 
@@ -6233,87 +6233,87 @@ msgid "EciAdsl usermode BSD (2006-01-31):"
 msgstr "EciAdsl usermode BSD (31/01/2006) :"
 
 #: templates/eciadsl/download.html:194 templates/gmemo/download.html:70
-#: templates/home/projects.html:64 templates/weewm/download.html:78
+#: templates/home/projects.html:61 templates/weewm/download.html:78
 msgid "Sources:"
 msgstr "Sources :"
 
-#: templates/eciadsl/download.html:199 templates/gmemo/download.html:59
+#: templates/eciadsl/download.html:200 templates/gmemo/download.html:59
 #: templates/weewm/download.html:67
 msgid "CVS commits graph"
 msgstr "Graphique des commits CVS"
 
-#: templates/eciadsl/download.html:220 templates/eciadsl/download.html:255
+#: templates/eciadsl/download.html:221 templates/eciadsl/download.html:256
 msgid "Mandriva/Redhat 9.0:"
 msgstr "Mandriva/Redhat 9.0 :"
 
-#: templates/eciadsl/download.html:221
+#: templates/eciadsl/download.html:222
 msgid "Fedora Core 4:"
 msgstr "Fedora Core 4 :"
 
-#: templates/eciadsl/download.html:224
+#: templates/eciadsl/download.html:225
 msgid "Debian Sid i386:"
 msgstr "Debian Sid i386 :"
 
-#: templates/eciadsl/download.html:225
+#: templates/eciadsl/download.html:226
 msgid "Debian Sid amd64:"
 msgstr "Debian Sid amd64 :"
 
-#: templates/eciadsl/download.html:226 templates/eciadsl/download.html:259
-#: templates/eciadsl/download.html:284 templates/eciadsl/download.html:308
-#: templates/eciadsl/download.html:330 templates/eciadsl/download.html:351
+#: templates/eciadsl/download.html:227 templates/eciadsl/download.html:260
+#: templates/eciadsl/download.html:285 templates/eciadsl/download.html:309
+#: templates/eciadsl/download.html:331 templates/eciadsl/download.html:352
 #: templates/weewm/download.html:35
 msgid "Slackware:"
 msgstr "Slackware :"
 
-#: templates/eciadsl/download.html:227
+#: templates/eciadsl/download.html:228
 msgid "Slax:"
 msgstr "Slax :"
 
-#: templates/eciadsl/download.html:228
+#: templates/eciadsl/download.html:229
 msgid "Damn Small Linux:"
 msgstr "Damn Small Linux :"
 
-#: templates/eciadsl/download.html:233
+#: templates/eciadsl/download.html:234
 msgid "Patch synch (≥ 2.6.18):"
 msgstr "Patch synch (≥ 2.6.18) :"
 
-#: templates/eciadsl/download.html:252
+#: templates/eciadsl/download.html:253
 msgid "Nortek sources (gzip):"
 msgstr "Nortek sources (gzip) :"
 
-#: templates/eciadsl/download.html:253 templates/eciadsl/download.html:287
+#: templates/eciadsl/download.html:254 templates/eciadsl/download.html:288
 msgid "Nortek sources (bzip2):"
 msgstr "Nortek sources (bzip2) :"
 
-#: templates/eciadsl/download.html:254
+#: templates/eciadsl/download.html:255
 msgid "Nortek Gentoo (bzip2):"
 msgstr "Nortek Gentoo (bzip2) :"
 
-#: templates/eciadsl/download.html:256
+#: templates/eciadsl/download.html:257
 msgid "Fedora Core 2:"
 msgstr "Fedora Core 2 :"
 
-#: templates/eciadsl/download.html:257
+#: templates/eciadsl/download.html:258
 msgid "Debian i386:"
 msgstr "Debian i386 :"
 
-#: templates/eciadsl/download.html:258
+#: templates/eciadsl/download.html:259
 msgid "Debian ppc:"
 msgstr "Debian ppc :"
 
-#: templates/eciadsl/download.html:261 templates/eciadsl/download.html:286
+#: templates/eciadsl/download.html:262 templates/eciadsl/download.html:287
 msgid "Crux Linux:"
 msgstr "Crux Linux :"
 
-#: templates/eciadsl/download.html:282 templates/eciadsl/download.html:306
-#: templates/eciadsl/download.html:328 templates/eciadsl/download.html:350
-#: templates/eciadsl/download.html:371 templates/eciadsl/download.html:390
-#: templates/eciadsl/download.html:408 templates/eciadsl/download.html:426
+#: templates/eciadsl/download.html:283 templates/eciadsl/download.html:307
+#: templates/eciadsl/download.html:329 templates/eciadsl/download.html:351
+#: templates/eciadsl/download.html:372 templates/eciadsl/download.html:391
+#: templates/eciadsl/download.html:409 templates/eciadsl/download.html:427
 msgid "RPM:"
 msgstr "RPM :"
 
-#: templates/eciadsl/download.html:283 templates/eciadsl/download.html:307
-#: templates/eciadsl/download.html:329 templates/eciadsl/download.html:372
+#: templates/eciadsl/download.html:284 templates/eciadsl/download.html:308
+#: templates/eciadsl/download.html:330 templates/eciadsl/download.html:373
 #: templates/gmemo/download.html:33 templates/weewm/download.html:33
 msgid "Debian:"
 msgstr "Debian :"
@@ -7677,6 +7677,10 @@ msgstr ""
 "Pour tout problème, merci de lire la <a href=\"%(url_doc)s\">documentation</"
 "a> et la <a href=\"%(url_faq)s\">FAQ</a>."
 
+#: templates/error.html:11
+msgid "Back to home"
+msgstr "Retour à l'accueil"
+
 #: templates/flashtris/dev.html:12
 msgid "FlashTris history"
 msgstr "Histoire de FlashTris"
@@ -7719,7 +7723,7 @@ msgstr ""
 msgid "FlashTris is born."
 msgstr "Naissance de FlashTris."
 
-#: templates/flashtris/dev.html:36 templates/home/about.html:109
+#: templates/flashtris/dev.html:36 templates/home/about.html:123
 msgid "Technical info"
 msgstr "Infos techniques"
 
@@ -7930,7 +7934,7 @@ msgid "Under Dos/Windows: unpack file and run game \"ftris.exe\""
 msgstr ""
 "Sous Dos/Windows : décompresser l'archive puis exécuter le jeu \"ftris.exe\""
 
-#: templates/flashtris/doc.html:23 templates/home/about.html:76
+#: templates/flashtris/doc.html:23 templates/home/about.html:89
 msgid "Source code"
 msgstr "Code source"
 
@@ -8521,7 +8525,7 @@ msgstr "source inclus !"
 msgid "C (569 lines), result of 2 days' work!"
 msgstr "C (569 lignes), fait en 2 jours !"
 
-#: templates/gmemo/download.html:34 templates/gmemo/download.html:91
+#: templates/gmemo/download.html:34 templates/gmemo/download.html:92
 msgid "Binary (Windows):"
 msgstr "Binaire (Windows) :"
 
@@ -8543,23 +8547,25 @@ msgid "Developer"
 msgstr "Développeur"
 
 #: templates/home/about.html:14
-msgid "History"
-msgstr "Histoire"
+msgid "Purpose"
+msgstr "Objectif"
 
-#: templates/home/about.html:21
-msgid "Key dates:"
-msgstr "Dates clés :"
+#: templates/home/about.html:20
+msgid "Key dates"
+msgstr "Dates clés"
 
-#: templates/home/about.html:25 templates/w3blacklist/sites.html:165
-msgid "Date"
-msgstr "Date"
+#: templates/home/about.html:23
+#, python-format
+msgid "%(date)s: FlashCode's page"
+msgstr "%(date)s : la page de FlashCode"
 
 #. Translators: "language" is a programming language
-#: templates/home/about.html:28
-msgid "Language / environment"
-msgstr "Langage / environnement"
+#: templates/home/about.html:28 templates/home/about.html:42
+#: templates/home/about.html:60 templates/home/about.html:79
+msgid "Language / environment:"
+msgstr "Langage / environnement :"
 
-#: templates/home/about.html:37
+#: templates/home/about.html:33
 msgid ""
 "Creation of the <a href=\"http://flashcode.free.fr/index2.php\">FlashCode's "
 "page</a>, with tools and games I am developing."
@@ -8567,17 +8573,22 @@ msgstr ""
 "Création de la <a href=\"http://flashcode.free.fr/index2.php\">Page de "
 "FlashCode</a>, avec les outils et jeux que je développe."
 
-#: templates/home/about.html:44
+#: templates/home/about.html:37
+#, python-format
+msgid "%(date)s: FlashTux.org"
+msgstr "%(date)s : FlashTux.org"
+
+#: templates/home/about.html:47
 msgid "Creation of FlashTux.org, in replacement of FlashCode's page."
 msgstr "Création de FlashTux.org, en remplacement de la page de FlashCode."
 
-#: templates/home/about.html:46
+#: templates/home/about.html:49
 msgid "Hosted projects like the EciAdsl driver are growing and become stable."
 msgstr ""
 "Les projets hébergés comme le driver EciAdsl grossissent et deviennent "
 "stables."
 
-#: templates/home/about.html:48
+#: templates/home/about.html:51
 msgid ""
 "Dynamic parts of website (like news, EciAdsl modems, programs, etc.) are now "
 "stored in a database."
@@ -8586,34 +8597,44 @@ msgstr ""
 "EciAdsl, programes, etc.) sont désormais stockées dans une base de données."
 
 #: templates/home/about.html:55
+#, python-format
+msgid "%(date)s: major update"
+msgstr "%(date)s : mise à jour majeure"
+
+#: templates/home/about.html:65
 msgid "Major update of website:"
 msgstr "Mise à jour majeure du site :"
 
-#: templates/home/about.html:57
+#: templates/home/about.html:67
 msgid "conform to XHTML / CSS 2 W3C recommandations"
 msgstr "conforme aux recommendations XHTML / CSS 2 du W3C"
 
-#: templates/home/about.html:58
+#: templates/home/about.html:68
 msgid "comments system for news"
 msgstr "système de commentaires pour les nouveautés"
 
-#: templates/home/about.html:59
+#: templates/home/about.html:69
 msgid "language selection is saved in a cookie"
 msgstr "sélection de la langue sauvegardée dans un cookie"
 
-#: templates/home/about.html:67
+#: templates/home/about.html:74
+#, python-format
+msgid "%(date)s: full rewrite"
+msgstr "%(date)s : réécriture complète"
+
+#: templates/home/about.html:84
 msgid "FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20!"
 msgstr "FlashTux.org (anciennement \"La page de FlashCode\") fête ses 20 ans !"
 
-#: templates/home/about.html:69
+#: templates/home/about.html:86
 msgid "Full rewrite of the site, source code is now available."
 msgstr "Réécriture complète du site, le code source est désormais disponible."
 
-#: templates/home/about.html:79
+#: templates/home/about.html:92
 msgid "The source code of this website is hosted on GitHub:"
 msgstr "Le code source du site est hébergé sur GitHub :"
 
-#: templates/home/about.html:84
+#: templates/home/about.html:98
 msgid ""
 "All pages are written with text editor, no web page editor or CMS (Content "
 "Management System) are used."
@@ -8621,7 +8642,7 @@ msgstr ""
 "Toutes les pages sont écrites avec un éditeur de texte, aucun éditeur de "
 "page web ou CMS (Content Management System) n'est utilisé."
 
-#: templates/home/about.html:88
+#: templates/home/about.html:102
 msgid ""
 "This website and software available on this website are free, source code is "
 "provided and you can redistribute it under GNU GPL licence conditions."
@@ -8629,7 +8650,7 @@ msgstr ""
 "Les logiciels disponibles sur ce site sont libres, le code source est fourni "
 "et il est permis de les distribuer sous les conditions de la licence GNU GPL."
 
-#: templates/home/about.html:90
+#: templates/home/about.html:104
 msgid ""
 "FlashTux.org is not responsible of any data/hardware damage due to use of "
 "software available on this website."
@@ -8637,11 +8658,11 @@ msgstr ""
 "FlashTux.org n'est pas responsable de toute perte de données ou dommage "
 "matériel découlant de l'utilisation de logiciels disponibles sur ce site."
 
-#: templates/home/about.html:93
+#: templates/home/about.html:107
 msgid "Pages conformity"
 msgstr "Conformité des pages"
 
-#: templates/home/about.html:96
+#: templates/home/about.html:110
 msgid ""
 "FlashTux.org pages are conform to W3C <a href=\"https://www.w3.org/TR/html5/"
 "\" target=\"_blank\" rel=\"noopener\">HTML 5 recommendation</a>."
@@ -8650,7 +8671,7 @@ msgstr ""
 "TR/html5/\" target=\"_blank\" rel=\"noopener\">recommandation HTML 5</a> du "
 "W3C."
 
-#: templates/home/about.html:98
+#: templates/home/about.html:112
 msgid ""
 "Therefore, any browser compatible with theses recommendations should display "
 "website without any problem."
@@ -8658,15 +8679,15 @@ msgstr ""
 "Par conséquent, tout navigateur compatible avec ces recommandations doit "
 "afficher le site sans problème."
 
-#: templates/home/about.html:101
+#: templates/home/about.html:115
 msgid "Spam"
 msgstr "Spam"
 
-#: templates/home/about.html:104
+#: templates/home/about.html:118
 msgid "FlashTux.org team is actively fighting against spam."
 msgstr "L'équipe de FlashTux.org combat activement le spam."
 
-#: templates/home/about.html:106
+#: templates/home/about.html:120
 msgid ""
 "Your e-mail address will NEVER be sent to anyone, neither displayed on "
 "website."
@@ -8674,15 +8695,15 @@ msgstr ""
 "Votre adresse e-mail ne sera JAMAIS envoyée à quiconque, ni affichée sur le "
 "site."
 
-#: templates/home/about.html:112
+#: templates/home/about.html:126
 msgid "Web hoster: Hetzner"
 msgstr "Hébergeur : Hetzner"
 
-#: templates/home/about.html:114
+#: templates/home/about.html:128
 msgid "Host: flashtux.org"
 msgstr "Host : flashtux.org"
 
-#: templates/home/about.html:117
+#: templates/home/about.html:131
 msgid "Contact"
 msgstr "Contact"
 
@@ -8715,19 +8736,19 @@ msgstr "Version stable :"
 msgid "Under development:"
 msgstr "En développement :"
 
-#: templates/home/projects.html:47
+#: templates/home/projects.html:44
 msgid "License:"
 msgstr "Licence :"
 
-#: templates/home/projects.html:50
+#: templates/home/projects.html:47
 msgid "Support:"
 msgstr "Support :"
 
-#: templates/home/projects.html:54
+#: templates/home/projects.html:51
 msgid "Page:"
 msgstr "Page :"
 
-#: templates/home/projects.html:58
+#: templates/home/projects.html:55
 msgid "Website:"
 msgstr "Site web :"
 
@@ -9454,6 +9475,10 @@ msgstr "Sites sur liste noire"
 #: templates/w3blacklist/sites.html:158
 msgid "Fixed websites"
 msgstr "Sites corrigés"
+
+#: templates/w3blacklist/sites.html:165
+msgid "Date"
+msgstr "Date"
 
 #: templates/w3blacklist/sites.html:166
 msgid "Website"
@@ -13855,3 +13880,6 @@ msgstr "complètement cassé"
 #: weewm/views.py:31
 msgid "WeeWM users guide"
 msgstr "Guide utilisateur WeeWM"
+
+#~ msgid "History"
+#~ msgstr "Histoire"

@@ -11,66 +11,79 @@
 
 <h3>FlashTux.org</h3>
 
-<h4>{% trans "History" %}</h4>
+<h4>{% trans "Purpose" %}</h4>
 
 <p>
   {% trans "FlashTux.org is a website hosting free software for free OS (Linux, BSD, etc.)." %}
 </p>
 
+<h4>{% trans "Key dates" %}</h4>
+
+{% with date="1999" %}
+<h5>{% blocktrans %}{{ date }}: FlashCode's page{% endblocktrans %}</h5>
+{% endwith %}
+
 <p>
-  {% trans "Key dates:" %}
-  <div class="table-responsive">
-    <table class="table table-striped">
-      <thead>
-        <th class="text-nowrap">{% trans "Date" %}</th>
-        <th class="text-nowrap">
-          {% comment %}Translators: "language" is a programming language{% endcomment %}
-          {% trans "Language / environment" %}
-        </th>
-        <th width="100%">{% trans "Description" %}</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="text-nowrap">1999</td>
-          <td class="text-nowrap">PHP</td>
-          <td>
-            {% blocktrans %}Creation of the <a href="http://flashcode.free.fr/index2.php">FlashCode's page</a>, with tools and games I am developing.{% endblocktrans %}
-          </td>
-        </tr>
-        <tr>
-          <td class="text-nowrap">{{ "2002-09"|localdate:"date_year_month" }}</td>
-          <td class="text-nowrap">PHP, MySQL</td>
-          <td>
-            {% trans "Creation of FlashTux.org, in replacement of FlashCode's page." %}
-            <br>
-            {% trans "Hosted projects like the EciAdsl driver are growing and become stable." %}
-            <br>
-            {% trans "Dynamic parts of website (like news, EciAdsl modems, programs, etc.) are now stored in a database." %}
-          </td>
-        </tr>
-        <tr>
-          <td class="text-nowrap">{{ "2004-06"|localdate:"date_year_month" }}</td>
-          <td class="text-nowrap">PHP, MySQL</td>
-          <td>
-            {% trans "Major update of website:" %}
-            <ul>
-              <li>{% trans "conform to XHTML / CSS 2 W3C recommandations" %}</li>
-              <li>{% trans "comments system for news" %}</li>
-              <li>{% trans "language selection is saved in a cookie" %}</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-nowrap">{{ "2019-02"|localdate:"date_year_month" }}</td>
-          <td class="text-nowrap">Python / Django, PostgreSQL</td>
-          <td>
-            {% blocktrans %}FlashTux.org (formerly the "FlashCode's webpage") is turning 20!{% endblocktrans %}
-            <br>
-            {% trans "Full rewrite of the site, source code is now available." %}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  {% comment %}Translators: "language" is a programming language{% endcomment %}
+  {% trans "Language / environment:" %}
+  PHP.
+</p>
+
+<p>
+  {% blocktrans %}Creation of the <a href="http://flashcode.free.fr/index2.php">FlashCode's page</a>, with tools and games I am developing.{% endblocktrans %}
+</p>
+
+{% with date="2002-09"|localdate:"Date_year_month" %}
+<h5>{% blocktrans %}{{ date }}: FlashTux.org{% endblocktrans %}</h5>
+{% endwith %}
+
+<p>
+  {% comment %}Translators: "language" is a programming language{% endcomment %}
+  {% trans "Language / environment:" %}
+  PHP, MySQL.
+</p>
+
+<p>
+  {% trans "Creation of FlashTux.org, in replacement of FlashCode's page." %}
+  <br>
+  {% trans "Hosted projects like the EciAdsl driver are growing and become stable." %}
+  <br>
+  {% trans "Dynamic parts of website (like news, EciAdsl modems, programs, etc.) are now stored in a database." %}
+</p>
+
+{% with date="2004-06"|localdate:"Date_year_month" %}
+<h5>{% blocktrans %}{{ date }}: major update{% endblocktrans %}</h5>
+{% endwith %}
+
+<p>
+  {% comment %}Translators: "language" is a programming language{% endcomment %}
+  {% trans "Language / environment:" %}
+  PHP, MySQL.
+</p>
+
+<p>
+  {% trans "Major update of website:" %}
+  <ul>
+    <li>{% trans "conform to XHTML / CSS 2 W3C recommandations" %}</li>
+    <li>{% trans "comments system for news" %}</li>
+    <li>{% trans "language selection is saved in a cookie" %}</li>
+  </ul>
+</p>
+
+{% with date="2019-02"|localdate:"Date_year_month" %}
+<h5>{% blocktrans %}{{ date }}: full rewrite{% endblocktrans %}</h5>
+{% endwith %}
+
+<p>
+  {% comment %}Translators: "language" is a programming language{% endcomment %}
+  {% trans "Language / environment:" %}
+  Python / Django, PostgreSQL.
+</p>
+
+<p>
+  {% blocktrans %}FlashTux.org (formerly the "FlashCode's webpage") is turning 20!{% endblocktrans %}
+  <br>
+  {% trans "Full rewrite of the site, source code is now available." %}
 </p>
 
 <h4>{% trans "Source code" %}</h4>

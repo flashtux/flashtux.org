@@ -40,19 +40,25 @@ def localdate(value, fmt='date'):
     If fmt == "datetime", the localized date/fime format is used.
     Another fmt it is used as-is.
     """
-    if fmt == 'date':
-        fmt = ugettext(settings.DATE_FORMAT)
+    fmt_lower = fmt.lower()
+    if fmt_lower == 'date':
+        date_fmt = ugettext(settings.DATE_FORMAT)
         if not isinstance(value, (date, datetime)):
             value = datetime.strptime(value, '%Y-%m-%d').date()
-    elif fmt == 'date_year_month':
-        fmt = ugettext(settings.DATE_YEAR_MONTH_FORMAT)
+    elif fmt_lower == 'date_year_month':
+        date_fmt = ugettext(settings.DATE_YEAR_MONTH_FORMAT)
         if not isinstance(value, (date, datetime)):
             value = datetime.strptime(value, '%Y-%m').date()
-    elif fmt == 'datetime':
-        fmt = ugettext(settings.DATETIME_FORMAT)
+    elif fmt_lower == 'datetime':
+        date_fmt = ugettext(settings.DATETIME_FORMAT)
         if not isinstance(value, (date, datetime)):
             value = datetime.strptime(value, '%Y-%m-%d %H:%M')
+    else:
+        date_fmt = fmt
+    date_value = dateformat.format(value, date_fmt)
+    if fmt[0].isupper():
+        date_value = date_value.capitalize()
     return mark_safe('<time datetime="%s">%s</time>' % (
         value.isoformat(),
-        dateformat.format(value, fmt),
+        date_value,
     ))
