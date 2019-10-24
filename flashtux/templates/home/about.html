@@ -126,6 +126,10 @@
   {% trans "Web hoster: Hetzner" %}
   <br>
   {% trans "Host: flashtux.org" %}
+  {% for info, value in extra_info.items %}
+  <br>
+  {{ info|capfirst }}: {{ value }}
+  {% endfor %}
 </p>
 
 <h4>{% trans "Contact" %}</h4>

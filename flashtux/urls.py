@@ -29,10 +29,12 @@ from django.contrib import admin
 from django.views.generic.base import RedirectView, TemplateView
 
 from flashtux.common.views import TextTemplateView
-from flashtux.home.views import projects
+from flashtux.home.views import projects, about
 from flashtux.news.feeds import LatestNewsFeed
 from flashtux.news.models import RE_SECTIONS
 from flashtux.news.views import news_section, form_comment
+
+URL_ABOUT_EXTRA = getattr(settings, 'URL_ABOUT_EXTRA', 'extra')
 
 # admin
 admin.autodiscover()
@@ -56,9 +58,8 @@ urlpatterns = [
         r'(?P<comment_relative_id>[0-9]*)/$' % RE_SECTIONS,
         form_comment, name='info_reply'),
     url(r'^projects/$', projects, name='home_projects'),
-    url(r'^about/$',
-        TemplateView.as_view(template_name='home/about.html'),
-        name='home_about'),
+    url(r'^about/$', about, name='home_about'),
+    url(r'^about/%s/$' % URL_ABOUT_EXTRA, about, {'extra_info': True}),
     url(r'^donate/$',
         TemplateView.as_view(template_name='home/donate.html'),
         name='home_donate'),
