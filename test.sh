@@ -18,4 +18,4 @@
 # along with FlashTux.org.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-python manage.py runserver $*
+python3 manage.py runserver $*
