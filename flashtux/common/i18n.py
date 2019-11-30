@@ -34,6 +34,8 @@ def i18n_autogen(app, name, strings):
         'DO NOT EDIT!',
         '',
         '"""Translations for %s/%s."""' % (app, name),
+        '',
+        '# flake8: noqa',
     ]
     if strings:
         content += [

@@ -3,6 +3,8 @@
 
 """Translations for w3blacklist/site."""
 
+# flake8: noqa
+
 from django.utils.translation import gettext_noop
 
 
