@@ -9,5 +9,5 @@ install:
   - pip install flake8 msgcheck
 
 script:
-  - flake8 --exclude="_i18n_*,settings.py" flashtux
+  - flake8 flashtux
   - msgcheck flashtux/locale/*/LC_MESSAGES/django.po
