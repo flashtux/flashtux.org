@@ -47,11 +47,18 @@ LANGUAGES_LOCALES = {
     'fr': 'fr_FR',
 }
 
-# Translators: this is a date format, see: http://www.php.net/date (note: the result string must be short, use abbreviation for month if possible)
+# Translators: this is a date format, see: http://www.php.net/date
+# Translators: (note: the result string must be short, use abbreviation
+# Translators: for month if possible)
 DATE_FORMAT = ugettext_lazy('M j, Y')
-# Translators: this is a date format with only year and month, see: http://www.php.net/date
+
+# Translators: this is a short date format, see: http://www.php.net/date
+# Translators: date with only year and month
 DATE_YEAR_MONTH_FORMAT = ugettext_lazy('F Y')
-# Translators: this is a date/time format, see: http://www.php.net/date (note: the result string must be short, use abbreviation for month if possible)
+
+# Translators: this is a date/time format, see: http://www.php.net/date
+# Translators: (note: the result string must be short, use abbreviation
+# Translators: for month if possible)
 DATETIME_FORMAT = ugettext_lazy('M j, Y H:i')
 
 MEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, '..', 'media'))
@@ -144,7 +151,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # read settings_local.py
 try:
-    from flashtux.settings_local import *
+    from flashtux.settings_local import *  # noqa: F401,F403
 except ImportError:
     from warnings import warn
     warn('File "settings_local.py" not found, using default settings')
