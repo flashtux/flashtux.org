@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (C) 1999-2019 Sébastien Helleu <flashcode@flashtux.org>
+# Copyright (C) 1999-2020 Sébastien Helleu <flashcode@flashtux.org>
 #
 # This file is part of FlashTux.org.
 #

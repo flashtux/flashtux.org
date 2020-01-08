@@ -45,7 +45,7 @@ And just point your browser on <http://127.0.0.1:8000/>, that's all!
 
 == Copyright
 
-Copyright (C) 1999-2019 Sébastien Helleu <flashcode@flashtux.org>
+Copyright (C) 1999-2020 Sébastien Helleu <flashcode@flashtux.org>
 
 This file is part of FlashTux.org.
 
