@@ -32,9 +32,9 @@ class LatestNewsFeed(Feed):
     link = '/news/'
 
     def get_object(self, request, *args, **kwargs):
+        # pylint: disable=attribute-defined-outside-init
         self.request = request
         self.section = kwargs.get('section')
-        return None
 
     def items(self):
         """Return items with date in the past."""
@@ -48,6 +48,7 @@ class LatestNewsFeed(Feed):
         return (f'{self.request.scheme}://{self.request.get_host()}'
                 f'/news/{item.pk}')
 
-    def item_pubdate(self, item):
+    @staticmethod
+    def item_pubdate(item):
         """Return idem date."""
         return item.date

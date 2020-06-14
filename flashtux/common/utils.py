@@ -18,31 +18,11 @@
 # along with FlashTux.org.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-"""Views for home."""
-
-from sys import version as python_version
-
-from django import __version__ as django_version
-from django.shortcuts import render
-
-from flashtux.home.models import Project
+"""Some useful functions."""
 
 
-def projects(request):
-    """Paginate list of news."""
-    project_list = Project.objects.order_by('priority')
-    return render(request, 'home/projects.html',
-                  {'project_list': project_list})
-
-
-def about(request, extra_info=False):
-    """About FlashTux.org."""
-    context = {}
-    if extra_info:
-        context.update({
-            'extra_info': {
-                'django': django_version,
-                'python': python_version,
-            },
-        })
-    return render(request, 'home/about.html', context)
+def truncate_content(content, length=64):
+    """Return the truncated content."""
+    if len(content) > length:
+        return content[:64] + u'(…)'
+    return content

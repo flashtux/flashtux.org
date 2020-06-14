@@ -27,6 +27,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.utils.translation import ugettext, ugettext_lazy
 
+from flashtux.common.utils import truncate_content
 from flashtux.common.i18n import i18n_autogen
 
 SITE_STATUS_CHOICES = (
@@ -151,14 +152,8 @@ class Comment(models.Model):
     def __str__(self):
         """Return string representation of a Comment."""
         str_name = self.name or '(anonymous)'
-        return (f'{self.date}, {str_name}: {self.content_truncated()} '
+        return (f'{self.date}, {str_name}: {truncate_content(self.content)} '
                 f'({self.site.url}, {self.site.status_i18n()})')
-
-    def content_truncated(self, length=64):
-        """Return the truncated content."""
-        if len(self.content) > length:
-            return self.content[:64] + u'(…)'
-        return self.content
 
 
 class Letter(models.Model):
@@ -196,6 +191,7 @@ class Letter(models.Model):
 
 def handler_site_saved(sender, **kwargs):
     """Generate code to translate sites."""
+    # pylint: disable=unused-argument
     strings = []
     for site in Site.objects.order_by('-date', 'website'):
         if site.status not in (2, 3):
@@ -219,6 +215,7 @@ def handler_site_saved(sender, **kwargs):
 
 def handler_letter_saved(sender, **kwargs):
     """Generate code to translate letters."""
+    # pylint: disable=unused-argument
     strings = []
     for letter in Letter.objects.order_by('priority'):
         strings.append((letter.content, f'Letter: {letter.description}'))

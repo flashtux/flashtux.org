@@ -58,6 +58,7 @@ class Project(models.Model):
 
 def handler_project_saved(sender, **kwargs):
     """Generate code to translate projects."""
+    # pylint: disable=unused-argument
     strings = []
     for project in Project.objects.order_by('priority'):
         strings.append(project.description)

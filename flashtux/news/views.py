@@ -122,12 +122,11 @@ def news_section(request, section=None, info_id=None, **kwargs):
             f'{section}/news.html',
             data,
         )
+    if section != 'home':
+        info_list = Info.objects.filter(section=section).order_by('-date')
     else:
-        if section != 'home':
-            info_list = Info.objects.filter(section=section).order_by('-date')
-        else:
-            info_list = Info.objects.order_by('-date')
-        return render_news(request, section, info_list, **kwargs)
+        info_list = Info.objects.order_by('-date')
+    return render_news(request, section, info_list, **kwargs)
 
 
 def form_comment(request, section=None, info_id=None,

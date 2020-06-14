@@ -115,6 +115,7 @@ class Modem(models.Model):
 
 def handler_modem_saved(sender, **kwargs):
     """Generate code to translate modems."""
+    # pylint: disable=unused-argument
     strings = []
     for modem in Modem.objects.order_by('manufacturer', 'modem'):
         if modem.comment:

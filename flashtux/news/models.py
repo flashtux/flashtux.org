@@ -27,6 +27,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.utils.translation import ugettext, ugettext_lazy
 
+from flashtux.common.utils import truncate_content
 from flashtux.common.forms import (
     CharField,
     EmailField,
@@ -91,8 +92,7 @@ class Info(models.Model):
         if match:
             # if the title is "Version x.y.z", translate only "Version"
             return f'{ugettext(match.group(1))} {match.group(2)}'
-        else:
-            return ugettext(self.title)
+        return ugettext(self.title)
 
     def text_i18n(self):
         """Return translated text."""
@@ -124,13 +124,8 @@ class Comment(models.Model):
     def __str__(self):
         """Return string representation of a Comment."""
         str_date = self.date.strftime('%Y-%m-%d %H:%M')
-        return f'{str_date}, {self.info.section}: {self.content_truncated()}'
-
-    def content_truncated(self, length=64):
-        """Return the truncated content."""
-        if len(self.content) > length:
-            return self.content[:64] + u'(…)'
-        return self.content
+        return (f'{str_date}, {self.info.section}: '
+                f'{truncate_content(self.content)}')
 
     class Meta:
         """Meta class for Comment."""
@@ -185,6 +180,7 @@ class CommentFormAdd(Form):
 
 def handler_info_saved(sender, **kwargs):
     """Generate code to translate news."""
+    # pylint: disable=unused-argument
     strings = []
     for info in Info.objects.order_by('-date'):
         translators = info.__unicode__()

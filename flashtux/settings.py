@@ -151,6 +151,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # read settings_local.py
 try:
+    # pylint: disable=wildcard-import,unused-wildcard-import
     from flashtux.settings_local import *  # noqa: F401,F403
 except ImportError:
     from warnings import warn
