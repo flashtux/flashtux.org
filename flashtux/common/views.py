@@ -51,7 +51,7 @@ def doc(request, section, versions, languages, other_docs=None):
     )
     return render(
         request,
-        '%s/doc.html' % section,
+        f'{section}/doc.html',
         {
             'section': section,
             'versions': versions,
@@ -69,7 +69,7 @@ def faq(request, section, versions, languages):
     )
     return render(
         request,
-        '%s/faq.html' % section,
+        f'{section}/faq.html',
         {
             'section': section,
             'versions': versions,

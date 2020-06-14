@@ -35,12 +35,8 @@ class Image(models.Model):
 
     def __str__(self):
         """Return string representation of an Image."""
-        return '%s (%s): %s (%d)' % (self.section, self.category,
-                                     self.filename, self.priority)
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of an Image."""
-        return self.__str__()
+        return (f'{self.section} ({self.category}): '
+                f'{self.filename} ({self.priority})')
 
     class Meta:
         """Meta class for Image."""

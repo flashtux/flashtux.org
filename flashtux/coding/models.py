@@ -44,15 +44,7 @@ class Program(models.Model):
 
     def __str__(self):
         """Return string representation of a Program."""
-        return '[%s] %s: %s' % (
-            self.category,
-            self.name,
-            self.shortdesc,
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of a Program."""
-        return self.__str__()
+        return f'[{self.category}] {self.name}: {self.shortdesc}'
 
     def prog_language_i18n(self):
         """Return translated programming language."""
@@ -84,11 +76,11 @@ def handler_program_saved(sender, **kwargs):
         strings_categ.append(prog.category.capitalize())
         strings_lang.append((prog.prog_language, 'Programming language'))
         strings.append((prog.shortdesc,
-                        'short description for program "%s"' % prog.name))
+                        f'short description for program "{prog.name}"'))
         strings.append((prog.description,
-                        'description for program "%s"' % prog.name))
+                        f'description for program "{prog.name}"'))
         strings.append((prog.filename_description,
-                        'filename description for program "%s"' % prog.name))
+                        f'filename description for program "{prog.name}"'))
     i18n_autogen('coding', 'program', strings_categ + strings_lang + strings)
 
 

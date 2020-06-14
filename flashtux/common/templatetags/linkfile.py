@@ -39,11 +39,8 @@ def linkfile(filename):
     path = files_path_join(filename)
     if os.path.exists(path):
         is_dir = os.path.isdir(path)
-        result = '<a href="/files/%s">%s%s</a>' % (
-            filename,
-            os.path.basename(path),
-            '/' if is_dir else '',
-        )
+        base_path = os.path.basename(path) + ('/' if is_dir else '')
+        result = f'<a href="/files/{filename}">{base_path}</a>'
         if os.path.isfile(path):
             result += ' (%s)' % filesizeformat(os.path.getsize(path))
         elif is_dir:

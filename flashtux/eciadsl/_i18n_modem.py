@@ -4,6 +4,7 @@
 """Translations for eciadsl/modem."""
 
 # flake8: noqa
+# pylint: disable=line-too-long,too-many-statements
 
 from django.utils.translation import gettext_noop
 

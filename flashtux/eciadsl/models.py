@@ -66,15 +66,7 @@ class Modem(models.Model):
 
     def __str__(self):
         """Return string representation of a Modem."""
-        return '%s %s (%s)' % (
-            self.manufacturer,
-            self.modem,
-            self.status_i18n(),
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of an Modem."""
-        return self.__str__()
+        return f'{self.manufacturer} {self.modem} ({self.status_i18n()})'
 
     def status_i18n(self):
         """Return translated status."""
@@ -129,8 +121,7 @@ def handler_modem_saved(sender, **kwargs):
             strings.append(
                 (
                     modem.comment,
-                    'comment for modem %s %s' % (modem.manufacturer,
-                                                 modem.modem),
+                    f'comment for modem {modem.manufacturer} {modem.modem}',
                 )
             )
     i18n_autogen('eciadsl', 'modem', strings)

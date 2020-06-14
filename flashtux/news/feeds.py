@@ -45,11 +45,8 @@ class LatestNewsFeed(Feed):
 
     def item_link(self, item):
         """Return link to item by using the domain sent in the request."""
-        return '%s://%s/news/%d' % (
-            self.request.scheme,
-            self.request.get_host(),
-            item.pk,
-        )
+        return (f'{self.request.scheme}://{self.request.get_host()}'
+                f'/news/{item.pk}')
 
     def item_pubdate(self, item):
         """Return idem date."""

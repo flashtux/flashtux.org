@@ -45,11 +45,7 @@ class Project(models.Model):
 
     def __str__(self):
         """Return string representation of a Project."""
-        return '%s (%d)' % (self.name, self.priority)
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of a Project."""
-        return self.__str__()
+        return f'{self.name} ({self.priority})'
 
     def description_i18n(self):
         """Return translated text."""

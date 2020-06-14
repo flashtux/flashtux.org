@@ -35,7 +35,7 @@ def images(request, section, category, template, filename=''):
                                   filename=filename)
         return render(
             request,
-            '%s/%s' % (section, template),
+            f'{section}/{template}',
             {
                 'section': section,
                 'category': category,
@@ -50,7 +50,7 @@ def images(request, section, category, template, filename=''):
                   .order_by('priority'))
     return render(
         request,
-        '%s/%s' % (section, template),
+        f'{section}/{template}',
         {
             'section': section,
             'category': category,

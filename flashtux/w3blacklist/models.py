@@ -73,16 +73,8 @@ class Site(models.Model):
 
     def __str__(self):
         """Return string representation of a Site."""
-        return '%s: %s - %s (%s)' % (
-            self.date,
-            self.website,
-            self.url,
-            self.status_i18n(),
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of a Site."""
-        return self.__str__()
+        return (f'{self.date}: {self.website} - '
+                f'{self.url} ({self.status_i18n()})')
 
     def status_i18n(self):
         """Return translated status."""
@@ -158,17 +150,9 @@ class Comment(models.Model):
 
     def __str__(self):
         """Return string representation of a Comment."""
-        return '%s, %s: %s (%s, %s)' % (
-            self.date,
-            self.name or '(anonymous)',
-            self.content_truncated(),
-            self.site.url,
-            self.site.status_i18n(),
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of a Comment."""
-        return self.__str__()
+        str_name = self.name or '(anonymous)'
+        return (f'{self.date}, {str_name}: {self.content_truncated()} '
+                f'({self.site.url}, {self.site.status_i18n()})')
 
     def content_truncated(self, length=64):
         """Return the truncated content."""
@@ -185,15 +169,8 @@ class Letter(models.Model):
 
     def __str__(self):
         """Return string representation of a Letter."""
-        return '%s: %s (%d)' % (
-            self.description,
-            self.content_truncated(),
-            self.priority,
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of a Letter."""
-        return self.__str__()
+        return (f'{self.description}: {self.content_truncated()} '
+                f'({self.priority})')
 
     def description_i18n(self):
         """Return translated description."""
@@ -227,16 +204,14 @@ def handler_site_saved(sender, **kwargs):
         strings.append(
             (
                 site.shortdesc,
-                'short description for site %s (%s)' % (site.website,
-                                                        site.url),
+                f'short description for site {site.website} ({site.url})',
             )
         )
         if site.description:
             strings.append(
                 (
                     site.description,
-                    'description for site %s (%s)' % (site.website,
-                                                      site.url),
+                    f'description for site {site.website} ({site.url})',
                 )
             )
     i18n_autogen('w3blacklist', 'site', strings)
@@ -246,7 +221,7 @@ def handler_letter_saved(sender, **kwargs):
     """Generate code to translate letters."""
     strings = []
     for letter in Letter.objects.order_by('priority'):
-        strings.append((letter.content, 'Letter: %s' % letter.description))
+        strings.append((letter.content, f'Letter: {letter.description}'))
     i18n_autogen('w3blacklist', 'letter', strings)
 
 

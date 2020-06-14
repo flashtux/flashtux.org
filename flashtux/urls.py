@@ -41,25 +41,24 @@ admin.autodiscover()
 
 urlpatterns = [
     # admin
-    url(r'^%s/doc/' % settings.ADMIN_PAGE,
+    url(rf'^{settings.ADMIN_PAGE}/doc/',
         include('django.contrib.admindocs.urls')),
-    url(r'^%s/' % settings.ADMIN_PAGE, admin.site.urls),
+    url(rf'^{settings.ADMIN_PAGE}/', admin.site.urls),
 
     # set language
     url(r'^i18n/', include('django.conf.urls.i18n')),
 
     # main FlashTux URLs
     url(r'^$', news_section, name='home_news'),
-    url(r'^(?P<section>%s)/$' % RE_SECTIONS,
-        news_section, name='news'),
-    url(r'^info/(?P<section>%s)/(?P<info_id>[0-9]*)/$' % RE_SECTIONS,
+    url(rf'^(?P<section>{RE_SECTIONS})/$', news_section, name='news'),
+    url(rf'^info/(?P<section>{RE_SECTIONS})/(?P<info_id>[0-9]*)/$',
         news_section, name='info'),
-    url(r'^info/reply/(?P<section>%s)/(?P<info_id>[0-9]*)-'
-        r'(?P<comment_relative_id>[0-9]*)/$' % RE_SECTIONS,
+    url(rf'^info/reply/(?P<section>{RE_SECTIONS})/(?P<info_id>[0-9]*)-'
+        rf'(?P<comment_relative_id>[0-9]*)/$',
         form_comment, name='info_reply'),
     url(r'^projects/$', projects, name='home_projects'),
     url(r'^about/$', about, name='home_about'),
-    url(r'^about/%s/$' % URL_ABOUT_EXTRA, about, {'extra_info': True}),
+    url(rf'^about/{URL_ABOUT_EXTRA}/$', about, {'extra_info': True}),
     url(r'^donate/$',
         TemplateView.as_view(template_name='home/donate.html'),
         name='home_donate'),
@@ -73,7 +72,7 @@ urlpatterns = [
 
     # feeds
     url(r'^feeds/news/$', LatestNewsFeed(), name='feeds_news'),
-    url(r'^feeds/news/(?P<section>%s)/$' % RE_SECTIONS,
+    url(rf'^feeds/news/(?P<section>{RE_SECTIONS})/$',
         LatestNewsFeed(), name='feeds_news_section'),
 
     # files and media

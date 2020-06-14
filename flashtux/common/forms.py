@@ -84,9 +84,7 @@ class TestField(forms.CharField):
     """Anti-spam field in forms."""
 
     def clean(self, value):
-        if not value:
-            raise forms.ValidationError(ugettext('This field is required.'))
-        if value.lower() != 'no':
+        if not value or value.lower() != 'no':
             raise forms.ValidationError(ugettext('This field is required.'))
         return value
 
@@ -119,13 +117,11 @@ class Form(forms.Form):
 
 def getxmlline(key, value):
     """Get a XML line for a key/value."""
-    strvalue = '%s' % value
-    return '    <%s>%s</%s>\n' % (
-        key, strvalue.replace('<', '&lt;').replace('>', '&gt;'), key)
+    strvalue = f'{value}'.replace('<', '&lt;').replace('>', '&gt;')
+    return f'    <{key}>{strvalue}%s</{key}>\n'
 
 
 def getjsonline(key, value):
     """Get a JSON line for a key/value."""
-    strvalue = '%s' % value
-    return '    "%s": "%s",\n' % (
-        key, strvalue.replace('"', '\\"').replace("'", "\\'"))
+    strvalue = f'{value}'.replace('"', '\\"').replace("'", "\\'")
+    return f'    "{key}": "{strvalue}",\n'

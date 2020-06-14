@@ -71,7 +71,7 @@ def render_news(request, section, info_list, **kwargs):
     data.update(kwargs)
     return render(
         request,
-        '%s/news.html' % section,
+        f'{section}/news.html',
         data,
     )
 
@@ -119,7 +119,7 @@ def news_section(request, section=None, info_id=None, **kwargs):
         data.update(kwargs)
         return render(
             request,
-            '%s/news.html' % section,
+            f'{section}/news.html',
             data,
         )
     else:
@@ -168,7 +168,7 @@ def form_comment(request, section=None, info_id=None,
 
     return render(
         request,
-        '%s/news.html' % section,
+        f'{section}/news.html',
         {
             'section': section,
             'info_id': info_id,

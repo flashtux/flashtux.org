@@ -67,15 +67,8 @@ class Info(models.Model):
 
     def __str__(self):
         """Return string representation of an Info."""
-        return '%s, %s: %s' % (
-            self.date.strftime('%Y-%m-%d %H:%M'),
-            self.section,
-            self.title,
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of an Info."""
-        return self.__str__()
+        str_date = self.date.strftime('%Y-%m-%d %H:%M')
+        return f'{str_date}, {self.section}: {self.title}'
 
     def section_i18n(self):
         """Return the translated section, for display."""
@@ -97,7 +90,7 @@ class Info(models.Model):
         match = PATTERN_TITLE_VERSION.match(self.title)
         if match:
             # if the title is "Version x.y.z", translate only "Version"
-            return '%s %s' % (ugettext(match.group(1)), match.group(2))
+            return f'{ugettext(match.group(1))} {match.group(2)}'
         else:
             return ugettext(self.title)
 
@@ -107,12 +100,10 @@ class Info(models.Model):
 
     def date_title_url(self):
         """Return date+title to include in URL."""
-        return '%04d%02d%02d-%02d%02d-%s' % (
-            self.date.year, self.date.month, self.date.day,
-            self.date.hour, self.date.min,
-            re.sub(' +', '-',
-                   re.sub('[^ a-zA-Z0-9.]', ' ',
-                          self.title).strip()))
+        text_url = re.sub(' +', '-',
+                          re.sub('[^ a-zA-Z0-9.]', ' ', self.title) .strip())
+        return (f'{self.date.year:0>4}{self.date.month:0>2}{self.date.day:0>2}'
+                f'-{self.date.hour:0>2}{self.date.min:0>2}-{text_url}')
 
     class Meta:
         """Meta class for Info."""
@@ -132,15 +123,8 @@ class Comment(models.Model):
 
     def __str__(self):
         """Return string representation of a Comment."""
-        return '%s, %s: %s' % (
-            self.date.strftime('%Y-%m-%d %H:%M'),
-            self.info.section,
-            self.content_truncated(),
-        )
-
-    def __unicode__(self):  # python 2.x
-        """Return unicode representation of a Comment."""
-        return self.__str__()
+        str_date = self.date.strftime('%Y-%m-%d %H:%M')
+        return f'{str_date}, {self.info.section}: {self.content_truncated()}'
 
     def content_truncated(self, length=64):
         """Return the truncated content."""
@@ -193,10 +177,10 @@ class CommentFormAdd(Form):
         if comment_relative:
             title = comment_relative.title
             if not title.startswith('Re: '):
-                title = 'Re: %s' % title
+                title = f'Re: {title}'
             self.fields['title'].initial = title
         elif info:
-            self.fields['title'].initial = 'Re: %s' % info.title_i18n()
+            self.fields['title'].initial = f'Re: {info.title_i18n()}'
 
 
 def handler_info_saved(sender, **kwargs):
