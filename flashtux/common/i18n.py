@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #
 # Copyright (C) 1999-2020 Sébastien Helleu <flashcode@flashtux.org>
 #
@@ -29,7 +28,6 @@ def i18n_autogen(app, name, strings):
     """Create a file '_i18n_xxx.py' with strings to translate."""
     # build content of file
     content = [
-        '# -*- coding: utf-8 -*-',
         '# This file is auto-generated after changes in database, '
         'DO NOT EDIT!',
         '',
