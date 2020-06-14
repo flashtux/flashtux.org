@@ -8,7 +8,7 @@ FlashTux.org is the website for FlashTux, the home of free projects for free OS.
 
 Homepage: https://flashtux.org/
 
-image:https://travis-ci.org/flashtux/flashtux.org.svg?branch=master["Build Status", link="https://travis-ci.org/flashtux/flashtux.org"]
+image:https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg["CI", link="https://github.com/flashtux/flashtux.org/actions"]
 
 == Install
 
