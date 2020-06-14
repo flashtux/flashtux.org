@@ -47,7 +47,7 @@ class LatestNewsFeed(Feed):
         return (f'{self.request.scheme}://{self.request.get_host()}'
                 f'/news/{item.pk}')
 
-    @staticmethod
-    def item_pubdate(item):
+    def item_pubdate(self, item):
         """Return idem date."""
+        # pylint: disable=no-self-use
         return item.date
