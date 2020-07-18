@@ -182,7 +182,7 @@ def handler_info_saved(sender, **kwargs):
     # pylint: disable=unused-argument
     strings = []
     for info in Info.objects.order_by('-date'):
-        translators = info.__unicode__()
+        translators = str(info)
         match = PATTERN_TITLE_VERSION.match(info.title)
         if match:
             # if the title is "Version x.y.z", translate only "Version"
