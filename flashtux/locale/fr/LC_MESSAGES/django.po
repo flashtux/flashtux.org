@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-30 11:30+0100\n"
+"POT-Creation-Date: 2020-07-18 15:29+0200\n"
 "PO-Revision-Date: 2019-02-20 20:50+0100\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
@@ -572,19 +572,19 @@ msgstr ""
 "Très utile dans un fichier Batch nécessitant un choix de l'utilisateur entre "
 "plusieurs options."
 
-#: common/forms.py:88 common/forms.py:90
+#: common/forms.py:87
 msgid "This field is required."
 msgstr "Ce champ est obligatoire."
 
-#: common/templatetags/linkfile.py:50
+#: common/templatetags/linkfile.py:46
 msgid "directory"
 msgstr "répertoire"
 
-#: common/templatetags/linkfile.py:53
+#: common/templatetags/linkfile.py:49
 msgid "File not found"
 msgstr "Fichier non trouvé"
 
-#: common/views.py:49 common/views.py:68
+#: common/views.py:48 common/views.py:67
 msgid "Text"
 msgstr "Texte"
 
@@ -738,102 +738,102 @@ msgstr ""
 "support/9000/9000-linux-ug/Installing%20the%20modem.html\">https://support."
 "usr.com/support/9000/9000-linux-ug/Installing%20the%20modem.html</a>"
 
-#: eciadsl/models.py:31
+#: eciadsl/models.py:30
 msgid "Not supported"
 msgstr "Non supporté"
 
-#: eciadsl/models.py:32
+#: eciadsl/models.py:31
 msgid "Maybe supported"
 msgstr "Peut-être supporté"
 
-#: eciadsl/models.py:33
+#: eciadsl/models.py:32
 msgid "Supported"
 msgstr "Supporté"
 
-#: eciadsl/models.py:36 templates/eciadsl/modems.html:16
+#: eciadsl/models.py:35 templates/eciadsl/modems.html:16
 msgctxt "plural"
 msgid "Not supported"
 msgstr "Non supportés"
 
-#: eciadsl/models.py:37 templates/eciadsl/modems.html:15
+#: eciadsl/models.py:36 templates/eciadsl/modems.html:15
 msgctxt "plural"
 msgid "Maybe supported"
 msgstr "Peut-être supportés"
 
-#: eciadsl/models.py:38 templates/eciadsl/modems.html:14
+#: eciadsl/models.py:37 templates/eciadsl/modems.html:14
 msgctxt "plural"
 msgid "Supported"
 msgstr "Supportés"
 
-#: eciadsl/views.py:38 eciadsl/views.py:41
+#: eciadsl/views.py:37 eciadsl/views.py:40
 msgid "EciAdsl installation guide"
 msgstr "Guide d'installation EciAdsl"
 
-#: eciadsl/views.py:42
+#: eciadsl/views.py:41
 msgid "development version"
 msgstr "version de développement"
 
-#: eciadsl/views.py:45 eciadsl/views.py:90 settings.py:43 weewm/views.py:34
+#: eciadsl/views.py:44 eciadsl/views.py:89 settings.py:42 weewm/views.py:33
 msgid "French"
 msgstr "Français"
 
-#: eciadsl/views.py:46 eciadsl/views.py:91 settings.py:42 weewm/views.py:35
+#: eciadsl/views.py:45 eciadsl/views.py:90 settings.py:41 weewm/views.py:34
 msgid "English"
 msgstr "Anglais"
 
-#: eciadsl/views.py:47 eciadsl/views.py:92
+#: eciadsl/views.py:46 eciadsl/views.py:91
 msgid "Italian"
 msgstr "Italien"
 
-#: eciadsl/views.py:48 eciadsl/views.py:94
+#: eciadsl/views.py:47 eciadsl/views.py:93
 msgid "Spanish"
 msgstr "Espagnol"
 
-#: eciadsl/views.py:49
+#: eciadsl/views.py:48
 msgid "German"
 msgstr "Allemand"
 
-#: eciadsl/views.py:50
+#: eciadsl/views.py:49
 msgid "Turkish"
 msgstr "Turc"
 
-#: eciadsl/views.py:55
+#: eciadsl/views.py:54
 msgid "EciAdsl installation with Mandrake 10 and kernel 2.6.x"
 msgstr "Installation EciAdsl avec Mandrake 10 et le noyau 2.6.x"
 
-#: eciadsl/views.py:59
+#: eciadsl/views.py:58
 msgid "Instructions for 2.6.x kernels patch"
 msgstr "Instructions pour le patch / noyaux 2.6.x"
 
-#: eciadsl/views.py:62
+#: eciadsl/views.py:61
 msgid "EciAdsl installation on *BSD"
 msgstr "Installation d'EciAdsl sur *BSD"
 
-#: eciadsl/views.py:65
+#: eciadsl/views.py:64
 msgid "EciAdsl config with \"Free dégroupé\" (France only)"
 msgstr "Config EciAdsl avec \"Free dégroupé\" (France seulement)"
 
-#: eciadsl/views.py:68
+#: eciadsl/views.py:67
 msgid "EciAdsl with Avangard provider (Russia)"
 msgstr "EciAdsl avec le fournisseur Avangard (Russie)"
 
-#: eciadsl/views.py:71
+#: eciadsl/views.py:70
 msgid "EciAdsl and APIC problem"
 msgstr "EciAdsl et le problème de l'APIC"
 
-#: eciadsl/views.py:74
+#: eciadsl/views.py:73
 msgid "EciAdsl with DSL-200 B1 modem and TPG (australian ISP)"
 msgstr "EciAdsl avec un modem DSL-200 B1 et TPG (FAI australien)"
 
-#: eciadsl/views.py:78
+#: eciadsl/views.py:77
 msgid "EciAdsl with hotplug"
 msgstr "EciAdsl avec le hotplug"
 
-#: eciadsl/views.py:87
+#: eciadsl/views.py:86
 msgid "EciAdsl FAQ"
 msgstr "FAQ EciAdsl"
 
-#: eciadsl/views.py:93
+#: eciadsl/views.py:92
 msgid "Portuguese"
 msgstr "Portugais"
 
@@ -938,13 +938,38 @@ msgstr ""
 msgid "Mail."
 msgstr "E-mail."
 
+#. Translators: 2020-07-18 13:28, weechat: Version 2.9
+#: news/_i18n_info.py:14 templates/eciadsl/download.html:23
+#: templates/eciadsl/download.html:211 templates/eciadsl/download.html:243
+#: templates/eciadsl/download.html:273 templates/eciadsl/download.html:297
+#: templates/eciadsl/download.html:319 templates/eciadsl/download.html:341
+#: templates/eciadsl/download.html:362 templates/eciadsl/download.html:382
+#: templates/eciadsl/download.html:400 templates/eciadsl/download.html:418
+#: templates/eciadsl/download.html:436 templates/flashtris/download.html:15
+#: templates/gmemo/download.html:23 templates/gmemo/download.html:82
+#: templates/weewm/download.html:23 templates/weewm/download.html:90
+msgid "Version"
+msgstr "Version"
+
+#. Translators: 2020-07-18 13:28, weechat: Version 2.9
+#: news/_i18n_info.py:16
+msgid "Many new features and bugs fixed, see WeeChat official site."
+msgstr ""
+"Beaucoup de nouveautés et de bugs corrigés, voir le site officiel de WeeChat."
+
+#. Translators: 2020-02-20 21:36, weechat: Version 2.7.1
+#: news/_i18n_info.py:18
+msgid "Bug fix and maintenance release, see WeeChat official site."
+msgstr ""
+"Version de maintenance avec des correctifs, voir le site officiel de WeeChat."
+
 #. Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
-#: news/_i18n_info.py:14
+#: news/_i18n_info.py:20
 msgid "Complete rewrite of FlashTux.org"
 msgstr "Réécriture complète de FlashTux.org"
 
 #. Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
-#: news/_i18n_info.py:16
+#: news/_i18n_info.py:22
 msgid ""
 "FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20!\n"
 "\n"
@@ -964,31 +989,6 @@ msgstr ""
 "\n"
 "Le code source est disponible sur GitHub : <a href=\"https://github.com/"
 "flashtux/flashtux.org\">https://github.com/flashtux/flashtux.org</a>."
-
-#. Translators: 2018-10-21 11:40, weechat: Version 2.3
-#: news/_i18n_info.py:18 templates/eciadsl/download.html:23
-#: templates/eciadsl/download.html:211 templates/eciadsl/download.html:243
-#: templates/eciadsl/download.html:273 templates/eciadsl/download.html:297
-#: templates/eciadsl/download.html:319 templates/eciadsl/download.html:341
-#: templates/eciadsl/download.html:362 templates/eciadsl/download.html:382
-#: templates/eciadsl/download.html:400 templates/eciadsl/download.html:418
-#: templates/eciadsl/download.html:436 templates/flashtris/download.html:15
-#: templates/gmemo/download.html:23 templates/gmemo/download.html:82
-#: templates/weewm/download.html:23 templates/weewm/download.html:90
-msgid "Version"
-msgstr "Version"
-
-#. Translators: 2018-10-21 11:40, weechat: Version 2.3
-#: news/_i18n_info.py:20
-msgid "Many new features and bugs fixed, see WeeChat official site."
-msgstr ""
-"Beaucoup de nouveautés et de bugs corrigés, voir le site officiel de WeeChat."
-
-#. Translators: 2017-12-20 21:51, weechat: Version 2.0.1
-#: news/_i18n_info.py:22
-msgid "Bug fix and maintenance release, see WeeChat official site."
-msgstr ""
-"Version de maintenance avec des correctifs, voir le site officiel de WeeChat."
 
 #. Translators: 2012-08-28 18:50, home: IPv6
 #: news/_i18n_info.py:24
@@ -5690,73 +5690,73 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#: news/models.py:90 templates/base.html:41 templates/base.html:134
+#: news/models.py:83 templates/base.html:41 templates/base.html:134
 #: templates/coding/coding.html:5
 msgid "Coding"
 msgstr "Prog"
 
-#: news/models.py:91 templates/base.html:42 templates/base.html:140
+#: news/models.py:84 templates/base.html:42 templates/base.html:140
 #: templates/games/games.html:5
 msgid "Games"
 msgstr "Jeux"
 
-#: news/models.py:161
+#: news/models.py:139
 msgid "Title"
 msgstr "Titre"
 
-#: news/models.py:162
+#: news/models.py:140
 msgid "The comment title."
 msgstr "Titre du commentaire."
 
-#: news/models.py:166
+#: news/models.py:144
 msgid "Comment"
 msgstr "Commentaire"
 
-#: news/models.py:167
+#: news/models.py:145
 msgid "Your comment."
 msgstr "Votre commentaire."
 
-#: news/models.py:172
+#: news/models.py:150
 msgid "Your name or nick"
 msgstr "Votre nom ou pseudo"
 
-#: news/models.py:173
+#: news/models.py:151
 msgid "Displayed above the comment."
 msgstr "Affiché au-dessus du commentaire."
 
-#: news/models.py:177
+#: news/models.py:155
 msgid "Your e-mail"
 msgstr "Votre e-mail"
 
-#: news/models.py:178
+#: news/models.py:156
 msgid "Optional, never displayed."
 msgstr "Facultatif, jamais affiché."
 
-#: news/models.py:184
+#: news/models.py:162
 msgid "Are you a spammer?"
 msgstr "Êtes-vous un spammeur ?"
 
-#: news/models.py:185
+#: news/models.py:163
 msgid "Enter \"no\" if you are not a spammer."
 msgstr "Entrez \"no\" si vous n'êtes pas un spammeur."
 
 #. Translators: this is a date format, see: http://www.php.net/date
 #. Translators: (note: the result string must be short, use abbreviation
 #. Translators: for month if possible)
-#: settings.py:53
+#: settings.py:52
 msgid "M j, Y"
 msgstr "d/m/Y"
 
 #. Translators: this is a short date format, see: http://www.php.net/date
 #. Translators: date with only year and month
-#: settings.py:57
+#: settings.py:56
 msgid "F Y"
 msgstr "F Y"
 
 #. Translators: this is a date/time format, see: http://www.php.net/date
 #. Translators: (note: the result string must be short, use abbreviation
 #. Translators: for month if possible)
-#: settings.py:62
+#: settings.py:61
 msgid "M j, Y H:i"
 msgstr "d/m/Y H:i"
 
@@ -13882,7 +13882,7 @@ msgstr "partiellement cassé"
 msgid "entirely broken"
 msgstr "complètement cassé"
 
-#: weewm/views.py:31
+#: weewm/views.py:30
 msgid "WeeWM users guide"
 msgstr "Guide utilisateur WeeWM"
 

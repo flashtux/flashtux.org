@@ -10,16 +10,16 @@ from django.utils.translation import gettext_noop
 
 def __i18n_news_info():
     """Translations for news/info."""
+    # Translators: 2020-07-18 13:28, weechat: Version 2.9
+    gettext_noop("Version")
+    # Translators: 2020-07-18 13:28, weechat: Version 2.9
+    gettext_noop("Many new features and bugs fixed, see WeeChat official site.")
+    # Translators: 2020-02-20 21:36, weechat: Version 2.7.1
+    gettext_noop("Bug fix and maintenance release, see WeeChat official site.")
     # Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
     gettext_noop("Complete rewrite of FlashTux.org")
     # Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
     gettext_noop("FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20!\n\nThe site has been completely rewritten from scratch, in Python, with the Django framework and PostgreSQL database.\nIt is now fully responsive, using Bootstrap toolkit.\n\nSource code is available on GitHub: <a href=\"https://github.com/flashtux/flashtux.org\">https://github.com/flashtux/flashtux.org</a>.")
-    # Translators: 2018-10-21 11:40, weechat: Version 2.3
-    gettext_noop("Version")
-    # Translators: 2018-10-21 11:40, weechat: Version 2.3
-    gettext_noop("Many new features and bugs fixed, see WeeChat official site.")
-    # Translators: 2017-12-20 21:51, weechat: Version 2.0.1
-    gettext_noop("Bug fix and maintenance release, see WeeChat official site.")
     # Translators: 2012-08-28 18:50, home: IPv6
     gettext_noop("IPv6")
     # Translators: 2012-08-28 18:50, home: IPv6
