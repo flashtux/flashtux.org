@@ -166,7 +166,7 @@ class CommentFormAdd(Form):
     def __init__(self, *args, **kwargs):
         info = kwargs.pop('ctx_info', None)
         comment_relative = kwargs.pop('ctx_comment_relative', None)
-        super(CommentFormAdd, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.label_suffix = ''
         if comment_relative:
             title = comment_relative.title
