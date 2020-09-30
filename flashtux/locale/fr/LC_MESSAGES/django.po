@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-18 15:29+0200\n"
-"PO-Revision-Date: 2019-02-20 20:50+0100\n"
+"POT-Creation-Date: 2020-09-30 20:57+0200\n"
+"PO-Revision-Date: 2020-09-30 20:57+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -572,7 +572,7 @@ msgstr ""
 "Très utile dans un fichier Batch nécessitant un choix de l'utilisateur entre "
 "plusieurs options."
 
-#: common/forms.py:87
+#: common/forms.py:84
 msgid "This field is required."
 msgstr "Ce champ est obligatoire."
 
@@ -584,7 +584,7 @@ msgstr "répertoire"
 msgid "File not found"
 msgstr "Fichier non trouvé"
 
-#: common/views.py:48 common/views.py:67
+#: common/views.py:47 common/views.py:66
 msgid "Text"
 msgstr "Texte"
 
@@ -9317,8 +9317,8 @@ msgstr ""
 
 #: templates/w3blacklist/news.html:18
 msgid ""
-"W3Blacklist is listing websites (companies, governement or organizations; "
-"not personal pages) that discriminate visitors according to their operating "
+"W3Blacklist is listing websites (companies, government or organizations; not "
+"personal pages) that discriminate visitors according to their operating "
 "system or web browser. Webmaster is contacted before adding website to this "
 "list. Our goal is that webmaster modify page to be readable by all, whatever "
 "browser or OS used."
