@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-30 20:57+0200\n"
-"PO-Revision-Date: 2020-09-30 20:57+0200\n"
+"POT-Creation-Date: 2020-10-18 13:54+0200\n"
+"PO-Revision-Date: 2020-10-18 13:53+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -5690,12 +5690,12 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#: news/models.py:83 templates/base.html:41 templates/base.html:134
+#: news/models.py:83 templates/base.html:41 templates/base.html:135
 #: templates/coding/coding.html:5
 msgid "Coding"
 msgstr "Prog"
 
-#: news/models.py:84 templates/base.html:42 templates/base.html:140
+#: news/models.py:84 templates/base.html:42 templates/base.html:141
 #: templates/games/games.html:5
 msgid "Games"
 msgstr "Jeux"
@@ -5799,22 +5799,27 @@ msgstr ""
 msgid "FlashTux: free projects for free OS"
 msgstr "FlashTux : projets libres pour OS libres"
 
-#: templates/base.html:34 templates/base.html:71
+#: templates/base.html:34 templates/base.html:72
 msgid "Home"
 msgstr "Accueil"
 
-#: templates/base.html:72 templates/home/home.html:12
+#. Translators: language used to display the site content
+#: templates/base.html:51
+msgid "Language"
+msgstr "Langue"
+
+#: templates/base.html:73 templates/home/home.html:12
 #: templates/home/projects.html:5
 msgid "Projects"
 msgstr "Projets"
 
-#: templates/base.html:73 templates/home/about.html:5
+#: templates/base.html:74 templates/home/about.html:5
 #: templates/home/home.html:13
 msgid "About"
 msgstr "À propos"
 
-#: templates/base.html:84 templates/base.html:98 templates/base.html:116
-#: templates/base.html:124 templates/eciadsl/eciadsl.html:12
+#: templates/base.html:85 templates/base.html:99 templates/base.html:117
+#: templates/base.html:125 templates/eciadsl/eciadsl.html:12
 #: templates/eciadsl/screenshots.html:5 templates/flashtris/flashtris.html:12
 #: templates/flashtris/screenshots.html:5 templates/gmemo/gmemo.html:12
 #: templates/gmemo/screenshots.html:5 templates/weewm/screenshots.html:5
@@ -5822,8 +5827,8 @@ msgstr "À propos"
 msgid "Screenshots"
 msgstr "Captures d'écran"
 
-#: templates/base.html:85 templates/base.html:99 templates/base.html:108
-#: templates/base.html:125 templates/eciadsl/doc.html:5
+#: templates/base.html:86 templates/base.html:100 templates/base.html:109
+#: templates/base.html:126 templates/eciadsl/doc.html:5
 #: templates/eciadsl/eciadsl.html:13 templates/flashtris/doc.html:5
 #: templates/flashtris/flashtris.html:13 templates/w3blacklist/doc.html:5
 #: templates/w3blacklist/w3blacklist.html:13 templates/weewm/doc.html:5
@@ -5831,18 +5836,18 @@ msgstr "Captures d'écran"
 msgid "Documentation"
 msgstr "Documentation"
 
-#: templates/base.html:86 templates/eciadsl/eciadsl.html:14
+#: templates/base.html:87 templates/eciadsl/eciadsl.html:14
 #: templates/eciadsl/tutorial.html:5
 msgid "Tutorial"
 msgstr "Tutoriel"
 
-#: templates/base.html:87 templates/eciadsl/eciadsl.html:15
+#: templates/base.html:88 templates/eciadsl/eciadsl.html:15
 #: templates/eciadsl/modems.html:5
 msgid "Modems"
 msgstr "Modems"
 
-#: templates/base.html:88 templates/base.html:100 templates/base.html:117
-#: templates/base.html:126 templates/coding/programs.html:67
+#: templates/base.html:89 templates/base.html:101 templates/base.html:118
+#: templates/base.html:127 templates/coding/programs.html:67
 #: templates/eciadsl/download.html:5 templates/eciadsl/eciadsl.html:16
 #: templates/flashtris/download.html:5 templates/flashtris/flashtris.html:14
 #: templates/games/bubblebobble.html:57 templates/games/demoniacfight.html:48
@@ -5854,15 +5859,15 @@ msgstr "Modems"
 msgid "Download"
 msgstr "Téléchargement"
 
-#: templates/base.html:89 templates/base.html:110 templates/base.html:128
+#: templates/base.html:90 templates/base.html:111 templates/base.html:129
 #: templates/eciadsl/eciadsl.html:17 templates/eciadsl/faq.html:5
 #: templates/flashtris/faq.html:5 templates/flashtris/flashtris.html:16
 #: templates/w3blacklist/faq.html:5 templates/w3blacklist/w3blacklist.html:15
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/base.html:90 templates/base.html:101 templates/base.html:118
-#: templates/base.html:129 templates/eciadsl/eciadsl.html:18
+#: templates/base.html:91 templates/base.html:102 templates/base.html:119
+#: templates/base.html:130 templates/eciadsl/eciadsl.html:18
 #: templates/eciadsl/support.html:5 templates/flashtris/flashtris.html:17
 #: templates/flashtris/support.html:5 templates/gmemo/gmemo.html:14
 #: templates/gmemo/support.html:5 templates/weewm/support.html:5
@@ -5870,40 +5875,40 @@ msgstr "FAQ"
 msgid "Support"
 msgstr "Support"
 
-#: templates/base.html:91 templates/eciadsl/eciadsl.html:19
+#: templates/base.html:92 templates/eciadsl/eciadsl.html:19
 #: templates/eciadsl/story.html:5
 msgid "Story"
 msgstr "Histoire"
 
-#: templates/base.html:92 templates/eciadsl/eciadsl.html:20
+#: templates/base.html:93 templates/eciadsl/eciadsl.html:20
 #: templates/eciadsl/support.html:35 templates/eciadsl/team.html:5
 #: templates/flashtris/support.html:20 templates/gmemo/support.html:24
 #: templates/weewm/support.html:24
 msgid "Team"
 msgstr "Équipe"
 
-#: templates/base.html:107 templates/w3blacklist/sites.html:5
+#: templates/base.html:108 templates/w3blacklist/sites.html:5
 #: templates/w3blacklist/w3blacklist.html:12
 msgid "Sites"
 msgstr "Sites"
 
-#: templates/base.html:109 templates/w3blacklist/letters.html:5
+#: templates/base.html:110 templates/w3blacklist/letters.html:5
 #: templates/w3blacklist/w3blacklist.html:14
 msgid "Letters"
 msgstr "Lettres"
 
-#: templates/base.html:127 templates/eciadsl/download.html:14
+#: templates/base.html:128 templates/eciadsl/download.html:14
 #: templates/flashtris/dev.html:5 templates/flashtris/flashtris.html:15
 #: templates/gmemo/download.html:14 templates/weewm/download.html:14
 msgid "Development"
 msgstr "Développement"
 
-#: templates/base.html:135 templates/coding/coding.html:12
+#: templates/base.html:136 templates/coding/coding.html:12
 #: templates/coding/programs.html:5
 msgid "Programs"
 msgstr "Programmes"
 
-#: templates/base.html:162
+#: templates/base.html:163
 msgid "About FlashTux.org"
 msgstr "À propos de FlashTux.org"
 
