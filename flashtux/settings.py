@@ -25,7 +25,12 @@ from django.utils.translation import ugettext_lazy
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DEBUG = False
+# Override these values in settings_local.py for production
+DEBUG = True
+SECRET_KEY = 'replace-me'
+ALLOWED_HOSTS = []
+ADMINS = []
+MANAGERS = []
 
 TIME_ZONE = 'Europe/Paris'
 USE_TZ = True
@@ -148,10 +153,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# read settings_local.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'flashtux.db',
+    },
+}
+
+ADMIN_PAGE = 'admin'
+
+# read settings_local.py (optional file)
 try:
     # pylint: disable=wildcard-import,unused-wildcard-import
     from flashtux.settings_local import *  # noqa: F401,F403
 except ImportError:
-    from warnings import warn
-    warn('File "settings_local.py" not found, using default settings')
+    pass

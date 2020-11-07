@@ -19,64 +19,33 @@
 
 """Local Django settings for flashtux project."""
 
-# Template for local Django settings.
+# Template for local Django settings: overrides options defined in
+# file settings.py.
+#
 # Copy this file to "settings_local.py" and make necessary changes.
 
-PRODUCTION = False
+DEBUG = False
 
-if PRODUCTION:
+SECRET_KEY = 'replace-me'
 
-    # =============== Settings for PRODUCTION ===============
+ALLOWED_HOSTS = [
+    '.example.com',
+]
 
-    DEBUG = False
-    TEMPLATE_DEBUG = DEBUG
+ADMINS = [
+    ('root', 'root@localhost'),
+]
+MANAGERS = ADMINS
 
-    ADMINS = (
-        ('root', 'root@localhost'),
-    )
-    MANAGERS = ADMINS
-
-    # Database
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': '',
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': '',
-            'PORT': '',
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'flashtux',
+        'USER': 'user',
+        'PASSWORD': 'password',
+        'HOST': '',
+        'PORT': '',
     }
+}
 
-    # Make this unique, and don't share it with anybody.
-    SECRET_KEY = 'replace-me'
-
-    ADMIN_PAGE = 'admin'
-
-else:
-
-    # =============== Settings for DEVELOPMENT ===============
-
-    DEBUG = True
-    TEMPLATE_DEBUG = False
-
-    ADMINS = (
-        ('root', 'root@localhost'),
-    )
-    MANAGERS = ADMINS
-
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': '',
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': '',
-            'PORT': '',
-        },
-    }
-
-    # Make this unique, and don't share it with anybody.
-    SECRET_KEY = 'replace-me'
-
-    ADMIN_PAGE = 'admin'
+INTERNAL_IPS = []

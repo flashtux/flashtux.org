@@ -7,6 +7,7 @@ etc
 
 # data files
 files
+flashtux.db
 
 # local settings
 settings_local.py
