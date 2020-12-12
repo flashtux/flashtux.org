@@ -1,56 +1,50 @@
-= FlashTux.org
-:author: Sébastien Helleu
-:email: flashcode@flashtux.org
-:lang: en
+# FlashTux.org
 
+[![Build Status](https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg)](https://github.com/flashtux/flashtux.org/actions?query=workflow%3A%22CI%22)
 
 FlashTux.org is the website for FlashTux, the home of free projects for free OS.
 
 Homepage: https://flashtux.org/
 
-image:https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg["CI", link="https://github.com/flashtux/flashtux.org/actions"]
+## Install
 
-== Install
+### Dependencies
 
-=== Dependencies
+Following packages are **required**:
 
-Following packages are *required*:
+- python ≥ 3.6
+- python-django ≥ 1.11
+- python-tz
+- python-django-countries
+- PostgreSQL.
 
-* python >= 3.6
-* python-django >= 1.11
-* python-tz
-* python-django-countries
-* PostgreSQL.
-
-=== Deploy
+### Deploy
 
 Run the install script:
 
-----
+```
 $ ./bin/install.sh
-----
+```
 
 Run Django server:
 
-----
+```
 $ ./test.sh
-----
+```
 
-And just point your browser on <http://127.0.0.1:8000/>, that's all!
+And just point your browser on http://127.0.0.1:8000/, that's all!
 
-[IMPORTANT]
-Default settings can be used for testing purposes but must be overridden
-for production, see the file
-link:flashtux/settings_local.template[settings_local.template] for more information.
+Important: default settings can be used for testing purposes but must be overridden
+for production, see the file [settings_local.template](flashtux/settings_local.template) for more information.
 
-== Authors
+## Authors
 
-* Design/code:
-** Sébastien Helleu (FlashCode)
+- Design/code:
+  - Sébastien Helleu (FlashCode)
 
-== Copyright
+## Copyright
 
-Copyright (C) 1999-2020 Sébastien Helleu <flashcode@flashtux.org>
+Copyright © 1999-2020 [Sébastien Helleu](https://github.com/flashcode)
 
 This file is part of FlashTux.org.
 
