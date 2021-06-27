@@ -15,11 +15,13 @@
   <div class="col-12">
     <div class="card mb-4">
       <div class="card-header">
-        <div class="media">
-          <img src="{{ MEDIA_URL }}images/icon_{{ project.name|lower }}32.png" class="mr-3" alt="{{ project.name }}">
-          <div class="media-body">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="{{ MEDIA_URL }}images/icon_{{ project.name|lower }}32.png" class="me-3" alt="{{ project.name }}">
+          </div>
+          <div class="flex-grow-1 ms-1">
             <div class="mt-1">
-              <span class="h5 mr-3"><strong>{{ project.name }}</strong></span>
+              <span class="h5 me-3"><strong>{{ project.name }}</strong></span>
               {% with date=project.start_date|localdate %}
               {% blocktrans %}Started on {{ date }}{% endblocktrans %}
               {% endwith %}
@@ -38,7 +40,7 @@
       </div>
       <div class="card-body pb-1">
         <div class="row">
-          <div class="col-12 col-md">
+          <div class="col col-md">
             {% autoescape off %}{{ project.description_i18n|linebreaks }}{% endautoescape %}
             <p>
               <strong>{% trans "License:" %}</strong> {{ project.license }}
@@ -64,7 +66,7 @@
               {% endif %}
             </p>
           </div>
-          <div class="col-12 col-md-auto">
+          <div class="col col-md-auto">
             {% if project.screenshot %}
             <img src="{{ MEDIA_URL }}images/project/{{ project.name|lower }}.jpg" class="img-fluid shadow mb-3" alt="{{ project.name }}">
             {% endif %}

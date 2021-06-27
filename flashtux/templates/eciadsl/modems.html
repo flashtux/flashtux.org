@@ -62,51 +62,51 @@
       <table class="table table-sm table-borderless">
         <tbody>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Status" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Status" %}</td>
             <td class="w-100"><strong>{{ modem.status_i18n }}</strong></td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Min EciAdsl" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Min EciAdsl" %}</td>
             <td class="w-100">{{ modem.drvmini }}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Chipset" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Chipset" %}</td>
             <td class="w-100">{{ modem.chipset }}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">Vid1/Pid1</td>
+            <td class="text-nowrap pe-4">Vid1/Pid1</td>
             <td class="w-100">{{ modem.vid1 }} / {{ modem.pid1 }}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">Vid2/Pid2</td>
+            <td class="text-nowrap pe-4">Vid2/Pid2</td>
             <td class="w-100">{{ modem.vid2 }} / {{ modem.pid2 }}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Country" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Country" %}</td>
             <td class="w-100">{% autoescape off %}{{ modem.country_string|linebreaksbr }}{% endautoescape %}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Provider(s)" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Provider(s)" %}</td>
             <td class="w-100">{% autoescape off %}{{ modem.provider_string|linebreaksbr }}{% endautoescape %}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">VPI.VCI</td>
+            <td class="text-nowrap pe-4">VPI.VCI</td>
             <td class="w-100">{{ modem.vpivci }}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Synch .bin" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Synch .bin" %}</td>
             <td class="w-100">{% autoescape off %}{{ modem.synchbin_string|linebreaksbr }}{% endautoescape %}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Synch alt" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Synch alt" %}</td>
             <td class="w-100">{{ modem.synch_alt }}<td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Pppoeci alt" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Pppoeci alt" %}</td>
             <td class="w-100">{{ modem.pppoeci_alt }}</td>
           </tr>
           <tr>
-            <td class="text-nowrap pr-4">{% trans "Comment" context "noun" %}</td>
+            <td class="text-nowrap pe-4">{% trans "Comment" context "noun" %}</td>
             <td class="w-100">{% autoescape off %}{{ modem.comment_i18n }}{% endautoescape %}</td>
           </tr>
         </tbody>

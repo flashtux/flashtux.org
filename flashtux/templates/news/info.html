@@ -30,7 +30,7 @@
 {% else %}
 {% include "svg/comments.html" %}
 <a href="{% url 'info' section=section info_id=info.id %}">
-  <span class="link-comments-count ml-2">
+  <span class="link-comments-count ms-2">
     {% blocktrans count counter=count_comments %}{{ count_comments }} comment{% plural %}{{ count_comments }} comments{% endblocktrans %}
   </span>
 </a>
@@ -49,7 +49,7 @@
     <form action="." method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {{ form.as_div }}
-      <button type="submit" class="btn btn-success mt-3 mr-3 px-5">{% trans "Submit" %}</button>
+      <button type="submit" class="btn btn-success mt-3 me-3 px-5">{% trans "Submit" %}</button>
       <a href="{% url 'info' section=section info_id=info.id %}" class="btn btn-secondary mt-3 px-5" role="button">{% trans "Cancel" %}</a>
     </form>
   </div>

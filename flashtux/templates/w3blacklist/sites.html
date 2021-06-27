@@ -30,11 +30,11 @@
 <h3>
   {{ site.website }}
   {% if site.status == 2 %}
-  <span class="severity{{ site.severity }} ml-3" title="{{ site.severity_i18n }}">
+  <span class="severity{{ site.severity }} ms-3" title="{{ site.severity_i18n }}">
     {% for i in site.severity_x %}{% include "svg/icon_x.html" %}{% endfor %}
   </span>
   {% else %}
-  <span class="fixed ml-3" title="{% trans "Website has been fixed" %}">
+  <span class="fixed ms-3" title="{% trans "Website has been fixed" %}">
     {% include "svg/check.html" %}
   </span>
   {% endif %}
@@ -47,7 +47,7 @@
     <li>{% trans "Problem:" %} {{ site.shortdesc_i18n }}</li>
     <li>
       {% trans "URL:" %} <a href="{{ site.url }}">{{ site.url }}</a>
-      <img src="{{ MEDIA_URL }}images/flag_{{ site.lang }}.png" class="border ml-2" width="26px" height="15px">
+      <img src="{{ MEDIA_URL }}images/flag_{{ site.lang }}.png" class="border ms-2" width="26px" height="15px">
     </li>
     <li>{% trans "Added:" %} {{ site.date|localdate }}</li>
     {% if site.date_update %}
@@ -174,7 +174,7 @@
           <td class="text-nowrap">{{ site.date|localdate }}</td>
           <td>
             <a href="{% url 'w3blacklist_site' site.id %}">
-              <img src="{{ MEDIA_URL }}images/flag_{{ site.lang }}.png" class="border mr-2" width="26px" height="15px">
+              <img src="{{ MEDIA_URL }}images/flag_{{ site.lang }}.png" class="border me-2" width="26px" height="15px">
               {{ site.website }}
             </a>
           </td>

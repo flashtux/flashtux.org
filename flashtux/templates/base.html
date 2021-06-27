@@ -23,40 +23,41 @@
 <body id="nav1-{% block menu %}{% endblock %}">
 
   <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-    <a class="navbar-brand" href="{% url "home_news" %}">
-      <img src="{{ MEDIA_URL }}images/logo_flashtux.png" width="180" height="35" alt="FlashTux">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarToggler">
-      <div class="navbar-nav mr-auto mt-2 mt-xl-0">
-        <a class="nav-item nav-link nav-home mt-2 mt-xl-0" href="{% url 'home_news' %}">{% trans "Home" %}</a>
-        <a class="nav-item nav-link nav-weechat mt-2 mt-xl-0" href="{% url 'news' section='weechat' %}">WeeChat</a>
-        <a class="nav-item nav-link nav-eciadsl mt-2 mt-xl-0" href="{% url 'news' section='eciadsl' %}">EciAdsl</a>
-        <a class="nav-item nav-link nav-weewm mt-2 mt-xl-0" href="{% url 'news' section='weewm' %}">WeeWM</a>
-        <a class="nav-item nav-link nav-w3blacklist mt-2 mt-xl-0" href="{% url 'news' section='w3blacklist' %}">W3BlackList</a>
-        <a class="nav-item nav-link nav-gmemo mt-2 mt-xl-0" href="{% url 'news' section='gmemo' %}">Gmemo</a>
-        <a class="nav-item nav-link nav-flashtris mt-2 mt-xl-0" href="{% url 'news' section='flashtris' %}">FlashTris</a>
-        <a class="nav-item nav-link nav-coding mt-2 mt-xl-0" href="{% url 'news' section='coding' %}">{% trans "Coding" %}</a>
-        <a class="nav-item nav-link nav-games mt-2 mt-xl-0" href="{% url 'news' section='games' %}">{% trans "Games" %}</a>
-      </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url "home_news" %}">
+        <img src="{{ MEDIA_URL }}images/logo_flashtux.png" width="180" height="35" alt="FlashTux">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <div class="navbar-nav me-auto mt-2 mt-xl-0">
+          <a class="nav-item nav-link nav-home mt-2 mt-xl-0" href="{% url 'home_news' %}">{% trans "Home" %}</a>
+          <a class="nav-item nav-link nav-weechat mt-2 mt-xl-0" href="{% url 'news' section='weechat' %}">WeeChat</a>
+          <a class="nav-item nav-link nav-eciadsl mt-2 mt-xl-0" href="{% url 'news' section='eciadsl' %}">EciAdsl</a>
+          <a class="nav-item nav-link nav-weewm mt-2 mt-xl-0" href="{% url 'news' section='weewm' %}">WeeWM</a>
+          <a class="nav-item nav-link nav-w3blacklist mt-2 mt-xl-0" href="{% url 'news' section='w3blacklist' %}">W3BlackList</a>
+          <a class="nav-item nav-link nav-gmemo mt-2 mt-xl-0" href="{% url 'news' section='gmemo' %}">Gmemo</a>
+          <a class="nav-item nav-link nav-flashtris mt-2 mt-xl-0" href="{% url 'news' section='flashtris' %}">FlashTris</a>
+          <a class="nav-item nav-link nav-coding mt-2 mt-xl-0" href="{% url 'news' section='coding' %}">{% trans "Coding" %}</a>
+          <a class="nav-item nav-link nav-games mt-2 mt-xl-0" href="{% url 'news' section='games' %}">{% trans "Games" %}</a>
+        </div>
 
-      <div class="nav-languages">
-        <form name="lang" action="/i18n/setlang/" method="post">
-          {% csrf_token %}
-          <div class="form-group my-0">
-            <input type="hidden" name="language" value="{{ LANGUAGE_CODE }}">
-            {% comment %}Translators: language used to display the site content{% endcomment %}
-            <select class="form-control form-control-sm" title="{% trans "Language" %}" onchange="javascript:document.forms['lang'].elements['language'].value = this.value; document.forms['lang'].submit();">
-              {% for lang in LANGUAGES %}
-              <option value="{{ lang.0 }}" onclick="javascript:document.forms['lang'].elements['language'].value = '{{ lang.0 }}'; document.forms['lang'].submit();" {% if lang.0 == LANGUAGE_CODE %} selected{% endif %}>{% language lang.0 %}{{ lang.1 }}{% endlanguage %}</option>
-              {% endfor %}
-            </select>
-          </div>
-        </form>
+        <div class="nav-languages">
+          <form name="lang" action="/i18n/setlang/" method="post">
+            {% csrf_token %}
+            <div class="form-group my-0">
+              <input type="hidden" name="language" value="{{ LANGUAGE_CODE }}">
+              {% comment %}Translators: language used to display the site content{% endcomment %}
+              <select class="form-select form-select-sm" title="{% trans "Language" %}" onchange="javascript:document.forms['lang'].elements['language'].value = this.value; document.forms['lang'].submit();">
+                {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}" onclick="javascript:document.forms['lang'].elements['language'].value = '{{ lang.0 }}'; document.forms['lang'].submit();" {% if lang.0 == LANGUAGE_CODE %} selected{% endif %}>{% language lang.0 %}{{ lang.1 }}{% endlanguage %}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </form>
+        </div>
       </div>
-
     </div>
   </nav>
 
@@ -166,8 +167,7 @@
 
   </div> <!-- footer -->
 
-  <script src="{{ MEDIA_URL }}js/jquery-3.5.1.min.js"></script>
-  <script src="{{ MEDIA_URL }}js/popper.min.js"></script>
+  <script src="{{ MEDIA_URL }}js/jquery-3.6.0.min.js"></script>
   <script src="{{ MEDIA_URL }}js/bootstrap.min.js"></script>
 
   <script>
