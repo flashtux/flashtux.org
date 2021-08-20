@@ -21,15 +21,15 @@
 
 from django.db import models
 from django.db.models.signals import post_save
-from django.utils.translation import ugettext, ugettext_lazy, pgettext_lazy
+from django.utils.translation import gettext, gettext_lazy, pgettext_lazy
 from django_countries import countries
 
 from flashtux.common.i18n import i18n_autogen
 
 MODEM_STATUS_CHOICES = (
-    (0, ugettext_lazy('Not supported')),
-    (1, ugettext_lazy('Maybe supported')),
-    (2, ugettext_lazy('Supported')),
+    (0, gettext_lazy('Not supported')),
+    (1, gettext_lazy('Maybe supported')),
+    (2, gettext_lazy('Supported')),
 )
 MODEM_STATUS_TITLE = {
     0: pgettext_lazy('plural', 'Not supported'),
@@ -69,11 +69,11 @@ class Modem(models.Model):
 
     def status_i18n(self):
         """Return translated status."""
-        return ugettext(dict(MODEM_STATUS_CHOICES)[self.status])
+        return gettext(dict(MODEM_STATUS_CHOICES)[self.status])
 
     def status_title_i18n(self):
         """Return translated status for a title."""
-        return ugettext(MODEM_STATUS_TITLE[self.status])
+        return gettext(MODEM_STATUS_TITLE[self.status])
 
     def status_bg_color(self):
         """Return background color for status."""
@@ -87,7 +87,7 @@ class Modem(models.Model):
             for code in codes.split(','):
                 code = code.upper()
                 if code in countries.countries:
-                    country_list2.append(ugettext(countries.countries[code]))
+                    country_list2.append(gettext(countries.countries[code]))
                 else:
                     country_list2.append(code)
             country_list1.append(', '.join(country_list2))
@@ -109,7 +109,7 @@ class Modem(models.Model):
 
     def comment_i18n(self):
         """Return translated comment."""
-        return ugettext(self.comment) if self.comment else ''
+        return gettext(self.comment) if self.comment else ''
 
 
 def handler_modem_saved(sender, **kwargs):

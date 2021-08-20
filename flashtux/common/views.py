@@ -20,7 +20,7 @@
 """Some useful views."""
 
 from django.shortcuts import render
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 from django.views.generic import TemplateView
 
 
@@ -44,7 +44,7 @@ def doc(request, section, versions, languages, other_docs=None):
     formats = (
         ('html', 'HTML'),
         ('pdf', 'PDF'),
-        ('txt', ugettext_lazy('Text')),
+        ('txt', gettext_lazy('Text')),
         ('texi', 'Texinfo'),
     )
     return render(
@@ -63,7 +63,7 @@ def doc(request, section, versions, languages, other_docs=None):
 def faq(request, section, versions, languages):
     """Documentation view."""
     formats = (
-        ('txt', ugettext_lazy('Text')),
+        ('txt', gettext_lazy('Text')),
     )
     return render(
         request,

@@ -25,7 +25,7 @@ from django import template
 from django.conf import settings
 from django.utils import dateformat
 from django.utils.safestring import mark_safe
-from django.utils.translation import ugettext
+from django.utils.translation import gettext
 
 # pylint: disable=invalid-name
 register = template.Library()
@@ -41,15 +41,15 @@ def localdate(value, fmt='date'):
     """
     fmt_lower = fmt.lower()
     if fmt_lower == 'date':
-        date_fmt = ugettext(settings.DATE_FORMAT)
+        date_fmt = gettext(settings.DATE_FORMAT)
         if not isinstance(value, (date, datetime)):
             value = datetime.strptime(value, '%Y-%m-%d').date()
     elif fmt_lower == 'date_year_month':
-        date_fmt = ugettext(settings.DATE_YEAR_MONTH_FORMAT)
+        date_fmt = gettext(settings.DATE_YEAR_MONTH_FORMAT)
         if not isinstance(value, (date, datetime)):
             value = datetime.strptime(value, '%Y-%m').date()
     elif fmt_lower == 'datetime':
-        date_fmt = ugettext(settings.DATETIME_FORMAT)
+        date_fmt = gettext(settings.DATETIME_FORMAT)
         if not isinstance(value, (date, datetime)):
             value = datetime.strptime(value, '%Y-%m-%d %H:%M')
     else:

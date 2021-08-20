@@ -21,7 +21,7 @@
 
 from django.db.models import Count
 from django.shortcuts import render, get_object_or_404
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 
 from flashtux.common.views import (
     doc as view_doc,
@@ -34,47 +34,47 @@ def doc(request):
     """EciAdsl documentation."""
     versions = (
         ('eciadsl_install',
-         ugettext_lazy('EciAdsl installation guide'),
+         gettext_lazy('EciAdsl installation guide'),
          'v0.12'),
         ('eciadsl-devel_install',
-         ugettext_lazy('EciAdsl installation guide'),
-         ugettext_lazy('development version')),
+         gettext_lazy('EciAdsl installation guide'),
+         gettext_lazy('development version')),
     )
     languages = (
-        ('fr', ugettext_lazy('French')),
-        ('en', ugettext_lazy('English')),
-        ('it', ugettext_lazy('Italian')),
-        ('es', ugettext_lazy('Spanish')),
-        ('de', ugettext_lazy('German')),
-        ('tr', ugettext_lazy('Turkish')),
+        ('fr', gettext_lazy('French')),
+        ('en', gettext_lazy('English')),
+        ('it', gettext_lazy('Italian')),
+        ('es', gettext_lazy('Spanish')),
+        ('de', gettext_lazy('German')),
+        ('tr', gettext_lazy('Turkish')),
     )
     other_docs = (
         (['fr', 'en'],
          '/files/eciadsl/doc/eciadsl-mdk10.txt',
-         ugettext_lazy('EciAdsl installation with Mandrake 10 and kernel '
-                       '2.6.x')),
+         gettext_lazy('EciAdsl installation with Mandrake 10 and kernel '
+                      '2.6.x')),
         (['fr', 'en'],
          '/files/download/eciadsl/beta/',
-         ugettext_lazy('Instructions for 2.6.x kernels patch')),
+         gettext_lazy('Instructions for 2.6.x kernels patch')),
         (['fr', 'en'],
          '/files/eciadsl/doc/eciadsl-on-openbsd.txt',
-         ugettext_lazy('EciAdsl installation on *BSD')),
+         gettext_lazy('EciAdsl installation on *BSD')),
         (['fr'],
          '/files/eciadsl/doc/eciadsl-free-degroupe.txt',
-         ugettext_lazy(u'EciAdsl config with "Free dégroupé" (France only)')),
+         gettext_lazy(u'EciAdsl config with "Free dégroupé" (France only)')),
         (['fr', 'en'],
          '/files/eciadsl/doc/eciadsl-avangard.txt',
-         ugettext_lazy('EciAdsl with Avangard provider (Russia)')),
+         gettext_lazy('EciAdsl with Avangard provider (Russia)')),
         (['fr', 'en'],
          '/files/eciadsl/doc/eciadsl-noapic.txt',
-         ugettext_lazy('EciAdsl and APIC problem')),
+         gettext_lazy('EciAdsl and APIC problem')),
         (['en'],
          '/files/eciadsl/doc/dsl200.html',
-         ugettext_lazy('EciAdsl with DSL-200 B1 modem and TPG '
-                       '(australian ISP)')),
+         gettext_lazy('EciAdsl with DSL-200 B1 modem and TPG '
+                      '(australian ISP)')),
         (['en'],
          '/files/eciadsl/doc/eciadsl_hotplug_en.html',
-         ugettext_lazy('EciAdsl with hotplug')),
+         gettext_lazy('EciAdsl with hotplug')),
     )
     return view_doc(request, 'eciadsl', versions, languages,
                     other_docs=other_docs)
@@ -83,14 +83,14 @@ def doc(request):
 def faq(request):
     """EciAdsl FAQ."""
     versions = (
-        ('TROUBLESHOOTING', ugettext_lazy('EciAdsl FAQ'), ''),
+        ('TROUBLESHOOTING', gettext_lazy('EciAdsl FAQ'), ''),
     )
     languages = (
-        ('fr', ugettext_lazy('French')),
-        ('en', ugettext_lazy('English')),
-        ('it', ugettext_lazy('Italian')),
-        ('pt', ugettext_lazy('Portuguese')),
-        ('es', ugettext_lazy('Spanish')),
+        ('fr', gettext_lazy('French')),
+        ('en', gettext_lazy('English')),
+        ('it', gettext_lazy('Italian')),
+        ('pt', gettext_lazy('Portuguese')),
+        ('es', gettext_lazy('Spanish')),
     )
     return view_faq(request, 'eciadsl', versions, languages)
 

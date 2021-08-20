@@ -20,7 +20,7 @@
 """Views for programs."""
 
 from django.shortcuts import render, get_object_or_404, get_list_or_404
-from django.utils.translation import ugettext
+from django.utils.translation import gettext
 
 from flashtux.coding.models import Program
 
@@ -30,7 +30,7 @@ def programs(request, category=None, name=None):
     categories = (Program.objects.distinct('category').order_by('category')
                   .values_list('category', flat=True))
     categories = [
-        (categ, ugettext(categ.capitalize()))
+        (categ, gettext(categ.capitalize()))
         for categ in categories
     ]
     data = {

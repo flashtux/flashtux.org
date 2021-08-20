@@ -21,7 +21,7 @@
 
 import os
 
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -43,8 +43,8 @@ USE_I18N = True
 USE_L10N = False
 
 LANGUAGES = (
-    ('en', ugettext_lazy('English')),
-    ('fr', ugettext_lazy('French')),
+    ('en', gettext_lazy('English')),
+    ('fr', gettext_lazy('French')),
 )
 LANGUAGES_LOCALES = {
     'en': 'en_US',
@@ -54,16 +54,16 @@ LANGUAGES_LOCALES = {
 # Translators: this is a date format, see: http://www.php.net/date
 # Translators: (note: the result string must be short, use abbreviation
 # Translators: for month if possible)
-DATE_FORMAT = ugettext_lazy('M j, Y')
+DATE_FORMAT = gettext_lazy('M j, Y')
 
 # Translators: this is a short date format, see: http://www.php.net/date
 # Translators: date with only year and month
-DATE_YEAR_MONTH_FORMAT = ugettext_lazy('F Y')
+DATE_YEAR_MONTH_FORMAT = gettext_lazy('F Y')
 
 # Translators: this is a date/time format, see: http://www.php.net/date
 # Translators: (note: the result string must be short, use abbreviation
 # Translators: for month if possible)
-DATETIME_FORMAT = ugettext_lazy('M j, Y H:i')
+DATETIME_FORMAT = gettext_lazy('M j, Y H:i')
 
 MEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, '..', 'media'))
 MEDIA_URL = '/media/'

@@ -21,7 +21,7 @@
 
 from django.db import models
 from django.db.models.signals import post_save
-from django.utils.translation import ugettext
+from django.utils.translation import gettext
 
 from flashtux.common.i18n import i18n_autogen
 
@@ -48,7 +48,7 @@ class Project(models.Model):
 
     def description_i18n(self):
         """Return translated text."""
-        return ugettext(self.description)
+        return gettext(self.description)
 
     class Meta:
         """Meta class for Project."""

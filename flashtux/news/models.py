@@ -24,7 +24,7 @@ import re
 from django import forms
 from django.db import models
 from django.db.models.signals import post_save
-from django.utils.translation import ugettext, ugettext_lazy
+from django.utils.translation import gettext, gettext_lazy
 
 from flashtux.common.utils import truncate_content
 from flashtux.common.forms import (
@@ -80,8 +80,8 @@ class Info(models.Model):
             'w3blacklist': 'W3BlackList',
             'gmemo': 'Gmemo',
             'flashtris': 'FlashTris',
-            'coding': ugettext('Coding'),
-            'games': ugettext('Games'),
+            'coding': gettext('Coding'),
+            'games': gettext('Games'),
         }
         return section_display[self.section]
 
@@ -90,12 +90,12 @@ class Info(models.Model):
         match = PATTERN_TITLE_VERSION.match(self.title)
         if match:
             # if the title is "Version x.y.z", translate only "Version"
-            return f'{ugettext(match.group(1))} {match.group(2)}'
-        return ugettext(self.title)
+            return f'{gettext(match.group(1))} {match.group(2)}'
+        return gettext(self.title)
 
     def text_i18n(self):
         """Return translated text."""
-        return ugettext(self.text.replace('\r\n', '\n'))
+        return gettext(self.text.replace('\r\n', '\n'))
 
     def date_title_url(self):
         """Return date+title to include in URL."""
@@ -136,31 +136,31 @@ class CommentFormAdd(Form):
     required_css_class = 'required'
     title = CharField(
         max_length=256,
-        label=ugettext_lazy('Title'),
-        help_text=ugettext_lazy('The comment title.'),
+        label=gettext_lazy('Title'),
+        help_text=gettext_lazy('The comment title.'),
     )
     content = CharField(
         max_length=1024,
-        label=ugettext_lazy('Comment'),
-        help_text=ugettext_lazy('Your comment.'),
+        label=gettext_lazy('Comment'),
+        help_text=gettext_lazy('Your comment.'),
         widget=forms.Textarea(attrs={'rows': '6', 'autofocus': True}),
     )
     name = CharField(
         max_length=256,
-        label=ugettext_lazy('Your name or nick'),
-        help_text=ugettext_lazy('Displayed above the comment.'),
+        label=gettext_lazy('Your name or nick'),
+        help_text=gettext_lazy('Displayed above the comment.'),
     )
     email = EmailField(
         max_length=256,
-        label=ugettext_lazy('Your e-mail'),
-        help_text=ugettext_lazy('Optional, never displayed.'),
+        label=gettext_lazy('Your e-mail'),
+        help_text=gettext_lazy('Optional, never displayed.'),
         required=False,
         widget=Html5EmailInput(),
     )
     test = TestField(
         max_length=64,
-        label=ugettext_lazy('Are you a spammer?'),
-        help_text=ugettext_lazy('Enter "no" if you are not a spammer.'),
+        label=gettext_lazy('Are you a spammer?'),
+        help_text=gettext_lazy('Enter "no" if you are not a spammer.'),
     )
 
     def __init__(self, *args, **kwargs):

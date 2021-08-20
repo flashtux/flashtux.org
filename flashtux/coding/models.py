@@ -21,7 +21,7 @@
 
 from django.db import models
 from django.db.models.signals import post_save
-from django.utils.translation import ugettext
+from django.utils.translation import gettext
 
 from flashtux.common.i18n import i18n_autogen
 
@@ -47,15 +47,15 @@ class Program(models.Model):
 
     def prog_language_i18n(self):
         """Return translated programming language."""
-        return ugettext(self.prog_language)
+        return gettext(self.prog_language)
 
     def shortdesc_i18n(self):
         """Return translated short description."""
-        return ugettext(self.shortdesc)
+        return gettext(self.shortdesc)
 
     def description_i18n(self):
         """Return translated description."""
-        return ugettext(self.description.replace('\r\n', '\n'))
+        return gettext(self.description.replace('\r\n', '\n'))
 
     def images_list(self):
         """Return a list of images."""

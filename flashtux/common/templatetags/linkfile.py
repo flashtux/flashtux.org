@@ -24,7 +24,7 @@ import os
 from django import template
 from django.template.defaultfilters import filesizeformat
 from django.utils.safestring import mark_safe
-from django.utils.translation import ugettext
+from django.utils.translation import gettext
 
 from flashtux.common.path import files_path_join
 
@@ -43,10 +43,10 @@ def linkfile(filename):
         if os.path.isfile(path):
             result += ' (%s)' % filesizeformat(os.path.getsize(path))
         elif is_dir:
-            result += ' (%s)' % ugettext('directory')
+            result += ' (%s)' % gettext('directory')
     else:
         result = '<span class="text-muted">%s</span>' % (
-            ugettext('File not found'))
+            gettext('File not found'))
     return mark_safe(result)
 
 

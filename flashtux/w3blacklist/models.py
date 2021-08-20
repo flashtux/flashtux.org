@@ -24,25 +24,25 @@ import re
 
 from django.db import models
 from django.db.models.signals import post_save
-from django.utils.translation import ugettext, ugettext_lazy
+from django.utils.translation import gettext, gettext_lazy
 
 from flashtux.common.utils import truncate_content
 from flashtux.common.i18n import i18n_autogen
 
 SITE_STATUS_CHOICES = (
     # Translators: status of a w3blacklist site
-    (0, ugettext_lazy('rejected')),
+    (0, gettext_lazy('rejected')),
     # Translators: status of a w3blacklist site
-    (1, ugettext_lazy('waiting for approval')),
+    (1, gettext_lazy('waiting for approval')),
     # Translators: status of a w3blacklist site
-    (2, ugettext_lazy('blacklisted')),
+    (2, gettext_lazy('blacklisted')),
     # Translators: status of a w3blacklist site
-    (3, ugettext_lazy('fixed')),
+    (3, gettext_lazy('fixed')),
 )
 SITE_SEVERITY_CHOICES = (
-    (1, ugettext_lazy('display issues')),
-    (2, ugettext_lazy('partially broken')),
-    (3, ugettext_lazy('entirely broken')),
+    (1, gettext_lazy('display issues')),
+    (2, gettext_lazy('partially broken')),
+    (3, gettext_lazy('entirely broken')),
 )
 
 
@@ -78,18 +78,18 @@ class Site(models.Model):
 
     def status_i18n(self):
         """Return translated status."""
-        return ugettext(dict(SITE_STATUS_CHOICES)[self.status])
+        return gettext(dict(SITE_STATUS_CHOICES)[self.status])
 
     def shortdesc_i18n(self):
         """Return translated short description."""
         if self.shortdesc:
-            return ugettext(self.shortdesc.replace('\r\n', '\n'))
+            return gettext(self.shortdesc.replace('\r\n', '\n'))
         return ''
 
     def description_i18n(self):
         """Return translated description."""
         if self.description:
-            return ugettext(self.description.replace('\r\n', '\n'))
+            return gettext(self.description.replace('\r\n', '\n'))
         return ''
 
     def severity_x(self):
@@ -98,7 +98,7 @@ class Site(models.Model):
 
     def severity_i18n(self):
         """Return the translated severity description."""
-        return ugettext(dict(SITE_SEVERITY_CHOICES)[self.severity])
+        return gettext(dict(SITE_SEVERITY_CHOICES)[self.severity])
 
     def browsers(self):
         """Return dict with browsers compatibility."""
@@ -168,11 +168,11 @@ class Letter(models.Model):
 
     def description_i18n(self):
         """Return translated description."""
-        return ugettext(self.description)
+        return gettext(self.description)
 
     def content_i18n(self):
         """Return translated content, with HTML tags for variable text."""
-        translated = ugettext(self.content.replace('\r\n', '\n'))
+        translated = gettext(self.content.replace('\r\n', '\n'))
         return re.sub(r'\[\[(.+?)\]\]',
                       r'<span class="highlight">\1</span>',
                       translated)
