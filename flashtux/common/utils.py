@@ -23,5 +23,5 @@
 def truncate_content(content, length=64):
     """Return the truncated content."""
     if len(content) > length:
-        return content[:64] + u'(…)'
+        return content[:64] + '(…)'
     return content

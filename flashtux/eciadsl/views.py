@@ -61,7 +61,7 @@ def doc(request):
          gettext_lazy('EciAdsl installation on *BSD')),
         (['fr'],
          '/files/eciadsl/doc/eciadsl-free-degroupe.txt',
-         gettext_lazy(u'EciAdsl config with "Free dégroupé" (France only)')),
+         gettext_lazy('EciAdsl config with "Free dégroupé" (France only)')),
         (['fr', 'en'],
          '/files/eciadsl/doc/eciadsl-avangard.txt',
          gettext_lazy('EciAdsl with Avangard provider (Russia)')),

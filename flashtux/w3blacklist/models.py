@@ -180,7 +180,7 @@ class Letter(models.Model):
     def content_truncated(self, length=64):
         """Return the truncated content."""
         if len(self.content) > length:
-            return self.content[:64] + u'(…)'
+            return self.content[:64] + '(…)'
         return self.content
 
     class Meta:
