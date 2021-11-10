@@ -51,7 +51,7 @@ SECTIONS_CHOICES = [
     (section, section)
     for section in SECTIONS
 ]
-RE_SECTIONS = '(%s)' % '|'.join(SECTIONS)
+RE_SECTIONS = f'({"|".join(SECTIONS)})'
 
 PATTERN_TITLE_VERSION = re.compile('(Version) ([0-9.a-z-]*)$')
 

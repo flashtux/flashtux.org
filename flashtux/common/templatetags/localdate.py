@@ -57,7 +57,5 @@ def localdate(value, fmt='date'):
     date_value = dateformat.format(value, date_fmt)
     if fmt[0].isupper():
         date_value = date_value.capitalize()
-    return mark_safe('<time datetime="%s">%s</time>' % (
-        value.isoformat(),
-        date_value,
-    ))
+    date_iso = value.isoformat()
+    return mark_safe(f'<time datetime="{date_iso}">{date_value}</time>')

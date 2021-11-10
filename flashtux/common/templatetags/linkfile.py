@@ -41,12 +41,12 @@ def linkfile(filename):
         base_path = os.path.basename(path) + ('/' if is_dir else '')
         result = f'<a href="/files/{filename}">{base_path}</a>'
         if os.path.isfile(path):
-            result += ' (%s)' % filesizeformat(os.path.getsize(path))
+            result += f' ({filesizeformat(os.path.getsize(path))})'
         elif is_dir:
-            result += ' (%s)' % gettext('directory')
+            result += f' ({gettext("directory")})'
     else:
-        result = '<span class="text-muted">%s</span>' % (
-            gettext('File not found'))
+        not_found = gettext('File not found')
+        result = f'<span class="text-muted">{not_found}</span>'
     return mark_safe(result)
 
 
