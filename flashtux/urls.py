@@ -39,6 +39,11 @@ URL_ABOUT_EXTRA = getattr(settings, 'URL_ABOUT_EXTRA', 'extra')
 admin.autodiscover()
 
 urlpatterns = [
+    # favicon.ico
+    url(rf'^favicon.ico$',
+        RedirectView.as_view(url=f'{settings.MEDIA_URL}images/favicon.png',
+                             permanent=True)),
+
     # admin
     url(rf'^{settings.ADMIN_PAGE}/doc/',
         include('django.contrib.admindocs.urls')),
