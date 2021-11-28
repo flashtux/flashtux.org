@@ -10,7 +10,7 @@
 
 {% if info_id and not form %}
 <div class="new-comment-button">
-  <a href="{% url 'info_reply' section=section info_id=info.id comment_relative_id=0 %}" class="btn btn-outline-secondary" role="button">
+  <a href="{% url 'info_reply' section=section info_id=info.id comment_relative_id=0 %}" class="btn btn-outline-primary" role="button">
     {% trans "New comment" %}
   </a>
 </div>
@@ -50,7 +50,7 @@
       {% csrf_token %}
       {{ form.as_div }}
       <button type="submit" class="btn btn-success mt-3 me-3 px-5">{% trans "Submit" %}</button>
-      <a href="{% url 'info' section=section info_id=info.id %}" class="btn btn-secondary mt-3 px-5" role="button">{% trans "Cancel" %}</a>
+      <a href="{% url 'info' section=section info_id=info.id %}" class="btn btn-danger mt-3 px-5" role="button">{% trans "Cancel" %}</a>
     </form>
   </div>
 </div>
