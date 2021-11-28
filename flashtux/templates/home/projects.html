@@ -55,14 +55,16 @@
               {% if project.website %}
               <br>
               <strong>{% trans "Website:" %}</strong>
-              <a href="{{ project.website }}" target="_blank" rel="noopener">{{ project.website }}</a>
-              <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+              <a href="{{ project.website }}" target="_blank" rel="noopener">
+                {{ project.website }} ↗
+              </a>
               {% endif %}
               {% if project.repository %}
               <br>
               <strong>{% trans "Sources:" %}</strong>
-              <a href="{{ project.repository }}" target="_blank" rel="noopener">{{ project.repository }}</a>
-              <img src="{{ MEDIA_URL }}images/link.png" width="16" height="16" alt="&gt;&gt;">
+              <a href="{{ project.repository }}" target="_blank" rel="noopener">
+                {{ project.repository }} ↗
+              </a>
               {% endif %}
             </p>
           </div>

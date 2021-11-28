@@ -24,9 +24,9 @@
           </td>
           <td>{% trans lang.1 %}</td>
           {% for format in formats %}
-          <td class="text-center">
+          <td class="text-center doc">
             <a href="/files/{{ section }}/doc/{{ version.0 }}_{{ lang.0 }}.{{ format.0 }}" target="_blank" rel="noopener">
-              <img src="{{ MEDIA_URL }}images/doc.png" alt="{% trans "Doc" %}" width="17" height="22">
+              {% include "svg/doc.html" %}
             </a>
           </td>
           {% endfor %}

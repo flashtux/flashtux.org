@@ -47,7 +47,7 @@
 
 <div class="row pt-5 pb-3 {% if not forloop.last %}border-bottom{% endif %}">
   <div class="col-auto">
-    <div class="text-center border rounded shadow mb-4" style="width: 150px; height: 150px; line-height: 150px; background: {{ modem.status_bg_color }};">
+    <div class="text-center border rounded shadow mb-4 modem-status modem-status-{{ modem.status }}">
       {% if modem.photo %}
       <img src="{{ MEDIA_URL }}images/eciadsl/modems/{{ modem.photo }}" width="128" height="128"
            alt="{{ modem.manufacturer }} {{ modem.modem }}" >

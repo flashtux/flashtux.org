@@ -1,0 +1,46 @@
+/*
+ * FlashTux.org CSS Style - Light style
+ * Copyright (C) 1999-2021 Sébastien Helleu <flashcode@flashtux.org>
+ */
+
+:root {
+  --body-bg-color: #fff;
+  --body-color: #000;
+  --link-color: #2a6ea1;
+  --tbody-border-top: inherit;
+  --td-color: inherit;
+  --table-striped-tr-color: inherit;
+  --alert-success-bg-color: #d1e7dd;
+  --alert-warning-bg-color: #fff3cd;
+  --alert-project-bg-color: #f8f8f8;
+  --border: 1px solid #dee2e6;
+  --img-thumbnail-border-color: #dee2e6;
+  --navbar-bg-color: #d5d5ee;
+  --navbar-bg: linear-gradient(#d5d5ee, #fdfdff);
+  --navbar-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  --navbar-color: #395b8d;
+  --navbar-toggler-border: 1px solid #ccc;
+  --navbar-toggler-icon-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --form-select-bg-color: #fff;
+  --form-select-color: #212529;
+  --form-required-color: #f00;
+  --page-link-border: 1px solid #dee2e6;
+  --page-link-active-bg-color: #0d6efd;
+  --page-link-disabled-color: #6c757d;
+  --page-link-hover-bg-color: #eee;
+  --comment-title-bg-color: #ebebeb;
+  --comment-name-date-color: #888;
+  --modem-status-not-supported-bg-color: #f6e0e0;
+  --modem-status-maybe-supported-bg-color: #f6eee0;
+  --modem-status-supported-bg-color: #e0f6e0;
+  --severity1-svg-fill: #999;
+  --severity2-svg-fill: #cd8500;
+  --severity3-svg-fill: #f00;
+  --fixed-svg-fill: #090;
+  --zimg-ok-bg-color: #dfd;
+  --zimg-ko-bg-color: #fcc;
+  --letter-highlight-color: #070;
+  --footer-bg-color: #ebebeb;
+  --footer-wave-bg-color: #fff;
+  --footer-wave-svg-fill: #ebebeb;
+}

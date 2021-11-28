@@ -12,9 +12,17 @@
   <meta name="keywords" content="flashtux, linux, bsd, gpl, free, os">
   <meta name="robots" content="all">
   <link rel="shortcut icon" type="image/png" href="{{ MEDIA_URL }}images/favicon.png">
-  <link rel="stylesheet" href="{{ MEDIA_URL }}css/bootstrap.min.css">
+  {% if theme == 'auto' %}
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/bootstrap_dark.min.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/bootstrap_light.min.css" media="(not (prefers-color-scheme: dark)), (prefers-color-scheme: light)">
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style_dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style_light.css" media="(not (prefers-color-scheme: dark)), (prefers-color-scheme: light)">
+  {% else %}
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/bootstrap_{{ theme }}.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style_{{ theme }}.css" media="screen">
+  {% endif %}
+  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style.css" media="screen">
   {% block css %}{% endblock %}
-  <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style.css" media="screen" title="Normal">
   <link rel="alternate" type="application/rss+xml" href="{% url 'feeds_news' %}" title="FlashTux RSS feed">
   <title>{% block title %}{% trans "FlashTux: free projects for free OS" %}{% endblock %}{% block subtitle %}{% endblock %}</title>
   {% block extrahead %}{% endblock %}
@@ -22,7 +30,7 @@
 
 <body id="nav1-{% block menu %}{% endblock %}">
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+  <nav class="navbar navbar-expand-xl navbar-flashtux fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url "home_news" %}">
         <img src="{{ MEDIA_URL }}images/logo_flashtux.png" width="180" height="35" alt="FlashTux">
@@ -43,20 +51,19 @@
           <a class="nav-item nav-link nav-games mt-2 mt-xl-0" href="{% url 'news' section='games' %}">{% trans "Games" %}</a>
         </div>
 
-        <div class="nav-languages">
-          <form name="lang" action="/i18n/setlang/" method="post">
-            {% csrf_token %}
-            <div class="form-group my-0">
-              <input type="hidden" name="language" value="{{ LANGUAGE_CODE }}">
-              {% comment %}Translators: language used to display the site content{% endcomment %}
-              <select class="form-select form-select-sm" title="{% trans "Language" %}" onchange="javascript:document.forms['lang'].elements['language'].value = this.value; document.forms['lang'].submit();">
-                {% for lang in LANGUAGES %}
-                <option value="{{ lang.0 }}" onclick="javascript:document.forms['lang'].elements['language'].value = '{{ lang.0 }}'; document.forms['lang'].submit();" {% if lang.0 == LANGUAGE_CODE %} selected{% endif %}>{% language lang.0 %}{{ lang.1 }}{% endlanguage %}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </form>
-        </div>
+        <form name="lang" action="/i18n/setlang/" method="post">
+          {% csrf_token %}
+          <div class="form-group my-0">
+            <input type="hidden" name="language" value="{{ LANGUAGE_CODE }}">
+            {% comment %}Translators: language used to display the site content{% endcomment %}
+            <select class="form-select form-select-sm" title="{% trans "Language" %}" onchange="javascript:document.forms['lang'].elements['language'].value = this.value; document.forms['lang'].submit();">
+              {% for lang in LANGUAGES %}
+              <option value="{{ lang.0 }}" onclick="javascript:document.forms['lang'].elements['language'].value = '{{ lang.0 }}'; document.forms['lang'].submit();" {% if lang.0 == LANGUAGE_CODE %} selected{% endif %}>{% language lang.0 %}{{ lang.1 }}{% endlanguage %}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </form>
+
       </div>
     </div>
   </nav>
@@ -162,6 +169,8 @@
         Copyright &#169; 1999-{% now "Y" %} <a href="mailto:{% txt2html "flashcode@flashtux.org" %}" title="email webmaster">Sébastien Helleu</a>
         &mdash;
         <a href="{% url 'home_about' %}">{% trans "About FlashTux.org" %}</a>
+        &mdash; Theme: <strong>{{ theme }}</strong>
+        ({% for name in other_themes %}<a href="?theme={{ name }}">{{ name }}</a>{% if not forloop.last %}, {% endif %}{% endfor %})
       </p>
     </div>
 

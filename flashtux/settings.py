@@ -51,6 +51,13 @@ LANGUAGES_LOCALES = {
     'fr': 'fr_FR',
 }
 
+# Themes
+THEMES = (
+    'auto',
+    'dark',
+    'light',
+)
+
 # Translators: this is a date format, see: http://www.php.net/date
 # Translators: (note: the result string must be short, use abbreviation
 # Translators: for month if possible)
@@ -110,6 +117,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'flashtux.middleware.ThemeMiddleware',
 ]
 
 TEMPLATES = [
@@ -129,6 +137,7 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'flashtux.context_processors.theme',
             ],
         },
     },

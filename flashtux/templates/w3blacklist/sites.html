@@ -10,7 +10,7 @@
 {{ block.super }}
 
 {% if not site %}
-<div class="alert border project">
+<div class="alert alert-project">
   {% trans "Status:" %}
   <ul>
     <li>{% blocktrans %}<strong>{{ count_blacklist }}</strong> blacklisted sites{% endblocktrans %}</li>

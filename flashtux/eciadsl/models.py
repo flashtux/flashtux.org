@@ -36,11 +36,6 @@ MODEM_STATUS_TITLE = {
     1: pgettext_lazy('plural', 'Maybe supported'),
     2: pgettext_lazy('plural', 'Supported'),
 }
-MODEM_STATUS_BG_COLOR = {
-    0: '#f6e0e0',
-    1: '#f6eee0',
-    2: '#e0f6e0',
-}
 
 
 class Modem(models.Model):
@@ -74,10 +69,6 @@ class Modem(models.Model):
     def status_title_i18n(self):
         """Return translated status for a title."""
         return gettext(MODEM_STATUS_TITLE[self.status])
-
-    def status_bg_color(self):
-        """Return background color for status."""
-        return MODEM_STATUS_BG_COLOR[self.status]
 
     def country_string(self):
         """Return list of countries as string."""
