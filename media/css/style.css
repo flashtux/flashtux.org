@@ -327,7 +327,22 @@ ul {
 
 .footer {
   background-color: var(--footer-bg-color);
-  margin-top: 2rem;
+}
+
+.footer .wave {
+  height: 125px;
+  background-color: var(--footer-wave-bg-color);
+  overflow: hidden;
+}
+
+.footer .wave svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .wave svg path {
+  fill: var(--footer-wave-svg-fill);
+  stroke: none;
 }
 
 .footer .main {
