@@ -21,33 +21,39 @@
 
 # pylint: disable=invalid-name, no-value-for-parameter
 
-from django.conf.urls import url
+from django.urls import path
 from django.views.generic.base import TemplateView
 
 from flashtux.image.views import images
 
 urlpatterns = [
-    url(r'^screenshots/$', images,
-        {'section': 'flashtris', 'category': 'screenshot',
-         'template': 'screenshots.html'},
-        name='flashtris_screenshots'),
-    url(r'^screenshots/(?P<filename>[a-zA-Z0-9_\-.]*)/$', images,
-        {'section': 'flashtris', 'category': 'screenshot',
-         'template': 'screenshots.html'},
-        name='flashtris_screenshot'),
-    url(r'^doc/$',
-        TemplateView.as_view(template_name='flashtris/doc.html'),
-        name='flashtris_doc'),
-    url(r'^download/$',
-        TemplateView.as_view(template_name='flashtris/download.html'),
-        name='flashtris_download'),
-    url(r'^dev/$',
-        TemplateView.as_view(template_name='flashtris/dev.html'),
-        name='flashtris_dev'),
-    url(r'^faq/$',
-        TemplateView.as_view(template_name='flashtris/faq.html'),
-        name='flashtris_faq'),
-    url(r'^support/$',
-        TemplateView.as_view(template_name='flashtris/support.html'),
-        name='flashtris_support'),
+    path('screenshots/', images,
+         kwargs={
+             'section': 'flashtris',
+             'category': 'screenshot',
+             'template': 'screenshots.html',
+         },
+         name='flashtris_screenshots'),
+    path('screenshots/<str:filename>/', images,
+         kwargs={
+             'section': 'flashtris',
+             'category': 'screenshot',
+             'template': 'screenshots.html',
+         },
+         name='flashtris_screenshot'),
+    path('doc/',
+         TemplateView.as_view(template_name='flashtris/doc.html'),
+         name='flashtris_doc'),
+    path('download/',
+         TemplateView.as_view(template_name='flashtris/download.html'),
+         name='flashtris_download'),
+    path('dev/',
+         TemplateView.as_view(template_name='flashtris/dev.html'),
+         name='flashtris_dev'),
+    path('faq/',
+         TemplateView.as_view(template_name='flashtris/faq.html'),
+         name='flashtris_faq'),
+    path('support/',
+         TemplateView.as_view(template_name='flashtris/support.html'),
+         name='flashtris_support'),
 ]

@@ -22,8 +22,8 @@
 # pylint: disable=invalid-name
 
 from django.conf import settings
-from django.conf.urls import include, url
 from django.conf.urls.static import static
+from django.urls import include, path, re_path
 from django.contrib import admin
 from django.views.generic.base import RedirectView, TemplateView
 
@@ -40,52 +40,50 @@ admin.autodiscover()
 
 urlpatterns = [
     # favicon.ico
-    url(r'^favicon.ico$',
-        RedirectView.as_view(url=f'{settings.MEDIA_URL}images/favicon.png',
-                             permanent=True)),
+    path('favicon.ico',
+         RedirectView.as_view(url=f'{settings.MEDIA_URL}images/favicon.png',
+                              permanent=True)),
 
     # admin
-    url(rf'^{settings.ADMIN_PAGE}/doc/',
-        include('django.contrib.admindocs.urls')),
-    url(rf'^{settings.ADMIN_PAGE}/', admin.site.urls),
+    path(f'{settings.ADMIN_PAGE}/doc/',
+         include('django.contrib.admindocs.urls')),
+    path(f'{settings.ADMIN_PAGE}/', admin.site.urls),
 
     # set language
-    url(r'^i18n/', include('django.conf.urls.i18n')),
+    path('i18n/', include('django.conf.urls.i18n')),
 
     # main FlashTux URLs
-    url(r'^$', news_section, name='home_news'),
-    url(rf'^(?P<section>{RE_SECTIONS})/$', news_section, name='news'),
-    url(rf'^info/(?P<section>{RE_SECTIONS})/(?P<info_id>[0-9]*)/$',
-        news_section, name='info'),
-    url(rf'^info/reply/(?P<section>{RE_SECTIONS})/(?P<info_id>[0-9]*)-'
-        rf'(?P<comment_relative_id>[0-9]*)/$',
-        form_comment, name='info_reply'),
-    url(r'^projects/$', projects, name='home_projects'),
-    url(r'^about/$', about, name='home_about'),
-    url(rf'^about/{URL_ABOUT_EXTRA}/$', about, {'extra_info': True}),
-    url(r'^donate/$',
-        TemplateView.as_view(template_name='home/donate.html'),
-        name='home_donate'),
-    url(r'^eciadsl/', include('flashtux.eciadsl.urls')),
-    url(r'^weewm/', include('flashtux.weewm.urls')),
-    url(r'^w3blacklist/', include('flashtux.w3blacklist.urls')),
-    url(r'^gmemo/', include('flashtux.gmemo.urls')),
-    url(r'^flashtris/', include('flashtux.flashtris.urls')),
-    url(r'^coding/', include('flashtux.coding.urls')),
-    url(r'^games/', include('flashtux.games.urls')),
+    path('', news_section, name='home_news'),
+    re_path(rf'^(?P<section>{RE_SECTIONS})/$', news_section, name='news'),
+    re_path(rf'^info/(?P<section>{RE_SECTIONS})/(?P<info_id>[0-9]*)/$',
+            news_section, name='info'),
+    re_path(rf'^info/reply/(?P<section>{RE_SECTIONS})/(?P<info_id>[0-9]*)-'
+            rf'(?P<comment_relative_id>[0-9]*)/$',
+            form_comment, name='info_reply'),
+    path('projects/', projects, name='home_projects'),
+    path('about/', about, name='home_about'),
+    path(f'about/{URL_ABOUT_EXTRA}/', about, {'extra_info': True}),
+    path('donate/', TemplateView.as_view(template_name='home/donate.html'),
+         name='home_donate'),
+    path('eciadsl/', include('flashtux.eciadsl.urls')),
+    path('weewm/', include('flashtux.weewm.urls')),
+    path('w3blacklist/', include('flashtux.w3blacklist.urls')),
+    path('gmemo/', include('flashtux.gmemo.urls')),
+    path('flashtris/', include('flashtux.flashtris.urls')),
+    path('coding/', include('flashtux.coding.urls')),
+    path('games/', include('flashtux.games.urls')),
 
     # feeds
-    url(r'^feeds/news/$', LatestNewsFeed(), name='feeds_news'),
-    url(rf'^feeds/news/(?P<section>{RE_SECTIONS})/$',
-        LatestNewsFeed(), name='feeds_news_section'),
+    path('feeds/news/', LatestNewsFeed(), name='feeds_news'),
+    re_path(rf'^feeds/news/(?P<section>{RE_SECTIONS})/$',
+            LatestNewsFeed(), name='feeds_news_section'),
 
     # files and media
-    url('^files$', RedirectView.as_view(url='/files/')),
-    url('^media$', RedirectView.as_view(url='/media/')),
+    path('files', RedirectView.as_view(url='/files/')),
+    path('media', RedirectView.as_view(url='/media/')),
 
     # robots.txt
-    url(r'^robots\.txt$',
-        TextTemplateView.as_view(template_name='robots.txt')),
+    path('robots.txt', TextTemplateView.as_view(template_name='robots.txt')),
 ]
 
 if settings.DEBUG:

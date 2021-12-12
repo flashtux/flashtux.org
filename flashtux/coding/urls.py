@@ -21,15 +21,14 @@
 
 # pylint: disable=invalid-name, no-value-for-parameter
 
-from django.conf.urls import url
+from django.urls import path
 
 from flashtux.coding.views import programs
 
 urlpatterns = [
-    url(r'^programs/$', programs, {'category': 'algorithms'},
-        name='coding_programs'),
-    url(r'^programs/(?P<category>[\w-]+)/$', programs,
-        name='coding_category'),
-    url(r'^programs/(?P<category>[\w-]+)/(?P<name>[\w-]+)/$', programs,
-        name='coding_program'),
+    path('programs/', programs, {'category': 'algorithms'},
+         name='coding_programs'),
+    path('programs/<slug:category>/', programs, name='coding_category'),
+    path('programs/<slug:category>/<slug:name>/', programs,
+         name='coding_program'),
 ]

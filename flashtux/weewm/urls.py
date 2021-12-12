@@ -21,7 +21,7 @@
 
 # pylint: disable=invalid-name, no-value-for-parameter
 
-from django.conf.urls import url
+from django.urls import path, re_path
 from django.views.generic.base import TemplateView
 
 from flashtux.common.views import DownloadView
@@ -29,19 +29,24 @@ from flashtux.image.views import images
 from flashtux.weewm.views import doc
 
 urlpatterns = [
-    url(r'^screenshots/$', images,
-        {'section': 'weewm', 'category': 'screenshot',
-         'template': 'screenshots.html'},
-        name='weewm_screenshots'),
-    url(r'^screenshots/(?P<filename>[a-zA-Z0-9_\-.]*)/$', images,
-        {'section': 'weewm', 'category': 'screenshot',
-         'template': 'screenshots.html'},
-        name='weewm_screenshot'),
-    url(r'^doc/$', doc, name='weewm_doc'),
-    url(r'^download(?:/(?P<version>(stable|devel|old)))?/$',
-        DownloadView.as_view(template_name='weewm/download.html'),
-        name='weewm_download'),
-    url(r'^support/$',
-        TemplateView.as_view(template_name='weewm/support.html'),
-        name='weewm_support'),
+    path('screenshots/', images,
+         kwargs={
+             'section': 'weewm',
+             'category': 'screenshot',
+             'template': 'screenshots.html',
+         },
+         name='weewm_screenshots'),
+    path('screenshots/<str:filename>/', images,
+         kwargs={
+             'section': 'weewm',
+             'category': 'screenshot',
+             'template': 'screenshots.html',
+         },
+         name='weewm_screenshot'),
+    path('doc/', doc, name='weewm_doc'),
+    re_path(r'^download(?:/(?P<version>(stable|devel|old)))?/$',
+            DownloadView.as_view(template_name='weewm/download.html'),
+            name='weewm_download'),
+    path('support/', TemplateView.as_view(template_name='weewm/support.html'),
+         name='weewm_support'),
 ]

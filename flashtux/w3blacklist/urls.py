@@ -21,23 +21,19 @@
 
 # pylint: disable=invalid-name, no-value-for-parameter
 
-from django.conf.urls import url
+from django.urls import path, re_path
 from django.views.generic.base import TemplateView
 
 from flashtux.w3blacklist.views import sites, letters
 
 urlpatterns = [
-    url(r'^sites/$', sites, {'status': 'blacklist'},
-        name='w3blacklist_sites'),
-    url(r'^sites/(?P<status>(blacklist|fixed))/$', sites,
-        name='w3blacklist_sites_status'),
-    url(r'^sites/(?P<site_id>([0-9]+))/$', sites,
-        name='w3blacklist_site'),
-    url(r'^doc/$',
-        TemplateView.as_view(template_name='w3blacklist/doc.html'),
-        name='w3blacklist_doc'),
-    url(r'^letters/$', letters, name='w3blacklist_letters'),
-    url(r'^faq/$',
-        TemplateView.as_view(template_name='w3blacklist/faq.html'),
-        name='w3blacklist_faq'),
+    path('sites/', sites, {'status': 'blacklist'}, name='w3blacklist_sites'),
+    re_path(r'^sites/(?P<status>(blacklist|fixed))/$', sites,
+            name='w3blacklist_sites_status'),
+    path('sites/<int:site_id>/', sites, name='w3blacklist_site'),
+    path('doc/', TemplateView.as_view(template_name='w3blacklist/doc.html'),
+         name='w3blacklist_doc'),
+    path('letters/', letters, name='w3blacklist_letters'),
+    path('faq/', TemplateView.as_view(template_name='w3blacklist/faq.html'),
+         name='w3blacklist_faq'),
 ]

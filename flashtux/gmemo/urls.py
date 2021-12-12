@@ -21,25 +21,31 @@
 
 # pylint: disable=invalid-name, no-value-for-parameter
 
-from django.conf.urls import url
+from django.urls import path, re_path
 from django.views.generic.base import TemplateView
 
 from flashtux.common.views import DownloadView
 from flashtux.image.views import images
 
 urlpatterns = [
-    url(r'^screenshots/$', images,
-        {'section': 'gmemo', 'category': 'screenshot',
-         'template': 'screenshots.html'},
-        name='gmemo_screenshots'),
-    url(r'^screenshots/(?P<filename>[a-zA-Z0-9_\-.]*)/$', images,
-        {'section': 'gmemo', 'category': 'screenshot',
-         'template': 'screenshots.html'},
-        name='gmemo_screenshot'),
-    url(r'^download(?:/(?P<version>(stable|devel|old)))?/$',
-        DownloadView.as_view(template_name='gmemo/download.html'),
-        name='gmemo_download'),
-    url(r'^support/$',
-        TemplateView.as_view(template_name='gmemo/support.html'),
-        name='gmemo_support'),
+    path('screenshots/', images,
+         kwargs={
+             'section': 'gmemo',
+             'category': 'screenshot',
+             'template': 'screenshots.html',
+         },
+         name='gmemo_screenshots'),
+    path('screenshots/<str:filename>/', images,
+         kwargs={
+             'section': 'gmemo',
+             'category': 'screenshot',
+             'template': 'screenshots.html',
+         },
+         name='gmemo_screenshot'),
+    re_path(r'^download(?:/(?P<version>(stable|devel|old)))?/$',
+            DownloadView.as_view(template_name='gmemo/download.html'),
+            name='gmemo_download'),
+    path('support/',
+         TemplateView.as_view(template_name='gmemo/support.html'),
+         name='gmemo_support'),
 ]

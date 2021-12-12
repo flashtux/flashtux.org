@@ -13,7 +13,7 @@ Homepage: https://flashtux.org/
 Following packages are **required**:
 
 - python ≥ 3.6
-- python-django ≥ 1.11
+- python-django ≥ 2.0
 - python-tz
 - python-django-countries
 - PostgreSQL.
