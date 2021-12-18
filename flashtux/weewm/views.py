@@ -19,7 +19,7 @@
 
 """Views for WeeWM."""
 
-from django.utils.translation import gettext_lazy
+from django.utils.translation import gettext
 
 from flashtux.common.views import doc as view_doc
 
@@ -27,10 +27,10 @@ from flashtux.common.views import doc as view_doc
 def doc(request):
     """WeeWM documentation."""
     versions = (
-        ('weewm', gettext_lazy('WeeWM user''s guide'), ''),
+        ('weewm', gettext('WeeWM user''s guide'), ''),
     )
     languages = (
-        ('fr', gettext_lazy('French')),
-        ('en', gettext_lazy('English')),
+        ('fr', gettext('French')),
+        ('en', gettext('English')),
     )
     return view_doc(request, 'weewm', versions, languages)
