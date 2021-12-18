@@ -21,8 +21,6 @@
 
 import os
 
-from django.utils.translation import gettext_lazy
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Override these values in settings_local.py for production
@@ -42,9 +40,10 @@ SITE_ID = 1
 USE_I18N = True
 USE_L10N = False
 
+gettext = lambda s: s  # noqa: E731  pylint: disable=C0103
 LANGUAGES = (
-    ('en', gettext_lazy('English')),
-    ('fr', gettext_lazy('French')),
+    ('en', gettext('English')),
+    ('fr', gettext('French')),
 )
 LANGUAGES_LOCALES = {
     'en': 'en_US',
@@ -61,16 +60,16 @@ THEMES = (
 # Translators: this is a date format, see: http://www.php.net/date
 # Translators: (note: the result string must be short, use abbreviation
 # Translators: for month if possible)
-DATE_FORMAT = gettext_lazy('M j, Y')
+DATE_FORMAT = gettext('M j, Y')
 
 # Translators: this is a short date format, see: http://www.php.net/date
 # Translators: date with only year and month
-DATE_YEAR_MONTH_FORMAT = gettext_lazy('F Y')
+DATE_YEAR_MONTH_FORMAT = gettext('F Y')
 
 # Translators: this is a date/time format, see: http://www.php.net/date
 # Translators: (note: the result string must be short, use abbreviation
 # Translators: for month if possible)
-DATETIME_FORMAT = gettext_lazy('M j, Y H:i')
+DATETIME_FORMAT = gettext('M j, Y H:i')
 
 MEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, '..', 'media'))
 MEDIA_URL = '/media/'
