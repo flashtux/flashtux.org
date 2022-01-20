@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright (C) 1999-2021 Sébastien Helleu <flashcode@flashtux.org>
+# Copyright (C) 1999-2022 Sébastien Helleu <flashcode@flashtux.org>
 #
 # This file is part of FlashTux.org.
 #
