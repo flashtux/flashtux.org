@@ -27,7 +27,7 @@ from flashtux.common.views import doc as view_doc
 def doc(request):
     """WeeWM documentation."""
     versions = (
-        ('weewm', gettext('WeeWM user''s guide'), ''),
+        ('weewm', gettext("WeeWM user's guide"), ''),
     )
     languages = (
         ('fr', gettext('French')),
