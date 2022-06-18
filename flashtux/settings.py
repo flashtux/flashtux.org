@@ -40,7 +40,7 @@ SITE_ID = 1
 USE_I18N = True
 USE_L10N = False
 
-gettext = lambda s: s  # noqa: E731  pylint: disable=C0103
+gettext = lambda s: s  # noqa: E731  pylint: disable=C3001
 LANGUAGES = (
     ('en', gettext('English')),
     ('fr', gettext('French')),

@@ -49,5 +49,5 @@ class LatestNewsFeed(Feed):
 
     def item_pubdate(self, item):
         """Return idem date."""
-        # pylint: disable=no-self-use
+        # pylint: disable=all
         return item.date
