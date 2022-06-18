@@ -53,7 +53,7 @@ def doc(request):
          '/files/eciadsl/doc/eciadsl-mdk10.txt',
          gettext('EciAdsl installation with Mandrake 10 and kernel 2.6.x')),
         (['fr', 'en'],
-         '/files/download/eciadsl/beta/',
+         '/files/eciadsl/beta/',
          gettext('Instructions for 2.6.x kernels patch')),
         (['fr', 'en'],
          '/files/eciadsl/doc/eciadsl-on-openbsd.txt',
