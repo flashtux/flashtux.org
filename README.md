@@ -44,7 +44,7 @@ for production, see the file [settings_local.template](flashtux/settings_local.t
 
 ## Copyright
 
-Copyright © 1999-2022 [Sébastien Helleu](https://github.com/flashcode)
+Copyright © 1999-2023 [Sébastien Helleu](https://github.com/flashcode)
 
 This file is part of FlashTux.org.
 
