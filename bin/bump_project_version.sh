@@ -24,26 +24,34 @@
 #  2. set devel version
 #
 # Syntax:
-#   ./bump_project_version.sh <project> <stable> <devel>
+#   ./bump_project_version.sh <project> <stable> [<devel>]
 #
-# Example:
+# Examples:
 #   ./bump_project_version.sh WeeChat 4.0.0 4.1.0-dev
+#   ./bump_project_version.sh WeeChat 4.0.1
 #
 
 set -o errexit
 
 DIR=$(cd "$(dirname "$0")"; pwd)
 
-if [ $# -lt 3 ]; then
-    echo "Syntax: $0 <project> <stable> <devel>"
+if [ $# -lt 2 ]; then
+    echo "Syntax: $0 <project> <stable> [<devel>]"
     exit 1
 fi
 
 PROJECT="$1"
 STABLE="$2"
-DEVEL="$3"
+DEVEL=""
+if [ $# -gt 2 ]; then
+    DEVEL="$3"
+fi
 
-echo "Setting in project ${PROJECT}: stable=${STABLE}, devel=${DEVEL}"
+if [ -n "${DEVEL}" ]; then
+    echo "Setting in project ${PROJECT}: stable=${STABLE}, devel=${DEVEL}"
+else
+    echo "Setting in project ${PROJECT}: stable=${STABLE}"
+fi
 
 "${DIR}/../manage.py" shell <<EOF
 from datetime import date
@@ -51,6 +59,7 @@ from flashtux.home.models import Project
 project = Project.objects.get(name="${PROJECT}")
 project.stable_date = date.today()
 project.stable_version = "${STABLE}"
-project.devel_version = "${DEVEL}"
+if "${DEVEL}":
+    project.devel_version = "${DEVEL}"
 project.save()
 EOF
