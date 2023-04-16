@@ -27,8 +27,8 @@ gettext:
 	msgcheck flashtux/locale/*/LC_MESSAGES/django.po
 
 flake8:
-	flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-	flake8 . --count --exit-zero --max-complexity=10 --statistics
+	flake8 . --count --max-line-length=88 --select=E9,F63,F7,F82 --exclude=migrations --show-source --statistics
+	flake8 . --count --max-line-length=88 --exclude=migrations --exit-zero --max-complexity=10 --statistics
 
 pylint:
-	pylint --load-plugins pylint_django --disable=django-not-configured flashtux
+	pylint --load-plugins pylint_django --disable=django-not-configured --ignore=migrations flashtux
