@@ -25,15 +25,6 @@
               {% with date=project.start_date|localdate %}
               {% blocktrans %}Started on {{ date }}{% endblocktrans %}
               {% endwith %}
-              {% if project.stable_version %}
-              -
-              {% trans "Stable version:" %} <strong>{{ project.stable_version }}</strong>
-              ({{ project.stable_date|localdate }})
-              {% endif %}
-              {% if project.devel_version %}
-              -
-              {% trans "Under development:" %} <strong>{{ project.devel_version }}</strong>
-              {% endif %}
             </div>
           </div>
         </div>

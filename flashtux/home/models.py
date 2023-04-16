@@ -30,9 +30,6 @@ class Project(models.Model):
     """A FlashTux project."""
     name = models.CharField(max_length=64)
     start_date = models.DateField()
-    stable_version = models.CharField(max_length=32, blank=True)
-    stable_date = models.DateField(blank=True, null=True)
-    devel_version = models.CharField(max_length=32, blank=True)
     description = models.TextField()
     license = models.CharField(max_length=32)
     support = models.CharField(max_length=1024, blank=True)
