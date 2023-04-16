@@ -31,7 +31,6 @@ ADMINS = []
 MANAGERS = []
 
 TIME_ZONE = 'Europe/Paris'
-USE_TZ = True
 
 LANGUAGE_CODE = 'en-us'
 
