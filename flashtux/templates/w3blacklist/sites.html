@@ -178,7 +178,7 @@
               {{ site.website }}
             </a>
           </td>
-          <td><a href="{{ site.url }}" target="_blank" rel="noopener" title="{{ site.url }}">{{ site.url|truncatechars:45 }}</a></td>
+          <td><a href="{{ site.url }}" title="{{ site.url }}">{{ site.url|truncatechars:45 }}</a></td>
           <td>{{ site.shortdesc_i18n }}</td>
           {% if site.status == 2 %}
           <td class="text-nowrap severity{{ site.severity }}" title="{{ site.severity_i18n }}">
