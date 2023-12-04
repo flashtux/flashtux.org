@@ -39,10 +39,12 @@ tbody {
 
 td {
   color: var(--td-color);
+  background-color: inherit !important;
 }
 
 .table-striped > tbody > tr:nth-of-type(2n+1) > * {
   color: var(--table-striped-tr-color);
+  background-color: var(--table-striped-tr-bg-color) !important;
 }
 
 .alert-success {
