@@ -1,16 +1,16 @@
 # FlashTux.org
 
-[![Build Status](https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg)](https://github.com/flashtux/flashtux.org/actions?query=workflow%3A%22CI%22)
+[![CI](https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg)](https://github.com/flashtux/flashtux.org/actions)
 
 FlashTux.org is the website for FlashTux, the home of free projects for free OS.
 
-Homepage: https://flashtux.org/
+Homepage: [https://flashtux.org/](https://flashtux.org/)
 
 ## Install
 
 ### Dependencies
 
-Following packages are **required**:
+The following packages are **required**:
 
 - python ≥ 3.7
 - python-django ≥ 2.0
@@ -22,20 +22,21 @@ Following packages are **required**:
 
 Run the install script:
 
-```
-$ ./bin/install.sh
+```bash
+./bin/install.sh
 ```
 
 Run Django server:
 
-```
-$ ./test.sh
+```bash
+./test.sh
 ```
 
-And just point your browser on http://127.0.0.1:8000/, that's all!
+And just point your browser on [http://127.0.0.1:8000/](http://127.0.0.1:8000/), that's all!
 
-Important: default settings can be used for testing purposes but must be overridden
-for production, see the file [settings_local.template](flashtux/settings_local.template) for more information.
+> [!IMPORTANT]
+> Default settings can be used for testing purposes but must be overridden for production,
+see the file [settings_local.template](flashtux/settings_local.template) for more information.
 
 ## Authors
 
