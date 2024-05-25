@@ -38,11 +38,6 @@ And just point your browser on [http://127.0.0.1:8000/](http://127.0.0.1:8000/),
 > Default settings can be used for testing purposes but must be overridden for production,
 see the file [settings_local.template](flashtux/settings_local.template) for more information.
 
-## Authors
-
-- Design/code:
-  - Sébastien Helleu (FlashCode)
-
 ## Copyright
 
 Copyright © 1999-2024 [Sébastien Helleu](https://github.com/flashcode)
