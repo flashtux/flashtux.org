@@ -1,5 +1,5 @@
 #
-# Copyright (C) 1999-2023 Sébastien Helleu <flashcode@flashtux.org>
+# Copyright (C) 1999-2024 Sébastien Helleu <flashcode@flashtux.org>
 #
 # This file is part of FlashTux.org.
 #
