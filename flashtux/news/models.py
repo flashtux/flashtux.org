@@ -30,7 +30,6 @@ from flashtux.common.utils import truncate_content
 from flashtux.common.forms import (
     CharField,
     EmailField,
-    Form,
     Html5EmailInput,
     TestField,
 )
@@ -131,7 +130,7 @@ class Comment(models.Model):
         ordering = ['-date']
 
 
-class CommentFormAdd(Form):
+class CommentFormAdd(forms.Form):
     """Form to add a script."""
     required_css_class = 'required'
     title = CharField(

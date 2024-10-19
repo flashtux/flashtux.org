@@ -48,7 +48,7 @@
   <div class="col-12 col-md-8">
     <form action="." method="post" enctype="multipart/form-data">
       {% csrf_token %}
-      {{ form.as_div }}
+      {{ form.as_p }}
       <button type="submit" class="btn btn-success mt-3 me-3 px-5">{% trans "Submit" %}</button>
       <a href="{% url 'info' section=section info_id=info.id %}" class="btn btn-danger mt-3 px-5" role="button">{% trans "Cancel" %}</a>
     </form>
