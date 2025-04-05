@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 #
-# Copyright (C) 1999-2024 Sébastien Helleu <flashcode@flashtux.org>
+# SPDX-FileCopyrightText: 1999-2025 Sébastien Helleu <flashcode@flashtux.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 #
 # This file is part of FlashTux.org.
 #

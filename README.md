@@ -40,7 +40,7 @@ see the file [settings_local.template](flashtux/settings_local.template) for mor
 
 ## Copyright
 
-Copyright © 1999-2024 [Sébastien Helleu](https://github.com/flashcode)
+Copyright © 1999-2025 [Sébastien Helleu](https://github.com/flashcode)
 
 This file is part of FlashTux.org.
 

@@ -1,5 +1,7 @@
 #
-# Copyright (C) 1999-2024 Sébastien Helleu <flashcode@flashtux.org>
+# SPDX-FileCopyrightText: 1999-2025 Sébastien Helleu <flashcode@flashtux.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 #
 # This file is part of FlashTux.org.
 #
@@ -21,7 +23,7 @@ msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-18 13:54+0200\n"
-"PO-Revision-Date: 2024-05-25 17:45+0200\n"
+"PO-Revision-Date: 2025-04-05 10:09+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
