@@ -1,6 +1,7 @@
 # FlashTux.org
 
 [![CI](https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg)](https://github.com/flashtux/flashtux.org/actions)
+[![REUSE status](https://api.reuse.software/badge/github.com/flashtux/flashtux.org)](https://api.reuse.software/info/github.com/flashtux/flashtux.org)
 
 FlashTux.org is the website for FlashTux, the home of free projects for free OS.
 
