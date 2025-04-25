@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 1999-2025 Sébastien Helleu <flashcode@flashtux.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # FlashTux.org
 
 [![CI](https://github.com/flashtux/flashtux.org/workflows/CI/badge.svg)](https://github.com/flashtux/flashtux.org/actions)
@@ -41,6 +47,7 @@ see the file [settings_local.template](flashtux/settings_local.template) for mor
 
 ## Copyright
 
+<!-- REUSE-IgnoreStart -->
 Copyright © 1999-2025 [Sébastien Helleu](https://github.com/flashcode)
 
 This file is part of FlashTux.org.
@@ -57,3 +64,4 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with FlashTux.org.  If not, see <https://www.gnu.org/licenses/>.
+<!-- REUSE-IgnoreEnd -->
