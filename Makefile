@@ -26,7 +26,7 @@ check: gettext lint
 lint: flake8 pylint
 
 gettext:
-	msgcheck flashtux/locale/*/LC_MESSAGES/django.po
+	poexam check
 
 flake8:
 	flake8 . --count --max-line-length=88 --select=E9,F63,F7,F82 --exclude=migrations --show-source --statistics
