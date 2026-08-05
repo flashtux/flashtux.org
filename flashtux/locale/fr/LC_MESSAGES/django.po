@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 13:54+0200\n"
-"PO-Revision-Date: 2025-04-05 10:09+0200\n"
+"POT-Creation-Date: 2026-08-05 12:41+0200\n"
+"PO-Revision-Date: 2026-08-05 12:44+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -450,8 +450,8 @@ msgid ""
 "Convert a .PCX file (format 320*200, 256 colors) into a .COM file.\n"
 "The target .COM file is smaller than the .PCX!"
 msgstr ""
-"Convertit un fichier .PCX (au format 320*200, 256 couleurs) en un fichier ."
-"COM exécutable.\n"
+"Convertit un fichier .PCX (au format 320*200, 256 couleurs) en un "
+"fichier .COM exécutable.\n"
 "Le fichier .COM obtenu est plus petit que le .PCX de départ !"
 
 #. Translators: short description for program "tascii"
@@ -466,8 +466,8 @@ msgid ""
 "Program removes itself from memory when runned a second time.\n"
 "Very useful for programers."
 msgstr ""
-"Programme résident qui affiche la table ASCII par simple pression sur Ctrl"
-"+Alt+T.\n"
+"Programme résident qui affiche la table ASCII par simple pression sur "
+"Ctrl+Alt+T.\n"
 "Le programme se retire de la mémoire lors du deuxième lancement.\n"
 "Très utile pour les programmeurs."
 
@@ -574,19 +574,19 @@ msgstr ""
 "Très utile dans un fichier Batch nécessitant un choix de l'utilisateur entre "
 "plusieurs options."
 
-#: common/forms.py:84
+#: common/forms.py:87
 msgid "This field is required."
 msgstr "Ce champ est obligatoire."
 
-#: common/templatetags/linkfile.py:46
+#: common/templatetags/linkfile.py:48
 msgid "directory"
 msgstr "répertoire"
 
-#: common/templatetags/linkfile.py:49
+#: common/templatetags/linkfile.py:50
 msgid "File not found"
 msgstr "Fichier non trouvé"
 
-#: common/views.py:47 common/views.py:66
+#: common/views.py:49 common/views.py:68
 msgid "Text"
 msgstr "Texte"
 
@@ -594,12 +594,12 @@ msgstr "Texte"
 #: eciadsl/_i18n_modem.py:14
 msgid ""
 "Conexant chipset, not supported by EciAdsl driver. Linux driver here: <a "
-"href=\"https://sourceforge.net/projects/accessrunner\">https://sourceforge."
-"net/projects/accessrunner</a>"
+"href=\"https://sourceforge.net/projects/accessrunner\">https://"
+"sourceforge.net/projects/accessrunner</a>"
 msgstr ""
-"Chipset Conexant, non supporté par EciAdsl. Driver Linux ici : <a href="
-"\"https://sourceforge.net/projects/accessrunner\">https://sourceforge.net/"
-"projects/accessrunner</a>"
+"Chipset Conexant, non supporté par EciAdsl. Driver Linux ici : <a "
+"href=\"https://sourceforge.net/projects/accessrunner\">https://"
+"sourceforge.net/projects/accessrunner</a>"
 
 #. Translators: comment for modem Arescom Telindus ND 220 B
 #: eciadsl/_i18n_modem.py:16
@@ -631,9 +631,9 @@ msgstr ""
 #. Translators: comment for modem Digicom MichelAngelo USB A
 #: eciadsl/_i18n_modem.py:22
 msgid ""
-"This modem as an Alcatel Dynamite chipset. Linux driver here: <a href="
-"\"https://sourceforge.net/projects/zyxel630-11\">https://sourceforge.net/"
-"projects/zyxel630-11</a>"
+"This modem as an Alcatel Dynamite chipset. Linux driver here: <a "
+"href=\"https://sourceforge.net/projects/zyxel630-11\">https://"
+"sourceforge.net/projects/zyxel630-11</a>"
 msgstr ""
 "Ce modem a un chipset Alcatel Dynamite. Driver Linux ici : <a href=\"https://"
 "sourceforge.net/projects/zyxel630-11\">https://sourceforge.net/projects/"
@@ -666,11 +666,11 @@ msgstr ""
 #. Translators: comment for modem DrayTek Vigor 318
 #: eciadsl/_i18n_modem.py:30
 msgid ""
-"Linux driver here: <a href=\"https://sourceforge.net/projects/accessrunner"
-"\">https://sourceforge.net/projects/accessrunner</a>"
+"Linux driver here: <a href=\"https://sourceforge.net/projects/"
+"accessrunner\">https://sourceforge.net/projects/accessrunner</a>"
 msgstr ""
-"Driver Linux ici : <a href=\"https://sourceforge.net/projects/accessrunner"
-"\">https://sourceforge.net/projects/accessrunner</a>"
+"Driver Linux ici : <a href=\"https://sourceforge.net/projects/"
+"accessrunner\">https://sourceforge.net/projects/accessrunner</a>"
 
 #. Translators: comment for modem Eicon Diva 2430
 #: eciadsl/_i18n_modem.py:32
@@ -732,98 +732,98 @@ msgstr ""
 #. Translators: comment for modem US Robotics 9000
 #: eciadsl/_i18n_modem.py:50
 msgid ""
-"Linux driver for this modem: <a href=\"https://support.usr.com/"
-"support/9000/9000-linux-ug/Installing%20the%20modem.html\">https://support."
-"usr.com/support/9000/9000-linux-ug/Installing%20the%20modem.html</a>"
+"Linux driver for this modem: <a href=\"https://support.usr.com/support/"
+"9000/9000-linux-ug/Installing%20the%20modem.html\">https://support.usr.com/"
+"support/9000/9000-linux-ug/Installing%20the%20modem.html</a>"
 msgstr ""
-"Driver Linux pour ce modem : <a href=\"https://support.usr.com/"
-"support/9000/9000-linux-ug/Installing%20the%20modem.html\">https://support."
-"usr.com/support/9000/9000-linux-ug/Installing%20the%20modem.html</a>"
+"Driver Linux pour ce modem : <a href=\"https://support.usr.com/support/"
+"9000/9000-linux-ug/Installing%20the%20modem.html\">https://support.usr.com/"
+"support/9000/9000-linux-ug/Installing%20the%20modem.html</a>"
 
-#: eciadsl/models.py:30
+#: eciadsl/models.py:32
 msgid "Not supported"
 msgstr "Non supporté"
 
-#: eciadsl/models.py:31
+#: eciadsl/models.py:33
 msgid "Maybe supported"
 msgstr "Peut-être supporté"
 
-#: eciadsl/models.py:32
+#: eciadsl/models.py:34
 msgid "Supported"
 msgstr "Supporté"
 
-#: eciadsl/models.py:35 templates/eciadsl/modems.html:16
+#: eciadsl/models.py:37 templates/eciadsl/modems.html:16
 msgctxt "plural"
 msgid "Not supported"
 msgstr "Non supportés"
 
-#: eciadsl/models.py:36 templates/eciadsl/modems.html:15
+#: eciadsl/models.py:38 templates/eciadsl/modems.html:15
 msgctxt "plural"
 msgid "Maybe supported"
 msgstr "Peut-être supportés"
 
-#: eciadsl/models.py:37 templates/eciadsl/modems.html:14
+#: eciadsl/models.py:39 templates/eciadsl/modems.html:14
 msgctxt "plural"
 msgid "Supported"
 msgstr "Supportés"
 
-#: eciadsl/views.py:37 eciadsl/views.py:40
+#: eciadsl/views.py:39 eciadsl/views.py:42
 msgid "EciAdsl installation guide"
 msgstr "Guide d'installation EciAdsl"
 
-#: eciadsl/views.py:41
+#: eciadsl/views.py:43
 msgid "development version"
 msgstr "version de développement"
 
-#: eciadsl/views.py:44 eciadsl/views.py:89 settings.py:42 weewm/views.py:33
+#: eciadsl/views.py:46 eciadsl/views.py:89 settings.py:47 weewm/views.py:35
 msgid "French"
 msgstr "Français"
 
-#: eciadsl/views.py:45 eciadsl/views.py:90 settings.py:41 weewm/views.py:34
+#: eciadsl/views.py:47 eciadsl/views.py:90 settings.py:46 weewm/views.py:36
 msgid "English"
 msgstr "Anglais"
 
-#: eciadsl/views.py:46 eciadsl/views.py:91
+#: eciadsl/views.py:48 eciadsl/views.py:91
 msgid "Italian"
 msgstr "Italien"
 
-#: eciadsl/views.py:47 eciadsl/views.py:93
+#: eciadsl/views.py:49 eciadsl/views.py:93
 msgid "Spanish"
 msgstr "Espagnol"
 
-#: eciadsl/views.py:48
+#: eciadsl/views.py:50
 msgid "German"
 msgstr "Allemand"
 
-#: eciadsl/views.py:49
+#: eciadsl/views.py:51
 msgid "Turkish"
 msgstr "Turc"
 
-#: eciadsl/views.py:54
+#: eciadsl/views.py:56
 msgid "EciAdsl installation with Mandrake 10 and kernel 2.6.x"
 msgstr "Installation EciAdsl avec Mandrake 10 et le noyau 2.6.x"
 
-#: eciadsl/views.py:58
+#: eciadsl/views.py:59
 msgid "Instructions for 2.6.x kernels patch"
 msgstr "Instructions pour le patch / noyaux 2.6.x"
 
-#: eciadsl/views.py:61
+#: eciadsl/views.py:62
 msgid "EciAdsl installation on *BSD"
 msgstr "Installation d'EciAdsl sur *BSD"
 
-#: eciadsl/views.py:64
+#: eciadsl/views.py:65
 msgid "EciAdsl config with \"Free dégroupé\" (France only)"
 msgstr "Config EciAdsl avec \"Free dégroupé\" (France seulement)"
 
-#: eciadsl/views.py:67
+#: eciadsl/views.py:68
 msgid "EciAdsl with Avangard provider (Russia)"
 msgstr "EciAdsl avec le fournisseur Avangard (Russie)"
 
-#: eciadsl/views.py:70
+#: eciadsl/views.py:71
 msgid "EciAdsl and APIC problem"
 msgstr "EciAdsl et le problème de l'APIC"
 
-#: eciadsl/views.py:73
+#: eciadsl/views.py:74
 msgid "EciAdsl with DSL-200 B1 modem and TPG (australian ISP)"
 msgstr "EciAdsl avec un modem DSL-200 B1 et TPG (FAI australien)"
 
@@ -942,12 +942,12 @@ msgstr "E-mail."
 
 #. Translators: 2020-07-18 13:28, weechat: Version 2.9
 #: news/_i18n_info.py:14 templates/eciadsl/download.html:23
-#: templates/eciadsl/download.html:211 templates/eciadsl/download.html:243
-#: templates/eciadsl/download.html:273 templates/eciadsl/download.html:297
-#: templates/eciadsl/download.html:319 templates/eciadsl/download.html:341
-#: templates/eciadsl/download.html:362 templates/eciadsl/download.html:382
-#: templates/eciadsl/download.html:400 templates/eciadsl/download.html:418
-#: templates/eciadsl/download.html:436 templates/flashtris/download.html:15
+#: templates/eciadsl/download.html:212 templates/eciadsl/download.html:244
+#: templates/eciadsl/download.html:274 templates/eciadsl/download.html:298
+#: templates/eciadsl/download.html:320 templates/eciadsl/download.html:342
+#: templates/eciadsl/download.html:363 templates/eciadsl/download.html:383
+#: templates/eciadsl/download.html:401 templates/eciadsl/download.html:419
+#: templates/eciadsl/download.html:437 templates/flashtris/download.html:15
 #: templates/gmemo/download.html:23 templates/gmemo/download.html:82
 #: templates/weewm/download.html:23 templates/weewm/download.html:90
 msgid "Version"
@@ -1122,8 +1122,8 @@ msgid ""
 "Note: many features are missing, like TLS connection, buddy list management, "
 "presence information, MUC and transports.\n"
 "\n"
-"&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-Jabber"
-"\">Article on dev blog</a>"
+"&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-"
+"Jabber\">Article on dev blog</a>"
 msgstr ""
 "Le développement de l'extension Jabber pour WeeChat a démarré et une "
 "première version alpha est disponible.\n"
@@ -1131,8 +1131,8 @@ msgstr ""
 "TLS, la gestion de la liste de contacts, l'information de présence, le MUC "
 "et les transports.\n"
 "\n"
-"&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-Jabber"
-"\">Article sur le blog de dev</a>"
+"&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-"
+"Jabber\">Article sur le blog de dev</a>"
 
 #. Translators: 2008-08-30 08:58, weechat: Dev blog
 #: news/_i18n_info.py:46
@@ -2596,8 +2596,8 @@ msgid ""
 "&bull; <a href=\"/eciadsl/download/\">EciAdsl download page</a>"
 msgstr ""
 "Le RPM pour la version 0.9 du driver EciAdsl a été remplacé par une nouvelle "
-"version, l'ancien présentait un problème de dépendance avec \"perl-base"
-"\" (qui n'existe pas).\n"
+"version, l'ancien présentait un problème de dépendance avec \"perl-base\" "
+"(qui n'existe pas).\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
@@ -3054,8 +3054,8 @@ msgstr ""
 "- paramètre de ligne de commande \"-c\" pour voir les options de "
 "configuration\n"
 "- dans la config par défaut, le nick est l'utilisateur un*x\n"
-"- code sécurisé pour éviter tout débordement de tampon (\"buffer overflow"
-"\")\n"
+"- code sécurisé pour éviter tout débordement de tampon (\"buffer "
+"overflow\")\n"
 "- nombreux bugs corrigés\n"
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>\n"
@@ -3119,8 +3119,8 @@ msgid ""
 msgstr ""
 "Un dépôt Debian a été créé sur FlashTux.org.\n"
 "Tous les projets du site ayant des paquets Debian y sont présents.\n"
-"Pour y accéder, ajoutez cette ligne dans votre fichier /etc/apt/sources."
-"list :\n"
+"Pour y accéder, ajoutez cette ligne dans votre fichier /etc/apt/"
+"sources.list :\n"
 "  deb http://www.flashtux.org/debian unstable main"
 
 #. Translators: 2004-01-21 13:13, eciadsl: New synch .bin file
@@ -3468,8 +3468,8 @@ msgid ""
 "&bull; <a href=\"/eciadsl/download/\">EciAdsl download page</a>"
 msgstr ""
 "Un nouveau fichier .bin de synchro a été ajouté (synch38.bin).\n"
-"Il a été créé en Egypte au Caire avec le fournisseur Menanet, modulation G."
-"DMT.\n"
+"Il a été créé en Egypte au Caire avec le fournisseur Menanet, modulation "
+"G.DMT.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
@@ -3846,8 +3846,8 @@ msgid ""
 "&bull; <a href=\"/eciadsl/download/&amp;view=sync\">Detail about "
 "synchronization</a>\n"
 "&bull; <a href=\"/eciadsl/doc/\">Doc about synch .bin creation</a>\n"
-"&bull; <a href=\"http://benoit.papillault.free.fr/usbsnoop/doc.en.php"
-"\">Snoopy documentation</a>"
+"&bull; <a href=\"http://benoit.papillault.free.fr/usbsnoop/"
+"doc.en.php\">Snoopy documentation</a>"
 msgstr ""
 "Benoit Papillault a écrit une documentation sur l'utilisation du sniffeur "
 "Snoopy.\n"
@@ -3857,8 +3857,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/\">Page de détails de la synchronisation</"
 "a>\n"
 "&bull; <a href=\"/eciadsl/doc/\">Doc sur la création de .bin de synchro</a>\n"
-"&bull; <a href=\"http://benoit.papillault.free.fr/usbsnoop/doc.fr.php"
-"\">Documentation sur Snoopy</a>"
+"&bull; <a href=\"http://benoit.papillault.free.fr/usbsnoop/"
+"doc.fr.php\">Documentation sur Snoopy</a>"
 
 #. Translators: 2003-06-04 07:10, eciadsl: New synch .bin file
 #: news/_i18n_info.py:330
@@ -4636,17 +4636,17 @@ msgstr "Nouvelles du week-end !"
 #: news/_i18n_info.py:454
 msgid ""
 "A new synch .bin has been added.\n"
-"Current usermode CVS now includes a script that try all the installed synch ."
-"bin's (it stops at the first .bin found OK, run probe_synch.sh --try-all to "
-"try all the .bin). Plus some fixes and doc updates.\n"
+"Current usermode CVS now includes a script that try all the installed "
+"synch .bin's (it stops at the first .bin found OK, run probe_synch.sh --try-"
+"all to try all the .bin). Plus some fixes and doc updates.\n"
 "The reco script (cnx) has been updated too (fixes).\n"
 "A new patch for extra encapsulation protocols has been added.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">The synch .bin package</a>\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">The usermode CVS snapshot</a>\n"
 "&bull; <a href=\"/eciadsl/download/\">The reco script (cnx)</a>\n"
-"&bull; <a href=\"http://sourceforge.net/tracker/index.php?group_id=30043&amp;"
-"atid=398083\">The official patch tracker</a>"
+"&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
+"group_id=30043&amp;atid=398083\">The official patch tracker</a>"
 msgstr ""
 "Un nouveau .bin de synchro a éte ajouté.\n"
 "Le CVS du usermode contient maintenant un script qui permet de tester tous "
@@ -4659,8 +4659,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/\">Les .bin de synchro</a>\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">Le CVS du usermode</a>\n"
 "&bull; <a href=\"/eciadsl/download/\">Le script de reco (cnx)</a>\n"
-"&bull; <a href=\"http://sourceforge.net/tracker/index.php?group_id=30043&amp;"
-"atid=398083\">La page des patchs</a>"
+"&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
+"group_id=30043&amp;atid=398083\">La page des patchs</a>"
 
 #. Translators: 2002-11-06 21:35, eciadsl: Version 0.6-pre5
 #: news/_i18n_info.py:456
@@ -4675,10 +4675,12 @@ msgid ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">EciAdsl download page, CVS "
 "version</a>\n"
-"&bull; <a href=\"http://sourceforge.net/tracker/index.php?func=detail&amp;"
-"aid=634469&amp;group_id=30043&amp;atid=398083\">PPPoE patch</a>\n"
-"&bull; <a href=\"http://sourceforge.net/tracker/index.php?func=detail&amp;"
-"aid=634472&amp;group_id=30043&amp;atid=398083\">IPoATM patch</a>"
+"&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
+"func=detail&amp;aid=634469&amp;group_id=30043&amp;atid=398083\">PPPoE patch</"
+"a>\n"
+"&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
+"func=detail&amp;aid=634472&amp;group_id=30043&amp;atid=398083\">IPoATM "
+"patch</a>"
 msgstr ""
 "La version 0.6-pre5 est disponible.\n"
 "Les nouveautés sont les suivantes :\n"
@@ -4690,10 +4692,12 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>\n"
-"&bull; <a href=\"http://sourceforge.net/tracker/index.php?func=detail&amp;"
-"aid=634469&amp;group_id=30043&amp;atid=398083\">Patch PPPoE</a>\n"
-"&bull; <a href=\"http://sourceforge.net/tracker/index.php?func=detail&amp;"
-"aid=634472&amp;group_id=30043&amp;atid=398083\">Patch IPoATM</a>"
+"&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
+"func=detail&amp;aid=634469&amp;group_id=30043&amp;atid=398083\">Patch PPPoE</"
+"a>\n"
+"&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
+"func=detail&amp;aid=634472&amp;group_id=30043&amp;atid=398083\">Patch "
+"IPoATM</a>"
 
 #. Translators: 2002-11-05 21:31, eciadsl: Mirror site
 #: news/_i18n_info.py:458
@@ -5491,13 +5495,13 @@ msgstr "Sniffeur USB Snoopy sur Sourceforge"
 msgid ""
 "Snoopy USB sniffer is available on Sourceforge:\n"
 "\n"
-"&bull; <a href=\"http://usbsnoop.sourceforge.net\">http://usbsnoop."
-"sourceforge.net</a>"
+"&bull; <a href=\"http://usbsnoop.sourceforge.net\">http://"
+"usbsnoop.sourceforge.net</a>"
 msgstr ""
 "Le sniffeur USB Snoopy est disponible sur Sourceforge :\n"
 "\n"
-"&bull; <a href=\"http://usbsnoop.sourceforge.net\">http://usbsnoop."
-"sourceforge.net</a>"
+"&bull; <a href=\"http://usbsnoop.sourceforge.net\">http://"
+"usbsnoop.sourceforge.net</a>"
 
 #. Translators: 2001-08-20 10:00, eciadsl: Mailing list is archived
 #: news/_i18n_info.py:626
@@ -5692,73 +5696,73 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#: news/models.py:83 templates/base.html:41 templates/base.html:135
+#: news/models.py:84 templates/base.html:43 templates/base.html:140
 #: templates/coding/coding.html:5
 msgid "Coding"
 msgstr "Prog"
 
-#: news/models.py:84 templates/base.html:42 templates/base.html:141
+#: news/models.py:85 templates/base.html:44 templates/base.html:146
 #: templates/games/games.html:5
 msgid "Games"
 msgstr "Jeux"
 
-#: news/models.py:139
+#: news/models.py:140
 msgid "Title"
 msgstr "Titre"
 
-#: news/models.py:140
+#: news/models.py:141
 msgid "The comment title."
 msgstr "Titre du commentaire."
 
-#: news/models.py:144
+#: news/models.py:145
 msgid "Comment"
 msgstr "Commentaire"
 
-#: news/models.py:145
+#: news/models.py:146
 msgid "Your comment."
 msgstr "Votre commentaire."
 
-#: news/models.py:150
+#: news/models.py:151
 msgid "Your name or nick"
 msgstr "Votre nom ou pseudo"
 
-#: news/models.py:151
+#: news/models.py:152
 msgid "Displayed above the comment."
 msgstr "Affiché au-dessus du commentaire."
 
-#: news/models.py:155
+#: news/models.py:156
 msgid "Your e-mail"
 msgstr "Votre e-mail"
 
-#: news/models.py:156
+#: news/models.py:157
 msgid "Optional, never displayed."
 msgstr "Facultatif, jamais affiché."
 
-#: news/models.py:162
+#: news/models.py:163
 msgid "Are you a spammer?"
 msgstr "Êtes-vous un spammeur ?"
 
-#: news/models.py:163
+#: news/models.py:164
 msgid "Enter \"no\" if you are not a spammer."
 msgstr "Entrez \"no\" si vous n'êtes pas un spammeur."
 
 #. Translators: this is a date format, see: http://www.php.net/date
 #. Translators: (note: the result string must be short, use abbreviation
 #. Translators: for month if possible)
-#: settings.py:52
+#: settings.py:63
 msgid "M j, Y"
 msgstr "d/m/Y"
 
 #. Translators: this is a short date format, see: http://www.php.net/date
 #. Translators: date with only year and month
-#: settings.py:56
+#: settings.py:67
 msgid "F Y"
 msgstr "F Y"
 
 #. Translators: this is a date/time format, see: http://www.php.net/date
 #. Translators: (note: the result string must be short, use abbreviation
 #. Translators: for month if possible)
-#: settings.py:61
+#: settings.py:72
 msgid "M j, Y H:i"
 msgstr "d/m/Y H:i"
 
@@ -5797,31 +5801,31 @@ msgstr ""
 "Vous pouvez revenir à l'accueil FlashTux avec le lien ci-dessous,<br>ou "
 "signaler ce lien cassé à"
 
-#: templates/base.html:19
+#: templates/base.html:20
 msgid "FlashTux: free projects for free OS"
 msgstr "FlashTux : projets libres pour OS libres"
 
-#: templates/base.html:34 templates/base.html:72
+#: templates/base.html:36 templates/base.html:77
 msgid "Home"
 msgstr "Accueil"
 
 #. Translators: language used to display the site content
-#: templates/base.html:51
+#: templates/base.html:52
 msgid "Language"
 msgstr "Langue"
 
-#: templates/base.html:73 templates/home/home.html:12
+#: templates/base.html:78 templates/home/home.html:12
 #: templates/home/projects.html:5
 msgid "Projects"
 msgstr "Projets"
 
-#: templates/base.html:74 templates/home/about.html:5
+#: templates/base.html:79 templates/home/about.html:5
 #: templates/home/home.html:13
 msgid "About"
 msgstr "À propos"
 
-#: templates/base.html:85 templates/base.html:99 templates/base.html:117
-#: templates/base.html:125 templates/eciadsl/eciadsl.html:12
+#: templates/base.html:90 templates/base.html:104 templates/base.html:122
+#: templates/base.html:130 templates/eciadsl/eciadsl.html:12
 #: templates/eciadsl/screenshots.html:5 templates/flashtris/flashtris.html:12
 #: templates/flashtris/screenshots.html:5 templates/gmemo/gmemo.html:12
 #: templates/gmemo/screenshots.html:5 templates/weewm/screenshots.html:5
@@ -5829,8 +5833,8 @@ msgstr "À propos"
 msgid "Screenshots"
 msgstr "Captures d'écran"
 
-#: templates/base.html:86 templates/base.html:100 templates/base.html:109
-#: templates/base.html:126 templates/eciadsl/doc.html:5
+#: templates/base.html:91 templates/base.html:105 templates/base.html:114
+#: templates/base.html:131 templates/eciadsl/doc.html:5
 #: templates/eciadsl/eciadsl.html:13 templates/flashtris/doc.html:5
 #: templates/flashtris/flashtris.html:13 templates/w3blacklist/doc.html:5
 #: templates/w3blacklist/w3blacklist.html:13 templates/weewm/doc.html:5
@@ -5838,18 +5842,18 @@ msgstr "Captures d'écran"
 msgid "Documentation"
 msgstr "Documentation"
 
-#: templates/base.html:87 templates/eciadsl/eciadsl.html:14
+#: templates/base.html:92 templates/eciadsl/eciadsl.html:14
 #: templates/eciadsl/tutorial.html:5
 msgid "Tutorial"
 msgstr "Tutoriel"
 
-#: templates/base.html:88 templates/eciadsl/eciadsl.html:15
+#: templates/base.html:93 templates/eciadsl/eciadsl.html:15
 #: templates/eciadsl/modems.html:5
 msgid "Modems"
 msgstr "Modems"
 
-#: templates/base.html:89 templates/base.html:101 templates/base.html:118
-#: templates/base.html:127 templates/coding/programs.html:67
+#: templates/base.html:94 templates/base.html:106 templates/base.html:123
+#: templates/base.html:132 templates/coding/programs.html:67
 #: templates/eciadsl/download.html:5 templates/eciadsl/eciadsl.html:16
 #: templates/flashtris/download.html:5 templates/flashtris/flashtris.html:14
 #: templates/games/bubblebobble.html:57 templates/games/demoniacfight.html:48
@@ -5861,15 +5865,15 @@ msgstr "Modems"
 msgid "Download"
 msgstr "Téléchargement"
 
-#: templates/base.html:90 templates/base.html:111 templates/base.html:129
+#: templates/base.html:95 templates/base.html:116 templates/base.html:134
 #: templates/eciadsl/eciadsl.html:17 templates/eciadsl/faq.html:5
 #: templates/flashtris/faq.html:5 templates/flashtris/flashtris.html:16
 #: templates/w3blacklist/faq.html:5 templates/w3blacklist/w3blacklist.html:15
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/base.html:91 templates/base.html:102 templates/base.html:119
-#: templates/base.html:130 templates/eciadsl/eciadsl.html:18
+#: templates/base.html:96 templates/base.html:107 templates/base.html:124
+#: templates/base.html:135 templates/eciadsl/eciadsl.html:18
 #: templates/eciadsl/support.html:5 templates/flashtris/flashtris.html:17
 #: templates/flashtris/support.html:5 templates/gmemo/gmemo.html:14
 #: templates/gmemo/support.html:5 templates/weewm/support.html:5
@@ -5877,40 +5881,40 @@ msgstr "FAQ"
 msgid "Support"
 msgstr "Support"
 
-#: templates/base.html:92 templates/eciadsl/eciadsl.html:19
+#: templates/base.html:97 templates/eciadsl/eciadsl.html:19
 #: templates/eciadsl/story.html:5
 msgid "Story"
 msgstr "Histoire"
 
-#: templates/base.html:93 templates/eciadsl/eciadsl.html:20
+#: templates/base.html:98 templates/eciadsl/eciadsl.html:20
 #: templates/eciadsl/support.html:35 templates/eciadsl/team.html:5
 #: templates/flashtris/support.html:20 templates/gmemo/support.html:24
 #: templates/weewm/support.html:24
 msgid "Team"
 msgstr "Équipe"
 
-#: templates/base.html:108 templates/w3blacklist/sites.html:5
+#: templates/base.html:113 templates/w3blacklist/sites.html:5
 #: templates/w3blacklist/w3blacklist.html:12
 msgid "Sites"
 msgstr "Sites"
 
-#: templates/base.html:110 templates/w3blacklist/letters.html:5
+#: templates/base.html:115 templates/w3blacklist/letters.html:5
 #: templates/w3blacklist/w3blacklist.html:14
 msgid "Letters"
 msgstr "Lettres"
 
-#: templates/base.html:128 templates/eciadsl/download.html:14
+#: templates/base.html:133 templates/eciadsl/download.html:14
 #: templates/flashtris/dev.html:5 templates/flashtris/flashtris.html:15
 #: templates/gmemo/download.html:14 templates/weewm/download.html:14
 msgid "Development"
 msgstr "Développement"
 
-#: templates/base.html:136 templates/coding/coding.html:12
+#: templates/base.html:141 templates/coding/coding.html:12
 #: templates/coding/programs.html:5
 msgid "Programs"
 msgstr "Programmes"
 
-#: templates/base.html:163
+#: templates/base.html:168
 msgid "About FlashTux.org"
 msgstr "À propos de FlashTux.org"
 
@@ -5990,10 +5994,6 @@ msgstr ""
 "<strong>Important :</strong> %(project)s a été arrêté, le site est en "
 "lecture seule et n'est plus mis à jour."
 
-#: templates/doc.html:29
-msgid "Doc"
-msgstr "Doc"
-
 #: templates/eciadsl/doc.html:14
 msgid "Other EciAdsl documentations"
 msgstr "Autres documentations EciAdsl"
@@ -6009,24 +6009,24 @@ msgid "Old versions"
 msgstr "Anciennes versions"
 
 #: templates/eciadsl/download.html:28 templates/eciadsl/download.html:183
-#: templates/eciadsl/download.html:216 templates/eciadsl/download.html:248
-#: templates/eciadsl/download.html:278 templates/eciadsl/download.html:302
-#: templates/eciadsl/download.html:324 templates/eciadsl/download.html:346
-#: templates/eciadsl/download.html:367 templates/eciadsl/download.html:387
-#: templates/eciadsl/download.html:405 templates/eciadsl/download.html:423
-#: templates/eciadsl/download.html:441 templates/flashtris/download.html:20
+#: templates/eciadsl/download.html:217 templates/eciadsl/download.html:249
+#: templates/eciadsl/download.html:279 templates/eciadsl/download.html:303
+#: templates/eciadsl/download.html:325 templates/eciadsl/download.html:347
+#: templates/eciadsl/download.html:368 templates/eciadsl/download.html:388
+#: templates/eciadsl/download.html:406 templates/eciadsl/download.html:424
+#: templates/eciadsl/download.html:442 templates/flashtris/download.html:20
 #: templates/gmemo/download.html:28 templates/gmemo/download.html:47
 #: templates/gmemo/download.html:87 templates/weewm/download.html:28
 #: templates/weewm/download.html:49 templates/weewm/download.html:95
 msgid "Packages"
 msgstr "Paquets"
 
-#: templates/eciadsl/download.html:31 templates/eciadsl/download.html:219
-#: templates/eciadsl/download.html:251 templates/eciadsl/download.html:281
-#: templates/eciadsl/download.html:305 templates/eciadsl/download.html:327
-#: templates/eciadsl/download.html:349 templates/eciadsl/download.html:370
-#: templates/eciadsl/download.html:390 templates/eciadsl/download.html:408
-#: templates/eciadsl/download.html:426 templates/eciadsl/download.html:444
+#: templates/eciadsl/download.html:31 templates/eciadsl/download.html:220
+#: templates/eciadsl/download.html:252 templates/eciadsl/download.html:282
+#: templates/eciadsl/download.html:306 templates/eciadsl/download.html:328
+#: templates/eciadsl/download.html:350 templates/eciadsl/download.html:371
+#: templates/eciadsl/download.html:391 templates/eciadsl/download.html:409
+#: templates/eciadsl/download.html:427 templates/eciadsl/download.html:445
 #: templates/flashtris/download.html:25 templates/gmemo/download.html:31
 #: templates/gmemo/download.html:50 templates/gmemo/download.html:90
 #: templates/weewm/download.html:31 templates/weewm/download.html:52
@@ -6034,17 +6034,17 @@ msgstr "Paquets"
 msgid "Sources (gzip):"
 msgstr "Sources (gzip) :"
 
-#: templates/eciadsl/download.html:32 templates/eciadsl/download.html:220
-#: templates/eciadsl/download.html:252 templates/eciadsl/download.html:282
-#: templates/eciadsl/download.html:306 templates/eciadsl/download.html:328
-#: templates/eciadsl/download.html:350 templates/eciadsl/download.html:371
+#: templates/eciadsl/download.html:32 templates/eciadsl/download.html:221
+#: templates/eciadsl/download.html:253 templates/eciadsl/download.html:283
+#: templates/eciadsl/download.html:307 templates/eciadsl/download.html:329
+#: templates/eciadsl/download.html:351 templates/eciadsl/download.html:372
 #: templates/gmemo/download.html:32 templates/gmemo/download.html:51
 #: templates/gmemo/download.html:91 templates/weewm/download.html:32
 #: templates/weewm/download.html:53 templates/weewm/download.html:99
 msgid "Sources (bzip2):"
 msgstr "Sources (bzip2) :"
 
-#: templates/eciadsl/download.html:33 templates/eciadsl/download.html:223
+#: templates/eciadsl/download.html:33 templates/eciadsl/download.html:224
 msgid "SuSE:"
 msgstr "SuSE :"
 
@@ -6052,7 +6052,7 @@ msgstr "SuSE :"
 msgid "Debian Lenny:"
 msgstr "Debian Lenny :"
 
-#: templates/eciadsl/download.html:35 templates/eciadsl/download.html:224
+#: templates/eciadsl/download.html:35 templates/eciadsl/download.html:225
 msgid "Debian Etch:"
 msgstr "Debian Etch :"
 
@@ -6064,24 +6064,24 @@ msgstr "Debian Sid :"
 msgid "Ubuntu:"
 msgstr "Ubuntu :"
 
-#: templates/eciadsl/download.html:38 templates/eciadsl/download.html:230
-#: templates/eciadsl/download.html:261 templates/eciadsl/download.html:286
-#: templates/eciadsl/download.html:310 templates/eciadsl/download.html:332
-#: templates/eciadsl/download.html:353 templates/weewm/download.html:36
+#: templates/eciadsl/download.html:38 templates/eciadsl/download.html:231
+#: templates/eciadsl/download.html:262 templates/eciadsl/download.html:287
+#: templates/eciadsl/download.html:311 templates/eciadsl/download.html:333
+#: templates/eciadsl/download.html:354 templates/weewm/download.html:36
 msgid "Gentoo:"
 msgstr "Gentoo :"
 
-#: templates/eciadsl/download.html:39 templates/eciadsl/download.html:231
-#: templates/eciadsl/download.html:263
+#: templates/eciadsl/download.html:39 templates/eciadsl/download.html:232
+#: templates/eciadsl/download.html:264
 msgid "Patch kernel 2.4.28 to 2.4.30:"
 msgstr "Patch noyau 2.4.28 à 2.4.30 :"
 
-#: templates/eciadsl/download.html:40 templates/eciadsl/download.html:232
-#: templates/eciadsl/download.html:264
+#: templates/eciadsl/download.html:40 templates/eciadsl/download.html:233
+#: templates/eciadsl/download.html:265
 msgid "Patch kernel 2.6.0 to 2.6.6:"
 msgstr "Patch noyau 2.6.0 à 2.6.6 :"
 
-#: templates/eciadsl/download.html:41 templates/eciadsl/download.html:233
+#: templates/eciadsl/download.html:41 templates/eciadsl/download.html:234
 msgid "Patch packet size:"
 msgstr "Patch taille de paquet :"
 
@@ -6209,8 +6209,8 @@ msgstr ""
 #: templates/eciadsl/download.html:168
 #, python-format
 msgid ""
-"You can make your own .bin with Windows and USB sniffer, look at <a href="
-"\"%(url_doc)s\">documentation</a>."
+"You can make your own .bin with Windows and USB sniffer, look at <a "
+"href=\"%(url_doc)s\">documentation</a>."
 msgstr ""
 "Vous pouvez créer votre propre fichier .bin de synchro sous Windows avec le "
 "sniffeur USB, voir la <a href=\"%(url_doc)s\">documentation</a>."
@@ -6244,88 +6244,88 @@ msgstr "EciAdsl kernelmode - Sources (gzip) :"
 msgid "EciAdsl usermode BSD (2006-01-31):"
 msgstr "EciAdsl usermode BSD (31/01/2006) :"
 
-#: templates/eciadsl/download.html:194 templates/gmemo/download.html:70
-#: templates/home/projects.html:61 templates/weewm/download.html:78
+#: templates/eciadsl/download.html:194 templates/gmemo/download.html:69
+#: templates/home/projects.html:55 templates/weewm/download.html:77
 msgid "Sources:"
 msgstr "Sources :"
 
-#: templates/eciadsl/download.html:200 templates/gmemo/download.html:59
+#: templates/eciadsl/download.html:201 templates/gmemo/download.html:59
 #: templates/weewm/download.html:67
 msgid "CVS commits graph"
 msgstr "Graphique des commits CVS"
 
-#: templates/eciadsl/download.html:221 templates/eciadsl/download.html:256
+#: templates/eciadsl/download.html:222 templates/eciadsl/download.html:257
 msgid "Mandriva/Redhat 9.0:"
 msgstr "Mandriva/Redhat 9.0 :"
 
-#: templates/eciadsl/download.html:222
+#: templates/eciadsl/download.html:223
 msgid "Fedora Core 4:"
 msgstr "Fedora Core 4 :"
 
-#: templates/eciadsl/download.html:225
+#: templates/eciadsl/download.html:226
 msgid "Debian Sid i386:"
 msgstr "Debian Sid i386 :"
 
-#: templates/eciadsl/download.html:226
+#: templates/eciadsl/download.html:227
 msgid "Debian Sid amd64:"
 msgstr "Debian Sid amd64 :"
 
-#: templates/eciadsl/download.html:227 templates/eciadsl/download.html:260
-#: templates/eciadsl/download.html:285 templates/eciadsl/download.html:309
-#: templates/eciadsl/download.html:331 templates/eciadsl/download.html:352
+#: templates/eciadsl/download.html:228 templates/eciadsl/download.html:261
+#: templates/eciadsl/download.html:286 templates/eciadsl/download.html:310
+#: templates/eciadsl/download.html:332 templates/eciadsl/download.html:353
 #: templates/weewm/download.html:35
 msgid "Slackware:"
 msgstr "Slackware :"
 
-#: templates/eciadsl/download.html:228
+#: templates/eciadsl/download.html:229
 msgid "Slax:"
 msgstr "Slax :"
 
-#: templates/eciadsl/download.html:229
+#: templates/eciadsl/download.html:230
 msgid "Damn Small Linux:"
 msgstr "Damn Small Linux :"
 
-#: templates/eciadsl/download.html:234
+#: templates/eciadsl/download.html:235
 msgid "Patch synch (≥ 2.6.18):"
 msgstr "Patch synch (≥ 2.6.18) :"
 
-#: templates/eciadsl/download.html:253
+#: templates/eciadsl/download.html:254
 msgid "Nortek sources (gzip):"
 msgstr "Nortek sources (gzip) :"
 
-#: templates/eciadsl/download.html:254 templates/eciadsl/download.html:288
+#: templates/eciadsl/download.html:255 templates/eciadsl/download.html:289
 msgid "Nortek sources (bzip2):"
 msgstr "Nortek sources (bzip2) :"
 
-#: templates/eciadsl/download.html:255
+#: templates/eciadsl/download.html:256
 msgid "Nortek Gentoo (bzip2):"
 msgstr "Nortek Gentoo (bzip2) :"
 
-#: templates/eciadsl/download.html:257
+#: templates/eciadsl/download.html:258
 msgid "Fedora Core 2:"
 msgstr "Fedora Core 2 :"
 
-#: templates/eciadsl/download.html:258
+#: templates/eciadsl/download.html:259
 msgid "Debian i386:"
 msgstr "Debian i386 :"
 
-#: templates/eciadsl/download.html:259
+#: templates/eciadsl/download.html:260
 msgid "Debian ppc:"
 msgstr "Debian ppc :"
 
-#: templates/eciadsl/download.html:262 templates/eciadsl/download.html:287
+#: templates/eciadsl/download.html:263 templates/eciadsl/download.html:288
 msgid "Crux Linux:"
 msgstr "Crux Linux :"
 
-#: templates/eciadsl/download.html:283 templates/eciadsl/download.html:307
-#: templates/eciadsl/download.html:329 templates/eciadsl/download.html:351
-#: templates/eciadsl/download.html:372 templates/eciadsl/download.html:391
-#: templates/eciadsl/download.html:409 templates/eciadsl/download.html:427
+#: templates/eciadsl/download.html:284 templates/eciadsl/download.html:308
+#: templates/eciadsl/download.html:330 templates/eciadsl/download.html:352
+#: templates/eciadsl/download.html:373 templates/eciadsl/download.html:392
+#: templates/eciadsl/download.html:410 templates/eciadsl/download.html:428
 msgid "RPM:"
 msgstr "RPM :"
 
-#: templates/eciadsl/download.html:284 templates/eciadsl/download.html:308
-#: templates/eciadsl/download.html:330 templates/eciadsl/download.html:373
+#: templates/eciadsl/download.html:285 templates/eciadsl/download.html:309
+#: templates/eciadsl/download.html:331 templates/eciadsl/download.html:374
 #: templates/gmemo/download.html:33 templates/weewm/download.html:33
 msgid "Debian:"
 msgstr "Debian :"
@@ -7239,8 +7239,8 @@ msgstr ""
 
 #: templates/eciadsl/story.html:632
 msgid ""
-"With the help of some foreign contributors (\"flynux\" and \"oliver the red"
-"\"), we modify the driver to support these modems as well as the "
+"With the help of some foreign contributors (\"flynux\" and \"oliver the "
+"red\"), we modify the driver to support these modems as well as the "
 "encapsulation protocols that are used in these countries."
 msgstr ""
 "Dès lors avec l'aide de quelques contributeurs étrangers (\"flynux\" et "
@@ -7265,8 +7265,8 @@ msgstr ""
 
 #: templates/eciadsl/story.html:651
 msgid ""
-"In early September 2002, I set up a brand new site for the driver: <a href="
-"\"https://eciadsl.flashtux.org\">https://eciadsl.flashtux.org</a>"
+"In early September 2002, I set up a brand new site for the driver: <a "
+"href=\"https://eciadsl.flashtux.org\">https://eciadsl.flashtux.org</a>"
 msgstr ""
 "Début septembre 2002, je mets en place un site tout neuf pour le driver : <a "
 "href=\"https://eciadsl.flashtux.org\">https://eciadsl.flashtux.org</a>"
@@ -7673,8 +7673,8 @@ msgid ""
 "and choose another .bin synch file."
 msgstr ""
 "S'il y a un timeout et que le voyant vert clignote toujours, répéter "
-"l'opération depuis l'étape 3 en prenant soin de choisir un autre fichier ."
-"bin de synchro."
+"l'opération depuis l'étape 3 en prenant soin de choisir un autre "
+"fichier .bin de synchro."
 
 #: templates/eciadsl/tutorial.html:149
 msgid "That's all, you should be connected :-)"
@@ -7704,9 +7704,9 @@ msgid ""
 "a>). The best is Demoniac-Tris, a \"Tetris like\" running under Dos/Windows "
 "with IPX network support."
 msgstr ""
-"Je développe des jeux en parallèle de mes études (voir la <a href="
-"\"%(url_games)s\">page des jeux</a>). Le plus abouti est Demoniac-Tris, un "
-"\"Tetris like\" fonctionnant sous Dos/Windows avec support réseau IPX."
+"Je développe des jeux en parallèle de mes études (voir la <a "
+"href=\"%(url_games)s\">page des jeux</a>). Le plus abouti est Demoniac-Tris, "
+"un \"Tetris like\" fonctionnant sous Dos/Windows avec support réseau IPX."
 
 #: templates/flashtris/dev.html:23
 msgid ""
@@ -7722,20 +7722,20 @@ msgid ""
 "I decide to convert Demoniac-Tris to a Linux version. I encountered "
 "difficulties (langage Pascal ==> C and system Linux/Dos). I decided to leave "
 "this project and I would like to create a new \"Tetris like\", 100%% in C "
-"and assembly langage, 100%% compatible between Linux, Dos and Windows 3."
-"x/95/98/2000/XP."
+"and assembly langage, 100%% compatible between Linux, Dos and Windows 3.x/"
+"95/98/2000/XP."
 msgstr ""
 "Je me lance dans la conversion de Demoniac-Tris vers une version Linux. "
 "Devant les différences entre le langage (Pascal ==> C) et surtout le système "
-"d'exploitation, je décide d'abandonner et de créer un nouveau \"Tetris like"
-"\" écrit 100%% en C et assembleur, 100%% compatible Linux, Dos et Windows 3."
-"x/95/98/2000/XP."
+"d'exploitation, je décide d'abandonner et de créer un nouveau \"Tetris "
+"like\" écrit 100%% en C et assembleur, 100%% compatible Linux, Dos et "
+"Windows 3.x/95/98/2000/XP."
 
 #: templates/flashtris/dev.html:31
 msgid "FlashTris is born."
 msgstr "Naissance de FlashTris."
 
-#: templates/flashtris/dev.html:36 templates/home/about.html:123
+#: templates/flashtris/dev.html:36 templates/home/about.html:124
 msgid "Technical info"
 msgstr "Infos techniques"
 
@@ -7955,8 +7955,8 @@ msgid ""
 "Unpack both archives (ftris-src-x.yy.tar.gz and ftris-data-x.yy.tar.gz) in "
 "the SAME directory."
 msgstr ""
-"Décompresser les deux archives (ftris-src-x.yy.tar.gz et ftris-data-x.yy.tar."
-"gz) dans le MÊME répertoire."
+"Décompresser les deux archives (ftris-src-x.yy.tar.gz et ftris-data-"
+"x.yy.tar.gz) dans le MÊME répertoire."
 
 #: templates/flashtris/doc.html:28
 msgid "To compile FlashTris, follow instructions in \"Readme\" file."
@@ -8128,11 +8128,11 @@ msgstr "compatible avec les noyaux 2.4.x (voir la FAQ)"
 
 #: templates/flashtris/download.html:37
 msgid ""
-"required libraries: libvga.so.1 (svgalib), libm.so.6, libc.so.6, ld-linux."
-"so.2"
+"required libraries: libvga.so.1 (svgalib), libm.so.6, libc.so.6, ld-"
+"linux.so.2"
 msgstr ""
-"librairies requises : libvga.so.1 (svgalib), libm.so.6, libc.so.6, ld-linux."
-"so.2"
+"librairies requises : libvga.so.1 (svgalib), libm.so.6, libc.so.6, ld-"
+"linux.so.2"
 
 #: templates/flashtris/download.html:41
 msgid "Version 0.30 alpha, binary for Windows"
@@ -8237,8 +8237,8 @@ msgstr "Désactiver l'introduction : \"ftris -nointro\" (et voir FAQ nº 7)."
 
 #: templates/flashtris/faq.html:46
 msgid ""
-"Game hangs up with error message \"svgalib: Cannot get I/O permissions"
-"\" (Linux only)"
+"Game hangs up with error message \"svgalib: Cannot get I/O permissions\" "
+"(Linux only)"
 msgstr ""
 "Le jeu plante avec l'erreur \"svgalib: Cannot get I/O permissions\" (Linux "
 "seulement)"
@@ -8261,11 +8261,11 @@ msgstr ""
 
 #: templates/flashtris/faq.html:55
 msgid ""
-"Game hangs up with error message \"svgalib: mmap error in paged screen memory"
-"\" (Linux only)"
+"Game hangs up with error message \"svgalib: mmap error in paged screen "
+"memory\" (Linux only)"
 msgstr ""
-"Le jeu plante avec l'erreur \"svgalib: mmap error in paged screen memory"
-"\" (Linux seulement)"
+"Le jeu plante avec l'erreur \"svgalib: mmap error in paged screen memory\" "
+"(Linux seulement)"
 
 #: templates/flashtris/faq.html:57
 msgid "This is an error of svgalib with kernels 2.3.x and 2.4.x."
@@ -8273,13 +8273,14 @@ msgstr "Ceci est une erreur de svgalib avec les noyaux 2.3.x et 2.4.x."
 
 #: templates/flashtris/faq.html:59
 msgid ""
-"Download last version of svgalib with sources (here: <a href=\"https://www."
-"svgalib.org\">https://www.svgalib.org</a>) and compile it without option "
+"Download last version of svgalib with sources (here: <a href=\"https://"
+"www.svgalib.org\">https://www.svgalib.org</a>) and compile it without option "
 "\"BACKGROUND = Y\" in file Makefile.cfg (comment this line)."
 msgstr ""
-"Télécharger la dernière version de svgalib avec les sources (sur <a href="
-"\"https://www.svgalib.org\">https://www.svgalib.org</a>) et le compiler en "
-"mettant en commentaire la ligne \"BACKGROUND = Y\" du fichier Makefile.cfg."
+"Télécharger la dernière version de svgalib avec les sources (sur <a "
+"href=\"https://www.svgalib.org\">https://www.svgalib.org</a>) et le compiler "
+"en mettant en commentaire la ligne \"BACKGROUND = Y\" du fichier "
+"Makefile.cfg."
 
 #: templates/flashtris/faq.html:64
 msgid "Menu and/or game are very slow."
@@ -8370,11 +8371,11 @@ msgstr "Dos (natif)"
 #: templates/games/helltris.html:36 templates/games/nibble.html:37
 #: templates/games/trap.html:36
 msgid ""
-"Windows / Linux / BSD / BeOS (with <a href=\"https://www.dosbox.com"
-"\">DOSBox</a>)"
+"Windows / Linux / BSD / BeOS (with <a href=\"https://"
+"www.dosbox.com\">DOSBox</a>)"
 msgstr ""
-"Windows / Linux / BSD / BeOS (avec <a href=\"https://www.dosbox.com"
-"\">DOSBox</a>)"
+"Windows / Linux / BSD / BeOS (avec <a href=\"https://"
+"www.dosbox.com\">DOSBox</a>)"
 
 #: templates/games/bubblebobble.html:46
 msgid "Pascal (8100 lines), result of 1 year' work."
@@ -8405,8 +8406,8 @@ msgstr "méga fun !"
 msgid ""
 "lot of cool musics, some by <a href=\"http://multor.free.fr/\">MulToR</a>"
 msgstr ""
-"beaucoup de musiques sympas, quelques-unes par <a href=\"http://multor.free."
-"fr\">MulToR</a>"
+"beaucoup de musiques sympas, quelques-unes par <a href=\"http://"
+"multor.free.fr\">MulToR</a>"
 
 #: templates/games/demoniacfight.html:45
 msgid "Pascal (6700 lines), result of 7 months' work."
@@ -8646,7 +8647,7 @@ msgstr "Réécriture complète du site, le code source est désormais disponible
 msgid "The source code of this website is hosted on GitHub:"
 msgstr "Le code source du site est hébergé sur GitHub :"
 
-#: templates/home/about.html:98
+#: templates/home/about.html:99
 msgid ""
 "All pages are written with text editor, no web page editor or CMS (Content "
 "Management System) are used."
@@ -8654,7 +8655,7 @@ msgstr ""
 "Toutes les pages sont écrites avec un éditeur de texte, aucun éditeur de "
 "page web ou CMS (Content Management System) n'est utilisé."
 
-#: templates/home/about.html:102
+#: templates/home/about.html:103
 msgid ""
 "This website and software available on this website are free, source code is "
 "provided and you can redistribute it under GNU GPL licence conditions."
@@ -8662,7 +8663,7 @@ msgstr ""
 "Les logiciels disponibles sur ce site sont libres, le code source est fourni "
 "et il est permis de les distribuer sous les conditions de la licence GNU GPL."
 
-#: templates/home/about.html:104
+#: templates/home/about.html:105
 msgid ""
 "FlashTux.org is not responsible of any data/hardware damage due to use of "
 "software available on this website."
@@ -8670,20 +8671,19 @@ msgstr ""
 "FlashTux.org n'est pas responsable de toute perte de données ou dommage "
 "matériel découlant de l'utilisation de logiciels disponibles sur ce site."
 
-#: templates/home/about.html:107
+#: templates/home/about.html:108
 msgid "Pages conformity"
 msgstr "Conformité des pages"
 
-#: templates/home/about.html:110
+#: templates/home/about.html:111
 msgid ""
-"FlashTux.org pages are conform to W3C <a href=\"https://www.w3.org/TR/html5/"
-"\" target=\"_blank\" rel=\"noopener\">HTML 5 recommendation</a>."
+"FlashTux.org pages are conform to W3C <a href=\"https://www.w3.org/TR/"
+"html5/\">HTML 5 recommendation</a>."
 msgstr ""
 "Les pages de FlashTux.org sont conformes à la <a href=\"https://www.w3.org/"
-"TR/html5/\" target=\"_blank\" rel=\"noopener\">recommandation HTML 5</a> du "
-"W3C."
+"TR/html5/\">recommandation HTML 5</a> du W3C."
 
-#: templates/home/about.html:112
+#: templates/home/about.html:113
 msgid ""
 "Therefore, any browser compatible with theses recommendations should display "
 "website without any problem."
@@ -8691,15 +8691,15 @@ msgstr ""
 "Par conséquent, tout navigateur compatible avec ces recommandations doit "
 "afficher le site sans problème."
 
-#: templates/home/about.html:115
+#: templates/home/about.html:116
 msgid "Spam"
 msgstr "Spam"
 
-#: templates/home/about.html:118
+#: templates/home/about.html:119
 msgid "FlashTux.org team is actively fighting against spam."
 msgstr "L'équipe de FlashTux.org combat activement le spam."
 
-#: templates/home/about.html:120
+#: templates/home/about.html:121
 msgid ""
 "Your e-mail address will NEVER be sent to anyone, neither displayed on "
 "website."
@@ -8707,15 +8707,15 @@ msgstr ""
 "Votre adresse e-mail ne sera JAMAIS envoyée à quiconque, ni affichée sur le "
 "site."
 
-#: templates/home/about.html:126
+#: templates/home/about.html:127
 msgid "Web hoster: Hetzner"
 msgstr "Hébergeur : Hetzner"
 
-#: templates/home/about.html:128
+#: templates/home/about.html:129
 msgid "Host: flashtux.org"
 msgstr "Host : flashtux.org"
 
-#: templates/home/about.html:135
+#: templates/home/about.html:136
 msgid "Contact"
 msgstr "Contact"
 
@@ -8735,32 +8735,24 @@ msgstr ""
 "Voir la <a href=\"%(url_projects)s\">page des projets</a> pour plus "
 "d'information sur les projets hébergés."
 
-#: templates/home/projects.html:24
+#: templates/home/projects.html:26
 #, python-format
 msgid "Started on %(date)s"
 msgstr "Démarré le %(date)s"
 
-#: templates/home/projects.html:28
-msgid "Stable version:"
-msgstr "Version stable :"
-
-#: templates/home/projects.html:33
-msgid "Under development:"
-msgstr "En développement :"
-
-#: templates/home/projects.html:44
+#: templates/home/projects.html:37
 msgid "License:"
 msgstr "Licence :"
 
-#: templates/home/projects.html:47
+#: templates/home/projects.html:40
 msgid "Support:"
 msgstr "Support :"
 
-#: templates/home/projects.html:51
+#: templates/home/projects.html:44
 msgid "Page:"
 msgstr "Page :"
 
-#: templates/home/projects.html:55
+#: templates/home/projects.html:48
 msgid "Website:"
 msgstr "Site web :"
 
@@ -9056,23 +9048,23 @@ msgstr ""
 msgid ""
 "The other main difference with HTML is that tags are case-sensitive and must "
 "be written in lower case (&lt;strong&gt; is correct, &lt;STRONG&gt; is not). "
-"Also, each tag opened must be closed (&lt;p&gt;&lt;/p&gt; is correct, &lt;"
-"p&gt; is not)."
+"Also, each tag opened must be closed (&lt;p&gt;&lt;/p&gt; is correct, "
+"&lt;p&gt; is not)."
 msgstr ""
 "L'autre différence avec HTML est que les balises sont sensibles à la casse "
-"et doivent être écrites en minuscules (&lt;strong&gt; est correct, &lt;"
-"STRONG&gt; ne l'est pas). De plus, chaque balise ouverte doit être fermée "
-"(&lt;p&gt;&lt;/p&gt; est correct, &lt;p&gt; ne l'est pas)."
+"et doivent être écrites en minuscules (&lt;strong&gt; est correct, "
+"&lt;STRONG&gt; ne l'est pas). De plus, chaque balise ouverte doit être "
+"fermée (&lt;p&gt;&lt;/p&gt; est correct, &lt;p&gt; ne l'est pas)."
 
 #: templates/w3blacklist/doc.html:116
 msgid ""
 "Tutorials about XHTML and CSS are available at http://www.w3schools.com. "
-"Practical CSS examples are available at digital-web.com, thenoodleincident."
-"com and pompage.net (in French)."
+"Practical CSS examples are available at digital-web.com, "
+"thenoodleincident.com and pompage.net (in French)."
 msgstr ""
-"Des tutoriels sur XHTML et CSS sont disponibles sur http://www.w3schools."
-"com. Des exemples pratiques de CSS sont disponibles sur digital-web.com, "
-"thenoodleincident.com pompage.net (en français)."
+"Des tutoriels sur XHTML et CSS sont disponibles sur http://"
+"www.w3schools.com. Des exemples pratiques de CSS sont disponibles sur "
+"digital-web.com, thenoodleincident.com pompage.net (en français)."
 
 #: templates/w3blacklist/doc.html:120
 msgid ""
@@ -9369,15 +9361,15 @@ msgstr "<strong>%(count_fixed)s</strong> sites corrigés"
 #: templates/w3blacklist/sites.html:18
 #, python-format
 msgid ""
-"<strong>%(count_approval)s</strong> waiting for approval (<strong>"
-"%(count_pending_approval)s</strong> in test by w3blacklist team, <strong>"
-"%(count_waiting_response)s</strong> waiting for a response from the "
+"<strong>%(count_approval)s</strong> waiting for approval "
+"(<strong>%(count_pending_approval)s</strong> in test by w3blacklist team, "
+"<strong>%(count_waiting_response)s</strong> waiting for a response from the "
 "webmaster)."
 msgstr ""
-"<strong>%(count_approval)s</strong> en attente d'approbation (<strong>"
-"%(count_pending_approval)s</strong> en test par l'équipe w3blacklist, "
-"<strong>%(count_waiting_response)s</strong> en attente d'une réponse du "
-"webmaster)."
+"<strong>%(count_approval)s</strong> en attente d'approbation "
+"(<strong>%(count_pending_approval)s</strong> en test par l'équipe "
+"w3blacklist, <strong>%(count_waiting_response)s</strong> en attente d'une "
+"réponse du webmaster)."
 
 #: templates/w3blacklist/sites.html:23
 msgid "Blacklist"
@@ -9551,7 +9543,6 @@ msgstr ""
 
 #. Translators: Letter: Gecko-based browsers
 #: w3blacklist/_i18n_letter.py:14
-#, python-format
 msgid ""
 "Madam, Sir,\n"
 "\n"
@@ -9842,9 +9833,9 @@ msgstr ""
 "[[(AU CHOIX)]] je suis utilisateur du système Linux et qu'Internet Explorer "
 "ne fonctionne pas sur ce système.\n"
 "[[(OU BIEN)]] peut-être savez-vous que les dizaines de trous de sécurité de "
-"ce navigateur (voir http://www.guninski.com/browsers.html et http://die.leox."
-"com/ie_unpatched/index.html) ne sont pas compatibles avec les opérations "
-"financières que je compte mener sur votre site.\n"
+"ce navigateur (voir http://www.guninski.com/browsers.html et http://"
+"die.leox.com/ie_unpatched/index.html) ne sont pas compatibles avec les "
+"opérations financières que je compte mener sur votre site.\n"
 "\n"
 "Je souhaiterais savoir quand vous comptez permettre à vos clients d'utiliser "
 "un navigateur moderne et conforme aux standards édictés par le W3C, comme "
@@ -10283,8 +10274,8 @@ msgstr ""
 "consulter des horaires, d'obtenir des informations, ou d'acheter un billet "
 "d'avion si l'on ne dispose pas du plugin Flash.\n"
 "\n"
-"Solution de contournement: entrer cet URL : http://www.aircaraibes.com/index."
-"cfm"
+"Solution de contournement: entrer cet URL : http://www.aircaraibes.com/"
+"index.cfm"
 
 #. Translators: short description for site Bobvila.com (http://www.bobvila.com/)
 #: w3blacklist/_i18n_site.py:80
@@ -10528,8 +10519,8 @@ msgid ""
 msgstr ""
 "Lorsqu'on se connecte pour la première fois, on doit changer de mot de "
 "passe. Ceci ne fonctionne avec aucun navigateur. Quand on remplit les cases "
-"et que l'on valide, on a un message \"Vous devez remplir la case mot de passe"
-"\".\n"
+"et que l'on valide, on a un message \"Vous devez remplir la case mot de "
+"passe\".\n"
 "Sur <http://www.caisse-epargne.fr/asp/modele2.aspx?"
 "np=aide_connexion_navigateurs&nv=20050302100632>, on a la confirmation que "
 "ce site est quasiment inaccessible pour les Macs : seul IE 5.5 est "
@@ -10728,8 +10719,8 @@ msgid ""
 "Site no longer exists."
 msgstr ""
 "Seul Internet Explorer est autorisé, tous les autres navigateurs (si vous "
-"n'utilisez pas un User-Agent personnalisé) sont redirigés vers http://www."
-"gamevideovault.com/browsercheck.html\n"
+"n'utilisez pas un User-Agent personnalisé) sont redirigés vers http://"
+"www.gamevideovault.com/browsercheck.html\n"
 "\n"
 "Réponse reçue :\n"
 "\"If you would like to do it for FREE or know some-one who would please "
@@ -10785,8 +10776,8 @@ msgstr "Le navigateur Opera est interdit"
 #: w3blacklist/_i18n_site.py:168
 msgid ""
 "Message:\n"
-"\"Votre navigateur est trop ancien pour accéder au site www.cancerdusein."
-"org\n"
+"\"Votre navigateur est trop ancien pour accéder au site "
+"www.cancerdusein.org\n"
 "Internet Explorer 4 ou Netscape Navigator 4 minimum sont recommandés.\"\n"
 "\n"
 "Opera version 7.54.\n"
@@ -10796,8 +10787,8 @@ msgid ""
 "Website is OK with Opera 8.00."
 msgstr ""
 "Message:\n"
-"\"Votre navigateur est trop ancien pour accéder au site www.cancerdusein."
-"org\n"
+"\"Votre navigateur est trop ancien pour accéder au site "
+"www.cancerdusein.org\n"
 "Internet Explorer 4 ou Netscape Navigator 4 minimum sont recommandés.\"\n"
 "\n"
 "Version 7.54 d'opéra.\n"
@@ -11146,8 +11137,8 @@ msgid ""
 "papeterie/.\n"
 "With Mozilla Firefox, there's an empty page."
 msgstr ""
-"Le site utilise du JavaScript pour rediriger le visiteur vers "
-"http://193.251.176.210/papeterie/.\n"
+"Le site utilise du JavaScript pour rediriger le visiteur vers http://"
+"193.251.176.210/papeterie/.\n"
 "Avec Mozilla Firefox, il y a une page vide."
 
 #. Translators: short description for site Schneider Electric (http://www.schneider-electric.fr/)
@@ -11776,7 +11767,6 @@ msgstr ""
 
 #. Translators: description for site Codex Productions (http://www.codex.lu/)
 #: w3blacklist/_i18n_site.py:332
-#, python-format
 msgid ""
 "When connecting to the website with a browser different from Internet "
 "Explorer, the following message is displayed after the Flash animation:\n"
@@ -12329,8 +12319,9 @@ msgstr ""
 "Réaction rapide du webmaster qui corrige en partie le problème. Seulement, "
 "la détection navigateur est toujours présente et se base sur le nom du "
 "navigateur. Une solution basée sur la détection par les capacités "
-"technologiques des navigateurs (GetElementById, document.all, document."
-"layers) a été soumise au webmaster. En attente de réponse favorable.\n"
+"technologiques des navigateurs (GetElementById, document.all, "
+"document.layers) a été soumise au webmaster. En attente de réponse "
+"favorable.\n"
 "\n"
 "*** Mise à jour le 01/12/2004 ***\n"
 "\n"
@@ -12358,10 +12349,10 @@ msgid ""
 "\n"
 "Conclusion: part of the website is not accessible."
 msgstr ""
-"Avec Mozilla, les menus déroulants \"Plans\", \"Les lignes\", \"Bien voyager"
-"\", \"Sorties\" et \"Entreprises\" n'affichent pas leurs sous-menus et leurs "
-"liens ne fonctionnent pas (les menus \"Accueil\", \"Horaires\", \"Itinéraires"
-"\" et \"Contacts\" fonctionnent correctement).\n"
+"Avec Mozilla, les menus déroulants \"Plans\", \"Les lignes\", \"Bien "
+"voyager\", \"Sorties\" et \"Entreprises\" n'affichent pas leurs sous-menus "
+"et leurs liens ne fonctionnent pas (les menus \"Accueil\", \"Horaires\", "
+"\"Itinéraires\" et \"Contacts\" fonctionnent correctement).\n"
 "\n"
 "Cause : utilisation de JavaScript non-conforme.\n"
 "\n"
@@ -12736,9 +12727,9 @@ msgid ""
 "working on a large part of the website.\n"
 "\n"
 "- The English version, available from URL http://www.tourrettessurloup.com/"
-"indexus.htm has not been updated: redirection to the error page (http://www."
-"tourrettessurloup.com/pagerefus.htm) with Opera et Konqueror. No redirection "
-"with Mozilla, but the menu is not working."
+"indexus.htm has not been updated: redirection to the error page (http://"
+"www.tourrettessurloup.com/pagerefus.htm) with Opera et Konqueror. No "
+"redirection with Mozilla, but the menu is not working."
 msgstr ""
 "Impossible d'accéder aux différentes pages du site depuis le menu "
 "principal : le code JavaScript utilisé par le menu ne fonctionne qu'avec "
@@ -12753,17 +12744,18 @@ msgstr ""
 "été mises à jour, donc le menu ne fonctionne pas sur une bonne partie du "
 "site.\n"
 "\n"
-"- La version anglaise, disponible depuis l'adresse http://www."
-"tourrettessurloup.com/indexus.htm n'a pas été modifiée : redirection vers la "
-"page d'erreur (http://www.tourrettessurloup.com/pagerefus.htm) avec Opera et "
-"Konqueror. Pas de redirection pour Mozilla, mais le menu ne fonctionne pas."
+"- La version anglaise, disponible depuis l'adresse http://"
+"www.tourrettessurloup.com/indexus.htm n'a pas été modifiée : redirection "
+"vers la page d'erreur (http://www.tourrettessurloup.com/pagerefus.htm) avec "
+"Opera et Konqueror. Pas de redirection pour Mozilla, mais le menu ne "
+"fonctionne pas."
 
 #. Translators: description for site BuyMusic.com (http://www.buymusic.com/)
 #: w3blacklist/_i18n_site.py:478
 msgid ""
 "BuyMusic.com is only accessible to Internet Explorer running on top of "
-"Microsoft Windows (you get redirected to http://www.buymusic.com/ierequired."
-"htm otherwise)\n"
+"Microsoft Windows (you get redirected to http://www.buymusic.com/"
+"ierequired.htm otherwise)\n"
 "\n"
 "*** Updated on 2004-12-22 ***\n"
 "\n"
@@ -12880,8 +12872,8 @@ msgid ""
 "http://oca.microsoft.com/en/browserinfo.asp"
 msgstr ""
 "Le site prétend supporter Internet Explorer 5+ et Netscape 6+ mais refuse "
-"l'entrée à tout navigateur basé sur Gecko : redirection vers http://oca."
-"microsoft.com/en/browserinfo.asp"
+"l'entrée à tout navigateur basé sur Gecko : redirection vers http://"
+"oca.microsoft.com/en/browserinfo.asp"
 
 #. Translators: description for site Within Temptation (http://www.within-temptation.com/)
 #: w3blacklist/_i18n_site.py:502
@@ -13377,8 +13369,8 @@ msgstr ""
 "d'afficher le site (en se faisait passer pour Mozilla ou Internet Explorer, "
 "on accède à tout le site).\n"
 "\n"
-"Safari n'est pas bloqué. Probablement grâce à la chaîne de caractères \"Gecko"
-"\" dans son \"user agent\".\n"
+"Safari n'est pas bloqué. Probablement grâce à la chaîne de caractères "
+"\"Gecko\" dans son \"user agent\".\n"
 "\n"
 "Opera est toujours banni."
 
@@ -13858,40 +13850,37 @@ msgid "Menus are working only with Internet Explorer."
 msgstr "Les menus ne fonctionnent qu'avec Internet Explorer."
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:34
+#: w3blacklist/models.py:36
 msgid "rejected"
 msgstr "rejeté"
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:36
+#: w3blacklist/models.py:38
 msgid "waiting for approval"
 msgstr "en attente d'approbation"
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:38
+#: w3blacklist/models.py:40
 msgid "blacklisted"
 msgstr "sur liste noire"
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:40
+#: w3blacklist/models.py:42
 msgid "fixed"
 msgstr "corrigé"
 
-#: w3blacklist/models.py:43
+#: w3blacklist/models.py:45
 msgid "display issues"
 msgstr "problèmes d'affichage"
 
-#: w3blacklist/models.py:44
+#: w3blacklist/models.py:46
 msgid "partially broken"
 msgstr "partiellement cassé"
 
-#: w3blacklist/models.py:45
+#: w3blacklist/models.py:47
 msgid "entirely broken"
 msgstr "complètement cassé"
 
-#: weewm/views.py:30
-msgid "WeeWM users guide"
+#: weewm/views.py:32
+msgid "WeeWM user's guide"
 msgstr "Guide utilisateur WeeWM"
-
-#~ msgid "History"
-#~ msgstr "Histoire"
