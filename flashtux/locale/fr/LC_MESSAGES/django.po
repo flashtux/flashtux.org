@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-05 12:44+0200\n"
-"PO-Revision-Date: 2026-08-05 12:44+0200\n"
+"POT-Creation-Date: 2026-08-05 13:12+0200\n"
+"PO-Revision-Date: 2026-08-05 13:12+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -112,13 +112,13 @@ msgstr "Affichage de nombres en toutes lettres."
 msgid ""
 "Writes numbers out in full.\n"
 "\n"
-"Parameter is number between 0 and 999 999 999 999 999 (15 digits)\n"
+"Parameter is number between 0 and 999999999999999 (15 digits).\n"
 "Return code: 0 if OK, 1 if invalid number, 2 if number too big."
 msgstr ""
 "Affiche un nombre en toutes lettres.\n"
 "\n"
-"Le paramètre à fournir est le nombre entier compris entre 0 et 999 999 999 "
-"999 999 (15 chiffres).\n"
+"Le paramètre à fournir est le nombre entier compris entre 0 et "
+"999999999999999 (15 chiffres).\n"
 "Code retour: 0 si OK, 1 si le nombre est invalide, 2 si le nombre est trop "
 "grand."
 
@@ -158,6 +158,7 @@ msgstr ""
 msgid "Searches solution for \"Solitary\"."
 msgstr "Recherche la solution du \"Solitaire\"."
 
+# noqa:double-words
 #. Translators: description for program "solitaire"
 #: coding/_i18n_program.py:45
 msgid ""
@@ -952,38 +953,13 @@ msgstr ""
 msgid "Mail."
 msgstr "E-mail."
 
-#. Translators: 2020-07-18 13:28, weechat: Version 2.9
-#: news/_i18n_info.py:14 templates/eciadsl/download.html:23
-#: templates/eciadsl/download.html:212 templates/eciadsl/download.html:244
-#: templates/eciadsl/download.html:274 templates/eciadsl/download.html:298
-#: templates/eciadsl/download.html:320 templates/eciadsl/download.html:342
-#: templates/eciadsl/download.html:363 templates/eciadsl/download.html:383
-#: templates/eciadsl/download.html:401 templates/eciadsl/download.html:419
-#: templates/eciadsl/download.html:437 templates/flashtris/download.html:15
-#: templates/gmemo/download.html:23 templates/gmemo/download.html:82
-#: templates/weewm/download.html:23 templates/weewm/download.html:90
-msgid "Version"
-msgstr "Version"
-
-#. Translators: 2020-07-18 13:28, weechat: Version 2.9
-#: news/_i18n_info.py:16
-msgid "Many new features and bugs fixed, see WeeChat official site."
-msgstr ""
-"Beaucoup de nouveautés et de bugs corrigés, voir le site officiel de WeeChat."
-
-#. Translators: 2020-02-20 21:36, weechat: Version 2.7.1
-#: news/_i18n_info.py:18
-msgid "Bug fix and maintenance release, see WeeChat official site."
-msgstr ""
-"Version de maintenance avec des correctifs, voir le site officiel de WeeChat."
-
-#. Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
-#: news/_i18n_info.py:20
+#. Translators: 2019-02-16 20:50, home: Complete rewrite of FlashTux.org
+#: news/_i18n_info.py:14
 msgid "Complete rewrite of FlashTux.org"
 msgstr "Réécriture complète de FlashTux.org"
 
-#. Translators: 2019-02-16 19:50, home: Complete rewrite of FlashTux.org
-#: news/_i18n_info.py:22
+#. Translators: 2019-02-16 20:50, home: Complete rewrite of FlashTux.org
+#: news/_i18n_info.py:16
 msgid ""
 "FlashTux.org (formerly the \"FlashCode's webpage\") is turning 20!\n"
 "\n"
@@ -1004,26 +980,42 @@ msgstr ""
 "Le code source est disponible sur GitHub : <a href=\"https://github.com/"
 "flashtux/flashtux.org\">https://github.com/flashtux/flashtux.org</a>."
 
-#. Translators: 2012-08-28 18:50, home: IPv6
-#: news/_i18n_info.py:24
+#. Translators: 2012-08-28 20:50, home: IPv6
+#: news/_i18n_info.py:18
 msgid "IPv6"
 msgstr "IPv6"
 
-#. Translators: 2012-08-28 18:50, home: IPv6
-#: news/_i18n_info.py:26
+#. Translators: 2012-08-28 20:50, home: IPv6
+#: news/_i18n_info.py:20
 msgid "Sites flashtux.org and weechat.org are now accessible via IPv6."
 msgstr ""
 "Les sites flashtux.org et weechat.org sont désormais accessibles en IPv6."
 
-#. Translators: 2009-09-06 22:09, weechat: Version 0.3.0
-#: news/_i18n_info.py:28
+#. Translators: 2009-09-07 00:09, weechat: Version 0.3.0
+#: news/_i18n_info.py:22 templates/eciadsl/download.html:23
+#: templates/eciadsl/download.html:212 templates/eciadsl/download.html:244
+#: templates/eciadsl/download.html:274 templates/eciadsl/download.html:298
+#: templates/eciadsl/download.html:320 templates/eciadsl/download.html:342
+#: templates/eciadsl/download.html:363 templates/eciadsl/download.html:383
+#: templates/eciadsl/download.html:401 templates/eciadsl/download.html:419
+#: templates/eciadsl/download.html:437 templates/flashtris/download.html:15
+#: templates/gmemo/download.html:23 templates/gmemo/download.html:82
+#: templates/weewm/download.html:23 templates/weewm/download.html:90
+msgid "Version"
+msgstr "Version"
+
+#. Translators: 2009-09-07 00:09, weechat: Version 0.3.0
+#: news/_i18n_info.py:24
 msgid ""
 "Version 0.3.0 is released, after 2 years of work and more than 1000 "
 "commits!\n"
 "This is a major upgrade since last stable, please read files UPGRADE_0.3 and "
 "ChangeLog for list of changes.\n"
 "For this important release, site has moved to weechat.org, with a new look!\n"
-"Enjoy WeeChat!"
+"Enjoy WeeChat!\n"
+"\n"
+"<strong>IMPORTANT:</strong> all future news will be posted only on <a "
+"href=\"https://weechat.org/\">weechat.org</a>."
 msgstr ""
 "La version 0.3.0 est disponible, après deux ans de travail et plus de 1000 "
 "commits !\n"
@@ -1031,10 +1023,13 @@ msgstr ""
 "fichiers UPGRADE_0.3 et ChangeLog pour la liste des changements.\n"
 "Pour cette version importante, le site a déménagé vers weechat.org, avec un "
 "nouveau look !\n"
-"Bon WeeChat !"
+"Bon WeeChat !\n"
+"\n"
+"<strong>IMPORTANT :</strong> toutes les futures nouveautés seront postées "
+"seulement sur <a href=\"https://weechat.org/\">weechat.org</a>."
 
-#. Translators: 2009-08-11 14:20, weechat: Version 0.3.0-rc3
-#: news/_i18n_info.py:30
+#. Translators: 2009-08-11 16:20, weechat: Version 0.3.0-rc3
+#: news/_i18n_info.py:26
 msgid ""
 "Third release candidate (version 0.3.0-rc3) for future version 0.3.0 is "
 "available.\n"
@@ -1046,8 +1041,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2009-07-03 15:59, weechat: Version 0.3.0-rc2
-#: news/_i18n_info.py:32
+#. Translators: 2009-07-03 17:59, weechat: Version 0.3.0-rc2
+#: news/_i18n_info.py:28
 msgid ""
 "Second release candidate (version 0.3.0-rc2) for future version 0.3.0 is "
 "available.\n"
@@ -1059,8 +1054,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2009-06-17 17:02, weechat: Version 0.3.0-rc1
-#: news/_i18n_info.py:34
+#. Translators: 2009-06-17 19:02, weechat: Version 0.3.0-rc1
+#: news/_i18n_info.py:30
 msgid ""
 "First release candidate (version 0.3.0-rc1) for future version 0.3.0 is "
 "available. No major feature will be added until version 0.3.0 will be "
@@ -1074,8 +1069,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2009-06-13 11:54, weechat: Version 0.2.6.3
-#: news/_i18n_info.py:36
+#. Translators: 2009-06-13 13:54, weechat: Version 0.2.6.3
+#: news/_i18n_info.py:32
 msgid ""
 "WeeChat 0.2.6.3 is available. This release fixes a bug with detection of "
 "gnutls.\n"
@@ -1087,8 +1082,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2009-04-18 14:10, weechat: Version 0.2.6.2
-#: news/_i18n_info.py:38
+#. Translators: 2009-04-18 16:10, weechat: Version 0.2.6.2
+#: news/_i18n_info.py:34
 msgid ""
 "WeeChat 0.2.6.2 is available. This release fixes a charset decoding problem "
 "of version 0.2.6.1.\n"
@@ -1100,8 +1095,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2009-03-14 19:21, weechat: Version 0.2.6.1
-#: news/_i18n_info.py:40
+#. Translators: 2009-03-14 20:21, weechat: Version 0.2.6.1
+#: news/_i18n_info.py:36
 msgid ""
 "WeeChat 0.2.6.1 is available. This release fixes a crash when receiving some "
 "special chars in IRC messages.\n"
@@ -1121,13 +1116,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2009-01-19 16:57, weechat: Jabber plugin
-#: news/_i18n_info.py:42
+#. Translators: 2009-01-19 17:57, weechat: Jabber plugin
+#: news/_i18n_info.py:38
 msgid "Jabber plugin"
 msgstr "Extension Jabber"
 
-#. Translators: 2009-01-19 16:57, weechat: Jabber plugin
-#: news/_i18n_info.py:44
+#. Translators: 2009-01-19 17:57, weechat: Jabber plugin
+#: news/_i18n_info.py:40
 msgid ""
 "Development of Jabber plugin for WeeChat has started and a first alpha "
 "version is available.\n"
@@ -1146,13 +1141,13 @@ msgstr ""
 "&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-"
 "Jabber\">Article sur le blog de dev</a>"
 
-#. Translators: 2008-08-30 08:58, weechat: Dev blog
-#: news/_i18n_info.py:46
+#. Translators: 2008-08-30 10:58, weechat: Dev blog
+#: news/_i18n_info.py:42
 msgid "Dev blog"
 msgstr "Blog de dev"
 
-#. Translators: 2008-08-30 08:58, weechat: Dev blog
-#: news/_i18n_info.py:48
+#. Translators: 2008-08-30 10:58, weechat: Dev blog
+#: news/_i18n_info.py:44
 msgid ""
 "A new blog about WeeChat development has been added. It announces all new "
 "features in development version and let you discuss about future of "
@@ -1168,13 +1163,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"http://dev.weechat.org/\">Blog de dev WeeChat</a>"
 
-#. Translators: 2008-03-30 10:50, weechat: News about development
-#: news/_i18n_info.py:50
+#. Translators: 2008-03-30 12:50, weechat: News about development
+#: news/_i18n_info.py:46
 msgid "News about development"
 msgstr "Infos sur le développement"
 
-#. Translators: 2008-03-30 10:50, weechat: News about development
-#: news/_i18n_info.py:52
+#. Translators: 2008-03-30 12:50, weechat: News about development
+#: news/_i18n_info.py:48
 msgid ""
 "Next WeeChat version (codename \"revolution\") is under development.\n"
 "Large part of code was rewritten, it's now faster, easier, and more "
@@ -1212,8 +1207,8 @@ msgstr ""
 "&bull; <a href=\"http://wiki.flashtux.org/wiki/WeeChat_0.2.7\">Page Wiki sur "
 "le développement</a>"
 
-#. Translators: 2007-09-06 09:27, weechat: Version 0.2.6
-#: news/_i18n_info.py:54
+#. Translators: 2007-09-06 11:27, weechat: Version 0.2.6
+#: news/_i18n_info.py:50
 msgid ""
 "WeeChat 0.2.6 is available!\n"
 "\n"
@@ -1253,8 +1248,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/"
 "ChangeLog?rev=1.482\">ChangeLog v0.2.6</a>"
 
-#. Translators: 2007-08-13 13:37, eciadsl: Version 0.12
-#: news/_i18n_info.py:56
+#. Translators: 2007-08-13 15:37, eciadsl: Version 0.12
+#: news/_i18n_info.py:52
 msgid ""
 "Driver version 0.12 is available.\n"
 "\n"
@@ -1284,8 +1279,8 @@ msgstr ""
 "&bull; <a href=\"http://eciadsl.cvs.sourceforge.net/*checkout*/eciadsl/"
 "usermode/ChangeLog?revision=1.11\">ChangeLog v0.12</a>"
 
-#. Translators: 2007-06-07 15:50, weechat: Version 0.2.5
-#: news/_i18n_info.py:58
+#. Translators: 2007-06-07 17:50, weechat: Version 0.2.5
+#: news/_i18n_info.py:54
 msgid ""
 "WeeChat 0.2.5 is available!\n"
 "\n"
@@ -1315,8 +1310,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/"
 "ChangeLog?rev=1.442\">ChangeLog v0.2.5</a>"
 
-#. Translators: 2007-03-29 18:20, weechat: Version 0.2.4
-#: news/_i18n_info.py:60
+#. Translators: 2007-03-29 20:20, weechat: Version 0.2.4
+#: news/_i18n_info.py:56
 msgid ""
 "WeeChat 0.2.4 is available!\n"
 "\n"
@@ -1342,8 +1337,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/"
 "ChangeLog?rev=1.412\">ChangeLog v0.2.4</a>"
 
-#. Translators: 2007-01-10 18:41, weechat: Version 0.2.3
-#: news/_i18n_info.py:62
+#. Translators: 2007-01-10 19:41, weechat: Version 0.2.3
+#: news/_i18n_info.py:58
 msgid ""
 "WeeChat 0.2.3 is available!\n"
 "This version fixes major bugs of version 0.2.2. All users of version 0.2.2 "
@@ -1375,13 +1370,13 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/"
 "ChangeLog?rev=1.387\">ChangeLog v0.2.3</a>"
 
-#. Translators: 2007-01-07 10:40, weechat: Bugs with WeeChat 0.2.2
-#: news/_i18n_info.py:64
+#. Translators: 2007-01-07 11:40, weechat: Bugs with WeeChat 0.2.2
+#: news/_i18n_info.py:60
 msgid "Bugs with WeeChat 0.2.2"
 msgstr "Bugs avec WeeChat 0.2.2"
 
-#. Translators: 2007-01-07 10:40, weechat: Bugs with WeeChat 0.2.2
-#: news/_i18n_info.py:66
+#. Translators: 2007-01-07 11:40, weechat: Bugs with WeeChat 0.2.2
+#: news/_i18n_info.py:62
 msgid ""
 "Bugs have been detected with WeeChat 0.2.2: for servers using charsets like "
 "KOI8-R. When nicks are encoded with cyrillic chars, WeeChat doesn't decode "
@@ -1409,8 +1404,8 @@ msgstr ""
 "Une nouvelle version sera bientôt disponible, elle corrigera tous les "
 "problèmes."
 
-#. Translators: 2007-01-06 00:47, weechat: Version 0.2.2
-#: news/_i18n_info.py:68
+#. Translators: 2007-01-06 01:47, weechat: Version 0.2.2
+#: news/_i18n_info.py:64
 msgid ""
 "WeeChat 0.2.2 is available!\n"
 "\n"
@@ -1453,8 +1448,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/"
 "ChangeLog?rev=1.381\">ChangeLog v0.2.2</a>"
 
-#. Translators: 2006-10-01 08:54, weechat: Version 0.2.1
-#: news/_i18n_info.py:70
+#. Translators: 2006-10-01 10:54, weechat: Version 0.2.1
+#: news/_i18n_info.py:66
 msgid ""
 "WeeChat 0.2.1 is available!\n"
 "\n"
@@ -1493,8 +1488,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/"
 "ChangeLog?rev=1.349\">ChangeLog v0.2.1</a>"
 
-#. Translators: 2006-08-19 12:26, weechat: Version 0.2.0
-#: news/_i18n_info.py:72
+#. Translators: 2006-08-19 14:26, weechat: Version 0.2.0
+#: news/_i18n_info.py:68
 msgid ""
 "WeeChat 0.2.0 is available!\n"
 "\n"
@@ -1543,8 +1538,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/NEWS?"
 "rev=1.24\">Notes de version (fichier NEWS)</a>"
 
-#. Translators: 2006-05-24 23:43, weechat: Version 0.1.9
-#: news/_i18n_info.py:74
+#. Translators: 2006-05-25 01:43, weechat: Version 0.1.9
+#: news/_i18n_info.py:70
 msgid ""
 "WeeChat 0.1.9 is available!\n"
 "\n"
@@ -1585,13 +1580,13 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/weechat/weechat/NEWS?"
 "rev=1.21\">Notes de version (fichier NEWS)</a>"
 
-#. Translators: 2006-04-16 10:47, weechat: Story… with screenshots
-#: news/_i18n_info.py:76
+#. Translators: 2006-04-16 12:47, weechat: Story… with screenshots
+#: news/_i18n_info.py:72
 msgid "Story… with screenshots"
 msgstr "Histoire… en captures d'écran"
 
-#. Translators: 2006-04-16 10:47, weechat: Story… with screenshots
-#: news/_i18n_info.py:78
+#. Translators: 2006-04-16 12:47, weechat: Story… with screenshots
+#: news/_i18n_info.py:74
 msgid ""
 "WeeChat story page is now available, as screenshots. You can see differences "
 "between all versions in one view!\n"
@@ -1607,13 +1602,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/story/\">Histoire de WeeChat</a>"
 
-#. Translators: 2006-04-13 12:46, weechat: WeeChat users map
-#: news/_i18n_info.py:80
+#. Translators: 2006-04-13 14:46, weechat: WeeChat users map
+#: news/_i18n_info.py:76
 msgid "WeeChat users map"
 msgstr "Carte des utilisateurs WeeChat"
 
-#. Translators: 2006-04-13 12:46, weechat: WeeChat users map
-#: news/_i18n_info.py:82
+#. Translators: 2006-04-13 14:46, weechat: WeeChat users map
+#: news/_i18n_info.py:78
 msgid ""
 "A map of developers, contributors and users is now available. Everybody is "
 "invited to add nick/location to this map.\n"
@@ -1625,13 +1620,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"http://www.frappr.com/weechat\">Carte WeeChat</a>"
 
-#. Translators: 2006-04-01 07:56, weechat: WeeChat will merge with irssi
-#: news/_i18n_info.py:84
+#. Translators: 2006-04-01 09:56, weechat: WeeChat will merge with irssi
+#: news/_i18n_info.py:80
 msgid "WeeChat will merge with irssi"
 msgstr "WeeChat va fusionner avec irssi"
 
-#. Translators: 2006-04-01 07:56, weechat: WeeChat will merge with irssi
-#: news/_i18n_info.py:86
+#. Translators: 2006-04-01 09:56, weechat: WeeChat will merge with irssi
+#: news/_i18n_info.py:82
 msgid ""
 "After discussion with irssi developers, both projects are going to merge in "
 "the next weeks.\n"
@@ -1642,7 +1637,7 @@ msgid ""
 "WeeChat developers will not take part into final client (which should be "
 "renamed to \"weerssi\").\n"
 "\n"
-"<b>Update:</b> it is of course an april joke :-)"
+"<b>Update:</b> it is of course an april joke!"
 msgstr ""
 "Suite aux discussions avec les développeurs irssi, les deux projets vont "
 "fusionner d'ici quelques semaines.\n"
@@ -1655,10 +1650,10 @@ msgstr ""
 "Les développeurs WeeChat ne participeront plus à l'évolution du client "
 "commun (qui devrait être renommé en \"weerssi\").\n"
 "\n"
-"<b>Mise à jour :</b> il s'agit évidemment d'un poisson d'avril :-)"
+"<b>Mise à jour :</b> il s'agit évidemment d'un poisson d'avril !"
 
-#. Translators: 2006-03-18 09:37, weechat: Version 0.1.8
-#: news/_i18n_info.py:88
+#. Translators: 2006-03-18 10:37, weechat: Version 0.1.8
+#: news/_i18n_info.py:84
 msgid ""
 "WeeChat 0.1.8 is available!\n"
 "\n"
@@ -1729,7 +1724,7 @@ msgstr ""
 "pointée pour compléter)\n"
 "- la commande /msg n'ouvre désormais plus de tampon (utiliser /query pour "
 "ouvrir un tampon privé)\n"
-"- crash corrigé avec l'historique global  (quand l'entrée la plus ancienne "
+"- crash corrigé avec l'historique global (quand l'entrée la plus ancienne "
 "est supprimée)\n"
 "- bug corrigé avec le /upgrade et le tampon des serveurs\n"
 "- bug corrigé avec la fonction \"get_dcc_info\" de l'interface des "
@@ -1742,8 +1737,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.gnu.org/viewcvs/*checkout*/weechat/"
 "weechat/NEWS?rev=1.19\">Notes de version (fichier NEWS)</a>"
 
-#. Translators: 2006-01-14 12:35, weechat: Version 0.1.7
-#: news/_i18n_info.py:90
+#. Translators: 2006-01-14 13:35, weechat: Version 0.1.7
+#: news/_i18n_info.py:86
 msgid ""
 "WeeChat 0.1.7 is available!\n"
 "\n"
@@ -1808,8 +1803,8 @@ msgstr ""
 "&bull; <a href=\"http://cvs.savannah.nongnu.org/viewcvs/*checkout*/weechat/"
 "weechat/NEWS?rev=1.16\">Notes de version (fichier NEWS)</a>"
 
-#. Translators: 2005-11-11 13:35, weechat: Version 0.1.6
-#: news/_i18n_info.py:92
+#. Translators: 2005-11-11 14:35, weechat: Version 0.1.6
+#: news/_i18n_info.py:88
 msgid ""
 "WeeChat 0.1.6 is available!\n"
 "\n"
@@ -1856,13 +1851,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/NEWS?rev=1.15\">Notes de version (fichier NEWS)</a>"
 
-#. Translators: 2005-10-18 13:51, eciadsl: BSD version of driver
-#: news/_i18n_info.py:94
+#. Translators: 2005-10-18 15:51, eciadsl: BSD version of driver
+#: news/_i18n_info.py:90
 msgid "BSD version of driver"
 msgstr "Version BSD du driver"
 
-#. Translators: 2005-10-18 13:51, eciadsl: BSD version of driver
-#: news/_i18n_info.py:96
+#. Translators: 2005-10-18 15:51, eciadsl: BSD version of driver
+#: news/_i18n_info.py:92
 msgid ""
 "EciAdsl is now available for BSD, as a test version.\n"
 "All feedbacks on this version are welcome, please contact \"kolja\" or "
@@ -1878,8 +1873,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version de développement</a>"
 
-#. Translators: 2005-09-24 12:02, weechat: Version 0.1.5
-#: news/_i18n_info.py:98
+#. Translators: 2005-09-24 14:02, weechat: Version 0.1.5
+#: news/_i18n_info.py:94
 msgid ""
 "WeeChat 0.1.5 is available!\n"
 "\n"
@@ -1919,8 +1914,8 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.182\">ChangeLog v0.1.5</a>"
 
-#. Translators: 2005-09-24 09:55, eciadsl: Version 0.11
-#: news/_i18n_info.py:100
+#. Translators: 2005-09-24 11:55, eciadsl: Version 0.11
+#: news/_i18n_info.py:96
 msgid ""
 "Driver version 0.11 is available.\n"
 "\n"
@@ -1956,13 +1951,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2005-09-20 14:53, weechat: Paypal donations
-#: news/_i18n_info.py:102
+#. Translators: 2005-09-20 16:53, weechat: Paypal donations
+#: news/_i18n_info.py:98
 msgid "Paypal donations"
 msgstr "Dons via Paypal"
 
-#. Translators: 2005-09-20 14:53, weechat: Paypal donations
-#: news/_i18n_info.py:104
+#. Translators: 2005-09-20 16:53, weechat: Paypal donations
+#: news/_i18n_info.py:100
 msgid ""
 "WeeChat project now accepts donations via Paypal account, with secured "
 "payment.\n"
@@ -1974,8 +1969,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/donate/\">Page des dons</a>"
 
-#. Translators: 2005-07-30 09:16, weechat: Version 0.1.4
-#: news/_i18n_info.py:106
+#. Translators: 2005-07-30 11:16, weechat: Version 0.1.4
+#: news/_i18n_info.py:102
 msgid ""
 "WeeChat 0.1.4 is available!\n"
 "\n"
@@ -2022,13 +2017,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.162\">ChangeLog v0.1.4</a>"
 
-#. Translators: 2005-07-20 11:15, eciadsl: Test call for version 0.11-beta1
-#: news/_i18n_info.py:108
+#. Translators: 2005-07-20 13:15, eciadsl: Test call for version 0.11-beta1
+#: news/_i18n_info.py:104
 msgid "Test call for version 0.11-beta1"
 msgstr "Appel à test pour la version 0.11-beta1"
 
-#. Translators: 2005-07-20 11:15, eciadsl: Test call for version 0.11-beta1
-#: news/_i18n_info.py:110
+#. Translators: 2005-07-20 13:15, eciadsl: Test call for version 0.11-beta1
+#: news/_i18n_info.py:106
 msgid ""
 "EciAdsl driver goes on and now a 0.11-beta1 version is available for testing "
 "purpose.\n"
@@ -2049,8 +2044,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/files/eciadsl/beta/\">Version 0.11-beta1</a>"
 
-#. Translators: 2005-07-02 18:05, weechat: Version 0.1.3
-#: news/_i18n_info.py:112
+#. Translators: 2005-07-02 20:05, weechat: Version 0.1.3
+#: news/_i18n_info.py:108
 msgid ""
 "WeeChat 0.1.3 is available!\n"
 "\n"
@@ -2080,8 +2075,8 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.146\">ChangeLog v0.1.3</a>"
 
-#. Translators: 2005-05-21 10:35, weechat: Version 0.1.2
-#: news/_i18n_info.py:114
+#. Translators: 2005-05-21 12:35, weechat: Version 0.1.2
+#: news/_i18n_info.py:110
 msgid ""
 "WeeChat 0.1.2 is available!\n"
 "\n"
@@ -2123,8 +2118,8 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.131\">ChangeLog v0.1.2</a>"
 
-#. Translators: 2005-03-20 07:58, weechat: Version 0.1.1
-#: news/_i18n_info.py:116
+#. Translators: 2005-03-20 08:58, weechat: Version 0.1.1
+#: news/_i18n_info.py:112
 msgid ""
 "WeeChat 0.1.1 is available!\n"
 "\n"
@@ -2160,15 +2155,15 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>\n"
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
-"weechat/weechat/ChangeLog?rev=1.117\">ChangeLog  v0.1.1</a>"
+"weechat/weechat/ChangeLog?rev=1.117\">ChangeLog v0.1.1</a>"
 
-#. Translators: 2005-03-11 15:52, home: Wiki
-#: news/_i18n_info.py:118
+#. Translators: 2005-03-11 16:52, home: Wiki
+#: news/_i18n_info.py:114
 msgid "Wiki"
 msgstr "Wiki"
 
-#. Translators: 2005-03-11 15:52, home: Wiki
-#: news/_i18n_info.py:120
+#. Translators: 2005-03-11 16:52, home: Wiki
+#: news/_i18n_info.py:116
 msgid ""
 "A wiki has been added to FlashTux website.\n"
 "Feel free to improve it: add documents, fixes, translations, etc.\n"
@@ -2181,8 +2176,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/wiki/\">Wiki FlashTux</a>"
 
-#. Translators: 2005-02-12 13:53, weechat: Version 0.1.0
-#: news/_i18n_info.py:122
+#. Translators: 2005-02-12 14:53, weechat: Version 0.1.0
+#: news/_i18n_info.py:118
 msgid ""
 "WeeChat 0.1.0 is available!\n"
 "\n"
@@ -2230,13 +2225,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.98\">ChangeLog v0.1.0</a>"
 
-#. Translators: 2005-01-23 10:46, home: RSS format for news
-#: news/_i18n_info.py:124
+#. Translators: 2005-01-23 11:46, home: RSS format for news
+#: news/_i18n_info.py:120
 msgid "RSS format for news"
 msgstr "Nouveautés au format RSS"
 
-#. Translators: 2005-01-23 10:46, home: RSS format for news
-#: news/_i18n_info.py:126
+#. Translators: 2005-01-23 11:46, home: RSS format for news
+#: news/_i18n_info.py:122
 msgid ""
 "FlashTux news and all subsites are now available as RSS 2.0 format.\n"
 "Link to RSS page is displayed on the right for all news pages.\n"
@@ -2264,8 +2259,8 @@ msgstr ""
 "&bull; <a href=\"/feeds/news/coding/\">RSS Coding</a>\n"
 "&bull; <a href=\"/feeds/news/games/\">RSS Games</a>"
 
-#. Translators: 2005-01-01 13:19, weechat: Version 0.0.9
-#: news/_i18n_info.py:128
+#. Translators: 2005-01-01 14:19, weechat: Version 0.0.9
+#: news/_i18n_info.py:124
 msgid ""
 "WeeChat 0.0.9 is available!\n"
 "\n"
@@ -2288,7 +2283,7 @@ msgstr ""
 "\n"
 "Les nouveautés depuis la dernière version sont :\n"
 "- reconnexion automatique au serveur en cas de déconnexion (et correction "
-"d'un bug qui faisait que WeeChat utilisait 100% du CPU après une "
+"d'un bug qui faisait que WeeChat utilisait 100 % du CPU après une "
 "déconnexion),\n"
 "- nouvelle commande \"/buffer close\" (qui permet de fermer un tampon de "
 "serveur),\n"
@@ -2303,13 +2298,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.81\">ChangeLog v0.0.9</a>"
 
-#. Translators: 2004-11-28 15:27, w3blacklist: W3Blacklist open
-#: news/_i18n_info.py:130
+#. Translators: 2004-11-28 16:27, w3blacklist: W3Blacklist open
+#: news/_i18n_info.py:126
 msgid "W3Blacklist open"
 msgstr "Ouverture de W3Blacklist"
 
-#. Translators: 2004-11-28 15:27, w3blacklist: W3Blacklist open
-#: news/_i18n_info.py:132
+#. Translators: 2004-11-28 16:27, w3blacklist: W3Blacklist open
+#: news/_i18n_info.py:128
 msgid ""
 "W3Blacklist is now open, after almost one year of interruption. Original "
 "website (created by Cédric Malherbe), at w3blacklist.tuxfamily.org has been "
@@ -2371,8 +2366,8 @@ msgstr ""
 "&bull; <a href=\"/w3blacklist/letters/\">Modèles de lettres</a>\n"
 "&bull; <a href=\"/w3blacklist/faq/\">FAQ</a>"
 
-#. Translators: 2004-11-03 19:12, eciadsl: Version 0.10
-#: news/_i18n_info.py:134
+#. Translators: 2004-11-03 20:12, eciadsl: Version 0.10
+#: news/_i18n_info.py:130
 msgid ""
 "Driver version 0.10 is available.\n"
 "\n"
@@ -2399,18 +2394,18 @@ msgstr ""
 "- nouveaux paquets pour Fedora Core 2 et Debian PPC,\n"
 "- nombreux bugs corrigés.\n"
 "\n"
-"A noter: cette version n&eacute;cessite toujours de patcher tout noyau 2.6 "
-"entre les versions 2.6.0 et 2.6.6.\n"
+"A noter: cette version nécessite toujours de patcher tout noyau 2.6 entre "
+"les versions 2.6.0 et 2.6.6.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2004-10-31 16:59, eciadsl: Story of a different driver
-#: news/_i18n_info.py:136
+#. Translators: 2004-10-31 17:59, eciadsl: Story of a different driver
+#: news/_i18n_info.py:132
 msgid "Story of a different driver"
 msgstr "Histoire d'un driver pas comme les autres"
 
-#. Translators: 2004-10-31 16:59, eciadsl: Story of a different driver
-#: news/_i18n_info.py:138
+#. Translators: 2004-10-31 17:59, eciadsl: Story of a different driver
+#: news/_i18n_info.py:134
 msgid ""
 "New page with whole EciAdsl story has been added: all from beginning (and "
 "even before) until today (and even after).\n"
@@ -2424,8 +2419,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/story/\">EciAdsl, histoire d'un driver pas comme "
 "les autres</a>"
 
-#. Translators: 2004-10-30 11:20, weechat: Version 0.0.8
-#: news/_i18n_info.py:140
+#. Translators: 2004-10-30 13:20, weechat: Version 0.0.8
+#: news/_i18n_info.py:136
 msgid ""
 "WeeChat 0.0.8 is available!\n"
 "\n"
@@ -2459,13 +2454,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.75\">ChangeLog v0.0.8</a>"
 
-#. Translators: 2004-09-19 19:41, eciadsl: Turkish documentation
-#: news/_i18n_info.py:142
+#. Translators: 2004-09-19 21:41, eciadsl: Turkish documentation
+#: news/_i18n_info.py:138
 msgid "Turkish documentation"
 msgstr "Documentation en turc"
 
-#. Translators: 2004-09-19 19:41, eciadsl: Turkish documentation
-#: news/_i18n_info.py:144
+#. Translators: 2004-09-19 21:41, eciadsl: Turkish documentation
+#: news/_i18n_info.py:140
 msgid ""
 "EciAdsl installation guide is now available in turkish version (thanks to "
 "Onur Kurt).\n"
@@ -2477,13 +2472,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Documentation EciAdsl</a>"
 
-#. Translators: 2004-09-13 21:44, eciadsl: German documentation
-#: news/_i18n_info.py:146
+#. Translators: 2004-09-13 23:44, eciadsl: German documentation
+#: news/_i18n_info.py:142
 msgid "German documentation"
 msgstr "Documentation en allemand"
 
-#. Translators: 2004-09-13 21:44, eciadsl: German documentation
-#: news/_i18n_info.py:148
+#. Translators: 2004-09-13 23:44, eciadsl: German documentation
+#: news/_i18n_info.py:144
 msgid ""
 "EciAdsl installation guide is now available in german version (thanks to "
 "Thorsten Hirsch).\n"
@@ -2495,13 +2490,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Documentation EciAdsl</a>"
 
-#. Translators: 2004-08-27 08:07, eciadsl: Help EciAdsl project
-#: news/_i18n_info.py:150
+#. Translators: 2004-08-27 10:07, eciadsl: Help EciAdsl project
+#: news/_i18n_info.py:146
 msgid "Help EciAdsl project"
 msgstr "Aider le projet EciAdsl"
 
-#. Translators: 2004-08-27 08:07, eciadsl: Help EciAdsl project
-#: news/_i18n_info.py:152
+#. Translators: 2004-08-27 10:07, eciadsl: Help EciAdsl project
+#: news/_i18n_info.py:148
 msgid ""
 "EciAdsl project is now accepting donations with Paypal account on "
 "Sourceforge project page (see link below).\n"
@@ -2523,8 +2518,8 @@ msgstr ""
 "&bull; <a href=\"http://sourceforge.net/donate/index.php?"
 "group_id=30043\">Aider le projet EciAdsl</a>"
 
-#. Translators: 2004-08-08 20:25, weechat: Version 0.0.7
-#: news/_i18n_info.py:154
+#. Translators: 2004-08-08 22:25, weechat: Version 0.0.7
+#: news/_i18n_info.py:150
 msgid ""
 "WeeChat 0.0.7 is available!\n"
 "\n"
@@ -2554,13 +2549,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.61\">ChangeLog v0.0.7</a>"
 
-#. Translators: 2004-07-05 08:55, weechat: Major new features
-#: news/_i18n_info.py:156
+#. Translators: 2004-07-05 10:55, weechat: Major new features
+#: news/_i18n_info.py:152
 msgid "Major new features"
 msgstr "Nouvelles fonctionnalités majeures"
 
-#. Translators: 2004-07-05 08:55, weechat: Major new features
-#: news/_i18n_info.py:158
+#. Translators: 2004-07-05 10:55, weechat: Major new features
+#: news/_i18n_info.py:154
 msgid ""
 "WeeChat has many new important features since some weeks:\n"
 "- multi-windows management (with horizontal and vertical window split)\n"
@@ -2594,13 +2589,13 @@ msgstr ""
 "&bull; <a href=\"/weechat/download/devel/\">Page téléchargement WeeChat, "
 "version de développement</a>"
 
-#. Translators: 2004-06-12 11:16, eciadsl: New EciAdsl 0.9 RPM
-#: news/_i18n_info.py:160
+#. Translators: 2004-06-12 13:16, eciadsl: New EciAdsl 0.9 RPM
+#: news/_i18n_info.py:156
 msgid "New EciAdsl 0.9 RPM"
 msgstr "Nouveau RPM EciAdsl 0.9"
 
-#. Translators: 2004-06-12 11:16, eciadsl: New EciAdsl 0.9 RPM
-#: news/_i18n_info.py:162
+#. Translators: 2004-06-12 13:16, eciadsl: New EciAdsl 0.9 RPM
+#: news/_i18n_info.py:158
 msgid ""
 "RPM for v0.9 of EciAdsl driver has been replaced by new version, old one was "
 "broken due to dependency to \"perl-base\" (package that does not exist).\n"
@@ -2613,13 +2608,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2004-06-05 19:04, eciadsl: EciAdsl and 2.6.x kernels
-#: news/_i18n_info.py:164
+#. Translators: 2004-06-05 21:04, eciadsl: EciAdsl and 2.6.x kernels
+#: news/_i18n_info.py:160
 msgid "EciAdsl and 2.6.x kernels"
 msgstr "EciAdsl et les noyaux 2.6.x"
 
-#. Translators: 2004-06-05 19:04, eciadsl: EciAdsl and 2.6.x kernels
-#: news/_i18n_info.py:166
+#. Translators: 2004-06-05 21:04, eciadsl: EciAdsl and 2.6.x kernels
+#: news/_i18n_info.py:162
 msgid ""
 "EciAdsl driver is compatible with 2.6 kernels since version 0.9.\n"
 "All 2.6 kernels between 2.6.0 and 2.6.6 have to be patched (look at link "
@@ -2651,13 +2646,13 @@ msgstr ""
 "&bull; <a href=\"/files/eciadsl/beta/\">Patch pour noyaux 2.6 (≥ 2.6.0 et ≤ "
 "2.6.6)</a>"
 
-#. Translators: 2004-06-05 17:10, eciadsl: New synch .bin file
-#: news/_i18n_info.py:168
+#. Translators: 2004-06-05 19:10, eciadsl: New synch .bin file
+#: news/_i18n_info.py:164
 msgid "New synch .bin file"
 msgstr "Nouveau fichier .bin de synchronisation"
 
-#. Translators: 2004-06-05 17:10, eciadsl: New synch .bin file
-#: news/_i18n_info.py:170
+#. Translators: 2004-06-05 19:10, eciadsl: New synch .bin file
+#: news/_i18n_info.py:166
 msgid ""
 "New .bin file has been added (synch49.bin).\n"
 "It was created in Switzerland (Bern), with Sunrise provider (modulation "
@@ -2671,8 +2666,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2004-06-05 10:51, weechat: Version 0.0.6
-#: news/_i18n_info.py:172
+#. Translators: 2004-06-05 12:51, weechat: Version 0.0.6
+#: news/_i18n_info.py:168
 msgid ""
 "WeeChat 0.0.6 is available!\n"
 "\n"
@@ -2709,13 +2704,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.52\">ChangeLog v0.0.6</a>"
 
-#. Translators: 2004-05-30 09:51, home: FlashTux.org new design
-#: news/_i18n_info.py:174
+#. Translators: 2004-05-30 11:51, home: FlashTux.org new design
+#: news/_i18n_info.py:170
 msgid "FlashTux.org new design"
 msgstr "Nouveau look FlashTux.org"
 
-#. Translators: 2004-05-30 09:51, home: FlashTux.org new design
-#: news/_i18n_info.py:176
+#. Translators: 2004-05-30 11:51, home: FlashTux.org new design
+#: news/_i18n_info.py:172
 msgid ""
 "FlashTux.org website has been redesigned:\n"
 "- conform to XHTML / CSS 2 W3C recommandations\n"
@@ -2751,8 +2746,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/projects/\">Projets hébergés sur FlashTux.org</a>"
 
-#. Translators: 2004-05-27 08:27, eciadsl: New synch .bin file
-#: news/_i18n_info.py:178
+#. Translators: 2004-05-27 10:27, eciadsl: New synch .bin file
+#: news/_i18n_info.py:174
 msgid ""
 "New .bin file has been added (synch48.bin).\n"
 "It was created in France (Gouzangrez), with Tele2 provider (modulation "
@@ -2766,13 +2761,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2004-05-12 23:34, home: WeeChat/WeeWM/Gmemo forums
-#: news/_i18n_info.py:180
+#. Translators: 2004-05-13 01:34, home: WeeChat/WeeWM/Gmemo forums
+#: news/_i18n_info.py:176
 msgid "WeeChat/WeeWM/Gmemo forums"
 msgstr "Forums WeeChat/WeeWM/Gmemo"
 
-#. Translators: 2004-05-12 23:34, home: WeeChat/WeeWM/Gmemo forums
-#: news/_i18n_info.py:182
+#. Translators: 2004-05-13 01:34, home: WeeChat/WeeWM/Gmemo forums
+#: news/_i18n_info.py:178
 msgid ""
 "FlashTux.org forums are now available for support and development about "
 "WeeChat, WeeWM and Gmemo.\n"
@@ -2784,13 +2779,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"http://forums.flashtux.org\">Forums FlashTux.org</a>"
 
-#. Translators: 2004-04-27 21:44, eciadsl: EciAdsl with Mdk 10 and kernel 2.6.X - Install doc
-#: news/_i18n_info.py:184
+#. Translators: 2004-04-27 23:44, eciadsl: EciAdsl with Mdk 10 and kernel 2.6.X - Install doc
+#: news/_i18n_info.py:180
 msgid "EciAdsl with Mdk 10 and kernel 2.6.X - Install doc"
 msgstr "Doc install EciAdsl avec Mdk 10 et noyau 2.6.x"
 
-#. Translators: 2004-04-27 21:44, eciadsl: EciAdsl with Mdk 10 and kernel 2.6.X - Install doc
-#: news/_i18n_info.py:186
+#. Translators: 2004-04-27 23:44, eciadsl: EciAdsl with Mdk 10 and kernel 2.6.X - Install doc
+#: news/_i18n_info.py:182
 msgid ""
 "Installation doc for EciAdsl driver with Mandrake 10 and 2.6.x kernel has "
 "been written by karimj.\n"
@@ -2804,8 +2799,8 @@ msgstr ""
 "&bull; <a href=\"/files/eciadsl/doc/eciadsl-mdk10.txt\">Doc installation "
 "EciAdsl sur Mdk 10</a>"
 
-#. Translators: 2004-04-25 10:23, eciadsl: New synch .bin file
-#: news/_i18n_info.py:188
+#. Translators: 2004-04-25 12:23, eciadsl: New synch .bin file
+#: news/_i18n_info.py:184
 msgid ""
 "New .bin file has been added (synch47.bin).\n"
 "It was created in France (Palaiseau), with Club Internet provider "
@@ -2819,8 +2814,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2004-04-03 23:04, eciadsl: Version 0.9
-#: news/_i18n_info.py:190
+#. Translators: 2004-04-04 01:04, eciadsl: Version 0.9
+#: news/_i18n_info.py:186
 msgid ""
 "Version 0.9 is available.\n"
 "This version now supports 2.4 and 2.6 kernels.\n"
@@ -2839,13 +2834,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>\n"
 "&bull; <a href=\"/files/eciadsl/beta/\">Patch pour noyaux 2.6</a>"
 
-#. Translators: 2004-04-02 12:48, eciadsl: New page about DSLAM
-#: news/_i18n_info.py:192
+#. Translators: 2004-04-02 14:48, eciadsl: New page about DSLAM
+#: news/_i18n_info.py:188
 msgid "New page about DSLAM"
 msgstr "Nouvelle page sur le DSLAM"
 
-#. Translators: 2004-04-02 12:48, eciadsl: New page about DSLAM
-#: news/_i18n_info.py:194
+#. Translators: 2004-04-02 14:48, eciadsl: New page about DSLAM
+#: news/_i18n_info.py:190
 msgid ""
 "New page has been created to show all possible modifications on DSLAM (look "
 "at previous news).\n"
@@ -2862,13 +2857,13 @@ msgstr ""
 "&bull; <a href=\"/files/eciadsl/dslam/\">Modification des paramètres du "
 "DSLAM</a>"
 
-#. Translators: 2004-04-01 09:23, eciadsl: DSLAM parameters
-#: news/_i18n_info.py:196
+#. Translators: 2004-04-01 11:23, eciadsl: DSLAM parameters
+#: news/_i18n_info.py:192
 msgid "DSLAM parameters"
 msgstr "Paramètres du DSLAM"
 
-#. Translators: 2004-04-01 09:23, eciadsl: DSLAM parameters
-#: news/_i18n_info.py:198
+#. Translators: 2004-04-01 11:23, eciadsl: DSLAM parameters
+#: news/_i18n_info.py:194
 msgid ""
 "New major feature has been added to CVS version of driver.\n"
 "It is now possible to modify DSLAM parameters remotely.\n"
@@ -2913,13 +2908,13 @@ msgstr ""
 "possibles (en cours de test), n'hésitez pas à nous contacter.\n"
 "Bon surf !"
 
-#. Translators: 2004-03-28 13:24, eciadsl: EciAdsl and Free dégroupé
-#: news/_i18n_info.py:200
+#. Translators: 2004-03-28 15:24, eciadsl: EciAdsl and Free dégroupé
+#: news/_i18n_info.py:196
 msgid "EciAdsl and Free dégroupé"
 msgstr "EciAdsl et Free dégroupé"
 
-#. Translators: 2004-03-28 13:24, eciadsl: EciAdsl and Free dégroupé
-#: news/_i18n_info.py:202
+#. Translators: 2004-03-28 15:24, eciadsl: EciAdsl and Free dégroupé
+#: news/_i18n_info.py:198
 msgid ""
 "EciAdsl driver (version 0.8 or more) is compatible with Free dégroupé.\n"
 "Changes to do in driver config:\n"
@@ -2941,13 +2936,13 @@ msgstr ""
 "&bull; <a href=\"/files/eciadsl/doc/eciadsl-free-degroupe.txt\">Config "
 "EciAdsl pour Free dégroupé</a>"
 
-#. Translators: 2004-03-28 11:00, home: New design for FlashTux.org
-#: news/_i18n_info.py:204
+#. Translators: 2004-03-28 13:00, home: New design for FlashTux.org
+#: news/_i18n_info.py:200
 msgid "New design for FlashTux.org"
 msgstr "Refonte du site FlashTux.org"
 
-#. Translators: 2004-03-28 11:00, home: New design for FlashTux.org
-#: news/_i18n_info.py:206
+#. Translators: 2004-03-28 13:00, home: New design for FlashTux.org
+#: news/_i18n_info.py:202
 msgid ""
 "FlashTux.org website is being rewritten from scratch. It will be compliant "
 "with XHTML 1.0 Strict, will be light and nice (for example non-aggressive "
@@ -2966,13 +2961,13 @@ msgstr ""
 "\n"
 "MAJ le 30/05/2004 : la nouvelle version est en place."
 
-#. Translators: 2004-03-15 20:59, eciadsl: Documentation EciAdsl / OpenBSD
-#: news/_i18n_info.py:208
+#. Translators: 2004-03-15 21:59, eciadsl: Documentation EciAdsl / OpenBSD
+#: news/_i18n_info.py:204
 msgid "Documentation EciAdsl / OpenBSD"
 msgstr "Documentation EciAdsl / OpenBSD"
 
-#. Translators: 2004-03-15 20:59, eciadsl: Documentation EciAdsl / OpenBSD
-#: news/_i18n_info.py:210
+#. Translators: 2004-03-15 21:59, eciadsl: Documentation EciAdsl / OpenBSD
+#: news/_i18n_info.py:206
 msgid ""
 "A documentation for installing EciAdsl driver on OpenBSD has been written by "
 "Benoit Papillault.\n"
@@ -2989,13 +2984,13 @@ msgstr ""
 "&bull; <a href=\"/files/eciadsl/doc/eciadsl-on-openbsd.txt\">Documentation "
 "EciAdsl / OpenBSD</a>"
 
-#. Translators: 2004-03-07 21:06, weewm: Version 0.0.3 scheduled
-#: news/_i18n_info.py:212
+#. Translators: 2004-03-07 22:06, weewm: Version 0.0.3 scheduled
+#: news/_i18n_info.py:208
 msgid "Version 0.0.3 scheduled"
 msgstr "Version 0.0.3 programmée"
 
-#. Translators: 2004-03-07 21:06, weewm: Version 0.0.3 scheduled
-#: news/_i18n_info.py:214
+#. Translators: 2004-03-07 22:06, weewm: Version 0.0.3 scheduled
+#: news/_i18n_info.py:210
 msgid ""
 "Version 0.0.3 of WeeWM is scheduled soon.\n"
 "Code has been cleaned up and secured.\n"
@@ -3016,13 +3011,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weewm/download/\">Page téléchargement WeeWM</a>"
 
-#. Translators: 2004-02-21 17:08, home: Download center
-#: news/_i18n_info.py:216
+#. Translators: 2004-02-21 18:08, home: Download center
+#: news/_i18n_info.py:212
 msgid "Download center"
 msgstr "Centre de téléchargement"
 
-#. Translators: 2004-02-21 17:08, home: Download center
-#: news/_i18n_info.py:218
+#. Translators: 2004-02-21 18:08, home: Download center
+#: news/_i18n_info.py:214
 msgid ""
 "A download center has been created for FlashTux.org.\n"
 "Purpose is to put all links to files on one page, for all FlashTux.org "
@@ -3038,8 +3033,8 @@ msgstr ""
 "&bull; <a href=\"http://download.flashtux.org\">Centre de téléchargement "
 "FlashTux.org</a>"
 
-#. Translators: 2004-02-07 20:24, weechat: Version 0.0.5
-#: news/_i18n_info.py:220
+#. Translators: 2004-02-07 21:24, weechat: Version 0.0.5
+#: news/_i18n_info.py:216
 msgid ""
 "WeeChat 0.0.5 is available!\n"
 "\n"
@@ -3074,13 +3069,13 @@ msgstr ""
 "&bull; <a href=\"http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/"
 "weechat/weechat/ChangeLog?rev=1.45\">ChangeLog v0.0.5</a>"
 
-#. Translators: 2004-02-04 07:06, home: Solutions Linux meeting
-#: news/_i18n_info.py:222
+#. Translators: 2004-02-04 08:06, home: Solutions Linux meeting
+#: news/_i18n_info.py:218
 msgid "Solutions Linux meeting"
 msgstr "Salon Solutions Linux"
 
-#. Translators: 2004-02-04 07:06, home: Solutions Linux meeting
-#: news/_i18n_info.py:224
+#. Translators: 2004-02-04 08:06, home: Solutions Linux meeting
+#: news/_i18n_info.py:220
 msgid ""
 "FlashCode is at Solutions Linux meeting, wednesday Feb 4, on Tuxfamily "
 "stand.\n"
@@ -3096,13 +3091,13 @@ msgstr ""
 "- WeeChat,\n"
 "- WeeWM."
 
-#. Translators: 2004-01-31 11:11, home: New web hoster
-#: news/_i18n_info.py:226
+#. Translators: 2004-01-31 12:11, home: New web hoster
+#: news/_i18n_info.py:222
 msgid "New web hoster"
 msgstr "Changement d'hébergeur"
 
-#. Translators: 2004-01-31 11:11, home: New web hoster
-#: news/_i18n_info.py:228
+#. Translators: 2004-01-31 12:11, home: New web hoster
+#: news/_i18n_info.py:224
 msgid ""
 "FlashTux.org has new web hoster, due to Tuxfamily problems. Thanks to them "
 "for hosting us for more than one year.\n"
@@ -3116,13 +3111,13 @@ msgstr ""
 "Certaines parties du site ont été ou seront inaccessibles pendant un certain "
 "temps, merci de votre compréhension."
 
-#. Translators: 2004-01-25 09:57, home: Debian repository on FlashTux.org
-#: news/_i18n_info.py:230
+#. Translators: 2004-01-25 10:57, home: Debian repository on FlashTux.org
+#: news/_i18n_info.py:226
 msgid "Debian repository on FlashTux.org"
 msgstr "Dépôt Debian sur FlashTux.org"
 
-#. Translators: 2004-01-25 09:57, home: Debian repository on FlashTux.org
-#: news/_i18n_info.py:232
+#. Translators: 2004-01-25 10:57, home: Debian repository on FlashTux.org
+#: news/_i18n_info.py:228
 msgid ""
 "Debian repository has been created on FlashTux.org.\n"
 "All FlashTux.org projects with Debian packages are in this repository.\n"
@@ -3135,8 +3130,8 @@ msgstr ""
 "sources.list :\n"
 "  deb http://www.flashtux.org/debian unstable main"
 
-#. Translators: 2004-01-21 13:13, eciadsl: New synch .bin file
-#: news/_i18n_info.py:234
+#. Translators: 2004-01-21 14:13, eciadsl: New synch .bin file
+#: news/_i18n_info.py:230
 msgid ""
 "New .bin file has been added (synch43.bin).\n"
 "It was created in Australia, with Arachnet provider (modulation G.DMT).\n"
@@ -3148,8 +3143,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2004-01-01 12:17, weechat: Version 0.0.4
-#: news/_i18n_info.py:236
+#. Translators: 2004-01-01 13:17, weechat: Version 0.0.4
+#: news/_i18n_info.py:232
 msgid ""
 "WeeChat 0.0.4 is available!\n"
 "\n"
@@ -3173,13 +3168,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2003-12-29 23:26, eciadsl: EciAdsl CVS ok with 2.4 and 2.6 kernels
-#: news/_i18n_info.py:238
+#. Translators: 2003-12-30 00:26, eciadsl: EciAdsl CVS ok with 2.4 and 2.6 kernels
+#: news/_i18n_info.py:234
 msgid "EciAdsl CVS ok with 2.4 and 2.6 kernels"
 msgstr "CVS EciAdsl ok avec noyaux 2.4 et 2.6"
 
-#. Translators: 2003-12-29 23:26, eciadsl: EciAdsl CVS ok with 2.4 and 2.6 kernels
-#: news/_i18n_info.py:240
+#. Translators: 2003-12-30 00:26, eciadsl: EciAdsl CVS ok with 2.4 and 2.6 kernels
+#: news/_i18n_info.py:236
 msgid ""
 "EciAdsl CVS is now ok with 2.4 and 2.6 kernels.\n"
 "\n"
@@ -3191,13 +3186,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Téléchargement CVS EciAdsl</a>\n"
 "&bull; <a href=\"/files/eciadsl/beta/\">Patch pour noyaux 2.6.x</a>"
 
-#. Translators: 2003-12-25 15:04, eciadsl: EciAdsl driver OK with 2.6.0 kernel
-#: news/_i18n_info.py:242
+#. Translators: 2003-12-25 16:04, eciadsl: EciAdsl driver OK with 2.6.0 kernel
+#: news/_i18n_info.py:238
 msgid "EciAdsl driver OK with 2.6.0 kernel"
 msgstr "Driver EciAdsl OK avec le noyau 2.6.0"
 
-#. Translators: 2003-12-25 15:04, eciadsl: EciAdsl driver OK with 2.6.0 kernel
-#: news/_i18n_info.py:244
+#. Translators: 2003-12-25 16:04, eciadsl: EciAdsl driver OK with 2.6.0 kernel
+#: news/_i18n_info.py:240
 msgid ""
 "EciAdsl has been tested with success on 2.6.0 kernel (thanks to crevetor).\n"
 "Note: version for this kernel is not merged with official version for 2.4.xx "
@@ -3223,20 +3218,20 @@ msgstr ""
 "&bull; <a href=\"/files/eciadsl/beta/\">EciAdsl compatible avec le noyau "
 "2.6.0</a>"
 
-#. Translators: 2003-12-22 15:20, eciadsl: EciAdsl driver and 2.6.0 kernel
-#: news/_i18n_info.py:246
+#. Translators: 2003-12-22 16:20, eciadsl: EciAdsl driver and 2.6.0 kernel
+#: news/_i18n_info.py:242
 msgid "EciAdsl driver and 2.6.0 kernel"
 msgstr "Driver EciAdsl et noyau 2.6.0"
 
-#. Translators: 2003-12-22 15:20, eciadsl: EciAdsl driver and 2.6.0 kernel
-#: news/_i18n_info.py:248
+#. Translators: 2003-12-22 16:20, eciadsl: EciAdsl driver and 2.6.0 kernel
+#: news/_i18n_info.py:244
 msgid ""
 "Today EciAdsl driver works with 2.6.0 kernel but versions available online "
 "are NOT ok with this kernel.\n"
 "We're working hard on this problem, thanks for your patience and please "
 "don't send us mails for asking how to run EciAdsl with 2.6.0 kernel\n"
 "If running 2.6.0 kernel is for you question of life or death, please join us "
-"on IRC, we'll explain you how to do for this kernel ;)\n"
+"on IRC, we'll explain you how to do for this kernel.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/support/\">EciAdsl support</a>"
 msgstr ""
@@ -3246,40 +3241,39 @@ msgstr ""
 "et de ne pas nous submerger de mails pour nous demander comment le faire "
 "fonctionner.\n"
 "Si passer au noyau 2.6.0 est pour vous une question de vie ou de mort, vous "
-"pouvez passer sur IRC on vous expliquera comment faire ;)\n"
+"pouvez passer sur IRC on vous expliquera comment faire.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/support/\">Support EciAdsl</a>"
 
-#. Translators: 2003-12-21 15:18, eciadsl: EciAdsl, *BSD version
-#: news/_i18n_info.py:250
+#. Translators: 2003-12-21 16:18, eciadsl: EciAdsl, *BSD version
+#: news/_i18n_info.py:246
 msgid "EciAdsl, *BSD version"
 msgstr "Driver EciAdsl pour *BSD"
 
-#. Translators: 2003-12-21 15:18, eciadsl: EciAdsl, *BSD version
-#: news/_i18n_info.py:252
+#. Translators: 2003-12-21 16:18, eciadsl: EciAdsl, *BSD version
+#: news/_i18n_info.py:248
 msgid ""
 "EciAdsl for *BSD is now available.\n"
 "Please note that this version has been tested only with NetBSD and that "
 "there's not support today for this version.\n"
-"But we welcome all bugs or comments about this version ;)\n"
+"But we welcome all bugs or comments about this version.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">EciAdsl driver for *BSD</a>"
 msgstr ""
 "La version *BSD du driver EciAdsl est désormais disponible.\n"
 "A noter qu'elle n'a été testée que sous NetBSD et qu'aucun support n'est "
 "aujourd'hui disponible pour cette version.\n"
-"Nous accueillons néanmoins toutes les remarques sur cette première "
-"version ;)\n"
+"Nous accueillons néanmoins toutes les remarques sur cette première version.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">Driver EciAdsl pour *BSD</a>"
 
-#. Translators: 2003-12-06 17:21, weechat: WeeChat scripts page
-#: news/_i18n_info.py:254
+#. Translators: 2003-12-06 18:21, weechat: WeeChat scripts page
+#: news/_i18n_info.py:250
 msgid "WeeChat scripts page"
 msgstr "Page de scripts pour WeeChat"
 
-#. Translators: 2003-12-06 17:21, weechat: WeeChat scripts page
-#: news/_i18n_info.py:256
+#. Translators: 2003-12-06 18:21, weechat: WeeChat scripts page
+#: news/_i18n_info.py:252
 msgid ""
 "WeeChat scripts page (today Perl scripts only) has been added.\n"
 "On this page you can submit your script (need to be approved by WeeChat "
@@ -3303,8 +3297,8 @@ msgstr ""
 "&bull; <a href=\"/weechat/download/devel/\">WeeChat, version de "
 "développement</a>"
 
-#. Translators: 2003-11-19 22:43, eciadsl: New synch .bin file
-#: news/_i18n_info.py:258
+#. Translators: 2003-11-19 23:43, eciadsl: New synch .bin file
+#: news/_i18n_info.py:254
 msgid ""
 "New .bin file has been added (synch42.bin).\n"
 "It was created in Italy, with Tin.it provider (modulation G.DMT).\n"
@@ -3316,8 +3310,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-11-11 15:04, eciadsl: New synch .bin file
-#: news/_i18n_info.py:260
+#. Translators: 2003-11-11 16:04, eciadsl: New synch .bin file
+#: news/_i18n_info.py:256
 msgid ""
 "New .bin file has been added (synch41.bin).\n"
 "It was created in UK, with Etisalat provider.\n"
@@ -3329,8 +3323,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-11-08 21:49, eciadsl: New synch .bin file
-#: news/_i18n_info.py:262
+#. Translators: 2003-11-08 22:49, eciadsl: New synch .bin file
+#: news/_i18n_info.py:258
 msgid ""
 "New .bin file has been added (synch40.bin).\n"
 "It was created in Bordeaux (France), with Nerim provider, T1.413 "
@@ -3344,8 +3338,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-11-04 23:34, eciadsl: New synch .bin file
-#: news/_i18n_info.py:264
+#. Translators: 2003-11-05 00:34, eciadsl: New synch .bin file
+#: news/_i18n_info.py:260
 msgid ""
 "New .bin file has been added (synch39.bin).\n"
 "It was created in UK, with Eclipse Internet provider, T1.413 modulation.\n"
@@ -3358,8 +3352,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-11-03 22:43, weechat: Version 0.0.3
-#: news/_i18n_info.py:266
+#. Translators: 2003-11-03 23:43, weechat: Version 0.0.3
+#: news/_i18n_info.py:262
 msgid ""
 "WeeChat 0.0.3 is available!\n"
 "\n"
@@ -3385,42 +3379,41 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2003-10-19 09:14, eciadsl: *BSD version of driver… soon!
-#: news/_i18n_info.py:268
+#. Translators: 2003-10-19 11:14, eciadsl: *BSD version of driver… soon!
+#: news/_i18n_info.py:264
 msgid "*BSD version of driver… soon!"
 msgstr "Version *BSD du driver… bientôt !"
 
-#. Translators: 2003-10-19 09:14, eciadsl: *BSD version of driver… soon!
-#: news/_i18n_info.py:270
+#. Translators: 2003-10-19 11:14, eciadsl: *BSD version of driver… soon!
+#: news/_i18n_info.py:266
 msgid ""
 "*BSD version of EciAdsl driver is under development. USB API was completely "
 "rewritten by Benoit Papillault, it is now compatible with many OS (Linux, "
 "*BSD, QNX, etc.).\n"
 "\n"
 "Today no *BSD version is available, but Benoit already managed to connect to "
-"the net with OpenBSD, so good news should not delay ;)"
+"the net with OpenBSD, so good news should not delay."
 msgstr ""
 "La version *BSD du driver EciAdsl est en cours de finalisation. Benoit "
 "Papillault a complètement réécrit l'API USB, qui est désormais portable "
 "(Linux, *BSD, QNX, etc.).\n"
 "\n"
 "Aujourd'hui aucune version n'est disponible pour *BSD, mais Benoit ayant "
-"réussi à se connecter sous OpenBSD, la bonne nouvelle ne devrait pas "
-"tarder ;)"
+"réussi à se connecter sous OpenBSD, la bonne nouvelle ne devrait pas tarder."
 
-#. Translators: 2003-10-06 19:51, weechat: WeeChat documentation
-#: news/_i18n_info.py:272
+#. Translators: 2003-10-06 21:51, weechat: WeeChat documentation
+#: news/_i18n_info.py:268
 msgid "WeeChat documentation"
 msgstr "Documentation WeeChat"
 
-#. Translators: 2003-10-06 19:51, weechat: WeeChat documentation
-#: news/_i18n_info.py:274
+#. Translators: 2003-10-06 21:51, weechat: WeeChat documentation
+#: news/_i18n_info.py:270
 msgid ""
 "First version of WeeChat users guide is available. Many formats: PDF, html, "
 "text and texinfo (source document).\n"
 "\n"
 "Note: this documentation is not finished and we're still looking for "
-"translators, feel free to contact us ;)\n"
+"translators, feel free to contact us!\n"
 "\n"
 "&bull; <a href=\"/weechat/doc/\">WeeChat User Guide</a>"
 msgstr ""
@@ -3428,12 +3421,12 @@ msgstr ""
 "différents formats : PDF, html, texte et texinfo (document source).\n"
 "\n"
 "NB : cette documentation n'est pas encore terminée et nous cherchons "
-"toujours des traducteurs, n'hésitez pas à nous contacter ;)\n"
+"toujours des traducteurs, n'hésitez pas à nous contacter !\n"
 "\n"
 "&bull; <a href=\"/weechat/doc/\">Guide utilisateur WeeChat</a>"
 
-#. Translators: 2003-10-05 10:17, weechat: Version 0.0.2
-#: news/_i18n_info.py:276
+#. Translators: 2003-10-05 12:17, weechat: Version 0.0.2
+#: news/_i18n_info.py:272
 msgid ""
 "WeeChat 0.0.2 is available!\n"
 "\n"
@@ -3471,8 +3464,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>"
 
-#. Translators: 2003-10-04 08:10, eciadsl: New synch .bin file
-#: news/_i18n_info.py:278
+#. Translators: 2003-10-04 10:10, eciadsl: New synch .bin file
+#: news/_i18n_info.py:274
 msgid ""
 "New .bin file has been added (synch38.bin).\n"
 "It was created in Egypt, Cairo, with Menanet provider, G.DMT modulation.\n"
@@ -3485,8 +3478,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-09-28 15:55, eciadsl: New synch .bin file
-#: news/_i18n_info.py:280
+#. Translators: 2003-09-28 17:55, eciadsl: New synch .bin file
+#: news/_i18n_info.py:276
 msgid ""
 "New .bin file has been added (synch37.bin).\n"
 "It was created in Bangalore (India).\n"
@@ -3498,13 +3491,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-09-27 10:36, weechat: WeeChat 0.0.1 released!
-#: news/_i18n_info.py:282
+#. Translators: 2003-09-27 12:36, weechat: WeeChat 0.0.1 released!
+#: news/_i18n_info.py:278
 msgid "WeeChat 0.0.1 released!"
 msgstr "WeeChat 0.0.1 disponible !"
 
-#. Translators: 2003-09-27 10:36, weechat: WeeChat 0.0.1 released!
-#: news/_i18n_info.py:284
+#. Translators: 2003-09-27 12:36, weechat: WeeChat 0.0.1 released!
+#: news/_i18n_info.py:280
 msgid ""
 "WeeChat, the fast, light and extensible IRC client, is released for the "
 "first time, version 0.0.1.\n"
@@ -3559,8 +3552,8 @@ msgstr ""
 "&bull; <a href=\"/weechat/download/\">Page téléchargement WeeChat</a>\n"
 "&bull; <a href=\"/weechat/about/\">Support pour WeeChat</a>"
 
-#. Translators: 2003-09-25 20:50, eciadsl: New synch .bin file
-#: news/_i18n_info.py:286
+#. Translators: 2003-09-25 22:50, eciadsl: New synch .bin file
+#: news/_i18n_info.py:282
 msgid ""
 "New .bin file has been added (synch36.bin).\n"
 "It was created in Vishakhapatnam (India).\n"
@@ -3572,13 +3565,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-09-01 07:32, weechat: New WeeChat screenshot
-#: news/_i18n_info.py:288
+#. Translators: 2003-09-01 09:32, weechat: New WeeChat screenshot
+#: news/_i18n_info.py:284
 msgid "New WeeChat screenshot"
 msgstr "Nouvelle capture d'écran WeeChat"
 
-#. Translators: 2003-09-01 07:32, weechat: New WeeChat screenshot
-#: news/_i18n_info.py:290
+#. Translators: 2003-09-01 09:32, weechat: New WeeChat screenshot
+#: news/_i18n_info.py:286
 msgid ""
 "IRC Client WeeChat is under development, a new screenshot is available: nick "
 "list and window for each channel.\n"
@@ -3607,8 +3600,8 @@ msgstr ""
 "&bull; <a href=\"/weechat/download/\">Version alpha 0.0.1 (en "
 "développement)</a>"
 
-#. Translators: 2003-08-05 21:51, eciadsl: New synch .bin file
-#: news/_i18n_info.py:292
+#. Translators: 2003-08-05 23:51, eciadsl: New synch .bin file
+#: news/_i18n_info.py:288
 msgid ""
 "New .bin file has been added (synch35.bin).\n"
 "It was created in Turino (Italia).\n"
@@ -3620,8 +3613,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-08-03 10:41, eciadsl: New synch .bin file
-#: news/_i18n_info.py:294
+#. Translators: 2003-08-03 12:41, eciadsl: New synch .bin file
+#: news/_i18n_info.py:290
 msgid ""
 "New .bin file has been added (synch34.bin).\n"
 "It was created in Lucerne (Switzerland).\n"
@@ -3633,13 +3626,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-08-03 09:59, eciadsl: EciAdsl documentation in Spanish
-#: news/_i18n_info.py:296
+#. Translators: 2003-08-03 11:59, eciadsl: EciAdsl documentation in Spanish
+#: news/_i18n_info.py:292
 msgid "EciAdsl documentation in Spanish"
 msgstr "Documentation EciAdsl en espagnol"
 
-#. Translators: 2003-08-03 09:59, eciadsl: EciAdsl documentation in Spanish
-#: news/_i18n_info.py:298
+#. Translators: 2003-08-03 11:59, eciadsl: EciAdsl documentation in Spanish
+#: news/_i18n_info.py:294
 msgid ""
 "EciAdsl documentation has been updated for version 0.8 (minor changes) and "
 "translated to spanish, thanks to Eduardo Gonzalez.\n"
@@ -3651,8 +3644,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Documentation EciAdsl</a>"
 
-#. Translators: 2003-08-01 13:16, eciadsl: Version 0.8
-#: news/_i18n_info.py:300
+#. Translators: 2003-08-01 15:16, eciadsl: Version 0.8
+#: news/_i18n_info.py:296
 msgid ""
 "Version 0.8 is available (no changes since 0.8 beta).\n"
 "\n"
@@ -3671,13 +3664,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-07-12 20:49, weechat: WeeChat screenshot
-#: news/_i18n_info.py:302
+#. Translators: 2003-07-12 22:49, weechat: WeeChat screenshot
+#: news/_i18n_info.py:298
 msgid "WeeChat screenshot"
 msgstr "Capture d'écran de WeeChat"
 
-#. Translators: 2003-07-12 20:49, weechat: WeeChat screenshot
-#: news/_i18n_info.py:304
+#. Translators: 2003-07-12 22:49, weechat: WeeChat screenshot
+#: news/_i18n_info.py:300
 msgid ""
 "First WeeChat screenshot is available (version with ncurses interface).\n"
 "This chat client is under development, first stable version will be "
@@ -3692,8 +3685,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/files/weechat/shots/\">Capture d'écran WeeChat</a>"
 
-#. Translators: 2003-07-07 20:59, weewm: Version 0.0.2
-#: news/_i18n_info.py:306
+#. Translators: 2003-07-07 22:59, weewm: Version 0.0.2
+#: news/_i18n_info.py:302
 msgid ""
 "WeeWM version 0.0.2 is available.\n"
 "\n"
@@ -3717,13 +3710,13 @@ msgstr ""
 "&bull; <a href=\"/weewm/download/\">Page téléchargement</a>\n"
 "&bull; <a href=\"/weewm/doc/\">Documentation WeeWM</a>"
 
-#. Translators: 2003-07-05 11:54, weechat: WeeChat - Wee Enhanced Environment for Chat
-#: news/_i18n_info.py:308
+#. Translators: 2003-07-05 13:54, weechat: WeeChat - Wee Enhanced Environment for Chat
+#: news/_i18n_info.py:304
 msgid "WeeChat - Wee Enhanced Environment for Chat"
 msgstr "WeeChat - Wee Enhanced Environment for Chat"
 
-#. Translators: 2003-07-05 11:54, weechat: WeeChat - Wee Enhanced Environment for Chat
-#: news/_i18n_info.py:310
+#. Translators: 2003-07-05 13:54, weechat: WeeChat - Wee Enhanced Environment for Chat
+#: news/_i18n_info.py:306
 msgid ""
 "WeeChat project is started.\n"
 "\n"
@@ -3747,19 +3740,19 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weechat/\">Page d'accueil WeeChat</a>"
 
-#. Translators: 2003-07-04 10:13, eciadsl: Version 0.8 beta available for tests
-#: news/_i18n_info.py:312
+#. Translators: 2003-07-04 12:13, eciadsl: Version 0.8 beta available for tests
+#: news/_i18n_info.py:308
 msgid "Version 0.8 beta available for tests"
 msgstr "Version 0.8 beta disponible pour tests"
 
-#. Translators: 2003-07-04 10:13, eciadsl: Version 0.8 beta available for tests
-#: news/_i18n_info.py:314
+#. Translators: 2003-07-04 12:13, eciadsl: Version 0.8 beta available for tests
+#: news/_i18n_info.py:310
 msgid ""
 "Version 0.8 is available for tests.\n"
 "Warning: this is not final version!\n"
 "\n"
 "Major bug was fixed: stability problem when USB problems occured.\n"
-"People who have stability problems can try this version immediately ;)\n"
+"People who have stability problems can try this version immediately.\n"
 "\n"
 "Thanks for reporting us any problem with this version (about ackages or "
 "driver problem) and please tell us if stability problems are resolved.\n"
@@ -3772,7 +3765,7 @@ msgstr ""
 "La correction majeure concerne un problème de stabilité du driver face aux "
 "problèmes USB.\n"
 "Ceux qui ont des problèmes de stabilité du driver peuvent donc se ruer "
-"dessus sans attendre ;)\n"
+"dessus sans attendre.\n"
 "\n"
 "Merci de nous remonter au plus vite tout problème avec cette version (aussi "
 "bien en ce qui concerne les packages que l'utilisation du driver) et de nous "
@@ -3780,8 +3773,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/files/eciadsl/beta/\">Version 0.8 beta</a>"
 
-#. Translators: 2003-06-29 09:26, eciadsl: New synch .bin file
-#: news/_i18n_info.py:316
+#. Translators: 2003-06-29 11:26, eciadsl: New synch .bin file
+#: news/_i18n_info.py:312
 msgid ""
 "New synch .bin has been added (synch33.bin), created in France (Avignon).\n"
 "\n"
@@ -3792,13 +3785,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-06-26 23:37, weewm: CVS available
-#: news/_i18n_info.py:318
+#. Translators: 2003-06-27 01:37, weewm: CVS available
+#: news/_i18n_info.py:314
 msgid "CVS available"
 msgstr "CVS disponible"
 
-#. Translators: 2003-06-26 23:37, weewm: CVS available
-#: news/_i18n_info.py:320
+#. Translators: 2003-06-27 01:37, weewm: CVS available
+#: news/_i18n_info.py:316
 msgid ""
 "CVS has been created on Savannah page.\n"
 "\n"
@@ -3808,13 +3801,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weewm/download/\">Page téléchargement</a>"
 
-#. Translators: 2003-06-09 10:36, eciadsl: New EciAdsl documentation
-#: news/_i18n_info.py:322
+#. Translators: 2003-06-09 12:36, eciadsl: New EciAdsl documentation
+#: news/_i18n_info.py:318
 msgid "New EciAdsl documentation"
 msgstr "Nouvelle documentation EciAdsl"
 
-#. Translators: 2003-06-09 10:36, eciadsl: New EciAdsl documentation
-#: news/_i18n_info.py:324
+#. Translators: 2003-06-09 12:36, eciadsl: New EciAdsl documentation
+#: news/_i18n_info.py:320
 msgid ""
 "New EciAdsl documentation has been written (\"EciAdsl installation guide\"), "
 "available in many formats (PDF, html, text, and Texinfo source).\n"
@@ -3825,7 +3818,7 @@ msgid ""
 "versions will be available soon.\n"
 "\n"
 "All suggestions about this doc are welcome.\n"
-"Hoping this doc will be useful ;)\n"
+"Hoping this doc will be useful!\n"
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">EciAdsl installation guide</a>"
 msgstr ""
@@ -3839,17 +3832,17 @@ msgstr ""
 "Portugais et Espagnol sont en cours de traduction.\n"
 "\n"
 "Toutes suggestions d'amélioration de la doc sont les bienvenues.\n"
-"En espérant que cette documentation soit utile ;)\n"
+"En espérant que cette documentation soit utile !\n"
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Guide d'installation EciAdsl</a>"
 
-#. Translators: 2003-06-04 09:38, eciadsl: Doc about USB sniffer (Snoopy)
-#: news/_i18n_info.py:326
+#. Translators: 2003-06-04 11:38, eciadsl: Doc about USB sniffer (Snoopy)
+#: news/_i18n_info.py:322
 msgid "Doc about USB sniffer (Snoopy)"
 msgstr "Documentation sur le sniffeur USB (Snoopy)"
 
-#. Translators: 2003-06-04 09:38, eciadsl: Doc about USB sniffer (Snoopy)
-#: news/_i18n_info.py:328
+#. Translators: 2003-06-04 11:38, eciadsl: Doc about USB sniffer (Snoopy)
+#: news/_i18n_info.py:324
 msgid ""
 "Benoit Papillault has written a doc about Snoopy sniffer.\n"
 "Don't forget: in order to creat your own synch .bin file, you've to read the "
@@ -3866,14 +3859,14 @@ msgstr ""
 "Rappel : pour créer son .bin de synchronisation il faut également consulter "
 "la doc de création des .bin.\n"
 "\n"
-"&bull; <a href=\"/eciadsl/download/\">Page de détails de la synchronisation</"
-"a>\n"
+"&bull; <a href=\"/eciadsl/download/&amp;view=sync\">Page de détails de la "
+"synchronisation</a>\n"
 "&bull; <a href=\"/eciadsl/doc/\">Doc sur la création de .bin de synchro</a>\n"
 "&bull; <a href=\"http://benoit.papillault.free.fr/usbsnoop/"
 "doc.fr.php\">Documentation sur Snoopy</a>"
 
-#. Translators: 2003-06-04 07:10, eciadsl: New synch .bin file
-#: news/_i18n_info.py:330
+#. Translators: 2003-06-04 09:10, eciadsl: New synch .bin file
+#: news/_i18n_info.py:326
 msgid ""
 "New synch .bin has been added (synch32.bin), created in Italy (Pisa).\n"
 "\n"
@@ -3884,8 +3877,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-06-03 07:02, eciadsl: New synch .bin file
-#: news/_i18n_info.py:332
+#. Translators: 2003-06-03 09:02, eciadsl: New synch .bin file
+#: news/_i18n_info.py:328
 msgid ""
 "New synch .bin has been added (synch31.bin), created in Italy (Turin).\n"
 "\n"
@@ -3896,8 +3889,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-05-28 09:09, gmemo: Version 0.1.1
-#: news/_i18n_info.py:334
+#. Translators: 2003-05-28 11:09, gmemo: Version 0.1.1
+#: news/_i18n_info.py:330
 msgid ""
 "Gmemo version 0.1.1 is available.\n"
 "New in this version:\n"
@@ -3915,8 +3908,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/gmemo/download/\">Page téléchargement Gmemo</a>"
 
-#. Translators: 2003-05-22 21:32, eciadsl: New synch .bin file
-#: news/_i18n_info.py:336
+#. Translators: 2003-05-22 23:32, eciadsl: New synch .bin file
+#: news/_i18n_info.py:332
 msgid ""
 "New synch .bin has been added (synch30.bin), created in Canada (Montreal).\n"
 "\n"
@@ -3927,8 +3920,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-05-20 13:03, eciadsl: New synch .bin file
-#: news/_i18n_info.py:338
+#. Translators: 2003-05-20 15:03, eciadsl: New synch .bin file
+#: news/_i18n_info.py:334
 msgid ""
 "New synch .bin has been added (synch29.bin), created in Switzerland.\n"
 "\n"
@@ -3938,8 +3931,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-05-19 20:16, eciadsl: New synch .bin file
-#: news/_i18n_info.py:340
+#. Translators: 2003-05-19 22:16, eciadsl: New synch .bin file
+#: news/_i18n_info.py:336
 msgid ""
 "New synch .bin has been added (synch28.bin), created in UK.\n"
 "\n"
@@ -3949,13 +3942,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-05-18 07:36, eciadsl: External contributions
-#: news/_i18n_info.py:342
+#. Translators: 2003-05-18 09:36, eciadsl: External contributions
+#: news/_i18n_info.py:338
 msgid "External contributions"
 msgstr "Contributions externes"
 
-#. Translators: 2003-05-18 07:36, eciadsl: External contributions
-#: news/_i18n_info.py:344
+#. Translators: 2003-05-18 09:36, eciadsl: External contributions
+#: news/_i18n_info.py:340
 msgid ""
 "A graphical launcher for startmodem (EcX) has been added to external "
 "contributions (thanks to Michel Le Foulgoc).\n"
@@ -3973,8 +3966,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl, version "
 "stable</a>"
 
-#. Translators: 2003-05-04 11:27, eciadsl: New synch .bin file
-#: news/_i18n_info.py:346
+#. Translators: 2003-05-04 13:27, eciadsl: New synch .bin file
+#: news/_i18n_info.py:342
 msgid ""
 "New synch .bin has been added (synch27.bin), created in Italy.\n"
 "\n"
@@ -3984,8 +3977,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-04-17 18:21, eciadsl: New synch .bin file
-#: news/_i18n_info.py:348
+#. Translators: 2003-04-17 20:21, eciadsl: New synch .bin file
+#: news/_i18n_info.py:344
 msgid ""
 "New synch .bin has been added (synch26.bin), created in Italy.\n"
 "\n"
@@ -3995,13 +3988,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-04-08 18:54, eciadsl: FAQ in Spanish
-#: news/_i18n_info.py:350
+#. Translators: 2003-04-08 20:54, eciadsl: FAQ in Spanish
+#: news/_i18n_info.py:346
 msgid "FAQ in Spanish"
 msgstr "FAQ en espagnol"
 
-#. Translators: 2003-04-08 18:54, eciadsl: FAQ in Spanish
-#: news/_i18n_info.py:352
+#. Translators: 2003-04-08 20:54, eciadsl: FAQ in Spanish
+#: news/_i18n_info.py:348
 msgid ""
 "FAQ has been translated to spanish (special thanks to Eduardo Gonzalez).\n"
 "\n"
@@ -4011,33 +4004,34 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/faq/\">FAQ en espagnol</a>"
 
-#. Translators: 2003-04-01 11:58, eciadsl: April 1st ;)
-#: news/_i18n_info.py:354
-msgid "April 1st ;)"
-msgstr "1er Avril ;)"
+#. Translators: 2003-04-01 13:58, eciadsl: April 1st!
+#: news/_i18n_info.py:350
+msgid "April 1st!"
+msgstr "1er Avril !"
 
-#. Translators: 2003-04-01 11:58, eciadsl: April 1st ;)
-#: news/_i18n_info.py:356
+#. Translators: 2003-04-01 13:58, eciadsl: April 1st!
+#: news/_i18n_info.py:352
 msgid ""
 "I've received a lot of mails about last news. Please look at today's date "
-"and you'll understand the news, it is an april joke! :-)\n"
+"and you'll understand the news, it is an april joke!\n"
 "\n"
 "How many people has already uninstalled the driver?"
 msgstr ""
 "Au vu du nombre importants de réponses reçues au sujet de la nouvelle sur "
 "l'arrêt du projet, je vous serai reconnaissant de regarder la date du jour "
 "et d'interpréter l'info en conséquence, il s'agit bien évidemment d'un "
-"poisson d'avril ! :-)\n"
+"poisson d'avril !\n"
 "\n"
 "Allez avouez, combien ont déjà désinstallé le driver ?"
 
-#. Translators: 2003-04-01 07:59, eciadsl: EciAdsl project is stopped :-(
-#: news/_i18n_info.py:358
+# noqa:punc-space-id;punc-space-str
+#. Translators: 2003-04-01 09:59, eciadsl: EciAdsl project is stopped :-(
+#: news/_i18n_info.py:354
 msgid "EciAdsl project is stopped :-("
 msgstr "Arrêt du projet EciAdsl :-("
 
-#. Translators: 2003-04-01 07:59, eciadsl: EciAdsl project is stopped :-(
-#: news/_i18n_info.py:360
+#. Translators: 2003-04-01 09:59, eciadsl: EciAdsl project is stopped :-(
+#: news/_i18n_info.py:356
 msgid ""
 "Due to the lawsuit from XXXXXXXX company (hidden name) about .bin files "
 "(copyrighted), we must stop the EciAdsl project.\n"
@@ -4063,13 +4057,13 @@ msgstr ""
 "\n"
 "L'équipe de développement EciAdsl."
 
-#. Translators: 2003-03-29 11:18, eciadsl: Beginners tutorial
-#: news/_i18n_info.py:362
+#. Translators: 2003-03-29 12:18, eciadsl: Beginners tutorial
+#: news/_i18n_info.py:358
 msgid "Beginners tutorial"
 msgstr "Tutoriel pour débutants"
 
-#. Translators: 2003-03-29 11:18, eciadsl: Beginners tutorial
-#: news/_i18n_info.py:364
+#. Translators: 2003-03-29 12:18, eciadsl: Beginners tutorial
+#: news/_i18n_info.py:360
 msgid ""
 "A tutorial has been added for beginners with Linux.\n"
 "This is only for installation of RPM version.\n"
@@ -4083,21 +4077,21 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/tutorial/\">Tutoriel EciAdsl</a>"
 
-#. Translators: 2003-03-26 21:55, eciadsl: Version 0.7
-#: news/_i18n_info.py:366
+#. Translators: 2003-03-26 22:55, eciadsl: Version 0.7
+#: news/_i18n_info.py:362
 msgid ""
 "Version 0.7 is released!\n"
 "\n"
 "New in this version:\n"
 "- bugfixes,\n"
-"- doc &amp; FAQ updated,\n"
+"- doc and FAQ updated,\n"
 "- packages for many distributions (Slackware and Gentoo coming soon, but "
-"Debian package is there :-)\n"
+"Debian package is there)\n"
 "\n"
 "Feel free to contact us for any installation problem (or any other problem "
 "related to the driver).\n"
 "\n"
-"Have a nice surf ;)\n"
+"Have a nice surf!\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">EciAdsl download page</a>"
 msgstr ""
@@ -4107,22 +4101,22 @@ msgstr ""
 "- quelques corrections de bugs,\n"
 "- documentation et FAQ mises à jour,\n"
 "- packages pour la plupart des distributions (la Slackware et la Gentoo ne "
-"vont pas tarder, mais le package Debian est bel et bien là :-)\n"
+"vont pas tarder, mais le package Debian est bel et bien là)\n"
 "\n"
 "Nous restons comme d'habitude à votre disposition pour tout problème "
 "d'installation ou d'utilisation du driver.\n"
 "\n"
-"Bon surf ;)\n"
+"Bon surf !\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-03-22 15:20, weewm: Newsletter WeeWM.org
-#: news/_i18n_info.py:368
+#. Translators: 2003-03-22 16:20, weewm: Newsletter WeeWM.org
+#: news/_i18n_info.py:364
 msgid "Newsletter WeeWM.org"
 msgstr "Lettre de nouveautés WeeWM.org"
 
-#. Translators: 2003-03-22 15:20, weewm: Newsletter WeeWM.org
-#: news/_i18n_info.py:370
+#. Translators: 2003-03-22 16:20, weewm: Newsletter WeeWM.org
+#: news/_i18n_info.py:366
 msgid ""
 "WeeWM newsletter has been created, to be informed in real time about WeeWM "
 "news.\n"
@@ -4138,8 +4132,8 @@ msgstr ""
 "Les e-mails ne sont en aucun cas divulgués à des tiers et n'apparaissent "
 "nulle part."
 
-#. Translators: 2003-03-18 17:56, weewm: Version 0.01
-#: news/_i18n_info.py:372
+#. Translators: 2003-03-18 18:56, weewm: Version 0.01
+#: news/_i18n_info.py:368
 msgid ""
 "News: dock is now ok, default config files automatically created if they do "
 "not exist.\n"
@@ -4151,13 +4145,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/weewm/download/\">Page téléchargement</a>"
 
-#. Translators: 2003-03-17 19:00, eciadsl: Doc updated and translated in Italiano
-#: news/_i18n_info.py:374
+#. Translators: 2003-03-17 20:00, eciadsl: Doc updated and translated in Italiano
+#: news/_i18n_info.py:370
 msgid "Doc updated and translated in Italiano"
 msgstr "Doc mise à jour et traduite en Italien"
 
-#. Translators: 2003-03-17 19:00, eciadsl: Doc updated and translated in Italiano
-#: news/_i18n_info.py:376
+#. Translators: 2003-03-17 20:00, eciadsl: Doc updated and translated in Italiano
+#: news/_i18n_info.py:372
 msgid ""
 "Documentation is updated and now available in Italiano in the usermode CVS "
 "package.\n"
@@ -4171,13 +4165,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-03-16 16:11, weewm: WeeWM - Wee Enhanced Environment
-#: news/_i18n_info.py:378
+#. Translators: 2003-03-16 17:11, weewm: WeeWM - Wee Enhanced Environment
+#: news/_i18n_info.py:374
 msgid "WeeWM - Wee Enhanced Environment"
 msgstr "WeeWM - Wee Enhanced Environment"
 
-#. Translators: 2003-03-16 16:11, weewm: WeeWM - Wee Enhanced Environment
-#: news/_i18n_info.py:380
+#. Translators: 2003-03-16 17:11, weewm: WeeWM - Wee Enhanced Environment
+#: news/_i18n_info.py:376
 msgid ""
 "WeeWM, small and customizable window manager!\n"
 "First version, 0.01-alpha, is now available!\n"
@@ -4189,19 +4183,19 @@ msgstr ""
 "\n"
 "&bull; <a href=\"http://weewm.flashtux.org/\">Le site de WeeWM</a>"
 
-#. Translators: 2003-03-16 16:04, weewm: First version: 0.01-alpha!
-#: news/_i18n_info.py:382
+#. Translators: 2003-03-16 17:04, weewm: First version: 0.01-alpha!
+#: news/_i18n_info.py:378
 msgid "First version: 0.01-alpha!"
 msgstr "Première version : 0.01-alpha !"
 
-#. Translators: 2003-03-16 16:04, weewm: First version: 0.01-alpha!
-#: news/_i18n_info.py:384
+#. Translators: 2003-03-16 17:04, weewm: First version: 0.01-alpha!
+#: news/_i18n_info.py:380
 msgid ""
 "First version, 0.01-alpha, has been released!\n"
 "\n"
 "Dock and some other features are still under development…\n"
 "\n"
-"Enjoy ;)\n"
+"Enjoy!\n"
 "\n"
 "&bull; <a href=\"/weewm/download/\">Download page</a>"
 msgstr ""
@@ -4209,12 +4203,12 @@ msgstr ""
 "\n"
 "Le dock et quelques autres fonctionnalités sont encore en développement…\n"
 "\n"
-"Amusez-vous bien ;)\n"
+"Amusez-vous bien !\n"
 "\n"
 "&bull; <a href=\"/weewm/download/\">Page téléchargement</a>"
 
-#. Translators: 2003-03-15 22:42, eciadsl: New synch .bin file
-#: news/_i18n_info.py:386
+#. Translators: 2003-03-15 23:42, eciadsl: New synch .bin file
+#: news/_i18n_info.py:382
 msgid ""
 "New synch .bin file, generated in Saint-Cloud (France), with provider "
 "Wanadoo.\n"
@@ -4226,13 +4220,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-03-01 11:00, weewm: Starting WeeWM project!
-#: news/_i18n_info.py:388
+#. Translators: 2003-03-01 12:00, weewm: Starting WeeWM project!
+#: news/_i18n_info.py:384
 msgid "Starting WeeWM project!"
 msgstr "Démarrage du projet WeeWM !"
 
-#. Translators: 2003-03-01 11:00, weewm: Starting WeeWM project!
-#: news/_i18n_info.py:390
+#. Translators: 2003-03-01 12:00, weewm: Starting WeeWM project!
+#: news/_i18n_info.py:386
 msgid ""
 "WeeWM - The Wee Enhanced Environment - window manager for XFree.\n"
 "Fast, ultra light, all can be done with keyboard.\n"
@@ -4268,13 +4262,13 @@ msgstr ""
 "\n"
 "WeeWM est distribué sous licence GPL."
 
-#. Translators: 2003-02-08 22:52, gmemo: First version of gmemo! (Linux and Windows)
-#: news/_i18n_info.py:392
+#. Translators: 2003-02-08 23:52, gmemo: First version of gmemo! (Linux and Windows)
+#: news/_i18n_info.py:388
 msgid "First version of gmemo! (Linux and Windows)"
 msgstr "Première version de gmemo ! (Linux et Windows)"
 
-#. Translators: 2003-02-08 22:52, gmemo: First version of gmemo! (Linux and Windows)
-#: news/_i18n_info.py:394
+#. Translators: 2003-02-08 23:52, gmemo: First version of gmemo! (Linux and Windows)
+#: news/_i18n_info.py:390
 msgid ""
 "First version of gmemo is available, for Linux and Windows!\n"
 "Beware, this is alpha version, this mean all is not yet finished!\n"
@@ -4300,8 +4294,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/gmemo/download/\">Page téléchargement Gmemo</a>"
 
-#. Translators: 2003-01-29 21:57, eciadsl: New synch .bin file
-#: news/_i18n_info.py:396
+#. Translators: 2003-01-29 22:57, eciadsl: New synch .bin file
+#: news/_i18n_info.py:392
 msgid ""
 "New synch .bin file, generated in Sardinia (Italy), with provider Tiscali.\n"
 "\n"
@@ -4312,8 +4306,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-01-26 15:16, eciadsl: New synch .bin file
-#: news/_i18n_info.py:398
+#. Translators: 2003-01-26 16:16, eciadsl: New synch .bin file
+#: news/_i18n_info.py:394
 msgid ""
 "New synch .bin file, generated in Arcueil (France), with provider 9online.\n"
 "\n"
@@ -4324,13 +4318,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-01-05 21:56, gmemo: Gmemo: first version soon!
-#: news/_i18n_info.py:400
+#. Translators: 2003-01-05 22:56, gmemo: Gmemo: first version soon!
+#: news/_i18n_info.py:396
 msgid "Gmemo: first version soon!"
 msgstr "Gmemo : bientôt la 1ère version !"
 
-#. Translators: 2003-01-05 21:56, gmemo: Gmemo: first version soon!
-#: news/_i18n_info.py:402
+#. Translators: 2003-01-05 22:56, gmemo: Gmemo: first version soon!
+#: news/_i18n_info.py:398
 msgid ""
 "Screenshots have been updated.\n"
 "gmemo now runs under Gnome 2, GTK+ 2 and Window Maker (or Fluxbox, etc.)\n"
@@ -4343,13 +4337,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/gmemo/screenshots/\">Captures d'écran</a>"
 
-#. Translators: 2003-01-05 20:02, eciadsl: EciAdsl 0.6: 2nd version of .rpm
-#: news/_i18n_info.py:404
+#. Translators: 2003-01-05 21:02, eciadsl: EciAdsl 0.6: 2nd version of .rpm
+#: news/_i18n_info.py:400
 msgid "EciAdsl 0.6: 2nd version of .rpm"
 msgstr "EciAdsl 0.6 : 2ème version du .rpm"
 
-#. Translators: 2003-01-05 20:02, eciadsl: EciAdsl 0.6: 2nd version of .rpm
-#: news/_i18n_info.py:406
+#. Translators: 2003-01-05 21:02, eciadsl: EciAdsl 0.6: 2nd version of .rpm
+#: news/_i18n_info.py:402
 msgid ""
 "RPM version has been rebuild due to problem in the first one.\n"
 "\n"
@@ -4359,8 +4353,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2003-01-04 17:28, eciadsl: New synch .bin file
-#: news/_i18n_info.py:408
+#. Translators: 2003-01-04 18:28, eciadsl: New synch .bin file
+#: news/_i18n_info.py:404
 msgid ""
 "New synch .bin file added, made in Italy (synch21.bin).\n"
 "Reminder: everybody can try all .bin, wherever you are and with any "
@@ -4375,31 +4369,31 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/\">Package des fichiers .bin de synchro</"
 "a>"
 
-#. Translators: 2003-01-04 15:02, eciadsl: EciAdsl 0.6 - RPM version
-#: news/_i18n_info.py:410
+#. Translators: 2003-01-04 16:02, eciadsl: EciAdsl 0.6 - RPM version
+#: news/_i18n_info.py:406
 msgid "EciAdsl 0.6 - RPM version"
 msgstr "EciAdsl 0.6 - Version RPM"
 
-#. Translators: 2003-01-04 15:02, eciadsl: EciAdsl 0.6 - RPM version
-#: news/_i18n_info.py:412
+#. Translators: 2003-01-04 16:02, eciadsl: EciAdsl 0.6 - RPM version
+#: news/_i18n_info.py:408
 msgid ""
 "RPM version of EciAdsl 0.6 is out!\n"
-"Any takers? :)\n"
+"Any takers?\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">EciAdsl download page</a>"
 msgstr ""
 "La version RPM du driver EciAdsl 0.6 est disponible.\n"
-"Avis aux amateurs :)\n"
+"Avis aux amateurs !\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2002-12-25 11:06, eciadsl: Stable 0.6 version: Christmas present!
-#: news/_i18n_info.py:414
+#. Translators: 2002-12-25 12:06, eciadsl: Stable 0.6 version: Christmas present!
+#: news/_i18n_info.py:410
 msgid "Stable 0.6 version: Christmas present!"
 msgstr "Version 0.6 stable : le cadeau de Noël !"
 
-#. Translators: 2002-12-25 11:06, eciadsl: Stable 0.6 version: Christmas present!
-#: news/_i18n_info.py:416
+#. Translators: 2002-12-25 12:06, eciadsl: Stable 0.6 version: Christmas present!
+#: news/_i18n_info.py:412
 msgid ""
 "Expected 0.6 is now out!\n"
 "\n"
@@ -4444,13 +4438,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>\n"
 "&bull; <a href=\"/eciadsl/faq/\">FAQ EciAdsl</a>"
 
-#. Translators: 2002-12-22 16:15, eciadsl: EciAdsl, Release Candidate 5
-#: news/_i18n_info.py:418
+#. Translators: 2002-12-22 17:15, eciadsl: EciAdsl, Release Candidate 5
+#: news/_i18n_info.py:414
 msgid "EciAdsl, Release Candidate 5"
 msgstr "EciAdsl, Release Candidate 5"
 
-#. Translators: 2002-12-22 16:15, eciadsl: EciAdsl, Release Candidate 5
-#: news/_i18n_info.py:420
+#. Translators: 2002-12-22 17:15, eciadsl: EciAdsl, Release Candidate 5
+#: news/_i18n_info.py:416
 msgid ""
 "Major documentation update, now the docs are installed (default in /usr/"
 "local/doc/eciadsl).\n"
@@ -4464,13 +4458,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-12-20 13:05, eciadsl: EciAdsl, Release Candidate 4
-#: news/_i18n_info.py:422
+#. Translators: 2002-12-20 14:05, eciadsl: EciAdsl, Release Candidate 4
+#: news/_i18n_info.py:418
 msgid "EciAdsl, Release Candidate 4"
 msgstr "EciAdsl, Release Candidate 4"
 
-#. Translators: 2002-12-20 13:05, eciadsl: EciAdsl, Release Candidate 4
-#: news/_i18n_info.py:424
+#. Translators: 2002-12-20 14:05, eciadsl: EciAdsl, Release Candidate 4
+#: news/_i18n_info.py:420
 msgid ""
 "Eci-load2 fixes issue getting the synch under Gnome.\n"
 "Minor changes, doc update.\n"
@@ -4484,13 +4478,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-12-15 16:04, eciadsl: EciAdsl, Release Candidate 3
-#: news/_i18n_info.py:426
+#. Translators: 2002-12-15 17:04, eciadsl: EciAdsl, Release Candidate 3
+#: news/_i18n_info.py:422
 msgid "EciAdsl, Release Candidate 3"
 msgstr "EciAdsl, Release Candidate 3"
 
-#. Translators: 2002-12-15 16:04, eciadsl: EciAdsl, Release Candidate 3
-#: news/_i18n_info.py:428
+#. Translators: 2002-12-15 17:04, eciadsl: EciAdsl, Release Candidate 3
+#: news/_i18n_info.py:424
 msgid ""
 "Release Candidate 3 is out.\n"
 "Some bugfixes and documentation updates.\n"
@@ -4504,13 +4498,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-12-11 20:11, eciadsl: EciAdsl, Release Candidate 2
-#: news/_i18n_info.py:430
+#. Translators: 2002-12-11 21:11, eciadsl: EciAdsl, Release Candidate 2
+#: news/_i18n_info.py:426
 msgid "EciAdsl, Release Candidate 2"
 msgstr "EciAdsl, Release Candidate 2"
 
-#. Translators: 2002-12-11 20:11, eciadsl: EciAdsl, Release Candidate 2
-#: news/_i18n_info.py:432
+#. Translators: 2002-12-11 21:11, eciadsl: EciAdsl, Release Candidate 2
+#: news/_i18n_info.py:428
 msgid ""
 "As planned, Release Candidate 2 is out.\n"
 "Mainly bugfixes.\n"
@@ -4524,13 +4518,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-12-09 07:08, eciadsl: New EciAdsl FAQ page
-#: news/_i18n_info.py:434
+#. Translators: 2002-12-09 08:08, eciadsl: New EciAdsl FAQ page
+#: news/_i18n_info.py:430
 msgid "New EciAdsl FAQ page"
 msgstr "Nouvelle page FAQ EciAdsl"
 
-#. Translators: 2002-12-09 07:08, eciadsl: New EciAdsl FAQ page
-#: news/_i18n_info.py:436
+#. Translators: 2002-12-09 08:08, eciadsl: New EciAdsl FAQ page
+#: news/_i18n_info.py:432
 msgid ""
 "Driver's FAQ page has been rewritten: this is now an index of "
 "TROUBLESHOOTING(.fr) file (latest version), built dynamically.\n"
@@ -4542,8 +4536,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/faq/\">FAQ EciAdsl</a>"
 
-#. Translators: 2002-12-08 15:53, eciadsl: Version 0.6-rc1
-#: news/_i18n_info.py:438
+#. Translators: 2002-12-08 16:53, eciadsl: Version 0.6-rc1
+#: news/_i18n_info.py:434
 msgid ""
 "First Release Candidate!\n"
 "\n"
@@ -4561,20 +4555,19 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-12-05 20:46, eciadsl: Version 0.6-pre7
-#: news/_i18n_info.py:440
+#. Translators: 2002-12-05 21:46, eciadsl: Version 0.6-pre7
+#: news/_i18n_info.py:436
 msgid ""
-"Bugfixes prerelease! 0.6-pre6 was unusable :-(\n"
+"Bugfixes prerelease! 0.6-pre6 was unusable.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">CVS download page</a>"
 msgstr ""
-"Nouvelle pre-release, principalement un correctif pour la 0.6-pre6 qui était "
-"inutilisable.\n"
+"Nouvelle pre-release ! La version 0.6-pre6 était inutilisable.\n"
 "\n"
 "&bull; <a href=\"/eciadsl/download/devel/\">Page de téléchargement du CVS</a>"
 
-#. Translators: 2002-12-03 21:09, eciadsl: Version 0.6-pre6
-#: news/_i18n_info.py:442
+#. Translators: 2002-12-03 22:09, eciadsl: Version 0.6-pre6
+#: news/_i18n_info.py:438
 msgid ""
 "Version 0.6-pre6 is available (usermode CVS version).\n"
 "Changes:\n"
@@ -4599,13 +4592,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2002-11-24 14:22, eciadsl: New download page
-#: news/_i18n_info.py:444
+#. Translators: 2002-11-24 15:22, eciadsl: New download page
+#: news/_i18n_info.py:440
 msgid "New download page"
 msgstr "Nouvelle page de téléchargement"
 
-#. Translators: 2002-11-24 14:22, eciadsl: New download page
-#: news/_i18n_info.py:446
+#. Translators: 2002-11-24 15:22, eciadsl: New download page
+#: news/_i18n_info.py:442
 msgid ""
 "All versions in one view!\n"
 "Detail of each version are visible by clicking on \"Detail\" buttons.\n"
@@ -4617,13 +4610,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement EciAdsl</a>"
 
-#. Translators: 2002-11-19 00:48, eciadsl: New modems page
-#: news/_i18n_info.py:448
+#. Translators: 2002-11-19 01:48, eciadsl: New modems page
+#: news/_i18n_info.py:444
 msgid "New modems page"
 msgstr "Nouvelle page modems"
 
-#. Translators: 2002-11-19 00:48, eciadsl: New modems page
-#: news/_i18n_info.py:450
+#. Translators: 2002-11-19 01:48, eciadsl: New modems page
+#: news/_i18n_info.py:446
 msgid ""
 "Modems page has been rewritten:\n"
 "- modems are now in a database,\n"
@@ -4639,13 +4632,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/modems/\">La page modems</a>"
 
-#. Translators: 2002-11-10 14:41, eciadsl: This week-end news!
-#: news/_i18n_info.py:452
+#. Translators: 2002-11-10 15:41, eciadsl: This week-end news!
+#: news/_i18n_info.py:448
 msgid "This week-end news!"
 msgstr "Nouvelles du week-end !"
 
-#. Translators: 2002-11-10 14:41, eciadsl: This week-end news!
-#: news/_i18n_info.py:454
+#. Translators: 2002-11-10 15:41, eciadsl: This week-end news!
+#: news/_i18n_info.py:450
 msgid ""
 "A new synch .bin has been added.\n"
 "Current usermode CVS now includes a script that try all the installed "
@@ -4662,9 +4655,9 @@ msgid ""
 msgstr ""
 "Un nouveau .bin de synchro a éte ajouté.\n"
 "Le CVS du usermode contient maintenant un script qui permet de tester tous "
-"les /bin de synchro sans avoir a se fatiguer :-) (par défaut il s'arrête au "
-"1er .bin OK, probe_synch.sh --try-all pour tous les tester). Plus quelques "
-"correctifs et mises à jour de la doc.\n"
+"les .bin de synchro (par défaut il s'arrête au 1er .bin OK, probe_synch.sh --"
+"try-all pour tous les tester). Plus quelques correctifs et mises à jour de "
+"la doc.\n"
 "Le script de reco (cnx) a été mis a jour (correctif).\n"
 "Un patch ajoutant le support pour de nouvelles encapsulations a été ajouté.\n"
 "\n"
@@ -4674,8 +4667,8 @@ msgstr ""
 "&bull; <a href=\"http://sourceforge.net/tracker/index.php?"
 "group_id=30043&amp;atid=398083\">La page des patchs</a>"
 
-#. Translators: 2002-11-06 21:35, eciadsl: Version 0.6-pre5
-#: news/_i18n_info.py:456
+#. Translators: 2002-11-06 22:35, eciadsl: Version 0.6-pre5
+#: news/_i18n_info.py:452
 msgid ""
 "Version 0.6-pre5 is now available.\n"
 "News for this version:\n"
@@ -4711,13 +4704,13 @@ msgstr ""
 "func=detail&amp;aid=634472&amp;group_id=30043&amp;atid=398083\">Patch "
 "IPoATM</a>"
 
-#. Translators: 2002-11-05 21:31, eciadsl: Mirror site
-#: news/_i18n_info.py:458
+#. Translators: 2002-11-05 22:31, eciadsl: Mirror site
+#: news/_i18n_info.py:454
 msgid "Mirror site"
 msgstr "Site miroir"
 
-#. Translators: 2002-11-05 21:31, eciadsl: Mirror site
-#: news/_i18n_info.py:460
+#. Translators: 2002-11-05 22:31, eciadsl: Mirror site
+#: news/_i18n_info.py:456
 msgid ""
 "For any download problem on the \"Download\" page, a mirror site has been "
 "added; you can download any driver version and all other files.\n"
@@ -4733,13 +4726,13 @@ msgstr ""
 "&bull; <a href=\"http://flashcode.free.fr/flashtux/eciadsl/\">Le site "
 "miroir</a>"
 
-#. Translators: 2002-11-03 13:19, home: Technical problem on "Your opinion" page
-#: news/_i18n_info.py:462
+#. Translators: 2002-11-03 14:19, home: Technical problem on "Your opinion" page
+#: news/_i18n_info.py:458
 msgid "Technical problem on \"Your opinion\" page"
 msgstr "Incident sur la page \"Votre avis\""
 
-#. Translators: 2002-11-03 13:19, home: Technical problem on "Your opinion" page
-#: news/_i18n_info.py:464
+#. Translators: 2002-11-03 14:19, home: Technical problem on "Your opinion" page
+#: news/_i18n_info.py:460
 msgid ""
 "Due to a technical problem, opinion given on the \"Your opinion\" page, were "
 "not sent to me.\n"
@@ -4756,13 +4749,13 @@ msgstr ""
 "Veuillez m'excuser pour la gêne occasionnée.\n"
 "Le webmaster FlashTux."
 
-#. Translators: 2002-11-03 09:28, eciadsl: Added 3 providers
-#: news/_i18n_info.py:466
+#. Translators: 2002-11-03 10:28, eciadsl: Added 3 providers
+#: news/_i18n_info.py:462
 msgid "Added 3 providers"
 msgstr "Ajout de 3 fournisseurs"
 
-#. Translators: 2002-11-03 09:28, eciadsl: Added 3 providers
-#: news/_i18n_info.py:468
+#. Translators: 2002-11-03 10:28, eciadsl: Added 3 providers
+#: news/_i18n_info.py:464
 msgid ""
 "Providers Infostrada, Sunrize and Econophone have been added to eciconf.sh "
 "and eciconftxt.sh.\n"
@@ -4776,8 +4769,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-11-02 18:06, eciadsl: New synch .bin file
-#: news/_i18n_info.py:470
+#. Translators: 2002-11-02 19:06, eciadsl: New synch .bin file
+#: news/_i18n_info.py:466
 msgid ""
 "Added new synch .bin (synch14.bin)\n"
 "\n"
@@ -4787,13 +4780,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Fichiers de synchronisation</a>"
 
-#. Translators: 2002-11-01 23:02, eciadsl: Troubleshooting in French
-#: news/_i18n_info.py:472
+#. Translators: 2002-11-02 00:02, eciadsl: Troubleshooting in French
+#: news/_i18n_info.py:468
 msgid "Troubleshooting in French"
 msgstr "Troubleshooting en français"
 
-#. Translators: 2002-11-01 23:02, eciadsl: Troubleshooting in French
-#: news/_i18n_info.py:474
+#. Translators: 2002-11-02 00:02, eciadsl: Troubleshooting in French
+#: news/_i18n_info.py:470
 msgid ""
 "The TROUBLESHOOTING.fr file of CVS version now contains French version of "
 "problems of installation/configuration/use of driver with their solutions.\n"
@@ -4808,8 +4801,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS.</a>"
 
-#. Translators: 2002-10-28 20:19, eciadsl: Version 0.6-pre4
-#: news/_i18n_info.py:476
+#. Translators: 2002-10-28 21:19, eciadsl: Version 0.6-pre4
+#: news/_i18n_info.py:472
 msgid ""
 "Current CVS is now 0.6-pre4, major updates are a new packaging scheme "
 "(using ./configure), and configuration tools massive updates (redesign, more "
@@ -4828,8 +4821,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>."
 
-#. Translators: 2002-10-22 23:47, eciadsl: Version 0.6-pre3
-#: news/_i18n_info.py:478
+#. Translators: 2002-10-23 01:47, eciadsl: Version 0.6-pre3
+#: news/_i18n_info.py:474
 msgid ""
 "Version 0.6-pre3 has been merged to CVS.\n"
 "\n"
@@ -4843,13 +4836,13 @@ msgstr ""
 "version CVS</a>\n"
 "&bull; <a href=\"/eciadsl/screenshots/\">Captures d'écrans Eciconf</a>"
 
-#. Translators: 2002-10-20 20:24, eciadsl: New synch .bin files
-#: news/_i18n_info.py:480
+#. Translators: 2002-10-20 22:24, eciadsl: New synch .bin files
+#: news/_i18n_info.py:476
 msgid "New synch .bin files"
 msgstr "Nouveaux fichiers .bin de synchronisation"
 
-#. Translators: 2002-10-20 20:24, eciadsl: New synch .bin files
-#: news/_i18n_info.py:482
+#. Translators: 2002-10-20 22:24, eciadsl: New synch .bin files
+#: news/_i18n_info.py:478
 msgid ""
 "Three new .bin files addes for sync.\n"
 "\n"
@@ -4859,13 +4852,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Fichiers de synchronisation</a>"
 
-#. Translators: 2002-10-13 08:24, eciadsl: Configuration script for console / terminal
-#: news/_i18n_info.py:484
+#. Translators: 2002-10-13 10:24, eciadsl: Configuration script for console / terminal
+#: news/_i18n_info.py:480
 msgid "Configuration script for console / terminal"
 msgstr "Script de configuration pour console / terminal"
 
-#. Translators: 2002-10-13 08:24, eciadsl: Configuration script for console / terminal
-#: news/_i18n_info.py:486
+#. Translators: 2002-10-13 10:24, eciadsl: Configuration script for console / terminal
+#: news/_i18n_info.py:482
 msgid ""
 "A configuration script (eciconftxt.sh) has been added.\n"
 "It is the same goal as eciconf.sh, but can be run in a console or a "
@@ -4886,8 +4879,8 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl, "
 "version CVS</a>"
 
-#. Translators: 2002-10-12 09:24, eciadsl: New synch .bin file
-#: news/_i18n_info.py:488
+#. Translators: 2002-10-12 11:24, eciadsl: New synch .bin file
+#: news/_i18n_info.py:484
 msgid ""
 "New synchronization file (.bin) has been added. Created by an English user "
 "(thanks Oliverthered).\n"
@@ -4899,8 +4892,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Fichiers de synchronisation</a>"
 
-#. Translators: 2002-10-11 09:57, eciadsl: New synch .bin file
-#: news/_i18n_info.py:490
+#. Translators: 2002-10-11 11:57, eciadsl: New synch .bin file
+#: news/_i18n_info.py:486
 msgid ""
 "Italian .bin has been added for sync.\n"
 "\n"
@@ -4910,13 +4903,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Fichiers de synchronisation</a>"
 
-#. Translators: 2002-10-05 10:44, eciadsl: Added 3 supported modems
-#: news/_i18n_info.py:492
+#. Translators: 2002-10-05 12:44, eciadsl: Added 3 supported modems
+#: news/_i18n_info.py:488
 msgid "Added 3 supported modems"
 msgstr "Ajout de 3 modems supportés"
 
-#. Translators: 2002-10-05 10:44, eciadsl: Added 3 supported modems
-#: news/_i18n_info.py:494
+#. Translators: 2002-10-05 12:44, eciadsl: Added 3 supported modems
+#: news/_i18n_info.py:490
 msgid ""
 "3 modems added into eciconf.sh, driver now runs with 11 different modems.\n"
 "\n"
@@ -4933,13 +4926,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement EciAdsl "
 "(version de développement)</a>"
 
-#. Translators: 2002-09-22 21:55, eciadsl: CVS version patched for preventing LCP timeouts
-#: news/_i18n_info.py:496
+#. Translators: 2002-09-22 23:55, eciadsl: CVS version patched for preventing LCP timeouts
+#: news/_i18n_info.py:492
 msgid "CVS version patched for preventing LCP timeouts"
 msgstr "Version CVS patchée pour éviter les LCP timeouts"
 
-#. Translators: 2002-09-22 21:55, eciadsl: CVS version patched for preventing LCP timeouts
-#: news/_i18n_info.py:498
+#. Translators: 2002-09-22 23:55, eciadsl: CVS version patched for preventing LCP timeouts
+#: news/_i18n_info.py:494
 msgid ""
 "CVS version patched for preventing LCP timeouts is available for download.\n"
 "\n"
@@ -4950,13 +4943,13 @@ msgstr ""
 "&bull; <a href=\"/eciadsl/download/devel/\">Page téléchargement, section "
 "CVS</a>"
 
-#. Translators: 2002-09-14 02:11, eciadsl: English documentation for driver
-#: news/_i18n_info.py:500
+#. Translators: 2002-09-14 04:11, eciadsl: English documentation for driver
+#: news/_i18n_info.py:496
 msgid "English documentation for driver"
 msgstr "Documentation du driver en anglais"
 
-#. Translators: 2002-09-14 02:11, eciadsl: English documentation for driver
-#: news/_i18n_info.py:502
+#. Translators: 2002-09-14 04:11, eciadsl: English documentation for driver
+#: news/_i18n_info.py:498
 msgid ""
 "Driver's documentation has been translated to English (thanks to Red "
 "Prophet).\n"
@@ -4967,13 +4960,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Page documentation (en anglais)</a>"
 
-#. Translators: 2002-09-12 21:31, eciadsl: Documentation updated
-#: news/_i18n_info.py:504
+#. Translators: 2002-09-12 23:31, eciadsl: Documentation updated
+#: news/_i18n_info.py:500
 msgid "Documentation updated"
 msgstr "Mise à jour de la documentation"
 
-#. Translators: 2002-09-12 21:31, eciadsl: Documentation updated
-#: news/_i18n_info.py:506
+#. Translators: 2002-09-12 23:31, eciadsl: Documentation updated
+#: news/_i18n_info.py:502
 msgid ""
 "Driver's documentation has been updated.\n"
 "\n"
@@ -4983,13 +4976,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Page documentation</a>"
 
-#. Translators: 2002-09-08 09:32, eciadsl: ECI win 1.06 driver for sniffing
-#: news/_i18n_info.py:508
+#. Translators: 2002-09-08 11:32, eciadsl: ECI win 1.06 driver for sniffing
+#: news/_i18n_info.py:504
 msgid "ECI win 1.06 driver for sniffing"
 msgstr "Driver win ECI 1.06 pour sniffer"
 
-#. Translators: 2002-09-08 09:32, eciadsl: ECI win 1.06 driver for sniffing
-#: news/_i18n_info.py:510
+#. Translators: 2002-09-08 11:32, eciadsl: ECI win 1.06 driver for sniffing
+#: news/_i18n_info.py:506
 msgid ""
 "ECI windows driver v1.06 has been added.\n"
 "Only this version lets you create a .bin file that linux driver can read "
@@ -5003,13 +4996,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2002-09-08 07:09, home: Added "Linux today's slogan"
-#: news/_i18n_info.py:512
+#. Translators: 2002-09-08 09:09, home: Added "Linux today's slogan"
+#: news/_i18n_info.py:508
 msgid "Added \"Linux today's slogan\""
 msgstr "Ajout du \"slogan Linux du jour\""
 
-#. Translators: 2002-09-08 07:09, home: Added "Linux today's slogan"
-#: news/_i18n_info.py:514
+#. Translators: 2002-09-08 09:09, home: Added "Linux today's slogan"
+#: news/_i18n_info.py:510
 msgid ""
 "The today's Linux slogan has been added on welcome page.\n"
 "It will change every day."
@@ -5017,18 +5010,18 @@ msgstr ""
 "Le slogan Linux du jour a été ajouté sur la page d'accueil.\n"
 "Comme son nom l'indique, il changera tous les jours."
 
-#. Translators: 2002-09-01 11:47, home: Official opening of FlashTux.org!
-#: news/_i18n_info.py:516
+#. Translators: 2002-09-01 13:47, home: Official opening of FlashTux.org!
+#: news/_i18n_info.py:512
 msgid "Official opening of FlashTux.org!"
 msgstr "Ouverture officielle de FlashTux.org !"
 
-#. Translators: 2002-09-01 11:47, home: Official opening of FlashTux.org!
-#: news/_i18n_info.py:518
+#. Translators: 2002-09-01 13:47, home: Official opening of FlashTux.org!
+#: news/_i18n_info.py:514
 msgid ""
-"After one month of hard work, here is the new version of my webpage :)\n"
+"After one month of hard work, here is the new version of my webpage!\n"
 "\n"
 "New features:\n"
-"- hosted by Tuxfamily with domain name :)\n"
+"- hosted by Tuxfamily with domain name!\n"
 "- new graphics\n"
 "- best menu organization\n"
 "- new rubriks\n"
@@ -5041,10 +5034,10 @@ msgid ""
 "FlashCode."
 msgstr ""
 "Après un mois de travail, voici un nouveau site, tout beau et qui sent "
-"encore le neuf :)\n"
+"encore le neuf !\n"
 "\n"
 "Au menu :\n"
-"- nouvel hébergeur (Tuxfamily) avec nom de domaine propre :)\n"
+"- nouvel hébergeur (Tuxfamily) avec nom de domaine propre !\n"
 "- nouveaux graphismes\n"
 "- menus réorganisés\n"
 "- nouvelles rubriques\n"
@@ -5058,13 +5051,13 @@ msgstr ""
 "\n"
 "FlashCode."
 
-#. Translators: 2002-08-30 12:24, games: Game section
-#: news/_i18n_info.py:520
+#. Translators: 2002-08-30 14:24, games: Game section
+#: news/_i18n_info.py:516
 msgid "Game section"
 msgstr "Section jeux"
 
-#. Translators: 2002-08-30 12:24, games: Game section
-#: news/_i18n_info.py:522
+#. Translators: 2002-08-30 14:24, games: Game section
+#: news/_i18n_info.py:518
 msgid ""
 "This section is composed by all games (except FlashTris).\n"
 "\n"
@@ -5076,13 +5069,13 @@ msgstr ""
 "Petits jeux auxquels vous pouvez la plupart du temps jouer à plusieurs et "
 "contre des ordinateurs."
 
-#. Translators: 2002-08-25 15:36, coding: Coding section ready
-#: news/_i18n_info.py:524
+#. Translators: 2002-08-25 17:36, coding: Coding section ready
+#: news/_i18n_info.py:520
 msgid "Coding section ready"
 msgstr "Section Prog terminée"
 
-#. Translators: 2002-08-25 15:36, coding: Coding section ready
-#: news/_i18n_info.py:526
+#. Translators: 2002-08-25 17:36, coding: Coding section ready
+#: news/_i18n_info.py:522
 msgid ""
 "Coding section is ready.\n"
 "\n"
@@ -5098,13 +5091,13 @@ msgstr ""
 "- possibilité de recherche des programmes,\n"
 "- classification par thèmes."
 
-#. Translators: 2002-06-22 10:00, eciadsl: List of supported modems
-#: news/_i18n_info.py:528
+#. Translators: 2002-06-22 12:00, eciadsl: List of supported modems
+#: news/_i18n_info.py:524
 msgid "List of supported modems"
 msgstr "Liste des modems supportés"
 
-#. Translators: 2002-06-22 10:00, eciadsl: List of supported modems
-#: news/_i18n_info.py:530
+#. Translators: 2002-06-22 12:00, eciadsl: List of supported modems
+#: news/_i18n_info.py:526
 msgid ""
 "Added list of supported modems.\n"
 "Warning: this list corresponds to CVS version of driver (version 0.5 runs "
@@ -5118,13 +5111,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/modems/\">Modems supportés</a>"
 
-#. Translators: 2002-06-09 16:30, gmemo: Gmemo: let's go!
-#: news/_i18n_info.py:532
+#. Translators: 2002-06-09 18:30, gmemo: Gmemo: let's go!
+#: news/_i18n_info.py:528
 msgid "Gmemo: let's go!"
 msgstr "Gmemo : c'est parti !"
 
-#. Translators: 2002-06-09 16:30, gmemo: Gmemo: let's go!
-#: news/_i18n_info.py:534
+#. Translators: 2002-06-09 18:30, gmemo: Gmemo: let's go!
+#: news/_i18n_info.py:530
 msgid ""
 "And let's go for Gmemo!\n"
 "\n"
@@ -5137,8 +5130,8 @@ msgstr ""
 "alarmes paramétrables.\n"
 "Il affiche aussi la date, l'heure, la fête du jour et du lendemain."
 
-#. Translators: 2002-06-06 07:37, eciadsl: New synch .bin file
-#: news/_i18n_info.py:536
+#. Translators: 2002-06-06 09:37, eciadsl: New synch .bin file
+#: news/_i18n_info.py:532
 msgid ""
 "Monsoult .bin file has been added.\n"
 "\n"
@@ -5148,13 +5141,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2002-05-03 10:00, eciadsl: Readme for graphical tool Eciconf
-#: news/_i18n_info.py:538
+#. Translators: 2002-05-03 12:00, eciadsl: Readme for graphical tool Eciconf
+#: news/_i18n_info.py:534
 msgid "Readme for graphical tool Eciconf"
 msgstr "Manuel pour l'outil graphique Eciconf"
 
-#. Translators: 2002-05-03 10:00, eciadsl: Readme for graphical tool Eciconf
-#: news/_i18n_info.py:540
+#. Translators: 2002-05-03 12:00, eciadsl: Readme for graphical tool Eciconf
+#: news/_i18n_info.py:536
 msgid ""
 "Readme for graphical tool Eciconf is written and included into the last "
 "version of driver.\n"
@@ -5166,13 +5159,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2002-04-14 10:00, eciadsl: Added graphical tool for config
-#: news/_i18n_info.py:542
+#. Translators: 2002-04-14 12:00, eciadsl: Added graphical tool for config
+#: news/_i18n_info.py:538
 msgid "Added graphical tool for config"
 msgstr "Ajout outil graphique pour la config"
 
-#. Translators: 2002-04-14 10:00, eciadsl: Added graphical tool for config
-#: news/_i18n_info.py:544
+#. Translators: 2002-04-14 12:00, eciadsl: Added graphical tool for config
+#: news/_i18n_info.py:540
 msgid ""
 "With Crevetor, a graphical tool to configure driver has been developed.\n"
 "This one is included into the last version of driver.\n"
@@ -5185,13 +5178,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2002-03-02 11:00, eciadsl: Link to EciAdsl forum
-#: news/_i18n_info.py:546
+#. Translators: 2002-03-02 12:00, eciadsl: Link to EciAdsl forum
+#: news/_i18n_info.py:542
 msgid "Link to EciAdsl forum"
 msgstr "Lien vers forum EciAdsl"
 
-#. Translators: 2002-03-02 11:00, eciadsl: Link to EciAdsl forum
-#: news/_i18n_info.py:548
+#. Translators: 2002-03-02 12:00, eciadsl: Link to EciAdsl forum
+#: news/_i18n_info.py:544
 msgid ""
 "Added link to EciAdsl forum.\n"
 "\n"
@@ -5203,13 +5196,13 @@ msgstr ""
 "&bull; <a href=\"http://eciadsl.sourceforge.net/scripts/forum\">Forum "
 "EciAdsl</a>"
 
-#. Translators: 2002-02-23 11:00, eciadsl: Updated v0.4, added doc and tools
-#: news/_i18n_info.py:550
+#. Translators: 2002-02-23 12:00, eciadsl: Updated v0.4, added doc and tools
+#: news/_i18n_info.py:546
 msgid "Updated v0.4, added doc and tools"
 msgstr "Version 0.4 MAJ, ajout doc et outils"
 
-#. Translators: 2002-02-23 11:00, eciadsl: Updated v0.4, added doc and tools
-#: news/_i18n_info.py:552
+#. Translators: 2002-02-23 12:00, eciadsl: Updated v0.4, added doc and tools
+#: news/_i18n_info.py:548
 msgid ""
 "Version 0.4 has been updated.\n"
 "Documentation and missing tools have been added.\n"
@@ -5221,13 +5214,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2002-01-09 11:00, eciadsl: Updated Howto
-#: news/_i18n_info.py:554
+#. Translators: 2002-01-09 12:00, eciadsl: Updated Howto
+#: news/_i18n_info.py:550
 msgid "Updated Howto"
 msgstr "Howto mis à jour"
 
-#. Translators: 2002-01-09 11:00, eciadsl: Updated Howto
-#: news/_i18n_info.py:556
+#. Translators: 2002-01-09 12:00, eciadsl: Updated Howto
+#: news/_i18n_info.py:552
 msgid ""
 "Howto has been updated.\n"
 "\n"
@@ -5237,8 +5230,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/doc/\">Howto</a>"
 
-#. Translators: 2001-12-24 11:00, eciadsl: Version 0.3
-#: news/_i18n_info.py:558
+#. Translators: 2001-12-24 12:00, eciadsl: Version 0.3
+#: news/_i18n_info.py:554
 msgid ""
 "Version 0.3 of driver has been released!\n"
 "\n"
@@ -5248,23 +5241,23 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2001-12-22 11:00, eciadsl: Added English Howto
-#: news/_i18n_info.py:560
+#. Translators: 2001-12-22 12:00, eciadsl: Added English Howto
+#: news/_i18n_info.py:556
 msgid "Added English Howto"
 msgstr "Ajout Howto anglais"
 
-#. Translators: 2001-12-22 11:00, eciadsl: Added English Howto
-#: news/_i18n_info.py:562
+#. Translators: 2001-12-22 12:00, eciadsl: Added English Howto
+#: news/_i18n_info.py:558
 msgid "English Howto has been added."
 msgstr "Le Howto en anglais a été ajouté."
 
-#. Translators: 2001-12-20 11:00, eciadsl: Flashcode's interview on Dslvalley
-#: news/_i18n_info.py:564
+#. Translators: 2001-12-20 12:00, eciadsl: Flashcode's interview on Dslvalley
+#: news/_i18n_info.py:560
 msgid "Flashcode's interview on Dslvalley"
 msgstr "Interview de FlashCode sur Dslvalley"
 
-#. Translators: 2001-12-20 11:00, eciadsl: Flashcode's interview on Dslvalley
-#: news/_i18n_info.py:566
+#. Translators: 2001-12-20 12:00, eciadsl: Flashcode's interview on Dslvalley
+#: news/_i18n_info.py:562
 msgid ""
 "FlashCode has been interviewed on DslValley.\n"
 "\n"
@@ -5276,13 +5269,13 @@ msgstr ""
 "&bull; <a href=\"http://www.dslvalley.com/news/news.php3?id=259\">Interview</"
 "a>"
 
-#. Translators: 2001-12-17 11:00, eciadsl: RPM version
-#: news/_i18n_info.py:568
+#. Translators: 2001-12-17 12:00, eciadsl: RPM version
+#: news/_i18n_info.py:564
 msgid "RPM version"
 msgstr "Version RPM"
 
-#. Translators: 2001-12-17 11:00, eciadsl: RPM version
-#: news/_i18n_info.py:570
+#. Translators: 2001-12-17 12:00, eciadsl: RPM version
+#: news/_i18n_info.py:566
 msgid ""
 "Added RPM version (based on CVS sources).\n"
 "\n"
@@ -5292,13 +5285,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2001-12-14 11:00, eciadsl: 2nd version of driver
-#: news/_i18n_info.py:572
+#. Translators: 2001-12-14 12:00, eciadsl: 2nd version of driver
+#: news/_i18n_info.py:568
 msgid "2nd version of driver"
 msgstr "2ème version du driver"
 
-#. Translators: 2001-12-14 11:00, eciadsl: 2nd version of driver
-#: news/_i18n_info.py:574
+#. Translators: 2001-12-14 12:00, eciadsl: 2nd version of driver
+#: news/_i18n_info.py:570
 msgid ""
 "Second version of driver is available.\n"
 "\n"
@@ -5308,13 +5301,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2001-12-07 11:00, eciadsl: 1st version of driver!
-#: news/_i18n_info.py:576
+#. Translators: 2001-12-07 12:00, eciadsl: 1st version of driver!
+#: news/_i18n_info.py:572
 msgid "1st version of driver!"
 msgstr "1ère version du driver !"
 
-#. Translators: 2001-12-07 11:00, eciadsl: 1st version of driver!
-#: news/_i18n_info.py:578
+#. Translators: 2001-12-07 12:00, eciadsl: 1st version of driver!
+#: news/_i18n_info.py:574
 msgid ""
 "The first version of driver is available!\n"
 "You'll be able to connect (a few minutes) to the Internet.\n"
@@ -5326,13 +5319,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/download/\">Page téléchargement</a>"
 
-#. Translators: 2001-11-24 11:00, eciadsl: E-mail sent to ECI Telecom
-#: news/_i18n_info.py:580
+#. Translators: 2001-11-24 12:00, eciadsl: E-mail sent to ECI Telecom
+#: news/_i18n_info.py:576
 msgid "E-mail sent to ECI Telecom"
 msgstr "E-mail envoyé à ECI Telecom"
 
-#. Translators: 2001-11-24 11:00, eciadsl: E-mail sent to ECI Telecom
-#: news/_i18n_info.py:582
+#. Translators: 2001-11-24 12:00, eciadsl: E-mail sent to ECI Telecom
+#: news/_i18n_info.py:578
 msgid ""
 "An e-mail was sent to ECI Telecom for getting news.\n"
 "To be continued…"
@@ -5340,13 +5333,13 @@ msgstr ""
 "Un e-mail de relance a été envoyé à ECI Telecom pour prendre des nouvelles.\n"
 "A suivre…"
 
-#. Translators: 2001-11-15 11:00, eciadsl: E-mail received from Ofer Reviv
-#: news/_i18n_info.py:584
+#. Translators: 2001-11-15 12:00, eciadsl: E-mail received from Ofer Reviv
+#: news/_i18n_info.py:580
 msgid "E-mail received from Ofer Reviv"
 msgstr "E-mail reçu de Mr Ofer Reviv"
 
-#. Translators: 2001-11-15 11:00, eciadsl: E-mail received from Ofer Reviv
-#: news/_i18n_info.py:586
+#. Translators: 2001-11-15 12:00, eciadsl: E-mail received from Ofer Reviv
+#: news/_i18n_info.py:582
 msgid ""
 "Mr Ofer Reviv (ECI Telecom) told us they were interested in the Linux driver "
 "and asked us to precise our needs.\n"
@@ -5356,13 +5349,13 @@ msgstr ""
 "a demandé de préciser notre besoin.\n"
 "Il doit nous contacter très prochainement."
 
-#. Translators: 2001-10-19 10:00, eciadsl: E-mail received from Thierry Berton
-#: news/_i18n_info.py:588
+#. Translators: 2001-10-19 12:00, eciadsl: E-mail received from Thierry Berton
+#: news/_i18n_info.py:584
 msgid "E-mail received from Thierry Berton"
 msgstr "E-mail reçu de Thierry Berton"
 
-#. Translators: 2001-10-19 10:00, eciadsl: E-mail received from Thierry Berton
-#: news/_i18n_info.py:590
+#. Translators: 2001-10-19 12:00, eciadsl: E-mail received from Thierry Berton
+#: news/_i18n_info.py:586
 msgid ""
 "He gave us the name of the person who was going to help us to contact their "
 "developers.\n"
@@ -5372,13 +5365,13 @@ msgstr ""
 "avec leurs développeurs.\n"
 "Du nouveau dans les prochains jours…"
 
-#. Translators: 2001-10-07 10:00, eciadsl: ECI driver FAQ
-#: news/_i18n_info.py:592
+#. Translators: 2001-10-07 12:00, eciadsl: ECI driver FAQ
+#: news/_i18n_info.py:588
 msgid "ECI driver FAQ"
 msgstr "FAQ sur le driver ECI"
 
-#. Translators: 2001-10-07 10:00, eciadsl: ECI driver FAQ
-#: news/_i18n_info.py:594
+#. Translators: 2001-10-07 12:00, eciadsl: ECI driver FAQ
+#: news/_i18n_info.py:590
 msgid ""
 "FAQ about this driver has been written:\n"
 "\n"
@@ -5388,13 +5381,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/faq\">F.A.Q.</a>"
 
-#. Translators: 2001-10-06 10:00, eciadsl: Answer from Thierry Berton
-#: news/_i18n_info.py:596
+#. Translators: 2001-10-06 12:00, eciadsl: Answer from Thierry Berton
+#: news/_i18n_info.py:592
 msgid "Answer from Thierry Berton"
 msgstr "Réponse de Thierry Berton"
 
-#. Translators: 2001-10-06 10:00, eciadsl: Answer from Thierry Berton
-#: news/_i18n_info.py:598
+#. Translators: 2001-10-06 12:00, eciadsl: Answer from Thierry Berton
+#: news/_i18n_info.py:594
 msgid ""
 "Answer from Thierry Berton, received on 2001/10/02: after some reunions into "
 "ECI Telecom, he will probably contact us again in one or two weeks."
@@ -5403,13 +5396,13 @@ msgstr ""
 "en interne chez ECI Telecom et il devrait nous recontacter d'ici une à deux "
 "semaines."
 
-#. Translators: 2001-09-23 10:00, eciadsl: Photos of Interop trade show with ECI Telecom
-#: news/_i18n_info.py:600
+#. Translators: 2001-09-23 12:00, eciadsl: Photos of Interop trade show with ECI Telecom
+#: news/_i18n_info.py:596
 msgid "Photos of Interop trade show with ECI Telecom"
 msgstr "Photos du salon Interop avec ECI Telecom"
 
-#. Translators: 2001-09-23 10:00, eciadsl: Photos of Interop trade show with ECI Telecom
-#: news/_i18n_info.py:602
+#. Translators: 2001-09-23 12:00, eciadsl: Photos of Interop trade show with ECI Telecom
+#: news/_i18n_info.py:598
 msgid ""
 "Photos of Interop trade show with ECI Telecom are available.\n"
 "\n"
@@ -5419,13 +5412,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/interop\">Photos salon Interop</a>"
 
-#. Translators: 2001-09-20 10:00, eciadsl: Mail sent to Thierry Berton
-#: news/_i18n_info.py:604
+#. Translators: 2001-09-20 12:00, eciadsl: Mail sent to Thierry Berton
+#: news/_i18n_info.py:600
 msgid "Mail sent to Thierry Berton"
 msgstr "Mail envoyé à Thierry Berton"
 
-#. Translators: 2001-09-20 10:00, eciadsl: Mail sent to Thierry Berton
-#: news/_i18n_info.py:606
+#. Translators: 2001-09-20 12:00, eciadsl: Mail sent to Thierry Berton
+#: news/_i18n_info.py:602
 msgid ""
 "A mail was sent to Thierry Berton, Sales manager of ECI Telecom France.\n"
 "Goal: to contact ECI Telecom driver development team."
@@ -5434,13 +5427,13 @@ msgstr ""
 "Telecom France.\n"
 "Objectif : entre en contact avec leurs développeurs de drivers."
 
-#. Translators: 2001-09-18 10:00, eciadsl: Meeting with ECI Telecom
-#: news/_i18n_info.py:608
+#. Translators: 2001-09-18 12:00, eciadsl: Meeting with ECI Telecom
+#: news/_i18n_info.py:604
 msgid "Meeting with ECI Telecom"
 msgstr "Rencontre avec ECI Telecom"
 
-#. Translators: 2001-09-18 10:00, eciadsl: Meeting with ECI Telecom
-#: news/_i18n_info.py:610
+#. Translators: 2001-09-18 12:00, eciadsl: Meeting with ECI Telecom
+#: news/_i18n_info.py:606
 msgid ""
 "Meeting with ECI Telecom (Inovia Telecom) at Interop trade show in Paris.\n"
 "\n"
@@ -5450,13 +5443,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/interop\">Salon Interop</a>"
 
-#. Translators: 2001-09-10 10:00, eciadsl: Petition for ECI Telecom
-#: news/_i18n_info.py:612
+#. Translators: 2001-09-10 12:00, eciadsl: Petition for ECI Telecom
+#: news/_i18n_info.py:608
 msgid "Petition for ECI Telecom"
 msgstr "Pétition pour ECI Telecom"
 
-#. Translators: 2001-09-10 10:00, eciadsl: Petition for ECI Telecom
-#: news/_i18n_info.py:614
+#. Translators: 2001-09-10 12:00, eciadsl: Petition for ECI Telecom
+#: news/_i18n_info.py:610
 msgid ""
 "Sign up petition for ECI Telecom!\n"
 "\n"
@@ -5466,8 +5459,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/eciadsl/petition\">Pétition pour ECI Telecom</a>"
 
-#. Translators: 2001-09-06 10:00, flashtris: Version 0.30
-#: news/_i18n_info.py:616
+#. Translators: 2001-09-06 12:00, flashtris: Version 0.30
+#: news/_i18n_info.py:612
 msgid ""
 "Version 0.30 is available.\n"
 "FlashTris full source code is now available.\n"
@@ -5481,13 +5474,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-08-29 10:00, eciadsl: Logs are available!
-#: news/_i18n_info.py:618
+#. Translators: 2001-08-29 12:00, eciadsl: Logs are available!
+#: news/_i18n_info.py:614
 msgid "Logs are available!"
 msgstr "Les logs sont disponibles !"
 
-#. Translators: 2001-08-29 10:00, eciadsl: Logs are available!
-#: news/_i18n_info.py:620
+#. Translators: 2001-08-29 12:00, eciadsl: Logs are available!
+#: news/_i18n_info.py:616
 msgid ""
 "(Almost) all logs ara available!\n"
 "\n"
@@ -5497,13 +5490,13 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/files/eciadsl/logs.zip\">logs.zip</a>"
 
-#. Translators: 2001-08-28 10:00, eciadsl: Snoopy USB sniffer on Sourceforge
-#: news/_i18n_info.py:622
+#. Translators: 2001-08-28 12:00, eciadsl: Snoopy USB sniffer on Sourceforge
+#: news/_i18n_info.py:618
 msgid "Snoopy USB sniffer on Sourceforge"
 msgstr "Sniffeur USB Snoopy sur Sourceforge"
 
-#. Translators: 2001-08-28 10:00, eciadsl: Snoopy USB sniffer on Sourceforge
-#: news/_i18n_info.py:624
+#. Translators: 2001-08-28 12:00, eciadsl: Snoopy USB sniffer on Sourceforge
+#: news/_i18n_info.py:620
 msgid ""
 "Snoopy USB sniffer is available on Sourceforge:\n"
 "\n"
@@ -5515,13 +5508,13 @@ msgstr ""
 "&bull; <a href=\"http://usbsnoop.sourceforge.net\">http://"
 "usbsnoop.sourceforge.net</a>"
 
-#. Translators: 2001-08-20 10:00, eciadsl: Mailing list is archived
-#: news/_i18n_info.py:626
+#. Translators: 2001-08-20 12:00, eciadsl: Mailing list is archived
+#: news/_i18n_info.py:622
 msgid "Mailing list is archived"
 msgstr "La mailing list est archivée"
 
-#. Translators: 2001-08-20 10:00, eciadsl: Mailing list is archived
-#: news/_i18n_info.py:628
+#. Translators: 2001-08-20 12:00, eciadsl: Mailing list is archived
+#: news/_i18n_info.py:624
 msgid ""
 "Thanks to ZeGuigui, mailing list is archived:\n"
 "\n"
@@ -5531,36 +5524,36 @@ msgstr ""
 "\n"
 "&bull; <a href=\"http://liste.eci.free.fr\">http://liste.eci.free.fr</a>"
 
-#. Translators: 2001-08-06 10:00, eciadsl: Green LED is fixed under Linux!
-#: news/_i18n_info.py:630
+#. Translators: 2001-08-06 12:00, eciadsl: Green LED is fixed under Linux!
+#: news/_i18n_info.py:626
 msgid "Green LED is fixed under Linux!"
 msgstr "LED verte fixe sous Linux !"
 
-#. Translators: 2001-08-06 10:00, eciadsl: Green LED is fixed under Linux!
-#: news/_i18n_info.py:632
+#. Translators: 2001-08-06 12:00, eciadsl: Green LED is fixed under Linux!
+#: news/_i18n_info.py:628
 msgid ""
 "Thanks to Jean-Sebastien Valette, green LED is fixed under Linux!\n"
 "Work is going on…"
 msgstr ""
 "Grâce à Jean-Sebastien Valette, la LED verte est fixe sous Linux !\n"
-"Le travail continue.…"
+"Le travail continue…"
 
-#. Translators: 2001-08-01 10:00, eciadsl: 1st version of driver!
-#: news/_i18n_info.py:634
+#. Translators: 2001-08-01 12:00, eciadsl: 1st version of driver!
+#: news/_i18n_info.py:630
 msgid ""
 "First version of driver has been released!\n"
-"But you cannot today connect to the Internet with this version :-("
+"But you cannot today connect to the Internet with this version."
 msgstr ""
 "La toute première version du driver est sortie !\n"
-"Elle ne permet cependant pas de se connecter à Internet :-("
+"Elle ne permet cependant pas de se connecter à Internet."
 
-#. Translators: 2001-06-30 19:29, eciadsl: The two modem LED blink!
-#: news/_i18n_info.py:636
+#. Translators: 2001-06-30 21:29, eciadsl: The two modem LED blink!
+#: news/_i18n_info.py:632
 msgid "The two modem LED blink!"
 msgstr "Les deux LEDs du modem clignotent !"
 
-#. Translators: 2001-06-30 19:29, eciadsl: The two modem LED blink!
-#: news/_i18n_info.py:638
+#. Translators: 2001-06-30 21:29, eciadsl: The two modem LED blink!
+#: news/_i18n_info.py:634
 msgid ""
 "Both LED are powered under Linux, after sending firmware (saved under "
 "Windows) to modem.\n"
@@ -5570,13 +5563,13 @@ msgstr ""
 "sous Windows) au modem.\n"
 "Du nouveau dans les prochains jours…"
 
-#. Translators: 2001-06-23 10:00, eciadsl: URB sending test program
-#: news/_i18n_info.py:640
+#. Translators: 2001-06-23 12:00, eciadsl: URB sending test program
+#: news/_i18n_info.py:636
 msgid "URB sending test program"
 msgstr "Programme de test d'envoi des URB"
 
-#. Translators: 2001-06-23 10:00, eciadsl: URB sending test program
-#: news/_i18n_info.py:642
+#. Translators: 2001-06-23 12:00, eciadsl: URB sending test program
+#: news/_i18n_info.py:638
 msgid ""
 "Program for sending URB has been written.\n"
 "This will be base for communicating with modem."
@@ -5584,13 +5577,13 @@ msgstr ""
 "Un programme pour envoyer les URB a été écrit.\n"
 "Celui-ci servira de base au driver pour communiquer avec le modem."
 
-#. Translators: 2001-06-21 10:00, eciadsl: First driver skeleton!
-#: news/_i18n_info.py:644
+#. Translators: 2001-06-21 12:00, eciadsl: First driver skeleton!
+#: news/_i18n_info.py:640
 msgid "First driver skeleton!"
 msgstr "Premier squelette de driver !"
 
-#. Translators: 2001-06-21 10:00, eciadsl: First driver skeleton!
-#: news/_i18n_info.py:646
+#. Translators: 2001-06-21 12:00, eciadsl: First driver skeleton!
+#: news/_i18n_info.py:642
 msgid ""
 "First driver skeleton has been written.\n"
 "Author: Jean-Sebastien Valette."
@@ -5598,23 +5591,23 @@ msgstr ""
 "Le premier squelette de driver a été écrit.\n"
 "Auteur : Jean-Sebastien Valette."
 
-#. Translators: 2001-06-15 10:00, eciadsl: Beginning of the project
-#: news/_i18n_info.py:648
+#. Translators: 2001-06-15 12:00, eciadsl: Beginning of the project
+#: news/_i18n_info.py:644
 msgid "Beginning of the project"
 msgstr "Début du projet"
 
-#. Translators: 2001-06-15 10:00, eciadsl: Beginning of the project
-#: news/_i18n_info.py:650
+#. Translators: 2001-06-15 12:00, eciadsl: Beginning of the project
+#: news/_i18n_info.py:646
 msgid ""
-"EciAdsl peoject begins!\n"
+"EciAdsl project begins!\n"
 "Goal: connection to the net with Eci Hifocus ADSL USB modem."
 msgstr ""
 "Le projet EciAdsl démarre !\n"
 "Objectif : pouvoir se connecter à internet avec le modem ADSL USB Eci "
 "Hifocus."
 
-#. Translators: 2001-06-03 10:00, flashtris: Version 0.29
-#: news/_i18n_info.py:652
+#. Translators: 2001-06-03 12:00, flashtris: Version 0.29
+#: news/_i18n_info.py:648
 msgid ""
 "Version 0.29 is available.\n"
 "Original Tetris music was added!\n"
@@ -5626,8 +5619,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-05-26 10:00, flashtris: Version 0.28
-#: news/_i18n_info.py:654
+#. Translators: 2001-05-26 12:00, flashtris: Version 0.28
+#: news/_i18n_info.py:650
 msgid ""
 "Version 0.28 is available.\n"
 "News: info scroll, fixed bugs.\n"
@@ -5639,8 +5632,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-05-07 10:00, flashtris: Version 0.27
-#: news/_i18n_info.py:656
+#. Translators: 2001-05-07 12:00, flashtris: Version 0.27
+#: news/_i18n_info.py:652
 msgid ""
 "Version 0.27 is available.\n"
 "News: random music, bonus level choice, X-console mode (experimental!)\n"
@@ -5653,8 +5646,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-04-17 10:00, flashtris: Version 0.26
-#: news/_i18n_info.py:658
+#. Translators: 2001-04-17 12:00, flashtris: Version 0.26
+#: news/_i18n_info.py:654
 msgid ""
 "Version 0.26 is available.\n"
 "Challenge mode has been added.\n"
@@ -5666,8 +5659,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-03-26 10:00, flashtris: Version 0.25
-#: news/_i18n_info.py:660
+#. Translators: 2001-03-26 12:00, flashtris: Version 0.25
+#: news/_i18n_info.py:656
 msgid ""
 "Version 0.25 is available.\n"
 "Intro music was added and some bugs were fixed.\n"
@@ -5679,8 +5672,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-02-26 11:00, flashtris: Version 0.2
-#: news/_i18n_info.py:662
+#. Translators: 2001-02-26 12:00, flashtris: Version 0.2
+#: news/_i18n_info.py:658
 msgid ""
 "Version 0.2: network (local and Internet) game (Linux version only, with TCP/"
 "IP), 15 levels (= speeds) for 1 player game.\n"
@@ -5694,8 +5687,8 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#. Translators: 2001-02-11 11:00, flashtris: Version 0.1
-#: news/_i18n_info.py:664
+#. Translators: 2001-02-11 12:00, flashtris: Version 0.1
+#: news/_i18n_info.py:660
 msgid ""
 "Version 0.1 is available.\n"
 "It has been successfully tested with Linux kernel 2.4.0 and Windows 2000.\n"
@@ -5791,8 +5784,8 @@ msgid "Oh no! This page is forbidden…"
 msgstr "Oh non ! Cette page est interdite…"
 
 #: templates/403.html:12
-msgid "You're looking where you shouldn't? ;)"
-msgstr "Vous regardez où vous ne devriez pas ? ;)"
+msgid "You're looking where you shouldn't?"
+msgstr "Vous regardez où vous ne devriez pas ?"
 
 #: templates/404.html:5
 msgid "Error 404: page not found"
@@ -6393,7 +6386,7 @@ msgid ""
 "Globespan chipset (GS7070 and GS7470 are supported)."
 msgstr ""
 "<strong>EciAdsl</strong> est un driver libre pour modems USB ADSL équipés "
-"d'un chipset GLobespan  (GS7070 et GS7470 sont supportés)."
+"d'un chipset Globespan (GS7070 et GS7470 sont supportés)."
 
 #: templates/eciadsl/news.html:16 templates/flashtris/news.html:16
 #: templates/gmemo/news.html:16 templates/weewm/news.html:16
@@ -6959,6 +6952,7 @@ msgstr ""
 "(À ce jour - Octobre 2004 - nous ne savons toujours pas ce qu'il y a "
 "exactement dans ces fichiers .bin de synchronisation)."
 
+# noqa:double-words
 #: templates/eciadsl/story.html:403
 msgid ""
 "Nevertheless, we suspect that the connection remains the most difficult and "
@@ -7443,12 +7437,12 @@ msgstr "L'équipe de développement EciAdsl :"
 msgid ""
 "I want to thank all the developers, the testers, the people who quickly "
 "reported problems, the foreign contributors which allowed us to adapt the "
-"driver for their country, and all driver users :)"
+"driver for their country, and all driver users!"
 msgstr ""
 "Je tiens à remercier tous les développeurs, les testeurs, les gens qui nous "
 "remonté rapidement les problèmes, les contributeurs étrangers qui nous ont "
 "permis d'adapter le driver pour leur pays, et tous les utilisateurs du "
-"driver :)"
+"driver !"
 
 #: templates/eciadsl/support.html:12 templates/flashtris/support.html:12
 #: templates/gmemo/support.html:12 templates/weewm/support.html:12
@@ -7693,8 +7687,8 @@ msgstr ""
 "fichier .bin de synchro."
 
 #: templates/eciadsl/tutorial.html:149
-msgid "That's all, you should be connected :-)"
-msgstr "Voila, après cela vous devriez être connecté :-)"
+msgid "That's all, you should be connected!"
+msgstr "Voila, après cela vous devriez être connecté !"
 
 #: templates/eciadsl/tutorial.html:155
 #, python-format
@@ -7744,7 +7738,7 @@ msgstr ""
 "Je me lance dans la conversion de Demoniac-Tris vers une version Linux. "
 "Devant les différences entre le langage (Pascal ==> C) et surtout le système "
 "d'exploitation, je décide d'abandonner et de créer un nouveau \"Tetris "
-"like\" écrit 100%% en C et assembleur, 100%% compatible Linux, Dos et "
+"like\" écrit 100 %% en C et assembleur, 100 %% compatible Linux, Dos et "
 "Windows 3.x/95/98/2000/XP."
 
 #: templates/flashtris/dev.html:31
@@ -7768,12 +7762,12 @@ msgstr ""
 msgid ""
 "100%% C/assembly langage, compatible Linux - Dos - Windows v3.x/95/98/2000/XP"
 msgstr ""
-"100%% C/assembleur, compatible Linux - Dos - Windows v3.x/95/98/2000/XP"
+"100 %% C/assembleur, compatible Linux - Dos - Windows v3.x/95/98/2000/XP"
 
 #: templates/flashtris/dev.html:42
 #, python-format
 msgid "Optimised: 75%% of graphics and sound are written in assembly langage."
-msgstr "Optimisé : routines graphiques et son à 75%% en assembleur."
+msgstr "Optimisé : routines graphiques et son à 75 %% en assembleur."
 
 #: templates/flashtris/dev.html:43
 msgid "Data is included in executable (compressed musics and graphics)."
@@ -7787,8 +7781,8 @@ msgid ""
 "More than 23000 lines of source code (menu: 28%%, graphics: 23%%, game: "
 "18%%, sound: 14%%, other: 20%%)."
 msgstr ""
-"Plus de 23000 lignes de code source (menu : 28%%, graphisme : 23%%, jeu : "
-"18%%, son : 14%%, reste : 20%%)."
+"Plus de 23000 lignes de code source (menu : 28 %%, graphisme : 23 %%, jeu : "
+"18 %%, son : 14 %%, reste : 20 %%)."
 
 #: templates/flashtris/dev.html:45
 msgid ""
@@ -7826,77 +7820,77 @@ msgstr "État d'avancement au %(date)s"
 #, python-format
 msgid "Graphics mode: VGA (320x200): 100%%, SVGA (unlimited resolution): 5%%"
 msgstr ""
-"Modes graphiques : VGA (320x200) : 100%%, SVGA (résolution illimitée) : 5%%"
+"Modes graphiques : VGA (320x200) : 100 %%, SVGA (résolution illimitée) : 5 %%"
 
 #: templates/flashtris/dev.html:67
 #, python-format
 msgid "X-Window version: 35%%"
-msgstr "Version X-Window : 35%%"
+msgstr "Version X-Window : 35 %%"
 
 #: templates/flashtris/dev.html:68
 #, python-format
 msgid "Linux console version: 100%%"
-msgstr "Version Linux console : 100%%"
+msgstr "Version Linux console : 100 %%"
 
 #: templates/flashtris/dev.html:69
 #, python-format
 msgid "Dos version: 100%%"
-msgstr "Version Dos : 100%%"
+msgstr "Version Dos : 100 %%"
 
 #: templates/flashtris/dev.html:70
 #, python-format
 msgid "Windows 3.x/95/98/2000/XP version: 100%%"
-msgstr "Version Windows 3.x/95/98/2000/XP : 100%%"
+msgstr "Version Windows 3.x/95/98/2000/XP : 100 %%"
 
 #: templates/flashtris/dev.html:71
 #, python-format
 msgid "Menu: 85%%"
-msgstr "Menu : 85%%"
+msgstr "Menu : 85 %%"
 
 #: templates/flashtris/dev.html:72
 #, python-format
 msgid "Game - display: 90%%"
-msgstr "Jeu - affichage : 90%%"
+msgstr "Jeu - affichage : 90 %%"
 
 #: templates/flashtris/dev.html:73
 #, python-format
 msgid "Game - modes: 70%%"
-msgstr "Jeu - modes : 70%%"
+msgstr "Jeu - modes : 70 %%"
 
 #: templates/flashtris/dev.html:74
 #, python-format
 msgid "Game - options: 65%%"
-msgstr "Jeu - options : 65%%"
+msgstr "Jeu - options : 65 %%"
 
 #: templates/flashtris/dev.html:75
 #, python-format
 msgid "Game - bonus levels: 60%%"
-msgstr "Jeu - niveaux bonus : 60%%"
+msgstr "Jeu - niveaux bonus : 60 %%"
 
 #: templates/flashtris/dev.html:76
 #, python-format
 msgid "Game - scores: 32%%"
-msgstr "Jeu - scores : 32%%"
+msgstr "Jeu - scores : 32 %%"
 
 #: templates/flashtris/dev.html:77
 #, python-format
 msgid "Artificial intelligence: 80%%"
-msgstr "Intelligence artificielle : 80%%"
+msgstr "Intelligence artificielle : 80 %%"
 
 #: templates/flashtris/dev.html:78
 #, python-format
 msgid "Network game - Linux: 20%% (TCP/IP only)"
-msgstr "Jeu en réseau - Linux : 20%% (TCP/IP seulement)"
+msgstr "Jeu en réseau - Linux : 20 %% (TCP/IP seulement)"
 
 #: templates/flashtris/dev.html:79
 #, python-format
 msgid "Network game - Windows: 0%% (soon)"
-msgstr "Jeu en réseau - Windows : 0%% (bientôt)"
+msgstr "Jeu en réseau - Windows : 0 %% (bientôt)"
 
 #: templates/flashtris/dev.html:80
 #, python-format
 msgid "Musics, sound FX: 100%%"
-msgstr "Musiques, bruitages : 100%%"
+msgstr "Musiques, bruitages : 100 %%"
 
 #: templates/flashtris/dev.html:88
 msgid "Network game for Windows version."
@@ -8040,7 +8034,7 @@ msgstr ""
 #: templates/flashtris/doc.html:67
 #, python-format
 msgid "writing C module player (today it is 90%% assembly code)"
-msgstr "portage en C du player de modules (actuellement à 90%% en assembleur)"
+msgstr "portage en C du player de modules (actuellement à 90 %% en assembleur)"
 
 #: templates/flashtris/doc.html:73
 msgid "Source details:"
@@ -8215,7 +8209,7 @@ msgstr ""
 #, python-format
 msgid "Under Dos/Windows, only SoundBlaster or 100%% compatible are supported."
 msgstr ""
-"Sous Dos/Windows, seules les SoundBlaster ou 100%% compatibles sont "
+"Sous Dos/Windows, seules les SoundBlaster ou 100 %% compatibles sont "
 "reconnues."
 
 #: templates/flashtris/faq.html:21
@@ -9557,8 +9551,10 @@ msgstr ""
 "<strong>WeeWM</strong> est un gestionnaire de fenêtres ultra léger pour "
 "XFree."
 
+# noqa:formats
 #. Translators: Letter: Gecko-based browsers
 #: w3blacklist/_i18n_letter.py:14
+#, python-format
 msgid ""
 "Madam, Sir,\n"
 "\n"
@@ -9624,7 +9620,7 @@ msgstr ""
 "navigateurs respectant les standards (Firefox, Camino, Epiphany, Galeon, "
 "Konqueror, Opera, Safari, etc.) d'accéder à votre site, et vous élargissez "
 "d'autant votre audience. Une enquête XitiMonitor montre qu'aujourd'hui près "
-"de 15% des internautes utilisent Mozilla/Firefox partout en Europe (http://"
+"de 15 % des internautes utilisent Mozilla/Firefox partout en Europe (http://"
 "www.xitimonitor.com/etudes/equipement7.asp).\n"
 "\n"
 "Je souhaiterais être informé lorsque vous aurez modifié le site pour le "
@@ -9870,6 +9866,7 @@ msgstr ""
 msgid "Internet Explorer required"
 msgstr "Internet Explorer obligatoire"
 
+# noqa:punc-space-id;punc-space-str
 #. Translators: description for site Office de tourisme Châtellerault (http://www.ot-chatellerault.com/)
 #: w3blacklist/_i18n_site.py:16
 msgid ""
@@ -11647,6 +11644,7 @@ msgstr ""
 "\n"
 "Pas de réponse de Wanadoo."
 
+# noqa:double-words
 #. Translators: description for site Wanadoo - vidéos à la carte (http://videosalacarte.wanadoo.fr/)
 #: w3blacklist/_i18n_site.py:316
 msgid ""
@@ -11677,16 +11675,16 @@ msgstr ""
 "\n"
 "Système d'exploitation\n"
 " Windows 98 Seconde Edition ou plus récent\n"
-" Windows 95, Windows 98 Première Edition, Windows NT, MacOs et Linux ne sont "
+"Windows 95, Windows 98 Première Edition, Windows NT, MacOs et Linux ne sont "
 "pas supportés.\n"
 "\n"
 "Navigateur Internet\n"
 " Internet Explorer version 6.0 ou plus récent\n"
-" Télécharger la dernière version d'Internet Explorer.\n"
+"Télécharger la dernière version d'Internet Explorer.\n"
 "\n"
 "Lecteur windows média\n"
 " Windows Media Player version 9 ou plus récent\n"
-" Télécharger la dernière version de Windows Media Player.\"\n"
+"Télécharger la dernière version de Windows Media Player.\"\n"
 "\n"
 "Pas de réponse de Wanadoo."
 
@@ -11781,8 +11779,10 @@ msgid "Warning message for any browser different from Internet Explorer"
 msgstr ""
 "Message d'avertissement pour tout navigateur autre qu'Internet Explorer"
 
+# noqa:punc-space-str
 #. Translators: description for site Codex Productions (http://www.codex.lu/)
 #: w3blacklist/_i18n_site.py:332
+#, python-format
 msgid ""
 "When connecting to the website with a browser different from Internet "
 "Explorer, the following message is displayed after the Flash animation:\n"
@@ -11792,14 +11792,14 @@ msgid ""
 "Feel free to contact us by email or phone and we'll gladly send you an "
 "information package by the traditional postal way.\n"
 "\n"
-"Note to Linux- and related activists : We know that trough the fact that our "
+"Note to Linux- and related activists: We know that trough the fact that our "
 "site only works correctly under Microsoft software, some 10% of the internet "
 "community will not be able to enjoy full surfing pleasure. Nevertheless, we "
 "DO NOT force anyone to do so, thus not forcing anyone to install Microsoft "
 "software. Nevertheless, if this seems unbearable to you, we will of course "
 "send you our files and scripts in order to allow you to set up a version of "
 "our site running under linux/netscape/opera/etc.\n"
-"by the way : we do not run Microsoft Server Software\n"
+"by the way: we do not run Microsoft Server Software\n"
 "\n"
 "-- [ CLICK HERE TO ENTER ANYWAY ] --\"\n"
 "\n"
@@ -11814,14 +11814,14 @@ msgstr ""
 "Feel free to contact us by email or phone and we'll gladly send you an "
 "information package by the traditional postal way.\n"
 "\n"
-"Note to Linux- and related activists : We know that trough the fact that our "
+"Note to Linux- and related activists: We know that trough the fact that our "
 "site only works correctly under Microsoft software, some 10% of the internet "
 "community will not be able to enjoy full surfing pleasure. Nevertheless, we "
 "DO NOT force anyone to do so, thus not forcing anyone to install Microsoft "
 "software. Nevertheless, if this seems unbearable to you, we will of course "
 "send you our files and scripts in order to allow you to set up a version of "
 "our site running under linux/netscape/opera/etc.\n"
-"by the way : we do not run Microsoft Server Software\n"
+"by the way: we do not run Microsoft Server Software\n"
 "\n"
 "-- [ CLICK HERE TO ENTER ANYWAY ] --\"\n"
 "\n"
@@ -12226,12 +12226,13 @@ msgstr ""
 "\n"
 "Site corrigé."
 
+# noqa:punc-space-id
 #. Translators: description for site Glaudel Immobilier (http://www.glaudel-immobilier.com/)
 #: w3blacklist/_i18n_site.py:404
 msgid ""
 "The following message is displayed if the browser is not Internet Explorer:\n"
 "\n"
-"\"[ B i e n v e n u e ] sur le site de notre agence immobilière !\n"
+"\"[ B i e n v e n u e ] sur le site de notre agence immobilière !\n"
 "Le site est en cours d'optimisation pour les navigateurs tels que Netscape "
 "et Oracle.\n"
 "Nous vous prions, en attendant, de bien vouloir utiliser Internet Explorer…"
@@ -12246,13 +12247,13 @@ msgstr ""
 "Le message est le suivant si on n'accède pas au site avec Internet "
 "Explorer :\n"
 "\n"
-"\"[ B i e n v e n u e ] sur le site de notre agence immobilière !\n"
+"\"[ B i e n v e n u e ] sur le site de notre agence immobilière !\n"
 "Le site est en cours d'optimisation pour les navigateurs tels que Netscape "
 "et Oracle.\n"
 "Nous vous prions, en attendant, de bien vouloir utiliser Internet Explorer…"
 "\"\n"
 "\n"
-"(Oracle ?…)\n"
+"(Oracle ?…)\n"
 "\n"
 "*** Mise à jour le 02/02/2010 ***\n"
 "\n"
@@ -13117,7 +13118,8 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: description for site Livermore High School (http://www.livermorehigh.com/)
-#: w3blacklist/_i18n_site.py:542
+#. Translators: description for site Lycra.com (http://www.lycra.com/)
+#: w3blacklist/_i18n_site.py:542 w3blacklist/_i18n_site.py:576
 msgid ""
 "*** Updated on 2009-05-02 ***\n"
 "\n"
@@ -13305,17 +13307,17 @@ msgstr ""
 "entre les navigateurs, mais Flash est obligatoire."
 
 #. Translators: description for site Federation of Enterprises in Belgium (http://www.feb.be/)
-#: w3blacklist/_i18n_site.py:576
+#: w3blacklist/_i18n_site.py:578
 msgid "Workaround URL: http://www.feb.be/vbosite/home.asp"
 msgstr "URL de contournement : http://www.feb.be/vbosite/home.asp"
 
 #. Translators: short description for site DreamTV TF1 (http://dreamtv.tf1.fr/)
-#: w3blacklist/_i18n_site.py:578
+#: w3blacklist/_i18n_site.py:580
 msgid "Gecko based browsers and Netscape are banned"
 msgstr "Les navigateurs basés sur Gecko et Netscape sont bannis"
 
 #. Translators: description for site DreamTV TF1 (http://dreamtv.tf1.fr/)
-#: w3blacklist/_i18n_site.py:580
+#: w3blacklist/_i18n_site.py:582
 msgid ""
 "Message: \"Ce site ne fonctionne pas avec NetScape\".\n"
 "\n"
@@ -13330,12 +13332,12 @@ msgstr ""
 "Le site n'existe plus."
 
 #. Translators: short description for site Let's Move (http://www.letsmove.be/)
-#: w3blacklist/_i18n_site.py:582
+#: w3blacklist/_i18n_site.py:584
 msgid "Broken display"
 msgstr "Affichage bancal"
 
 #. Translators: description for site Let's Move (http://www.letsmove.be/)
-#: w3blacklist/_i18n_site.py:584
+#: w3blacklist/_i18n_site.py:586
 msgid ""
 "Website content is shifted, there's a long empty space.\n"
 "\n"
@@ -13346,12 +13348,12 @@ msgstr ""
 "Le contact n'est pas possible à cause d'une fonction JavaScript cassée."
 
 #. Translators: short description for site TMP (http://www.tmp.be/)
-#: w3blacklist/_i18n_site.py:586
+#: w3blacklist/_i18n_site.py:588
 msgid "Infinite loop"
 msgstr "Boucle infinie"
 
 #. Translators: description for site TMP (http://www.tmp.be/)
-#: w3blacklist/_i18n_site.py:588
+#: w3blacklist/_i18n_site.py:590
 msgid ""
 "A semicolon is missing in redirection code, so there's an infinite loop.\n"
 "\n"
@@ -13363,7 +13365,7 @@ msgstr ""
 "Contournement : www.tmpw.be"
 
 #. Translators: description for site Bang & Olufsen (http://www.bang-olufsen.com/)
-#: w3blacklist/_i18n_site.py:590
+#: w3blacklist/_i18n_site.py:592
 msgid ""
 "B&O updated their detection script and now allows IE5+ Mac, IE5.5+ for "
 "Windows and all Gecko-based browsers to enter the site.\n"
@@ -13391,12 +13393,12 @@ msgstr ""
 "Opera est toujours banni."
 
 #. Translators: short description for site ComparaTEL.fr (http://www.comparatel.fr/)
-#: w3blacklist/_i18n_site.py:592
+#: w3blacklist/_i18n_site.py:594
 msgid "Advertising sometimes break display"
 msgstr "La publicité casse parfois l'affichage"
 
 #. Translators: description for site ComparaTEL.fr (http://www.comparatel.fr/)
-#: w3blacklist/_i18n_site.py:594
+#: w3blacklist/_i18n_site.py:596
 msgid ""
 "Some advertising banners prevent the website to display correctly pages."
 msgstr ""
@@ -13404,7 +13406,7 @@ msgstr ""
 "intermittente l'accès aux pages du site."
 
 #. Translators: description for site RATP plans de proximités (http://www.citefutee.com/Proxi/proxi.php)
-#: w3blacklist/_i18n_site.py:596
+#: w3blacklist/_i18n_site.py:598
 msgid ""
 "*** Updated on 2005-01-14 ***\n"
 "\n"
@@ -13415,12 +13417,12 @@ msgstr ""
 "Le site est OK avec Mozilla Firefox 1.0."
 
 #. Translators: short description for site Chez Merlin (http://www.chezmerlin.com/)
-#: w3blacklist/_i18n_site.py:598
+#: w3blacklist/_i18n_site.py:600
 msgid "Access not possible with Netscape, Konqueror or Opera"
 msgstr "Accès impossible avec Netscape, Konqueror ou Opera"
 
 #. Translators: description for site Chez Merlin (http://www.chezmerlin.com/)
-#: w3blacklist/_i18n_site.py:600
+#: w3blacklist/_i18n_site.py:602
 msgid ""
 "If the browser is Netscape 4 or based on Gecko, there is this message: "
 "\"Désolé, Netscape n'est pas très stable\", et on nous propose de "
@@ -13454,12 +13456,12 @@ msgstr ""
 "Le site est corrigé."
 
 #. Translators: short description for site Le Conseil d'Etat (http://www.conseil-etat.fr/)
-#: w3blacklist/_i18n_site.py:602
+#: w3blacklist/_i18n_site.py:604
 msgid "Menu does not work with Konqueror or Opera"
 msgstr "Le menu ne fonctionne pas avec Konqueror ou Opera"
 
 #. Translators: description for site premier-ministre.gouv.fr (http://www.premier-ministre.gouv.fr/)
-#: w3blacklist/_i18n_site.py:604
+#: w3blacklist/_i18n_site.py:606
 msgid ""
 "Website is OK only with Internet Explorer.\n"
 "With Mozilla, Opera or Konqueror, the page layout is broken.\n"
@@ -13476,12 +13478,12 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: short description for site AA Advisors (http://www.aaadvisors.fr/)
-#: w3blacklist/_i18n_site.py:606
+#: w3blacklist/_i18n_site.py:608
 msgid "Problems with texts position and links"
 msgstr "Problèmes avec la position des textes et les liens"
 
 #. Translators: description for site AA Advisors (http://www.aaadvisors.fr/)
-#: w3blacklist/_i18n_site.py:608
+#: w3blacklist/_i18n_site.py:610
 msgid ""
 "Graphical elements and texts are not well placed, links are not working with "
 "Konqueror or Opera."
@@ -13490,7 +13492,7 @@ msgstr ""
 "avec Konqueror ou Opera."
 
 #. Translators: description for site Carre Senart (http://www.carre-senart.com/)
-#: w3blacklist/_i18n_site.py:610
+#: w3blacklist/_i18n_site.py:612
 msgid ""
 "The dynamic menu does not work with browsers based on Gecko.\n"
 "\n"
@@ -13505,7 +13507,7 @@ msgstr ""
 "Le site est désormais OK avec Mozilla Firefox 1.0."
 
 #. Translators: description for site Forum des halles (http://www.forum-des-halles.com/)
-#: w3blacklist/_i18n_site.py:612
+#: w3blacklist/_i18n_site.py:614
 msgid ""
 "The dynamic menu does not work with browsers based on Gecko.\n"
 "\n"
@@ -13520,7 +13522,7 @@ msgstr ""
 "Le site est corrigé."
 
 #. Translators: description for site Vertbaudet (http://www.vertbaudet.fr/)
-#: w3blacklist/_i18n_site.py:614
+#: w3blacklist/_i18n_site.py:616
 msgid ""
 "Access is refused because the browser doesn't have Flash (which is false); "
 "it is caused by a broken detection script.\n"
@@ -13533,27 +13535,27 @@ msgstr ""
 "Aucun contenu ne s'affiche avec les navigateurs basés sur Gecko."
 
 #. Translators: short description for site Girondins de Bordeaux (http://www.girondins.com/index2.html)
-#: w3blacklist/_i18n_site.py:616
+#: w3blacklist/_i18n_site.py:618
 msgid "Drop-down menus are not working with Mozilla or Opera"
 msgstr "Les menus déroulants ne fonctionnent pas avec Mozilla ou Opera"
 
 #. Translators: short description for site Rire et chansons (http://www.rireetchansons.fr/)
-#: w3blacklist/_i18n_site.py:618
+#: w3blacklist/_i18n_site.py:620
 msgid "WMP format only for the radio"
 msgstr "Format WMP seulement pour la radio"
 
 #. Translators: short description for site Star Academy (http://staracademy.tf1.fr/)
-#: w3blacklist/_i18n_site.py:620
+#: w3blacklist/_i18n_site.py:622
 msgid "WMP format only for videos"
 msgstr "Format WMP seulement pour les vidéos"
 
 #. Translators: short description for site Getty Images (http://www.gettyimages.com/)
-#: w3blacklist/_i18n_site.py:622
+#: w3blacklist/_i18n_site.py:624
 msgid "Page layout troubles"
 msgstr "Problèmes de mise en page"
 
 #. Translators: description for site Getty Images (http://www.gettyimages.com/)
-#: w3blacklist/_i18n_site.py:624
+#: w3blacklist/_i18n_site.py:626
 msgid ""
 "Website seems to be optimized for Internet Explorer. Other browsers "
 "(Mozilla, Konqueror, Opera) output a quite different layout (blank space due "
@@ -13576,12 +13578,12 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: short description for site M6.fr (http://www.m6.fr/)
-#: w3blacklist/_i18n_site.py:626
+#: w3blacklist/_i18n_site.py:628
 msgid "Videos not accessible"
 msgstr "Vidéos non accessibles"
 
 #. Translators: description for site M6.fr (http://www.m6.fr/)
-#: w3blacklist/_i18n_site.py:628
+#: w3blacklist/_i18n_site.py:630
 msgid ""
 "Some videos (for example the journal) are available only in Windows Media "
 "Player format, so not readable with Linux/Unix.\n"
@@ -13594,7 +13596,7 @@ msgstr ""
 "D'autres vidéos sont accessible au format RealPlayer."
 
 #. Translators: description for site Porsche Belgique (http://www.porsche.be/)
-#: w3blacklist/_i18n_site.py:630
+#: w3blacklist/_i18n_site.py:632
 msgid ""
 "The website has been updated and is more accessible, but some dynamic menus "
 "require Internet Explorer."
@@ -13603,12 +13605,12 @@ msgstr ""
 "menus dynamiques nécessitent Internet Explorer."
 
 #. Translators: short description for site Packard Bell (http://www.packardbell.fr/)
-#: w3blacklist/_i18n_site.py:632
+#: w3blacklist/_i18n_site.py:634
 msgid "Annoying popup window"
 msgstr "Fenêtre popup ennuyeuse"
 
 #. Translators: description for site Packard Bell (http://www.packardbell.fr/)
-#: w3blacklist/_i18n_site.py:634
+#: w3blacklist/_i18n_site.py:636
 msgid ""
 "A popup window is displayed for each click on a link:\n"
 "\n"
@@ -13625,12 +13627,12 @@ msgstr ""
 "Cependant, le menu fonctionne correctement sur la plupart des navigateurs."
 
 #. Translators: short description for site Peugeot France (http://www.peugeot.fr/)
-#: w3blacklist/_i18n_site.py:636
+#: w3blacklist/_i18n_site.py:638
 msgid "Menus not working"
 msgstr "Les menus ne fonctionnent pas"
 
 #. Translators: description for site Peugeot France (http://www.peugeot.fr/)
-#: w3blacklist/_i18n_site.py:638
+#: w3blacklist/_i18n_site.py:640
 msgid ""
 "Dialog box to inform that some features are not present for Netscape 6.\n"
 "\n"
@@ -13652,24 +13654,24 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: short description for site RTL 2 (http://www.rtl2.fr/)
-#: w3blacklist/_i18n_site.py:640
+#: w3blacklist/_i18n_site.py:642
 msgid "Menu problems with Konqueror and Opera"
 msgstr "Problèmes de menu avec Konqueror et Opera"
 
 #. Translators: description for site RTL 2 (http://www.rtl2.fr/)
-#: w3blacklist/_i18n_site.py:642
+#: w3blacklist/_i18n_site.py:644
 msgid ""
 "Menus are not working well with Mozilla and not at all with Konqueror 3."
 msgstr ""
 "Les menus fonctionnent mal avec Mozilla et pas du tout avec Konqueror 3."
 
 #. Translators: short description for site Ville de LaRiche (http://www.ville-lariche.fr/)
-#: w3blacklist/_i18n_site.py:644
+#: w3blacklist/_i18n_site.py:646
 msgid "Menus not working with Mozilla, Konqueror and Opera"
 msgstr "Les menus ne fonctionnent pas avec Mozilla, Konqueror et Opera"
 
 #. Translators: description for site Carrefour Multimedia (http://www.carrefour-multimedia.com/)
-#: w3blacklist/_i18n_site.py:646
+#: w3blacklist/_i18n_site.py:648
 msgid ""
 "*** Updated on 2004-12-01 ***\n"
 "\n"
@@ -13680,7 +13682,7 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: description for site LeShop.ch (http://www.leshop.ch/)
-#: w3blacklist/_i18n_site.py:648
+#: w3blacklist/_i18n_site.py:650
 msgid ""
 "*** Updated on 2004-12-01 ***\n"
 "\n"
@@ -13691,12 +13693,12 @@ msgstr ""
 "OK avec Firefox 1.0, toujours le problème avec Konqueror et Opera."
 
 #. Translators: short description for site Ooshop (http://www.ooshop.fr/)
-#: w3blacklist/_i18n_site.py:650
+#: w3blacklist/_i18n_site.py:652
 msgid "Production selection is not possible"
 msgstr "Impossible de sélectionner un produit"
 
 #. Translators: description for site Ooshop (http://www.ooshop.fr/)
-#: w3blacklist/_i18n_site.py:652
+#: w3blacklist/_i18n_site.py:654
 msgid ""
 "The button to increase quantity does nothing.\n"
 "\n"
@@ -13711,7 +13713,7 @@ msgstr ""
 "mais le sit ne fonctionne pas avec."
 
 #. Translators: description for site apside (http://www.apside.fr/)
-#: w3blacklist/_i18n_site.py:654
+#: w3blacklist/_i18n_site.py:656
 msgid ""
 "JavaScript menus from hiring part (http://www.rh.apside.fr/) are accessible "
 "only with Internet Explorer or Konqueror 3.\n"
@@ -13726,7 +13728,7 @@ msgstr ""
 "non-disponible sur Unix."
 
 #. Translators: description for site Caisse d'assurance maladie (nord pas-de-calais) (http://www.npdc.assurance-maladie.fr/)
-#: w3blacklist/_i18n_site.py:656
+#: w3blacklist/_i18n_site.py:658
 msgid ""
 "Left menus are not working with Mozilla; they are OK with Konqueror 3 and "
 "Opera."
@@ -13735,12 +13737,12 @@ msgstr ""
 "Konqueror 3 et Opera."
 
 #. Translators: short description for site La Dernière Heure / Les Sports (DH Net) (http://www.dhnet.be/)
-#: w3blacklist/_i18n_site.py:658
+#: w3blacklist/_i18n_site.py:660
 msgid "Left menu not visible"
 msgstr "Le menu de gauche n'est pas visible"
 
 #. Translators: description for site La Dernière Heure / Les Sports (DH Net) (http://www.dhnet.be/)
-#: w3blacklist/_i18n_site.py:660
+#: w3blacklist/_i18n_site.py:662
 msgid ""
 "With Mozilla, Konqueror or Opera, the left menu is not visible.\n"
 "\n"
@@ -13755,12 +13757,12 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: short description for site Adecco (http://www.adecco.fr/www/index_flash.html)
-#: w3blacklist/_i18n_site.py:662
+#: w3blacklist/_i18n_site.py:664
 msgid "Problem with scrollbar"
 msgstr "Problème avec la barre de défilement"
 
 #. Translators: description for site Adecco (http://www.adecco.fr/www/index_flash.html)
-#: w3blacklist/_i18n_site.py:664
+#: w3blacklist/_i18n_site.py:666
 msgid ""
 "In the central panel, the scrollbar works only with Internet Explorer or "
 "Mozilla.\n"
@@ -13777,7 +13779,7 @@ msgstr ""
 "Le site est OK avec Konqueror et Opera."
 
 #. Translators: description for site Infoconcert.fr (http://www.infoconcert.fr/)
-#: w3blacklist/_i18n_site.py:666
+#: w3blacklist/_i18n_site.py:668
 msgid ""
 "Scrollbar problem: list of concerts is not entirely visible or overflow all "
 "over the page, according to the browser used."
@@ -13786,7 +13788,7 @@ msgstr ""
 "visible entièrement ou déborde sur toute la page selon le navigateur utilisé."
 
 #. Translators: description for site Ecole de commerce de Nantes (http://www.escna.fr/)
-#: w3blacklist/_i18n_site.py:668
+#: w3blacklist/_i18n_site.py:670
 msgid ""
 "The menu \"Vous etes\" works only with Internet Explorer, Konqueror 3 or "
 "Opera 7.54."
@@ -13795,7 +13797,7 @@ msgstr ""
 "ou Opera 7.54."
 
 #. Translators: description for site Virgin Megastore (http://www.virgin.fr/)
-#: w3blacklist/_i18n_site.py:670
+#: w3blacklist/_i18n_site.py:672
 msgid ""
 "*** Updated on 2004-12-08 ***\n"
 "\n"
@@ -13831,12 +13833,12 @@ msgstr ""
 "Firefox)."
 
 #. Translators: short description for site Scottish Power (http://www.scottishpower.co.uk/)
-#: w3blacklist/_i18n_site.py:672
+#: w3blacklist/_i18n_site.py:674
 msgid "Very restrictive detection script"
 msgstr "Script de détection très restrictif"
 
 #. Translators: description for site Scottish Power (http://www.scottishpower.co.uk/)
-#: w3blacklist/_i18n_site.py:674
+#: w3blacklist/_i18n_site.py:676
 msgid ""
 "*** Updated on 2003-07-01 ***\n"
 "\n"
@@ -13861,7 +13863,7 @@ msgstr ""
 "Site corrigé."
 
 #. Translators: description for site Unilog (http://www.unilog.fr/)
-#: w3blacklist/_i18n_site.py:676
+#: w3blacklist/_i18n_site.py:678
 msgid "Menus are working only with Internet Explorer."
 msgstr "Les menus ne fonctionnent qu'avec Internet Explorer."
 
@@ -13900,3 +13902,13 @@ msgstr "complètement cassé"
 #: weewm/views.py:32
 msgid "WeeWM user's guide"
 msgstr "Guide utilisateur WeeWM"
+
+#~ msgid "Many new features and bugs fixed, see WeeChat official site."
+#~ msgstr ""
+#~ "Beaucoup de nouveautés et de bugs corrigés, voir le site officiel de "
+#~ "WeeChat."
+
+#~ msgid "Bug fix and maintenance release, see WeeChat official site."
+#~ msgstr ""
+#~ "Version de maintenance avec des correctifs, voir le site officiel de "
+#~ "WeeChat."

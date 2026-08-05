@@ -34,7 +34,7 @@ def __i18n_coding_program():
     # Translators: short description for program "nb2l"
     gettext_noop("Writes numbers out in full.")
     # Translators: description for program "nb2l"
-    gettext_noop("Writes numbers out in full.\n\nParameter is number between 0 and 999 999 999 999 999 (15 digits)\nReturn code: 0 if OK, 1 if invalid number, 2 if number too big.")
+    gettext_noop("Writes numbers out in full.\n\nParameter is number between 0 and 999999999999999 (15 digits).\nReturn code: 0 if OK, 1 if invalid number, 2 if number too big.")
     # Translators: short description for program "parfait"
     gettext_noop("Looks for perfect numbers.")
     # Translators: description for program "parfait"
