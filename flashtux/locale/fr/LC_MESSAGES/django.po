@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-05 12:41+0200\n"
+"POT-Creation-Date: 2026-08-05 12:44+0200\n"
 "PO-Revision-Date: 2026-08-05 12:44+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
@@ -589,6 +589,18 @@ msgstr "Fichier non trouvé"
 #: common/views.py:49 common/views.py:68
 msgid "Text"
 msgstr "Texte"
+
+#. Translators: name of the theme (in English: light / dark)
+#: context_processors.py:30
+msgctxt "theme name for website"
+msgid "light"
+msgstr "clair"
+
+#. Translators: name of the theme (in English: light / dark)
+#: context_processors.py:32
+msgctxt "theme name for website"
+msgid "dark"
+msgstr "sombre"
 
 #. Translators: comment for modem Aethra Starmodem (#2)
 #: eciadsl/_i18n_modem.py:14
@@ -5917,6 +5929,10 @@ msgstr "Programmes"
 #: templates/base.html:168
 msgid "About FlashTux.org"
 msgstr "À propos de FlashTux.org"
+
+#: templates/base.html:169
+msgid "Theme:"
+msgstr "Thème :"
 
 #: templates/coding/coding.html:11 templates/coding/news.html:5
 #: templates/eciadsl/eciadsl.html:11 templates/eciadsl/news.html:5

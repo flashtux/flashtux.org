@@ -164,10 +164,10 @@
       </p>
       <p>
         Copyright &#169; 1999-{% now "Y" %} <a href="mailto:{% txt2html "flashcode@flashtux.org" %}" title="email webmaster">Sébastien Helleu</a>
-        &mdash;
+        —
         <a href="{% url 'home_about' %}">{% trans "About FlashTux.org" %}</a>
-        &mdash; Theme: <strong>{{ theme }}</strong>
-        ({% for name in other_themes %}<a href="?theme={{ name }}">{{ name }}</a>{% if not forloop.last %}, {% endif %}{% endfor %})
+        — {% trans "Theme:" %} <strong>{% trans theme context "theme name for website" %}</strong>
+        ({% for name in other_themes %}<a href="?theme={{ name }}">{% trans name context "theme name for website" %}</a>{% if not forloop.last %}, {% endif %}{% endfor %})
       </p>
     </div>
 
