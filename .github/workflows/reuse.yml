@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2025 Sébastien Helleu <flashcode@flashtux.org>
+# SPDX-FileCopyrightText: 2025-2026 Sébastien Helleu <flashcode@flashtux.org>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -12,7 +12,7 @@ jobs:
 
   test:
 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
 
     steps:
 
