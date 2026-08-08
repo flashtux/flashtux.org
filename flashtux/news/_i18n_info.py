@@ -37,11 +37,11 @@ def __i18n_news_info():
     # Translators: 2009-01-19 17:57, weechat: Jabber plugin
     gettext_noop("Jabber plugin")
     # Translators: 2009-01-19 17:57, weechat: Jabber plugin
-    gettext_noop("Development of Jabber plugin for WeeChat has started and a first alpha version is available.\nNote: many features are missing, like TLS connection, buddy list management, presence information, MUC and transports.\n\n&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-Jabber\">Article on dev blog</a>")
+    gettext_noop("Development of Jabber plugin for WeeChat has started and a first alpha version is available.\nNote: many features are missing, like TLS connection, buddy list management, presence information, MUC and transports.")
     # Translators: 2008-08-30 10:58, weechat: Dev blog
     gettext_noop("Dev blog")
     # Translators: 2008-08-30 10:58, weechat: Dev blog
-    gettext_noop("A new blog about WeeChat development has been added. It announces all new features in development version and let you discuss about future of WeeChat.\nFeel free to read it and add comments!\n\n&bull; <a href=\"http://dev.weechat.org/\">WeeChat dev blog</a>")
+    gettext_noop("A new blog about WeeChat development has been added. It announces all new features in development version and let you discuss about future of WeeChat.\nFeel free to read it and add comments!\n\n&bull; <a href=\"https://blog.weechat.org/\">WeeChat dev blog</a>")
     # Translators: 2008-03-30 12:50, weechat: News about development
     gettext_noop("News about development")
     # Translators: 2008-03-30 12:50, weechat: News about development

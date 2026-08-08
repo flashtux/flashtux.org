@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WeeChat.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-05 13:12+0200\n"
-"PO-Revision-Date: 2026-08-05 13:12+0200\n"
+"POT-Creation-Date: 2026-08-08 14:13+0200\n"
+"PO-Revision-Date: 2026-08-08 14:13+0200\n"
 "Last-Translator: Sébastien Helleu <flashcode@flashtux.org>\n"
 "Language-Team: French <flashcode@flashtux.org>\n"
 "Language: fr\n"
@@ -558,30 +558,30 @@ msgstr ""
 "Très utile dans un fichier Batch nécessitant un choix de l'utilisateur entre "
 "plusieurs options."
 
-#: common/forms.py:87
+#: common/forms.py:70
 msgid "This field is required."
 msgstr "Ce champ est obligatoire."
 
-#: common/templatetags/linkfile.py:48
+#: common/templatetags/linkfile.py:31
 msgid "directory"
 msgstr "répertoire"
 
-#: common/templatetags/linkfile.py:50
+#: common/templatetags/linkfile.py:33
 msgid "File not found"
 msgstr "Fichier non trouvé"
 
-#: common/views.py:49 common/views.py:68
+#: common/views.py:32 common/views.py:51
 msgid "Text"
 msgstr "Texte"
 
 #. Translators: name of the theme (in English: light / dark)
-#: context_processors.py:30
+#: context_processors.py:13
 msgctxt "theme name for website"
 msgid "light"
 msgstr "clair"
 
 #. Translators: name of the theme (in English: light / dark)
-#: context_processors.py:32
+#: context_processors.py:15
 msgctxt "theme name for website"
 msgid "dark"
 msgstr "sombre"
@@ -736,102 +736,102 @@ msgstr ""
 "9000/9000-linux-ug/Installing%20the%20modem.html\">https://support.usr.com/"
 "support/9000/9000-linux-ug/Installing%20the%20modem.html</a>"
 
-#: eciadsl/models.py:32
+#: eciadsl/models.py:15
 msgid "Not supported"
 msgstr "Non supporté"
 
-#: eciadsl/models.py:33
+#: eciadsl/models.py:16
 msgid "Maybe supported"
 msgstr "Peut-être supporté"
 
-#: eciadsl/models.py:34
+#: eciadsl/models.py:17
 msgid "Supported"
 msgstr "Supporté"
 
-#: eciadsl/models.py:37 templates/eciadsl/modems.html:16
+#: eciadsl/models.py:20 templates/eciadsl/modems.html:16
 msgctxt "plural"
 msgid "Not supported"
 msgstr "Non supportés"
 
-#: eciadsl/models.py:38 templates/eciadsl/modems.html:15
+#: eciadsl/models.py:21 templates/eciadsl/modems.html:15
 msgctxt "plural"
 msgid "Maybe supported"
 msgstr "Peut-être supportés"
 
-#: eciadsl/models.py:39 templates/eciadsl/modems.html:14
+#: eciadsl/models.py:22 templates/eciadsl/modems.html:14
 msgctxt "plural"
 msgid "Supported"
 msgstr "Supportés"
 
-#: eciadsl/views.py:39 eciadsl/views.py:42
+#: eciadsl/views.py:22 eciadsl/views.py:25
 msgid "EciAdsl installation guide"
 msgstr "Guide d'installation EciAdsl"
 
-#: eciadsl/views.py:43
+#: eciadsl/views.py:26
 msgid "development version"
 msgstr "version de développement"
 
-#: eciadsl/views.py:46 eciadsl/views.py:89 settings.py:47 weewm/views.py:35
+#: eciadsl/views.py:29 eciadsl/views.py:72 settings.py:30 weewm/views.py:18
 msgid "French"
 msgstr "Français"
 
-#: eciadsl/views.py:47 eciadsl/views.py:90 settings.py:46 weewm/views.py:36
+#: eciadsl/views.py:30 eciadsl/views.py:73 settings.py:29 weewm/views.py:19
 msgid "English"
 msgstr "Anglais"
 
-#: eciadsl/views.py:48 eciadsl/views.py:91
+#: eciadsl/views.py:31 eciadsl/views.py:74
 msgid "Italian"
 msgstr "Italien"
 
-#: eciadsl/views.py:49 eciadsl/views.py:93
+#: eciadsl/views.py:32 eciadsl/views.py:76
 msgid "Spanish"
 msgstr "Espagnol"
 
-#: eciadsl/views.py:50
+#: eciadsl/views.py:33
 msgid "German"
 msgstr "Allemand"
 
-#: eciadsl/views.py:51
+#: eciadsl/views.py:34
 msgid "Turkish"
 msgstr "Turc"
 
-#: eciadsl/views.py:56
+#: eciadsl/views.py:39
 msgid "EciAdsl installation with Mandrake 10 and kernel 2.6.x"
 msgstr "Installation EciAdsl avec Mandrake 10 et le noyau 2.6.x"
 
-#: eciadsl/views.py:59
+#: eciadsl/views.py:42
 msgid "Instructions for 2.6.x kernels patch"
 msgstr "Instructions pour le patch / noyaux 2.6.x"
 
-#: eciadsl/views.py:62
+#: eciadsl/views.py:45
 msgid "EciAdsl installation on *BSD"
 msgstr "Installation d'EciAdsl sur *BSD"
 
-#: eciadsl/views.py:65
+#: eciadsl/views.py:48
 msgid "EciAdsl config with \"Free dégroupé\" (France only)"
 msgstr "Config EciAdsl avec \"Free dégroupé\" (France seulement)"
 
-#: eciadsl/views.py:68
+#: eciadsl/views.py:51
 msgid "EciAdsl with Avangard provider (Russia)"
 msgstr "EciAdsl avec le fournisseur Avangard (Russie)"
 
-#: eciadsl/views.py:71
+#: eciadsl/views.py:54
 msgid "EciAdsl and APIC problem"
 msgstr "EciAdsl et le problème de l'APIC"
 
-#: eciadsl/views.py:74
+#: eciadsl/views.py:57
 msgid "EciAdsl with DSL-200 B1 modem and TPG (australian ISP)"
 msgstr "EciAdsl avec un modem DSL-200 B1 et TPG (FAI australien)"
 
-#: eciadsl/views.py:77
+#: eciadsl/views.py:60
 msgid "EciAdsl with hotplug"
 msgstr "EciAdsl avec le hotplug"
 
-#: eciadsl/views.py:86
+#: eciadsl/views.py:69
 msgid "EciAdsl FAQ"
 msgstr "FAQ EciAdsl"
 
-#: eciadsl/views.py:92
+#: eciadsl/views.py:75
 msgid "Portuguese"
 msgstr "Portugais"
 
@@ -1110,19 +1110,13 @@ msgid ""
 "Development of Jabber plugin for WeeChat has started and a first alpha "
 "version is available.\n"
 "Note: many features are missing, like TLS connection, buddy list management, "
-"presence information, MUC and transports.\n"
-"\n"
-"&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-"
-"Jabber\">Article on dev blog</a>"
+"presence information, MUC and transports."
 msgstr ""
 "Le développement de l'extension Jabber pour WeeChat a démarré et une "
 "première version alpha est disponible.\n"
 "A noter : il manque encore bon nombre de fonctionnalités, comme la connexion "
 "TLS, la gestion de la liste de contacts, l'information de présence, le MUC "
-"et les transports.\n"
-"\n"
-"&bull; <a href=\"http://dev.weechat.org/post/2009/01/15/New-plugin-"
-"Jabber\">Article sur le blog de dev</a>"
+"et les transports."
 
 #. Translators: 2008-08-30 10:58, weechat: Dev blog
 #: news/_i18n_info.py:42
@@ -1137,14 +1131,14 @@ msgid ""
 "WeeChat.\n"
 "Feel free to read it and add comments!\n"
 "\n"
-"&bull; <a href=\"http://dev.weechat.org/\">WeeChat dev blog</a>"
+"&bull; <a href=\"https://blog.weechat.org/\">WeeChat dev blog</a>"
 msgstr ""
 "Un nouveau blog sur le développement de WeeChat a été ajouté. Il annonce "
 "toutes les nouvelles fonctionnalités dans la version de développement et "
 "permet de discuter sur le futur de WeeChat (en anglais).\n"
 "N'hésitez pas à le suivre et à y laisser des commentaires !\n"
 "\n"
-"&bull; <a href=\"http://dev.weechat.org/\">Blog de dev WeeChat</a>"
+"&bull; <a href=\"https://blog.weechat.org/\">Blog de dev WeeChat</a>"
 
 #. Translators: 2008-03-30 12:50, weechat: News about development
 #: news/_i18n_info.py:46
@@ -5684,73 +5678,73 @@ msgstr ""
 "\n"
 "&bull; <a href=\"/flashtris/download/\">Page téléchargement FlashTris</a>"
 
-#: news/models.py:84 templates/base.html:43 templates/base.html:140
+#: news/models.py:67 templates/base.html:43 templates/base.html:140
 #: templates/coding/coding.html:5
 msgid "Coding"
 msgstr "Prog"
 
-#: news/models.py:85 templates/base.html:44 templates/base.html:146
+#: news/models.py:68 templates/base.html:44 templates/base.html:146
 #: templates/games/games.html:5
 msgid "Games"
 msgstr "Jeux"
 
-#: news/models.py:140
+#: news/models.py:123
 msgid "Title"
 msgstr "Titre"
 
-#: news/models.py:141
+#: news/models.py:124
 msgid "The comment title."
 msgstr "Titre du commentaire."
 
-#: news/models.py:145
+#: news/models.py:128
 msgid "Comment"
 msgstr "Commentaire"
 
-#: news/models.py:146
+#: news/models.py:129
 msgid "Your comment."
 msgstr "Votre commentaire."
 
-#: news/models.py:151
+#: news/models.py:134
 msgid "Your name or nick"
 msgstr "Votre nom ou pseudo"
 
-#: news/models.py:152
+#: news/models.py:135
 msgid "Displayed above the comment."
 msgstr "Affiché au-dessus du commentaire."
 
-#: news/models.py:156
+#: news/models.py:139
 msgid "Your e-mail"
 msgstr "Votre e-mail"
 
-#: news/models.py:157
+#: news/models.py:140
 msgid "Optional, never displayed."
 msgstr "Facultatif, jamais affiché."
 
-#: news/models.py:163
+#: news/models.py:146
 msgid "Are you a spammer?"
 msgstr "Êtes-vous un spammeur ?"
 
-#: news/models.py:164
+#: news/models.py:147
 msgid "Enter \"no\" if you are not a spammer."
 msgstr "Entrez \"no\" si vous n'êtes pas un spammeur."
 
 #. Translators: this is a date format, see: http://www.php.net/date
 #. Translators: (note: the result string must be short, use abbreviation
 #. Translators: for month if possible)
-#: settings.py:63
+#: settings.py:46
 msgid "M j, Y"
 msgstr "d/m/Y"
 
 #. Translators: this is a short date format, see: http://www.php.net/date
 #. Translators: date with only year and month
-#: settings.py:67
+#: settings.py:50
 msgid "F Y"
 msgstr "F Y"
 
 #. Translators: this is a date/time format, see: http://www.php.net/date
 #. Translators: (note: the result string must be short, use abbreviation
 #. Translators: for month if possible)
-#: settings.py:72
+#: settings.py:55
 msgid "M j, Y H:i"
 msgstr "d/m/Y H:i"
 
@@ -13851,38 +13845,38 @@ msgid "Menus are working only with Internet Explorer."
 msgstr "Les menus ne fonctionnent qu'avec Internet Explorer."
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:36
+#: w3blacklist/models.py:19
 msgid "rejected"
 msgstr "rejeté"
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:38
+#: w3blacklist/models.py:21
 msgid "waiting for approval"
 msgstr "en attente d'approbation"
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:40
+#: w3blacklist/models.py:23
 msgid "blacklisted"
 msgstr "sur liste noire"
 
 #. Translators: status of a w3blacklist site
-#: w3blacklist/models.py:42
+#: w3blacklist/models.py:25
 msgid "fixed"
 msgstr "corrigé"
 
-#: w3blacklist/models.py:45
+#: w3blacklist/models.py:28
 msgid "display issues"
 msgstr "problèmes d'affichage"
 
-#: w3blacklist/models.py:46
+#: w3blacklist/models.py:29
 msgid "partially broken"
 msgstr "partiellement cassé"
 
-#: w3blacklist/models.py:47
+#: w3blacklist/models.py:30
 msgid "entirely broken"
 msgstr "complètement cassé"
 
-#: weewm/views.py:32
+#: weewm/views.py:15
 msgid "WeeWM user's guide"
 msgstr "Guide utilisateur WeeWM"
 
