@@ -48,6 +48,7 @@ urlpatterns = [
     path('projects/', projects, name='home_projects'),
     path('about/', about, name='home_about'),
     path(f'about/{URL_ABOUT_EXTRA}/', about, {'extra_info': True}),
+    path('weechat/', include('flashtux.weechat.urls')),
     path('eciadsl/', include('flashtux.eciadsl.urls')),
     path('weewm/', include('flashtux.weewm.urls')),
     path('w3blacklist/', include('flashtux.w3blacklist.urls')),
