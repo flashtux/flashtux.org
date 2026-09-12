@@ -63,7 +63,7 @@ class Site(models.Model):
 
     def status_i18n(self):
         """Return translated status."""
-        return gettext(dict(SITE_STATUS_CHOICES)[self.status])
+        return str(dict(SITE_STATUS_CHOICES)[self.status])
 
     def shortdesc_i18n(self):
         """Return translated short description."""
@@ -83,7 +83,7 @@ class Site(models.Model):
 
     def severity_i18n(self):
         """Return the translated severity description."""
-        return gettext(dict(SITE_SEVERITY_CHOICES)[self.severity])
+        return str(dict(SITE_SEVERITY_CHOICES)[self.severity])
 
     def browsers(self):
         """Return dict with browsers compatibility."""

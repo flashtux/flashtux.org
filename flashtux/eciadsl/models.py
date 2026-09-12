@@ -49,11 +49,11 @@ class Modem(models.Model):
 
     def status_i18n(self):
         """Return translated status."""
-        return gettext(dict(MODEM_STATUS_CHOICES)[self.status])
+        return str(dict(MODEM_STATUS_CHOICES)[self.status])
 
     def status_title_i18n(self):
         """Return translated status for a title."""
-        return gettext(MODEM_STATUS_TITLE[self.status])
+        return str(MODEM_STATUS_TITLE[self.status])
 
     def country_string(self):
         """Return list of countries as string."""
@@ -63,7 +63,7 @@ class Modem(models.Model):
             for code in codes.split(','):
                 code = code.upper()
                 if code in countries.countries:
-                    country_list2.append(gettext(countries.countries[code]))
+                    country_list2.append(str(countries.countries[code]))
                 else:
                     country_list2.append(code)
             country_list1.append(', '.join(country_list2))
