@@ -92,7 +92,7 @@ def news_section(request, section=None, info_id=None, **kwargs):
     section = section or 'home'
     if info_id:
         info = get_object_or_404(Info, pk=info_id)
-        comments = info.comment_set.all().order_by('date')
+        comments = Comment.objects.filter(info=info).order_by('date')
         comments_list = get_comments_list(comments)
         data = {
             'section': section,
@@ -130,10 +130,10 @@ def form_comment(request, section=None, info_id=None,
             # add comment in database
             timezone = pytz.timezone(settings.TIME_ZONE)
             now = datetime.now(tz=timezone)
-            comment_relative_id = comment.id if comment else None
+            comment_relative_id = comment.pk if comment else None
             comment = Comment(
                 comment_relative_id=comment_relative_id,
-                info_id=info.id,
+                info_id=info.pk,
                 date=now,
                 name=form.cleaned_data['name'],
                 email=form.cleaned_data['email'],

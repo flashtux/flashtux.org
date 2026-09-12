@@ -6,7 +6,7 @@
 
 from django.shortcuts import get_object_or_404, render
 
-from flashtux.w3blacklist.models import Letter, Site
+from flashtux.w3blacklist.models import Comment, Letter, Site
 
 
 def sites(request, status=None, site_id=None):
@@ -30,7 +30,7 @@ def sites(request, status=None, site_id=None):
     # list of sites
     if site_id:
         site = get_object_or_404(Site, pk=site_id)
-        comments = site.comment_set.all().order_by('date')
+        comments = Comment.objects.filter(site=site).order_by('date')
         data['site'] = site
         data['comments'] = comments
     else:
