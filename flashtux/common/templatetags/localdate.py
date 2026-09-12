@@ -8,7 +8,7 @@ from datetime import date, datetime
 
 from django import template
 from django.conf import settings
-from django.utils import dateformat
+from django.utils import dateformat, timezone
 from django.utils.html import format_html
 from django.utils.translation import gettext
 
@@ -28,15 +28,18 @@ def localdate(value, fmt='date'):
     if fmt_lower == 'date':
         date_fmt = gettext(settings.DATE_FORMAT)
         if not isinstance(value, (date, datetime)):
-            value = datetime.strptime(value, '%Y-%m-%d').date()
+            value = date.fromisoformat(value)
     elif fmt_lower == 'date_year_month':
         date_fmt = gettext(settings.DATE_YEAR_MONTH_FORMAT)
         if not isinstance(value, (date, datetime)):
-            value = datetime.strptime(value, '%Y-%m').date()
+            # "YYYY-MM" is not supported by date.fromisoformat()
+            value = date.fromisoformat(f'{value}-01')
     elif fmt_lower == 'datetime':
         date_fmt = gettext(settings.DATETIME_FORMAT)
         if not isinstance(value, (date, datetime)):
-            value = datetime.strptime(value, '%Y-%m-%d %H:%M')
+            value = datetime.strptime(value, '%Y-%m-%d %H:%M').replace(
+                tzinfo=timezone.get_current_timezone(),
+            )
     else:
         date_fmt = fmt
     date_value = dateformat.format(value, date_fmt)
