@@ -11,7 +11,6 @@ from django.db import models
 from django.forms import TextInput
 
 
-# pylint: disable=too-many-public-methods
 class FlashtuxAdmin(admin.ModelAdmin):
     """FlashTux admin."""
     list_per_page = 1000

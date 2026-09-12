@@ -13,7 +13,6 @@ from django.utils.translation import gettext
 
 from flashtux.common.path import files_path_join
 
-# pylint: disable=invalid-name
 register = template.Library()
 
 

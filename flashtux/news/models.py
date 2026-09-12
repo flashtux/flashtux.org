@@ -163,7 +163,6 @@ class CommentFormAdd(forms.Form):
 
 def handler_info_saved(sender, **kwargs):
     """Generate code to translate news."""
-    # pylint: disable=unused-argument
     strings = []
     for info in Info.objects.order_by('-date'):
         translators = str(info)

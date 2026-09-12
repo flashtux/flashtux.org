@@ -15,9 +15,6 @@ def i18n_autogen(app, name, strings):
          'DO NOT EDIT!'),
         '',
         f'"""Translations for {app}/{name}."""',
-        '',
-        '# flake8: noqa',
-        '# pylint: disable=line-too-long,too-many-statements',
     ]
     if strings:
         content += [

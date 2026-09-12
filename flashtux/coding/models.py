@@ -53,7 +53,6 @@ class Program(models.Model):
 
 def handler_program_saved(sender, **kwargs):
     """Generate code to translate programs."""
-    # pylint: disable=unused-argument
     strings_categ = []
     strings_lang = []
     strings = []

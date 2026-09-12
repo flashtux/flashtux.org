@@ -19,7 +19,7 @@ Homepage: [https://flashtux.org/](https://flashtux.org/)
 
 The following packages are **required**:
 
-- python ≥ 3.7
+- python ≥ 3.11
 - python-django ≥ 2.0
 - python-tz
 - python-django-countries

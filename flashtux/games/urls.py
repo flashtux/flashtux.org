@@ -4,8 +4,6 @@
 
 """URLs for "games" menu."""
 
-# pylint: disable=invalid-name, no-value-for-parameter
-
 from django.urls import path
 from django.views.generic.base import TemplateView
 

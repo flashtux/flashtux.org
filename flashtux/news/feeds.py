@@ -16,7 +16,6 @@ class LatestNewsFeed(Feed):
     link = '/news/'
 
     def get_object(self, request, *args, **kwargs):
-        # pylint: disable=attribute-defined-outside-init
         self.request = request
         self.section = kwargs.get('section')
 
@@ -34,5 +33,4 @@ class LatestNewsFeed(Feed):
 
     def item_pubdate(self, item):
         """Return idem date."""
-        # pylint: disable=all
         return item.date

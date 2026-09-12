@@ -4,8 +4,6 @@
 
 """URLs for "weechat" menu."""
 
-# pylint: disable=invalid-name, no-value-for-parameter
-
 from django.urls import path
 from django.views.generic import RedirectView
 

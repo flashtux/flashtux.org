@@ -175,7 +175,6 @@ class Letter(models.Model):
 
 def handler_site_saved(sender, **kwargs):
     """Generate code to translate sites."""
-    # pylint: disable=unused-argument
     strings = []
     for site in Site.objects.order_by('-date', 'website'):
         if site.status not in (2, 3):
@@ -199,7 +198,6 @@ def handler_site_saved(sender, **kwargs):
 
 def handler_letter_saved(sender, **kwargs):
     """Generate code to translate letters."""
-    # pylint: disable=unused-argument
     strings = []
     for letter in Letter.objects.order_by('priority'):
         strings.append((letter.content, f'Letter: {letter.description}'))

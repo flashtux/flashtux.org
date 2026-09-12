@@ -4,8 +4,6 @@
 
 """URLs for "coding" menu."""
 
-# pylint: disable=invalid-name, no-value-for-parameter
-
 from django.urls import path
 
 from flashtux.coding.views import programs
