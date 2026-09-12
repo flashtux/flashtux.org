@@ -48,7 +48,7 @@ class Program(models.Model):
 
     class Meta:
         """Meta class for Site."""
-        ordering = ['category', 'name']
+        ordering = ('category', 'name')
 
 
 def handler_program_saved(sender, **kwargs):

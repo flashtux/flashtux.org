@@ -123,7 +123,7 @@ class Site(models.Model):
 
     class Meta:
         """Meta class for Site."""
-        ordering = ['-date', 'website']
+        ordering = ('-date', 'website')
 
 
 class Comment(models.Model):
@@ -170,7 +170,7 @@ class Letter(models.Model):
 
     class Meta:
         """Meta class for Letter."""
-        ordering = ['priority']
+        ordering = ('priority',)
 
 
 def handler_site_saved(sender, **kwargs):

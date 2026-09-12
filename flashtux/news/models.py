@@ -90,7 +90,7 @@ class Info(models.Model):
 
     class Meta:
         """Meta class for Info."""
-        ordering = ['-date']
+        ordering = ('-date',)
 
 
 class Comment(models.Model):
@@ -112,7 +112,7 @@ class Comment(models.Model):
 
     class Meta:
         """Meta class for Comment."""
-        ordering = ['-date']
+        ordering = ('-date',)
 
 
 class CommentFormAdd(forms.Form):

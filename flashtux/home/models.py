@@ -34,7 +34,7 @@ class Project(models.Model):
 
     class Meta:
         """Meta class for Project."""
-        ordering = ['priority']
+        ordering = ('priority',)
 
 
 def handler_project_saved(sender, **kwargs):

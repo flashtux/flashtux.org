@@ -24,4 +24,4 @@ class Image(models.Model):
 
     class Meta:
         """Meta class for Image."""
-        ordering = ['section', 'category', 'priority']
+        ordering = ('section', 'category', 'priority')
