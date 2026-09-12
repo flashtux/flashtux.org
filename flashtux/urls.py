@@ -8,15 +8,15 @@
 
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import include, path, re_path
 from django.contrib import admin
+from django.urls import include, path, re_path
 from django.views.generic.base import RedirectView
 
 from flashtux.common.views import TextTemplateView
-from flashtux.home.views import projects, about
+from flashtux.home.views import about, projects
 from flashtux.news.feeds import LatestNewsFeed
 from flashtux.news.models import RE_SECTIONS
-from flashtux.news.views import news_section, form_comment
+from flashtux.news.views import form_comment, news_section
 
 URL_ABOUT_EXTRA = getattr(settings, 'URL_ABOUT_EXTRA', 'extra')
 

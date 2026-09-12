@@ -4,15 +4,15 @@
 
 """Models for w3blacklist."""
 
-from collections import OrderedDict
 import re
+from collections import OrderedDict
 
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils.translation import gettext, gettext_lazy
 
-from flashtux.common.utils import truncate_content
 from flashtux.common.i18n import i18n_autogen
+from flashtux.common.utils import truncate_content
 
 SITE_STATUS_CHOICES = (
     # Translators: status of a w3blacklist site

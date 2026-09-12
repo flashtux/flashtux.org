@@ -7,7 +7,7 @@
 from django.contrib import admin
 
 from flashtux.common.admin import FlashtuxAdmin
-from flashtux.news.models import Info, Comment
+from flashtux.news.models import Comment, Info
 
 admin.site.register(Info, FlashtuxAdmin)
 admin.site.register(Comment, FlashtuxAdmin)

@@ -11,7 +11,6 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.utils.translation import gettext, gettext_lazy
 
-from flashtux.common.utils import truncate_content
 from flashtux.common.forms import (
     CharField,
     EmailField,
@@ -19,6 +18,7 @@ from flashtux.common.forms import (
     TestField,
 )
 from flashtux.common.i18n import i18n_autogen
+from flashtux.common.utils import truncate_content
 
 SECTIONS = (
     'home',

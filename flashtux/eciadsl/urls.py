@@ -10,7 +10,7 @@ from django.urls import path, re_path
 from django.views.generic.base import TemplateView
 
 from flashtux.common.views import DownloadView
-from flashtux.eciadsl.views import doc, modems, faq
+from flashtux.eciadsl.views import doc, faq, modems
 from flashtux.image.views import images
 
 urlpatterns = [

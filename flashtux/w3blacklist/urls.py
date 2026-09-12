@@ -9,7 +9,7 @@
 from django.urls import path, re_path
 from django.views.generic.base import TemplateView
 
-from flashtux.w3blacklist.views import sites, letters
+from flashtux.w3blacklist.views import letters, sites
 
 urlpatterns = [
     path('sites/', sites, {'status': 'blacklist'}, name='w3blacklist_sites'),

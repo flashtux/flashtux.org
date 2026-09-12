@@ -4,9 +4,9 @@
 
 """Views for w3blacklist."""
 
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
-from flashtux.w3blacklist.models import Site, Letter
+from flashtux.w3blacklist.models import Letter, Site
 
 
 def sites(request, status=None, site_id=None):

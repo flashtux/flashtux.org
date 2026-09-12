@@ -5,13 +5,11 @@
 """Views for EciAdsl."""
 
 from django.db.models import Count
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from django.utils.translation import gettext
 
-from flashtux.common.views import (
-    doc as view_doc,
-    faq as view_faq,
-)
+from flashtux.common.views import doc as view_doc
+from flashtux.common.views import faq as view_faq
 from flashtux.eciadsl.models import Modem
 
 

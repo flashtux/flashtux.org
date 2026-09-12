@@ -7,7 +7,7 @@
 from django.contrib import admin
 
 from flashtux.common.admin import FlashtuxAdmin
-from flashtux.w3blacklist.models import Site, Comment, Letter
+from flashtux.w3blacklist.models import Comment, Letter, Site
 
 admin.site.register(Site, FlashtuxAdmin)
 admin.site.register(Comment, FlashtuxAdmin)

@@ -6,7 +6,7 @@
 
 from django.contrib import admin
 
-from flashtux.common.admin import FlashtuxAdmin
 from flashtux.coding.models import Program
+from flashtux.common.admin import FlashtuxAdmin
 
 admin.site.register(Program, FlashtuxAdmin)

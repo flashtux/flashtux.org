@@ -6,14 +6,14 @@
 
 from datetime import datetime
 
-from django.conf import settings
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
-from django.urls import reverse
 import pytz
+from django.conf import settings
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
+from django.urls import reverse
 
-from flashtux.news.models import Info, Comment, CommentFormAdd
+from flashtux.news.models import Comment, CommentFormAdd, Info
 
 
 def paginate_news(request, info_list, pagesize):
