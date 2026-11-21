@@ -35,7 +35,7 @@ def __i18n_coding_program():
     # Translators: short description for program "parfait"
     gettext_noop("Looks for perfect numbers.")
     # Translators: description for program "parfait"
-    gettext_noop("Looks for perfect numbers (numbers which divisors (except number itself) other than themself) sum give themself).\nExample: 6 divisors are: 1, 2, 3. And 1 + 2 + 3 = 6.\n\nPerfect numbers I've found are: 6, 28, 496, 8128 and 33 550 336.\n\nYou can give as parameter a number from which research starts.\n\nSpecial thanks to Pierre Barbier de Reuille for improving my algorithm, program runs fery fast!")
+    gettext_noop("Looks for perfect numbers.\nExample: 6 divisors are: 1, 2, 3. And 1 + 2 + 3 = 6.\n\nPerfect numbers I've found are: 6, 28, 496, 8128 and 33 550 336.\n\nYou can give as parameter a number from which research starts.\n\nSpecial thanks to Pierre Barbier de Reuille for improving my algorithm, program runs very fast!")
     # Translators: short description for program "solitaire"
     gettext_noop("Searches solution for \"Solitary\".")
     # Translators: description for program "solitaire"
@@ -47,7 +47,7 @@ def __i18n_coding_program():
     # Translators: filename description for program "vpcx"
     gettext_noop("Assembly source with compiled version for Dos / Windows")
     # Translators: short description for program "ffind"
-    gettext_noop("Fastly search directories.")
+    gettext_noop("Quickly search directories.")
     # Translators: description for program "ffind"
     gettext_noop("Search directories on one or more disks.\nUsing tree made by VA (va.arb), search is instantaneous (no scan of disk).")
     # Translators: filename description for program "ffind"
@@ -95,7 +95,7 @@ def __i18n_coding_program():
     # Translators: short description for program "hbase"
     gettext_noop("Data management like spreadsheet.")
     # Translators: description for program "hbase"
-    gettext_noop("Data management like spreadsheet including following features:\n- unlimited data size (only limit: physical + virtual memory),\n- easy functions on text files,\n- powerful and complexs macros,\n- \"3D columns\",\n- very swift (32 bits C++),\n- loads binary files with hexadecimal edition,\n- includes calendar (fetes),\n- completely configurable: menus, coulors, variables, macros, etc.")
+    gettext_noop("Data management like spreadsheet including following features:\n- unlimited data size (only limit: physical + virtual memory),\n- easy functions on text files,\n- powerful and complex macros,\n- \"3D columns\",\n- very swift (32 bits C++),\n- loads binary files with hexadecimal edition,\n- includes calendar,\n- completely configurable: menus, colors, variables, macros, etc.")
     # Translators: short description for program "hdigit"
     gettext_noop("Digital animated clock.")
     # Translators: description for program "hdigit"
@@ -109,11 +109,11 @@ def __i18n_coding_program():
     # Translators: short description for program "tascii"
     gettext_noop("Displays ASCII table.")
     # Translators: description for program "tascii"
-    gettext_noop("Resident program which displays ASCII table by pressing Ctrl+Alt+T.\nProgram removes itself from memory when runned a second time.\nVery useful for programers.")
+    gettext_noop("Resident program which displays ASCII table by pressing Ctrl+Alt+T.\nProgram removes itself from memory when run a second time.\nVery useful for programmers.")
     # Translators: short description for program "banque"
-    gettext_noop("Manage fastly bank account.")
+    gettext_noop("Quickly manage bank account.")
     # Translators: description for program "banque"
-    gettext_noop("Fast management of bank account:\n- fast operation creation,\n- operation checking,\n- multiple undo,\n- search with multiple criterions,\n- double money: french francs / euros,\n- part balance, bank and real,\n- etc.\n\nN.B.: A new version, X-Window compatible, with CB and cheque symbols, etc. is under development.")
+    gettext_noop("Fast management of bank account:\n- fast operation creation,\n- operation checking,\n- multiple undo,\n- search with multiple criteria,\n- double money: french francs / euros,\n- part balance, bank and real,\n- etc.\n\nN.B.: A new version, X-Window compatible, with CB and cheque symbols, etc. is under development.")
     # Translators: short description for program "calc"
     gettext_noop("Mini-calculator.")
     # Translators: description for program "calc"
@@ -129,7 +129,7 @@ def __i18n_coding_program():
     # Translators: short description for program "sbvol"
     gettext_noop("Fast volume setup.")
     # Translators: description for program "sbvol"
-    gettext_noop("Fastly adjust sound card volume under Linux.\n\nNeeds a sound card.")
+    gettext_noop("Quickly adjust sound card volume under Linux.\n\nNeeds a sound card.")
     # Translators: short description for program "tmenu"
     gettext_noop("Build interactive menus.")
     # Translators: description for program "tmenu"
