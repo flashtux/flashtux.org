@@ -76,7 +76,7 @@ def __i18n_w3blacklist_site():
     # Translators: short description for site Bobvila.com (http://www.bobvila.com/)
     gettext_noop("Design Software requires Windows, IE 5+ or Netscape 4")
     # Translators: description for site Bobvila.com (http://www.bobvila.com/)
-    gettext_noop("This site offers online home design software, such as kitchen designer, and is unfriendly to anyone using Linux, Mac or alternative browsers, susch as Firefox.  Only windows and IE and obsolete net scape browsers are supported.")
+    gettext_noop("This site offers online home design software, such as kitchen designer, and is unfriendly to anyone using Linux, Mac or alternative browsers, such as Firefox. Only windows and IE and obsolete Netscape browsers are supported.")
     # Translators: short description for site Surf 4 All (http://www.surf4all.net/)
     gettext_noop("Layout problems with Firefox")
     # Translators: description for site Surf 4 All (http://www.surf4all.net/)
