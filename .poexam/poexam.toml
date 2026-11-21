@@ -5,7 +5,19 @@
 [check]
 select = [
     "default",
+    "apostrophes",
     "compilation",
+    "double-words",
+    "format-flag",
+    "functions",
+    "markdown",
+    "options",
+    "plurals-same",
+    "previous-msgid",
+    "reused-translation",
+    "spelling-ctxt",
+    "unpluralised",
+    "wrapping",
 ]
 ignore = [
     "header",
