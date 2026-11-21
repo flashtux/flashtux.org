@@ -8456,7 +8456,7 @@ msgid "original"
 msgstr "original"
 
 #: templates/games/helltris.html:27
-msgid "many players, computer reflexion"
+msgid "many players, computer reflection"
 msgstr "jeu à plusieurs contre l'ordinateur"
 
 #: templates/games/helltris.html:43
