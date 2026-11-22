@@ -3816,6 +3816,7 @@ msgstr ""
 msgid "Doc about USB sniffer (Snoopy)"
 msgstr "Documentation sur le sniffeur USB (Snoopy)"
 
+# noqa:html-tags
 #. Translators: 2003-06-04 11:38, eciadsl: Doc about USB sniffer (Snoopy)
 #: news/_i18n_info.py:321
 msgid ""

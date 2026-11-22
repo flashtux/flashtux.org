@@ -10,6 +10,7 @@ select = [
     "double-words",
     "format-flag",
     "functions",
+    "html-tags",
     "markdown",
     "options",
     "plurals-same",
